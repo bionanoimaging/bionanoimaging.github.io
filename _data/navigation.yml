@@ -1,0 +1,9 @@
+main:
+  - title: "RESEARCH OVERVIEW"
+    url: /team/
+  - title: "TEAM"
+    url: /team/
+  - title: "PUBLICATIONS"
+    url: /categories/
+  - title: "TEACHING"
+
