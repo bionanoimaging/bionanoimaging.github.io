@@ -34,11 +34,10 @@ github_username: bionanoimaging
 theme: minimal-mistakes-jekyll
 locale: en-US
 minimal_mistakes_skin: "dirt" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
-plugins:
-  - jekyll-feed
+#plugins:
+#  - jekyll-feed
 
 teaser: /assets/images/Groupphoto2020.png 
-breadcrumbs: true
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
