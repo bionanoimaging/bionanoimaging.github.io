@@ -1,7 +1,18 @@
+Rainer Heintzmann:
+  name        : "Prof. Dr. Rainer Heintzmann"
+  bio         : "" 
+  avatar      : "/assets/images/people/heintzmann.jpg"
+  active      : true 
+  role        : "Group Leader"
+
+
+
 Felix Wechsler:
   name        : "Felix Wechsler"
   bio         : "PhD student coding in Julia" 
   avatar      : "/assets/images/people/wechsler.jpg"
+  active      : true 
+  role        : "PhD Candidate"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -14,10 +25,55 @@ Felix Wechsler:
       url: "https://twitter.com/efixwe"
 
 
+
+Ondrej Stranik:
+  name        : "Dr. Ondrej Stranik"
+  bio         : "" 
+  avatar      : "/assets/images/people/heintzmann.jpg"
+  active      : true 
+  role        : "Post Doc"
+
+Daniela Täuber:
+  name        : "Dr. Daniela Täuber"
+  bio         : "" 
+  avatar      : "/assets/images/people/taeuber.jpg"
+  active      : true 
+
+
+Benedict Diederich:
+  name        : "Dr. Benedict Diederich"
+  bio         : "" 
+  avatar      : "/assets/images/people/diederich.jpg"
+  active      : true 
+
+
+Barbora Marsikova:
+  name        : "Barbora Marsikova"
+  bio         : ""
+  avatar      : "/assets/images/people/marsikova.jpg"
+  active      : true 
+  role        : "PhD Candidate"
+
+Fengjiao Ma:
+  name        : "Fengjiao Ma"
+  bio         : ""
+  avatar      : "/assets/images/people/ma.jpg"
+  active      : true 
+  role        : "PhD Candidate"
+
+Robert Kretschmer:
+  name        : "Robert Kretschmer"
+  bio         : ""
+  avatar      : "/assets/images/people/kretschmer.jpg"
+  active      : true 
+  role        : "Engineer"
+
 Felix Vechsler:
   name        : "Felix Vechsler"
   bio         : "PhD student coding in Julia" 
   avatar      : "/assets/images/people/wechsler.jpg"
+  active      : false
+  role        : "PhD Candidate"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"

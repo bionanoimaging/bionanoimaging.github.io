@@ -18,38 +18,6 @@ Open positions are posted here, but we might have positions available for except
 
 
 # Current Members
-<figure class="person">
-	<img src="/assets/images/people/heintzmann.jpg">
-    <figcaption>Group Leader - Prof. Dr. Rainer Heintzmann<br>+49 (0) 3641 · 206-431</figcaption>
-</figure>
-<figure class="person">
-	<img src="/assets/images/people/diederich.jpg">
-    <figcaption>PostDoc - Dr. Benedict Diederich<br>+49 (0) 3641 · 206-432</figcaption>
-</figure>
-<figure class="person">
-	<img src="/assets/images/people/taeuber.jpg">
-    <figcaption>PostDoc - Dr. Daniela Täuber<br><br></figcaption>
-</figure>
-<figure class="person">
-	<img src="/assets/images/people/heintzmann.jpg">
-    <figcaption>PostDoc - Dr. Ondra Stranik<br><br></figcaption>
-</figure>
-<figure class="person">
-	<img src="/assets/images/people/marsikova.jpg">
-    <figcaption>PhD Candidate - Barbora Marsikova<br><br></figcaption>
-</figure>
-<figure class="person">
-	<img src="/assets/images/people/wechsler.jpg">
-    <figcaption>PhD Candidate - <a target="_blank" href="https://www.felixwechsler.science">Felix Wechsler</a><br><br></figcaption>
-</figure>
-<figure class="person">
-	<img src="/assets/images/people/kretschmer.jpg">
-    <figcaption>Engineer - Robert Kretschmer<br><br></figcaption>
-</figure>
-<figure class="person">
-	<img src="/assets/images/people/ma.jpg">
-    <figcaption>PhD Candidate - Fengjiao Ma<br><br></figcaption>
-</figure>
 
 
 
