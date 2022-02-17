@@ -6,7 +6,7 @@ The main theme is [minimal-mistakes](https://github.com/mmistakes/minimal-mistak
 We use [GitHub Actions](https://jekyllrb.com/docs/continuous-integration/github-actions/) to automagically build the webpage.
 The output is a static webpage which is hosted at GitHub. The domain `nanoimaging.de` just points to the IP adress of the webpage.
 You don't have to update any server!
-
+Hosted [here](bionanoimaging.github.io).
 
 ## A few notes
 * Pictures of people only 300px * 300px!
