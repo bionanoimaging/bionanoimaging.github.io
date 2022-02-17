@@ -25,12 +25,12 @@ description: >- # this means to ignore newlines until "baseurl:"
   Webpage of the Nanoimaging group affiliated with the Leibniz Institute of 
   Photonic Technology and the Friedrich Schiller University of Jena.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://nanoimaging.de" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://bionanoimaging.github.io/nanoimaging.de" # the base hostname & protocol for your site, e.g. http://example.com
 repository: "bionanoimaging/nanoimaging.de"
 twitter_username: HeintzmannLab 
 github_username: bionanoimaging 
 
-logo: /assets/images/site-logo.jpg
+logo: assets/images/site-logo.jpg
 
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
