@@ -1,7 +1,7 @@
 ---
 layout: splash 
 title: TEAM
-permalink: /team/
+permalink: team/
 header:
   overlay_image: assets/images/Groupphoto2020.jpg
   overlay_filter: 0.4 # same as adding an opacity

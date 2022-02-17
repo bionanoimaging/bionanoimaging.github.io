@@ -1,7 +1,7 @@
 ---
 layout: splash 
 title: Teaching 
-permalink: /teaching/
+permalink: teaching/
 header:
   overlay_image: assets/images/teaching.jpg
   overlay_filter: 0.4 # same as adding an opacity

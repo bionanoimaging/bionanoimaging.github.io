@@ -1,7 +1,7 @@
 ---
 layout: splash 
 title: Open Positions
-permalink: /open_positions/
+permalink: open_positions/
 ---
 
 

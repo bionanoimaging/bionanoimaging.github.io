@@ -1,6 +1,6 @@
 ---
 layout: splash 
 title: Research Overview
-permalink: /research/
+permalink: research/
 ---
 
