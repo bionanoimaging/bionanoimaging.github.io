@@ -1,9 +1,0 @@
----
-layout: home 
-title:  "Welcome on the Group page!"
-date:   2022-02-17 11:16:06 +0100
-categories: post 
----
-
-
-Lalala, we have a new group page, so nice!

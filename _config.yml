@@ -30,6 +30,9 @@ repository: "bionanoimaging/nanoimaging.de"
 twitter_username: HeintzmannLab 
 github_username: bionanoimaging 
 
+# in posts
+author_profile : true
+
 logo: assets/images/site-logo.jpg
 
 # Build settings
