@@ -1,0 +1,16 @@
+---
+layout: splash 
+---
+
+
+<div id="main" role="main">
+    {{ content }}
+    {% for a in site.data.authors %}
+        <figure class="person">
+            <img src={{ a[1]["avatar"] }}>
+            <figcaption>{{ a[1]["name"] }}<br></figcaption>
+        </figure>
+
+    {% endfor %}
+  </div>
+</div>

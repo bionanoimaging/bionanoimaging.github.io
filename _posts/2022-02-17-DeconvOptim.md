@@ -7,7 +7,7 @@ categories:
     - archive
 header:
   teaser: /assets/posts/color-deconv.jpg
-author: Felix Wechsler
+author: Felix Wechsler 
 author_profile: true
 ---
 
@@ -23,3 +23,7 @@ Also we put a lot of emphasize on the performance of DeconvOptim.jl, as shown he
 
 
 Using Julia's CUDA ability we could outperform any existing deconvolution package but maintain the same quality measure - here under the normalized cross correlation (NCC) value.
+
+
+See also that video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FodpnOhccis" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

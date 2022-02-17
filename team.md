@@ -1,5 +1,5 @@
 ---
-layout: splash 
+layout: list_all_authors 
 title: TEAM
 permalink: team/
 header:
