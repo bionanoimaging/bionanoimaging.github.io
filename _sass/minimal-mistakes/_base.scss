@@ -206,6 +206,15 @@ li ol {
 /* Figures and images */
 
 figure {
+  &.person {
+    display: inline-block;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+}
+
+
+figure {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: justify;

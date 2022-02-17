@@ -11,42 +11,45 @@ We are a enthusiastic group of bachelor and master students, doctoral and postdo
 
 
 # WE ARE HIRING 
-We are always looking for motivated, skilled young talents around the globe. Our research group is very international.
-Open positions are posted here as well, but we might have positions available for exceptional candidates.
-Please <a target="_blank" href="https://mailhide.io/e/GKDvrXdl">send an mail</a> with attached CV and motivation letters to Rainer Heintzmann.
+We are always looking for motivated, skilled young talents around the globe.
+Open positions are posted here, but we might have positions available for exceptional candidates upon application.
 
 [See this page](/open_positions) for further projects such as internships.
 
 
-
-|:-------------------------:|
-|![](/assets/images/people/heintzmann.jpg)|  
-| Prof. Dr. Rainer Heintzmann |
-
-|:-------------------------:|
-|![](/assets/images/people/heintzmann.jpg)|![](/assets/images/people/heintzmann.jpg)|![](/assets/images/people/heintzmann.jpg)     
-| Prof. Dr. Rainer Heintzmann | Ondrej stranik | asdasd aasdasd |
-    
-<figure class="third">
-	    <img src="/assets/images/people/heintzmann.jpg">
-        <figcaption>asdasdasd asd </figcaption>
+# Current Members
+<figure class="person">
+	<img src="/assets/images/people/heintzmann.jpg">
+    <figcaption>Group Leader - Prof. Dr. Rainer Heintzmann<br>+49 (0) 3641 · 206-431</figcaption>
+</figure>
+<figure class="person">
+	<img src="/assets/images/people/diederich.jpg">
+    <figcaption>PostDoc - Dr. Benedict Diederich<br>+49 (0) 3641 · 206-432</figcaption>
+</figure>
+<figure class="person">
+	<img src="/assets/images/people/taeuber.jpg">
+    <figcaption>PostDoc - Dr. Daniela Täuber<br><br></figcaption>
+</figure>
+<figure class="person">
+	<img src="/assets/images/people/heintzmann.jpg">
+    <figcaption>PostDoc - Dr. Ondra Stranik<br><br></figcaption>
+</figure>
+<figure class="person">
+	<img src="/assets/images/people/marsikova.jpg">
+    <figcaption>PhD Candidate - Barbora Marsikova<br><br></figcaption>
+</figure>
+<figure class="person">
+	<img src="/assets/images/people/wechsler.jpg">
+    <figcaption>PhD Candidate - <a target="_blank" href="https://mailhide.io/e/scBJzLBn">Felix Wechsler</a><br><br></figcaption>
+</figure>
+<figure class="person">
+	<img src="/assets/images/people/kretschmer.jpg">
+    <figcaption>Engineer - Robert Kretschmer<br><br></figcaption>
+</figure>
+<figure class="person">
+	<img src="/assets/images/people/ma.jpg">
+    <figcaption>PhD Candidate - Fengjiao Ma<br><br></figcaption>
 </figure>
 
-<figure class="third">
-    <figure>
-	    <img src="/assets/images/people/heintzmann.jpg">
-        <figcaption>asdasdasd asd </figcaption>
-    </figure>
-    <figure>
-	    <img src="/assets/images/people/heintzmann.jpg">
-        <figcaption>asdasdasd asd </figcaption>
-    </figure>
-    <figure>
-	    <img src="/assets/images/people/heintzmann.jpg">
-        <figcaption>asdasdasd asd </figcaption>
-    </figure>
-</figure>
 
 
-
-[See old members](/old_members)
