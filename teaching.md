@@ -13,11 +13,11 @@ Our lab regularly offers courses about microscopy and image processing in micros
 <details>
     <summary>Click to expand!</summary>
 
-### Microscopy
+#### Microscopy
 * TBA
 
 
-### Biophotonics
+#### Biophotonics
 * TBA
 
 </details>
@@ -26,7 +26,7 @@ Our lab regularly offers courses about microscopy and image processing in micros
 <details>
     <summary>Click to expand!</summary>
 
-### Image Processing in Microscopy
+#### Image Processing in Microscopy
 * Friday 12:30pm in CIP Pool at ACP
 * Teachers: Rainer Heintzmann, Felix Wechsler
 * Register via Friedolin for both the course and the exercise and you should be able to see the Moodle course.
@@ -34,14 +34,14 @@ Our lab regularly offers courses about microscopy and image processing in micros
 * [Friedolin link](https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=187771&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung)
 
 
-### Computational Imaging
+#### Computational Imaging
 * Tuesday 12:15pm in CIP Pool at ACP
 * Teachers: Lars Loetgering, Rainer Heintzmann
 * Register via Friedolin for both the course and the exercise and you should be able to see the Moodle course.
 * [Friedolin link](https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=193012&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung)
 
 
-### Light Microscopy 
+#### Light Microscopy 
 * Teachers: Rainer Heintzmann
 * Register via Friedolin for both the course and the exercise and you should be able to see the Moodle course.
 * [Friedolin link](https://friedolin.uni-jena.de/qisserver/rds?state=wsearchv&search=1&subdir=veranstaltung&veranstaltung.dtxt=Light+Microscopy&veranstaltung.semester=20212&P_start=0&P_anzahl=10&P.sort=&_form=display)

@@ -40,7 +40,7 @@ Open positions are posted here, but we might have positions available for except
 </figure>
 <figure class="person">
 	<img src="/assets/images/people/wechsler.jpg">
-    <figcaption>PhD Candidate - <a target="_blank" href="https://mailhide.io/e/scBJzLBn">Felix Wechsler</a><br><br></figcaption>
+    <figcaption>PhD Candidate - <a target="_blank" href="https://www.felixwechsler.science">Felix Wechsler</a><br><br></figcaption>
 </figure>
 <figure class="person">
 	<img src="/assets/images/people/kretschmer.jpg">

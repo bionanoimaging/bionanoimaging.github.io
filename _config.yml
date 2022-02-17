@@ -37,6 +37,7 @@ theme: minimal-mistakes-jekyll
 locale: en-US
 minimal_mistakes_skin: "dirt" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
+markdown: CommonMarkGhPages
 
 atom_feed:
   hide: true
