@@ -1,7 +1,10 @@
 ---
-layout: home
+layout: splash 
 title: Teaching 
 permalink: /teaching/
+header:
+  overlay_image: assets/images/teaching.jpg
+  overlay_filter: 0.4 # same as adding an opacity
 ---
 
 Our lab is regularly offering course about microscopy and image processing in microscopy.
@@ -46,6 +49,4 @@ Our lab is regularly offering course about microscopy and image processing in mi
 
 </details>
 
-
-asddasd
 
