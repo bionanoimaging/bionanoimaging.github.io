@@ -11,7 +11,7 @@ We are a enthusiastic group of bachelor and master students, doctoral and postdo
 
 
 # WE ARE HIRING 
-We are always looking for motivated, skilled young talents around the globe.
+We are always looking for motivated, skilled young scientists around the globe.
 Open positions are posted here, but we might have positions available for exceptional candidates upon application.
 
 [See this page](/open_positions) for further projects such as internships.
