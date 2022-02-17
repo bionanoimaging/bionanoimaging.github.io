@@ -2,9 +2,11 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-teaser: /assets/images/Groupphoto2020.png 
 layout: splash
 title: Bio-Nanoimaging Group
+header:
+  overlay_image: assets/images/banner.jpg
+  overlay_filter: 0.4 # same as adding an opacity
 ---
 We are a research group located at the [Leibniz Institute of Photonics Technology (IPHT)](https://www.leibniz-ipht.de/en/homepage/) and the [Institute of Physical Chemistry](https://www.ipc.uni-jena.de/en/research-groups/heintzmann-group) in Jena, Germany.
 The group is led by Rainer Heintzmann.

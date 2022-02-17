@@ -7,7 +7,7 @@ header:
   overlay_filter: 0.4 # same as adding an opacity
 ---
 
-Our lab is regularly offering course about microscopy and image processing in microscopy.
+Our lab regularly offers courses about microscopy and image processing in microscopy.
 
 ## Summer Term 2022
 <details>
