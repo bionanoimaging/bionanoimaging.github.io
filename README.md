@@ -34,7 +34,7 @@ Put the following lines in your `~/.bashrc` or `~/.zshrc`:
 export GEM_HOME="$HOME/gems"
 export PATH="$HOME/gems/bin:$PATH"
 ```
-and call `soure ~/.zshrc`.
+and call `source ~/.zshrc`.
 
 Then install Jekyll with
 ```bash
