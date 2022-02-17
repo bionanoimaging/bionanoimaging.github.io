@@ -4,6 +4,6 @@ main:
   - title: "TEAM"
     url: /team/
   - title: "PUBLICATIONS"
-    url: /categories/
+    url: /publications/
   - title: "TEACHING"
-
+    url: /teaching/

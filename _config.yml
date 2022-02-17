@@ -34,6 +34,10 @@ github_username: bionanoimaging
 theme: minimal-mistakes-jekyll
 locale: en-US
 minimal_mistakes_skin: "dirt" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+markdown: CommonMarkGhPages
+
+
 #plugins:
 #  - jekyll-feed
 
