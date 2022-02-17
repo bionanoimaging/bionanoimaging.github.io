@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Nanoimaging in Jena 
+title: Bio-Nanoimaging in Jena 
 name: Rainer Heintzmann, Felix Wechsler
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
@@ -30,12 +30,16 @@ repository: "bionanoimaging/nanoimaging.de"
 twitter_username: HeintzmannLab 
 github_username: bionanoimaging 
 
+logo: /assets/images/site-logo.jpg
+
 # Build settings
 theme: minimal-mistakes-jekyll
 locale: en-US
 minimal_mistakes_skin: "dirt" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
-markdown: CommonMarkGhPages
+
+atom_feed:
+  hide: true
 
 
 #plugins:
