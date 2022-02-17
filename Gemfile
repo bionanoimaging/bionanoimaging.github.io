@@ -7,7 +7,7 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 4.2.1"
+gem 'jekyll', '~> 3.9'
 
 # use this theme https://github.com/mmistakes/minimal-mistakes 
 gem "minimal-mistakes-jekyll"
@@ -32,4 +32,11 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 
 group :jekyll_plugins do
   gem 'jekyll-commonmark-ghpages'
+
+
+source "https://rubygems.org"
+
+gem "github-pages", group: :jekyll_plugins
+gem "jekyll-include-cache", group: :jekyll_plugins
+
 end

@@ -33,7 +33,8 @@ github_username: bionanoimaging
 logo: /assets/images/site-logo.jpg
 
 # Build settings
-theme: minimal-mistakes-jekyll
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+
 locale: en-US
 minimal_mistakes_skin: "dirt" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
@@ -43,8 +44,8 @@ atom_feed:
   hide: true
 
 
-#plugins:
-#  - jekyll-feed
+plugins:
+  - jekyll-include-cache 
 
 
 # Exclude from processing.
