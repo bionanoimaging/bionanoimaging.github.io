@@ -12,7 +12,8 @@ Hosted [here](bionanoimaging.github.io).
 * Pictures of people only 300px * 300px!
 * Please check always locally if the webpage still builds!
 * Don't add pictures >1MB to git. In general don't update binary files (such as images, PDF, ...) too often.
-
+* Update [_data/authors.yaml](_data/authors.yaml) if you want to add a new person. Old person should set to `active : false`.
+* For posts, generate a file in the same date format as [_posts/2022-02-17-DeconvOptim.md](_posts/2022-02-17-DeconvOptim.md). Data for posts belongs in [assets/posts/](assets/posts/) 
 
 
 ## Hosting for Development
