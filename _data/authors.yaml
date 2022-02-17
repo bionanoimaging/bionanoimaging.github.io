@@ -10,13 +10,14 @@ Ondrej Stranik:
   bio         : "" 
   avatar      : "/assets/images/people/heintzmann.jpg"
   active      : true 
-  role        : "Post Doc"
+  role        : "PostDoc"
 
 Daniela Täuber:
   name        : "Dr. Daniela Täuber"
   bio         : "" 
   avatar      : "/assets/images/people/taeuber.jpg"
   active      : true 
+  role        : "PostDoc"
 
 
 Benedict Diederich:
@@ -24,6 +25,7 @@ Benedict Diederich:
   bio         : "" 
   avatar      : "/assets/images/people/diederich.jpg"
   active      : true 
+  role        : "PostDoc"
 
 
 Felix Wechsler:
