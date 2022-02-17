@@ -5,27 +5,6 @@ Rainer Heintzmann:
   active      : true 
   role        : "Group Leader"
 
-
-
-Felix Wechsler:
-  name        : "Felix Wechsler"
-  bio         : "PhD student coding in Julia" 
-  avatar      : "/assets/images/people/wechsler.jpg"
-  active      : true 
-  role        : "PhD Candidate"
-  links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "https://mailhide.io/e/scBJzLBn"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://felixwechsler.science"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/efixwe"
-
-
-
 Ondrej Stranik:
   name        : "Dr. Ondrej Stranik"
   bio         : "" 
@@ -45,6 +24,25 @@ Benedict Diederich:
   bio         : "" 
   avatar      : "/assets/images/people/diederich.jpg"
   active      : true 
+
+
+Felix Wechsler:
+  name        : "Felix Wechsler"
+  bio         : "PhD student coding in Julia" 
+  avatar      : "/assets/images/people/wechsler.jpg"
+  active      : true 
+  role        : "PhD Candidate"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "https://mailhide.io/e/scBJzLBn"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://felixwechsler.science"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/efixwe"
+
 
 
 Barbora Marsikova:
