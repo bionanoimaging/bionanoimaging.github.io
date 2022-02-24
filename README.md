@@ -4,16 +4,19 @@
 This webpage is based on [Jekyll](https://jekyllrb.com/), a very popular static website generator.
 The main theme is [minimal-mistakes](https://github.com/mmistakes/minimal-mistakes).
 We use [GitHub Actions](https://jekyllrb.com/docs/continuous-integration/github-actions/) to automagically build the webpage.
-The output is a static webpage which is hosted at GitHub. The domain `nanoimaging.de` just points to the IP adress of the webpage.
+The output is a static webpage which is hosted at GitHub.
 Hosted still [here](https://bionanoimaging.github.io).
 
 ## A few notes for maintaining
-* Pictures of people exactly the size of 300px * 300px! Activate .jpg compression on a moderate leve.
 * Please check always locally if the webpage still builds!
-* Don't add pictures >1MB to git. In general don't update binary files (such as images, PDF, ...) too often.
-* Update [_data/authors.yaml](_data/authors.yaml) if you want to add a new person. Old persons should be set to `active : false`.
 * For posts, generate a file in the same date format as [_posts/2022-02-17-DeconvOptim.md](_posts/2022-02-17-DeconvOptim.md). Data for posts belongs in [assets/posts/](assets/posts/). I would recommend to simply copy it.
 
+
+## Updating group members
+* Update [_data/authors.yaml](_data/authors.yaml) if you want to add a new person. Old persons should be set to `active : false`.
+* Pictures of people exactly the size of 300px * 300px! Activate .jpg compression on a moderate level (size should be <100KB)
+* Place the picture of the person [assets/images/people](assets/images/people) in here
+* The generator then assembles automatically the new [team page](https://bionanoimaging.github.io/team/).
 
 ## Hosting for Development
 Navigate to the folder and then call:
