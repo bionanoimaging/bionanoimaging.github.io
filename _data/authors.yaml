@@ -46,6 +46,12 @@ Felix Wechsler:
       url: "https://twitter.com/efixwe"
 
 
+Monalisa Goswami:
+  name        : "Monalisa Goswami"
+  bio         : ""
+  avatar      : "/assets/images/people/goswami.jpg"
+  active      : true 
+  role        : "PhD Candidate"
 
 Barbora Marsikova:
   name        : "Barbora Marsikova"
