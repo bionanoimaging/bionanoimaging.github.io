@@ -14,11 +14,17 @@ Our lab regularly offers courses about microscopy and image processing in micros
     <summary>Click to expand!</summary>
 
 #### Microscopy
-* TBA
+* Friday, 12:30PM 
+* Albert-Einstein-Str. 6 - SR 2-ACP
+* Teachers: Rainer Heintzmann, Christian Eggeling
+* [Friedolin link](https://friedolin.uni-jena.de/qisserver/rds?state=wsearchv&search=1&subdir=veranstaltung&veranstaltung.dtxt=microscopy&veranstaltung.semester=20221&P_start=0&P_anzahl=10&P.sort=&_form=display)
 
 
 #### Biophotonics
-* TBA
+* Friday 8:30AM 
+* Albert-Einstein-Str. 6 - SR 1-ACP
+* Teachers: Daniela Täuber, Rainer Heintzmann, Christian Eggeling
+* [Friedolin link](https://friedolin.uni-jena.de/qisserver/rds?state=wsearchv&search=1&subdir=veranstaltung&veranstaltung.dtxt=biophotonics&veranstaltung.semester=20221&P_start=0&P_anzahl=10&P.sort=&_form=display)
 
 </details>
 
