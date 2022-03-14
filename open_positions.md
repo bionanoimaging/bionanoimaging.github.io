@@ -6,10 +6,10 @@ permalink: open_positions/
 
 
 ## PostDoc Positions 
-TBA
+High-resolution (STED-based) microscopy system with adaptive optics [Apply here](https://www.leibniz-ipht.de/en/institute/career/job-portal/job/?id=1042)
 
 ## PhD Candidates 
-TBA
+Pandemic Forecasting Based on Mathematical Models and Machine Learning. [Apply here](https://www.leibniz-ipht.de/en/institute/career/job-portal/job/?id=1044)
 
 ## Internships/Research Lab/Master Thesis
 Please don't hesistate to contact the linked person for further details!
