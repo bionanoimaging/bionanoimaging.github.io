@@ -7,10 +7,14 @@ Rainer Heintzmann:
 
 Ondrej Stranik:
   name        : "Dr. Ondrej Stranik"
-  bio         : "" 
-  avatar      : "/assets/images/people/heintzmann.jpg"
+  bio         : "Focus on a label-free imaging, hyperspectral imaging and 2-photon 3D print"
+  avatar      : "/assets/images/people/stranik.jpg"
   active      : true 
   role        : "PostDoc"
+  links:
+      - label: "Website"
+        icon: "fas fa-fw fa-link"
+        url: "https://www.leibniz-ipht.de/de/author/372/"
 
 Daniela Täuber:
   name        : "Dr. Daniela Täuber"
