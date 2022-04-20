@@ -94,3 +94,9 @@ Felix Vechsler:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/efixwe"
+Mohammad Soltaninezhad:
+  name        : "Mohammad Soltaninezhad"
+  bio         : " Polarization Microscopy + Python "
+  avatar      : "/assets/images/people/Soltaninezhad.jpeg"
+  active      : true 
+  role        : "PhD Candidate"
