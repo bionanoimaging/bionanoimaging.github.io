@@ -3,7 +3,7 @@ layout: list_all_authors
 title: TEAM
 permalink: team/
 header:
-  overlay_image: assets/images/Groupphoto2020.jpg
+  overlay_image: assets/images/group_photo_2022.jpg
   overlay_filter: 0.4 # same as adding an opacity
 ---
 
