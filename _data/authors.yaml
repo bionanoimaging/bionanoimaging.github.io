@@ -102,3 +102,11 @@ Mohammad Soltaninezhad:
   avatar      : "/assets/images/people/Soltaninezhad.jpeg"
   active      : true 
   role        : "PhD Candidate"
+
+Yutong Wang:
+  name        : "Yutong Wang"
+  bio         : ""
+  avatar      : "/assets/images/people/ytwang.jpg"
+  active      : true 
+  role        : "Master's Student"
+  
