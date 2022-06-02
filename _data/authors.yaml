@@ -64,6 +64,13 @@ Barbora Marsikova:
   active      : false 
   role        : "PhD Candidate"
 
+Mahyasadat Ebrahimi:
+  name        : "Mahyasadat Ebrahimi"
+  bio         : " Image segmentation + Python "
+  avatar      : "/assets/images/people/Ebrahimi.jpg"
+  active      : true 
+  role        : "PhD Candidate"
+
 Fengjiao Ma:
   name        : "Fengjiao Ma"
   bio         : ""
@@ -102,6 +109,8 @@ Mohammad Soltaninezhad:
   avatar      : "/assets/images/people/Soltaninezhad.jpeg"
   active      : true 
   role        : "PhD Candidate"
+
+
 
 Yutong Wang:
   name        : "Yutong Wang"
