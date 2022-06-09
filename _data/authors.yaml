@@ -131,3 +131,9 @@ Lukas Haßfurth:
   active      : true 
   role        : "Master's Student"
   
+Eda Bingöl:
+  name        : "Eda Bingöl"
+  bio         : ""
+  avatar      : "/assets/images/people/Eda-Bingl-2300x300.jpg"
+  active      : true 
+  role        : "Master's Student"
