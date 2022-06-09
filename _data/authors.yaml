@@ -57,6 +57,13 @@ Monalisa Goswami:
   active      : true 
   role        : "PhD Candidate"
 
+Haoran Wang:
+  name        : "Haoran Wang"
+  bio         : "PhD student working with nonlinear structured illumination microscopy and open-source microscopy kit UC2" 
+  avatar      : "/assets/images/people/wang.jpg"
+  active      : true
+  role        : "PhD Candidate"
+  
 Barbora Marsikova:
   name        : "Barbora Marsikova"
   bio         : ""
@@ -84,7 +91,7 @@ Robert Kretschmer:
   avatar      : "/assets/images/people/kretschmer.jpg"
   active      : true 
   role        : "Engineer"
-
+  
 Felix Vechsler:
   name        : "Felix Vechsler"
   bio         : "PhD student coding in Julia" 
