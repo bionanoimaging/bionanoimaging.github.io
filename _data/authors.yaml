@@ -116,4 +116,11 @@ Yutong Wang:
   avatar      : "/assets/images/people/ytwang.jpg"
   active      : true 
   role        : "Master's Student"
+
+Lukas Haßfurth:
+  name        : "Lukas Haßfurth"
+  bio         : ""
+  avatar      : "/assets/images/people/Hassfurth.jpg"
+  active      : true 
+  role        : "Master's Student"
   
