@@ -7,7 +7,7 @@ header:
   overlay_filter: 0.4 # same as adding an opacity
 ---
 
-We are a enthusiastic group of bachelor and master students, doctoral and postdoctoral fellows working on computational microscopy.
+We are an enthusiastic group of bachelor and master students, doctoral and postdoctoral fellows working on computational microscopy.
 
 
 # WE ARE HIRING 
