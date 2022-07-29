@@ -92,6 +92,13 @@ Robert Kretschmer:
   active      : true 
   role        : "Engineer"
   
+Martin Buchmann:
+  name        : "Martin Buchmann"
+  bio         : ""
+  avatar      : "/assets/images/people/buchmann.jpg"
+  active      : true 
+  role        : "Engineer"
+  
 Felix Vechsler:
   name        : "Felix Vechsler"
   bio         : "PhD student coding in Julia" 
