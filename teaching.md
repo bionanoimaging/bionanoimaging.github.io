@@ -17,7 +17,7 @@ Our lab regularly offers courses about microscopy and image processing in micros
 #### Image Processing in Microscopy
 * Friday 12:30pm in CIP Pool at ACP
 * Exercises bi-weekly: 14:15pm in CIP Pool
-* Teachers: Rainer Heintzmann, Felix Wechsler
+* Teachers: Rainer Heintzmann, Lukas Haßfurth, Felix Wechsler
 * Register via Friedolin for both the course and the exercise and you should be able to see the Moodle course.
 * [GitHub repository](https://github.com/bionanoimaging/Image-Processing-In-Microscopy-2022-2023) contains the exercises
 
