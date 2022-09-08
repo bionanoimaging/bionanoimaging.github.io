@@ -12,9 +12,9 @@ Ondrej Stranik:
   active      : true 
   role        : "PostDoc"
   links:
-      - label: "Website"
-        icon: "fas fa-fw fa-link"
-        url: "https://www.leibniz-ipht.de/de/author/372/"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.leibniz-ipht.de/de/author/372/"
 
 Daniela Täuber:
   name        : "Dr. Daniela Täuber"
