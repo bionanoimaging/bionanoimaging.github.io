@@ -144,3 +144,10 @@ Eda Bingöl:
   avatar      : "/assets/images/people/Eda-Bingl-2300x300.jpg"
   active      : true 
   role        : "Master's Student"
+
+Subham Adak:
+  name        : "Subham Adak"
+  bio         : ""
+  avatar      : "/assets/images/people/adak.jpg"
+  active      : true 
+  role        : "Master's Student"
