@@ -54,7 +54,7 @@ Monalisa Goswami:
   name        : "Monalisa Goswami"
   bio         : ""
   avatar      : "/assets/images/people/goswami.jpg"
-  active      : true 
+  active      : false 
   role        : "PhD Candidate"
 
 Haoran Wang:
