@@ -64,6 +64,15 @@ Haoran Wang:
   active      : true
   role        : "PhD Candidate"
   
+
+Dina Ratsimandresi:
+  name        : "Dina Ratsimandresi"
+  bio         : "" 
+  avatar      : "/assets/images/people/dina.jpg"
+  active      : true
+  role        : "PhD Candidate"
+
+
 Barbora Marsikova:
   name        : "Barbora Marsikova"
   bio         : ""
