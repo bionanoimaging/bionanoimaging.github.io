@@ -18,7 +18,7 @@ We work on computational algorithms enhancing properties such as the resolution 
 
 Furthermore, We aim to support researchers around the world with imaging devices which are easy replicate. This includes low-cost (microscopic) imaging devices, but also image processing algorithms. See the [GitHub page of UC2](http://youseetoo.org) for further reference.
 
-Recently, we started to work more on open source software regarding microscopy image processing in [Julia Lang](https://julialang.org/) on [GitHub](https://github.com/bionanoimaging/?q=&type=all&language=&sort=stargazers).
+Recently, we started to work more on open source software regarding microscopy image processing in [Julia Lang](https://julialang.org/) on [GitHub](https://github.com/bionanoimaging/?q=&type=all&language=&sort=stargazers). See also [this software page](/software).
 
 
 
