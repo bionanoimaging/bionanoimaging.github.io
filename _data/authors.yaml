@@ -107,24 +107,6 @@ Martin Buchmann:
   avatar      : "/assets/images/people/buchmann.jpg"
   active      : true 
   role        : "Engineer"
-  
-Felix Vechsler:
-  name        : "Felix Vechsler"
-  bio         : "PhD student coding in Julia" 
-  avatar      : "/assets/images/people/wechsler.jpg"
-  active      : false
-  role        : "PhD Candidate"
-  links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "https://mailhide.io/e/scBJzLBn"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://felixwechsler.science"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/efixwe"
-
 
 Mohammad Soltaninezhad:
   name        : "Mohammad Soltaninezhad"
