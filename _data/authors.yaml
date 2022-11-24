@@ -89,7 +89,13 @@ Haoran Wang:
   avatar      : "/assets/images/people/wang.jpg"
   active      : true
   role        : "PhD Candidate"
-  
+
+Yubraj Gupta:
+  name        : "Yubraj Gupta"
+  bio         : "PhD student focusing in microscope 3D visualization" 
+  avatar      : "/assets/images/people/IMG_Yuvi.jpg"
+  active      : true
+  role        : "PhD Candidate"
 
 Dina Ratsimandresi:
   name        : "Dina Ratsimandresi"
