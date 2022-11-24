@@ -46,6 +46,16 @@ Benedict Diederich:
   avatar      : "/assets/images/people/diederich.jpg"
   active      : true 
   role        : "PostDoc"
+  
+  
+Dirk Boonzajer:
+  name        : "Dr. Dirk Ewoud Boonzajer Flaes"
+  bio         : "" 
+  avatar      : "/assets/images/people/Dirk_300x300.jpg"
+  active      : true 
+  role        : "PostDoc"
+  
+  
 
 
 Felix Wechsler:
