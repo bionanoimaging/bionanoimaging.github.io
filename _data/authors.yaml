@@ -158,3 +158,10 @@ Subham Adak:
   avatar      : "/assets/images/people/adak.jpg"
   active      : true 
   role        : "Master's Student"
+
+Sobhi Saeed:
+  name        : "Sobhi Saeed"
+  bio         : ""
+  avatar      : "/assets/images/people/saeed.jpg"
+  active      : true 
+  role        : "Master's Student"
