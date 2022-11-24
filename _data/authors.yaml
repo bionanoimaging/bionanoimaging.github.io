@@ -1,9 +1,19 @@
 Rainer Heintzmann:
   name        : "Prof. Dr. Rainer Heintzmann"
-  bio         : "" 
+  bio         : "Head of the Microscopy Department (Leibniz IPHT) and Chair of Nanobiophotonics in the Department of Physical Chemistry" 
   avatar      : "/assets/images/people/heintzmann.jpg"
   active      : true 
   role        : "Group Leader"
+  links:
+    - label: "Personal Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://sites.google.com/site/heintzmann/?pli=1"
+    - label: "IPC Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.ipc.uni-jena.de/arbeitsgruppen/ag-heintzmann"
+    - label: "IPHT Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.leibniz-ipht.de/de/abteilungen/mikroskopie/"
 
 Ondrej Stranik:
   name        : "Dr. Ondrej Stranik"
@@ -23,6 +33,12 @@ Daniela Täuber:
   active      : true 
   role        : "PostDoc"
 
+René Lachmann:
+  name        : "Dr. René Lachmann"
+  bio         : "" 
+  avatar      : ""
+  active      : false 
+  role        : "PhD Student"
 
 Benedict Diederich:
   name        : "Dr. Benedict Diederich"
