@@ -16,9 +16,9 @@ Open positions are posted here, but we might have positions available for except
 
 [See this page](/open_positions) for further projects such as internships.
 
+## Alumnis
+[See this page](/team_alumni)
 
 # Current Members
 
-## Alumnis
-[See this page](/team_alumni)
 
