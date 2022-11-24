@@ -1,0 +1,19 @@
+---
+layout: splash 
+---
+
+
+<div id="main" role="main">
+    {{ content }}
+    {% for a in site.data.authors %}
+        {% unless a[1]["active"] %}
+        
+            <figure class="person">
+                <a href={{ a[1]["links"][1]["url"] }}> 
+                    <img src={{ a[1]["avatar"] }}></a>
+                <figcaption>{{a[1]["role"] }} - <a href={{ a[1]["links"][1]["url"] }}>{{ a[1]["name"] }}</a><br></figcaption>
+            </figure>
+        {% endunless %}
+    {% endfor %}
+  </div>
+</div>
