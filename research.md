@@ -5,4 +5,6 @@ layout: posts
 entries_layout: grid
 ---
 
-Here, we hightlight some of our projects. 
+Here, we highlight some of our projects. 
+
+[See this page](/open_positions) for further projects such as internships.
