@@ -36,7 +36,7 @@ Daniela Täuber:
 René Lachmann:
   name        : "Dr. René Lachmann"
   bio         : "" 
-  avatar      : ""
+  avatar      : "/assets/images/people/dummy.jpg"
   active      : false 
   role        : "PhD Student"
 
@@ -62,7 +62,7 @@ Felix Wechsler:
   name        : "Felix Wechsler"
   bio         : "PhD student coding in Julia" 
   avatar      : "/assets/images/people/wechsler.jpg"
-  active      : true 
+  active      : false 
   role        : "PhD Candidate"
   links:
     - label: "Email"
