@@ -24,7 +24,7 @@ Here are some topics of current interest:
 + (Fourier) 3D Ptychography
 + optimization and 3D printing of DOEs
 
-Please don't hesistate to contact the Rainer Heintzmann for further details!
+Please don't hesitate to <a target="_blank" href="https://mailhide.io/e/GKDvrXdl">contact the Rainer Heintzmann</a> for further details!
 
 
 # Speculative Application
