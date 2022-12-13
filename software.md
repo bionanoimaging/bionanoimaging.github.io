@@ -12,7 +12,7 @@ We develop a couple of packages regarding microscopy data processing.
 Many of our packages are mentioned on [GitHub](https://github.com/bionanoimaging).
 
 ## Python
-* [NanoImagingPack]([https://github.com/bionanoimaging/View5D](https://gitlab.com/bionanoimaging/nanoimagingpack)) A python package for quantitative image analysis and intended to provide similar functionality as DIPimage in Matlab.
+* [NanoImagingPack](https://gitlab.com/bionanoimaging/nanoimagingpack) A python package for quantitative image analysis and intended to provide similar functionality as DIPimage in Matlab.
 
 ## JuliaLang
 * [DeconvOptim.jl](https://github.com/roflmaostc/DeconvOptim.jl) for high-performance deconvolution on CPU and CUDA
