@@ -11,8 +11,10 @@ header:
 We develop a couple of packages regarding microscopy data processing.
 Many of our packages are mentioned on [GitHub](https://github.com/bionanoimaging).
 
-## JuliaLang
+## Python
+* [NanoImagingPack]([https://github.com/bionanoimaging/View5D](https://gitlab.com/bionanoimaging/nanoimagingpack)) A python package for quantitative image analysis and intended to provide similar functionality as DIPimage in Matlab.
 
+## JuliaLang
 * [DeconvOptim.jl](https://github.com/roflmaostc/DeconvOptim.jl) for high-performance deconvolution on CPU and CUDA
 * [FourierTools.jl](https://github.com/bionanoimaging/FourierTools.jl/) for working efficiently in Fourier space
 * [PointSpreadFunctions.jl](https://github.com/RainerHeintzmann/PointSpreadFunctions.jl/) for calculating PSFs
@@ -20,4 +22,3 @@ Many of our packages are mentioned on [GitHub](https://github.com/bionanoimaging
 
 ## Java
 * [View5D](https://github.com/bionanoimaging/View5D)
-
