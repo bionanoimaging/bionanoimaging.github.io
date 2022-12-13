@@ -55,8 +55,6 @@ Dirk Boonzajer:
   active      : true 
   role        : "PostDoc"
   
-  
-
 
 Felix Wechsler:
   name        : "Felix Wechsler"
@@ -123,6 +121,13 @@ Fengjiao Ma:
   name        : "Fengjiao Ma"
   bio         : ""
   avatar      : "/assets/images/people/ma.jpg"
+  active      : true 
+  role        : "PhD Candidate"
+
+David McFadden:
+  name        : "David McFadden"
+  bio         : "PhD student working on quantum-enhanced imaging."
+  avatar      : "/assets/images/people/mcfadden.jpg"
   active      : true 
   role        : "PhD Candidate"
 
