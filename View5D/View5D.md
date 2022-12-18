@@ -1,4 +1,4 @@
- ---
+---
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
@@ -16,7 +16,7 @@ header:
 Information on View5D
 =====================
 
-ImageJ plugin, Matlab plugin and Java applet ([current Version](https://github.com/bionanoimaging/View5D) )  
+ImageJ, Matlab and Julia plugin and Java applet ([current Version](https://github.com/bionanoimaging/View5D) )  
 
 --------------------------------------------------------------------------------------------------------------
 
