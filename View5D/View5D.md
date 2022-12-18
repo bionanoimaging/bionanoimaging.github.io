@@ -32,7 +32,7 @@ Multi-dimensional data frequently arises in confocal microscopy and medical imag
 Here are some [example screen shots](examples/index.html) and the applet version can be [tested](examples/index.html#Testing) or the [interactive online tutorials](View5DOnlineTutorials.html) can be used.  
 There is also a [reference of all commands](View5DCommandReference.html) and mode of operation  
 
-### Main features of View5D are:[![Example displaying an MRI dataset] <img src="examples/MRIOvUn.jpg" title="" alt="Example displaying an MRI dataset" style="border: 0px solid ; width: 260px; height: 274px;"/>
+### Main features of View5D are:[![Example displaying an MRI dataset] <img src="examples/MRIOvUn.jpg" title="" alt="Example displaying an MRI dataset" style="border: 0px solid ; width: 260px; height: 274px;" align ="right" />
 *   Simultaneous display of 3 orthogonal slices: axial (XY), sigittal (YZ) and frontal (XZ). Continuous update of the slicing positions by mouse clicks /drags.
 *   Semiautomatic tracking of maxima or minima in up to 5 dimensions. Interactive adjustment and correction of tracks. Alignment of data to tracks (!). Support of lineage naming.
 *   Scattergrams from multiple colors in up to 3 dimensions and interactive switching between ROIs in images and ROIs in the multidimensional histogram.
