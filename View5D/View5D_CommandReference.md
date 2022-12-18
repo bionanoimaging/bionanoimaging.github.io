@@ -11,9 +11,7 @@ header:
 
 
 
-# View5D
-
-# Command Reference  
+# View5D Command Reference  
 
 <span style="font-family: 'arial';"><span style="font-weight: bold;"></span></span>The command reference is structured into different subjects, wich roughly correspond to the menu in the 5DViewer (accessible in ImageJ at the top or the viewer, or by right mouse click in the applet versions).  
 
