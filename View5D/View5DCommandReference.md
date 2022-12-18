@@ -10,10 +10,11 @@ header:
 ---
 
 
-
 # View5D Command Reference  
 
 <span style="font-family: 'arial';"><span style="font-weight: bold;"></span></span>The command reference is structured into different subjects, wich roughly correspond to the menu in the 5DViewer (accessible in ImageJ at the top or the viewer, or by right mouse click in the applet versions).  
+Most of the View5D commands are accessible via context menus (right mouse button in Windows) and each command has a hot-key as stated in the menu (be careful hitting keys!). The mouse wheel allows to zoom and shift-mouse-wheel modifies the gamma-curve of this color channel (shift-click mouse wheel resets gamma to one).
+
 
 ## <span style="font-weight: bold; font-size: 14pt; font-family: 'Arial';"><a name="ImportExport"></a>Import / Export of data</span>
 

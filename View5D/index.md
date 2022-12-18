@@ -30,7 +30,9 @@ The program View5D interactively displays of up to 5 dimensional volumetric data
 Multi-dimensional data frequently arises in confocal microscopy and medical imaging applications. The applet can be tested by clicking the links below, however a Java runtime environment (preferably from Sun Microsystems) must have been installed and Java activated in the preferences of your browser!
 
 Here are some [example screen shots](examples/index.html) and the applet version can be [tested](examples/index.html#Testing) or the [interactive online tutorials](View5DOnlineTutorials.html) can be used.  
-There is also a [reference of all commands](View5DCommandReference.html) and mode of operation  
+There is also a [reference of all commands](View5DCommandReference.html).
+Most of its commands are accessible via context menus (right mouse button in Windows) and each command has a hot-key as stated in the menu (be careful hitting keys!). The mouse wheel allows to zoom and shift-mouse-wheel modifies the gamma-curve of this color channel (shift-click mouse wheel resets gamma to one).
+
 
 ### Main features of View5D are: <img src="examples/MRIOvUn.jpg" title="" alt="Example displaying an MRI dataset" style="border: 0px solid ; width: 260px; height: 274px;" align ="right" />
 *   Simultaneous display of 3 orthogonal slices: axial (XY), sigittal (YZ) and frontal (XZ). Continuous update of the slicing positions by mouse clicks /drags.
@@ -67,7 +69,7 @@ ImageJ plugin, Java applet and MATLAB plugin
 
 -----------------------------------------------
 
-The View5D Java program can be compiled as Java Applet or as a plugin to ImageJ or MATLAB. Its functionality remains identical; only the way its loads and saves data differs between applet and plugin. To optain information on the specific details, click [Applet](View5DasApplet.html), [ImageJ plugin](View5DasImageJ.html), or as applet within [MATLAB](View5DasMatlab.html). You can also start View5D from Julia offering many ways to interact with the Viewer directly from Julia. For more details see [View5D in Jullia](https://github.com/RainerHeintzmann/View5D.jl). 
+The View5D Java program can be compiled as Java Applet or as a plugin to ImageJ, MATLAB and Julia. Its functionality remains identical; only the way its loads and saves data differs between applet and plugin. To optain information on the specific details, click [Applet](View5DasApplet.html), [ImageJ plugin](View5DasImageJ.html), or as applet within [MATLAB](View5DasMatlab.html). You can also start View5D from Julia offering many ways to interact with the Viewer directly from Julia. For more details see [View5D in Jullia](https://github.com/RainerHeintzmann/View5D.jl). 
   
 
 Almost all commands in View5D can be addressed via the keyboard (be careful when you type, as every letter has an action!) or the menu (right click in one of the data-display windows) and selection from the popup menu.  
