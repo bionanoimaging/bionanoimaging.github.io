@@ -10,10 +10,8 @@ header:
 ---
 
 
- 
- View5D - an interactive image viewer <!-- @media print { body { padding-top: 0.000000in; padding-bottom: 0.000000in; padding-left: 0.982639in; padding-right: 0.982639in; } } body { font-family: 'Times New Roman'; font-style: normal; text-indent: 0in; font-weight: normal; font-variant: normal; color: #000000; text-decoration: none; text-align: left; font-size: 12pt; widows: 2; font-stretch: normal; background-color: #ffffff; } h1, .Heading1 { font-size: 17pt; margin-bottom: 0.0417in; font-weight: bold; font-family: 'Arial'; margin-top: 0.3056in; } h2, .Heading2 { font-size: 14pt; margin-bottom: 0.0417in; font-weight: bold; font-family: 'Arial'; margin-top: 0.3056in; } h3, .Heading3 { font-size: 12pt; margin-bottom: 0.0417in; font-weight: bold; font-family: 'Arial'; margin-top: 0.3056in; } p, .Normal { font-family: 'Times New Roman'; font-style: normal; margin-left: 0pt; text-indent: 0in; margin-top: 0pt; font-weight: normal; font-variant: normal; color: #000000; text-decoration: none; margin-bottom: 0pt; text-align: left; margin-right: 0pt; font-size: 12pt; widows: 2; font-stretch: normal; } -->
 
-Information on View5D
+View5D - an interactive image viewer
 =====================
 
 ImageJ, Matlab and Julia plugin and Java applet ([current Version](https://github.com/bionanoimaging/View5D) )  
