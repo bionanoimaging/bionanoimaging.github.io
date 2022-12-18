@@ -219,9 +219,3 @@ Future goals
 [Back to the View5D homepage](View5D.html)  
 For hints and suggestions, contact the author under heintzmann at gmail dot com
 
-  
-  
-  
-  
-[![DWI Lawyer](http://www.e-zeeinternet.com/count.php?page=113232&style=default&nbdigits=5)](http://www.lawcore.com/)  
-[DWI Lawyer](http://www.lawcore.com/ "DWI Lawyer")
