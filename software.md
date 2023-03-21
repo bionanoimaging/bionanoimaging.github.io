@@ -22,7 +22,7 @@ Many of our packages are mentioned on [GitHub](https://github.com/bionanoimaging
 * [PSFDistiller.jl](https://github.com/bionanoimaging/PSFDistiller.jl) destills a PSF from a measurement of beads by selecting local maxima that are separate enough from other ones.
 * [View5D.jl](https://github.com/RainerHeintzmann/View5D.jl) for viewing high-dimensional data in Julia
 * [FindShift.jl](https://github.com/RainerHeintzmann/FindShift.jl) package for finding peaks, correlations and image shifts between images.
-* [TimeTags.jl](https://github.com/RainerHeintzmann/TimeTags.jl) a package for reading the PicoQunat *.ptu dataformat.
+* [TimeTags.jl](https://github.com/RainerHeintzmann/TimeTags.jl) a package for reading the PicoQuant *.ptu dataformat.
 * [RegistrationNuFFT.jl](https://github.com/RainerHeintzmann/RegistrationNuFFT.jl) registers images based on the non-uniform FFT which enables user-defined (arbitrary) coordinate transforms.
 * [ROIViews.jl](https://github.com/RainerHeintzmann/ROIViews.jl) allows to view multiple regions of interest (ROIs) of the arrays to be accessed as an array. Provided center_pos and ROI_size can have fewer dimensions than array.
 * [TiledViews.jl](https://github.com/bionanoimaging/TiledViews.jl) allows to view an N-dimensional array as an 2N-dimensional TiledView being separated in overlapping tiles.
