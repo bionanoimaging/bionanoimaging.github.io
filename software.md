@@ -33,7 +33,7 @@ Many of our packages are mentioned on [GitHub](https://github.com/bionanoimaging
 * [View5D](https://github.com/bionanoimaging/View5D) An orthogonal slice viewer made for up to 5D data. It has interfaces to Matlab and Julia.
 
 ## Matlab
-* [CudaMat](https://github.com/RainerHeintzmann/CudaMat)
+* [CudaMat](https://github.com/RainerHeintzmann/CudaMat) Allows some Matlab programs to run with GPU acceleration.
 * [PSFToolbox-Matlab](https://github.com/bionanoimaging/PSFToolbox-Matlab) A Matlab-based toolbox for calculating point spread functions.
 * [Deconv](https://github.com/RainerHeintzmann/Deconv) A package for deconvolution based on a self-made autodifferentiation system in Matlab
 * [SimFun](https://cloud.uni-jena.de/s/o3HmtKj5w3TibaJ) A script to calculate the structured illumination illusion
