@@ -3,11 +3,11 @@ layout: list_all_authors
 title: TEAM
 permalink: team/
 header:
-  overlay_image: assets/images/Groupphoto2020.jpg
+  overlay_image: assets/images/group_photo_2022.jpg
   overlay_filter: 0.4 # same as adding an opacity
 ---
 
-We are a enthusiastic group of bachelor and master students, doctoral and postdoctoral fellows working on computational microscopy.
+We are an enthusiastic group of bachelor and master students, doctoral and postdoctoral fellows working on computational microscopy.
 
 
 # WE ARE HIRING 
@@ -16,8 +16,9 @@ Open positions are posted here, but we might have positions available for except
 
 [See this page](/open_positions) for further projects such as internships.
 
+## Alumnis
+[See this page](/team_alumni)
 
 # Current Members
-
 
 

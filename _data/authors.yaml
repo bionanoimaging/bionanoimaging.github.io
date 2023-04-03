@@ -1,9 +1,19 @@
 Rainer Heintzmann:
   name        : "Prof. Dr. Rainer Heintzmann"
-  bio         : "" 
+  bio         : "Head of the Microscopy Department (Leibniz IPHT) and Chair of Nanobiophotonics in the Department of Physical Chemistry" 
   avatar      : "/assets/images/people/heintzmann.jpg"
   active      : true 
   role        : "Group Leader"
+  links:
+    - label: "Personal Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://sites.google.com/site/heintzmann/?pli=1"
+    - label: "IPC Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.ipc.uni-jena.de/arbeitsgruppen/ag-heintzmann"
+    - label: "IPHT Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.leibniz-ipht.de/de/abteilungen/mikroskopie/"
 
 Ondrej Stranik:
   name        : "Dr. Ondrej Stranik"
@@ -12,9 +22,9 @@ Ondrej Stranik:
   active      : true 
   role        : "PostDoc"
   links:
-      - label: "Website"
-        icon: "fas fa-fw fa-link"
-        url: "https://www.leibniz-ipht.de/de/author/372/"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.leibniz-ipht.de/de/author/372/"
 
 Daniela Täuber:
   name        : "Dr. Daniela Täuber"
@@ -23,6 +33,12 @@ Daniela Täuber:
   active      : true 
   role        : "PostDoc"
 
+René Lachmann:
+  name        : "Dr. René Lachmann"
+  bio         : "" 
+  avatar      : "/assets/images/people/dummy.jpg"
+  active      : false 
+  role        : "PhD Student"
 
 Benedict Diederich:
   name        : "Dr. Benedict Diederich"
@@ -30,13 +46,21 @@ Benedict Diederich:
   avatar      : "/assets/images/people/diederich.jpg"
   active      : true 
   role        : "PostDoc"
-
+  
+  
+Dirk Boonzajer:
+  name        : "Dr. Dirk Ewoud Boonzajer Flaes"
+  bio         : "" 
+  avatar      : "/assets/images/people/Dirk_300x300.jpg"
+  active      : true 
+  role        : "PostDoc"
+  
 
 Felix Wechsler:
   name        : "Felix Wechsler"
   bio         : "PhD student coding in Julia" 
   avatar      : "/assets/images/people/wechsler.jpg"
-  active      : true 
+  active      : false 
   role        : "PhD Candidate"
   links:
     - label: "Email"
@@ -54,13 +78,42 @@ Monalisa Goswami:
   name        : "Monalisa Goswami"
   bio         : ""
   avatar      : "/assets/images/people/goswami.jpg"
-  active      : true 
+  active      : false 
   role        : "PhD Candidate"
+
+Haoran Wang:
+  name        : "Haoran Wang"
+  bio         : "PhD student working with nonlinear structured illumination microscopy and open-source microscopy kit UC2" 
+  avatar      : "/assets/images/people/wang.jpg"
+  active      : true
+  role        : "PhD Candidate"
+
+Yubraj Gupta:
+  name        : "Yubraj Gupta"
+  bio         : "PhD student focusing in microscope 3D visualization" 
+  avatar      : "/assets/images/people/IMG_Yuvi.jpg"
+  active      : true
+  role        : "PhD Candidate"
+
+Dina Ratsimandresi:
+  name        : "Dina Ratsimandresi"
+  bio         : "" 
+  avatar      : "/assets/images/people/dina.jpg"
+  active      : true
+  role        : "PhD Candidate"
+
 
 Barbora Marsikova:
   name        : "Barbora Marsikova"
   bio         : ""
   avatar      : "/assets/images/people/marsikova.jpg"
+  active      : false 
+  role        : "PhD Candidate"
+
+Mahyasadat Ebrahimi:
+  name        : "Mahyasadat Ebrahimi"
+  bio         : " Image segmentation + Python "
+  avatar      : "/assets/images/people/Ebrahimi.jpg"
   active      : true 
   role        : "PhD Candidate"
 
@@ -71,26 +124,65 @@ Fengjiao Ma:
   active      : true 
   role        : "PhD Candidate"
 
+David McFadden:
+  name        : "David McFadden"
+  bio         : "PhD student working on quantum-enhanced imaging."
+  avatar      : "/assets/images/people/mcfadden.jpg"
+  active      : true 
+  role        : "PhD Candidate"
+
 Robert Kretschmer:
   name        : "Robert Kretschmer"
   bio         : ""
   avatar      : "/assets/images/people/kretschmer.jpg"
   active      : true 
   role        : "Engineer"
+  
+Martin Buchmann:
+  name        : "Martin Buchmann"
+  bio         : ""
+  avatar      : "/assets/images/people/buchmann.jpg"
+  active      : true 
+  role        : "Engineer"
 
-Felix Vechsler:
-  name        : "Felix Vechsler"
-  bio         : "PhD student coding in Julia" 
-  avatar      : "/assets/images/people/wechsler.jpg"
-  active      : false
+Mohammad Soltaninezhad:
+  name        : "Mohammad Soltaninezhad"
+  bio         : " Polarization Microscopy + Python "
+  avatar      : "/assets/images/people/Soltaninezhad.jpeg"
+  active      : true 
   role        : "PhD Candidate"
-  links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "https://mailhide.io/e/scBJzLBn"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://felixwechsler.science"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/efixwe"
+
+Yutong Wang:
+  name        : "Yutong Wang"
+  bio         : ""
+  avatar      : "/assets/images/people/ytwang.jpg"
+  active      : true 
+  role        : "Master's Student"
+
+Lukas Haßfurth:
+  name        : "Lukas Haßfurth"
+  bio         : ""
+  avatar      : "/assets/images/people/Hassfurth.jpg"
+  active      : true 
+  role        : "Master's Student"
+  
+Eda Bingöl:
+  name        : "Eda Bingöl"
+  bio         : ""
+  avatar      : "/assets/images/people/Eda-Bingl-2300x300.jpg"
+  active      : true 
+  role        : "Master's Student"
+
+Subham Adak:
+  name        : "Subham Adak"
+  bio         : ""
+  avatar      : "/assets/images/people/adak.jpg"
+  active      : true 
+  role        : "Master's Student"
+
+Sobhi Saeed:
+  name        : "Sobhi Saeed"
+  bio         : ""
+  avatar      : "/assets/images/people/saeed.jpg"
+  active      : true 
+  role        : "Master's Student"
