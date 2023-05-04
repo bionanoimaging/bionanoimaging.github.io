@@ -11,13 +11,17 @@ header:
 We develop a couple of packages regarding microscopy data processing.
 Many of our packages are mentioned on [GitHub](https://github.com/bionanoimaging).
 
+## Multilingual
+* [PtyLab](https://github.com/PtyLab) for reconstruction of ptychography datasets.
+
 ## Python
 * [NanoImagingPack](https://gitlab.com/bionanoimaging/nanoimagingpack) A python package for quantitative image analysis and intended to provide similar functionality as DIPimage in Matlab.
-* [StaeModeling](https://github.com/RainerHeintzmann/StateModeling) A python package that allows to easily formulate a linear or non-linear model of states and their transitions and fit the model parameters from the data. This was developed also with modeling the Corona epidemics in mind.
+* [StateModeling](https://github.com/RainerHeintzmann/StateModeling) A python package that allows to easily formulate a linear or non-linear model of states and their transitions and fit the model parameters from the data. This was developed also with modeling the Corona epidemics in mind.
 
 ## JuliaLang
 * [DeconvOptim.jl](https://github.com/roflmaostc/DeconvOptim.jl) for high-performance deconvolution on CPU and CUDA
 * [FourierTools.jl](https://github.com/bionanoimaging/FourierTools.jl/) for working efficiently in Fourier space
+* [IndexFunArrays.jl](https://github.com/bionanoimaging/IndexFunArrays.jl)
 * [PointSpreadFunctions.jl](https://github.com/RainerHeintzmann/PointSpreadFunctions.jl/) for calculating PSFs
 * [PSFDistiller.jl](https://github.com/bionanoimaging/PSFDistiller.jl) destills a PSF from a measurement of beads by selecting local maxima that are separate enough from other ones.
 * [View5D.jl](https://github.com/RainerHeintzmann/View5D.jl) for viewing high-dimensional data in Julia
