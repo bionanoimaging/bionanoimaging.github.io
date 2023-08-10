@@ -104,7 +104,7 @@ Dina Ratsimandresi:
 
 
 Barbora Marsikova:
-  name        : "Barbora Marsikova"
+  name        : "Dr. Barbora Marsikova"
   bio         : ""
   avatar      : "/assets/images/people/marsikova.jpg"
   active      : false 
@@ -112,10 +112,24 @@ Barbora Marsikova:
 
 Shangjun Cheng:
   name        : "Shangjun Cheng"
-  bio         : " PhD Student working on Expansion Microscopy"
+  bio         : "PhD Student working on Expansion Microscopy"
   avatar      : "/assets/images/people/dummy.jpg"
   active      : true 
   role        : "PhD Candidate"
+
+Maryam Ali:
+  name        : "Maryam Ali"
+  bio         : "PhD Student working on Hyperspectral Dataprocessing"
+  avatar      : "/assets/images/people/dummy.jpg"
+  active      : true 
+  role        : "PhD Candidate"
+
+Yunhao Mei:
+  name        : "Yunhao Mei"
+  bio         : "Master Student working on 2D-POLIM"
+  avatar      : "/assets/images/people/dummy.jpg"
+  active      : true 
+  role        : "Master Student"
 
 Hossein Zarei-Oshtolagh:
   name        : "Hossein Zarei-Oshtolagh"
@@ -132,10 +146,10 @@ Mahyasadat Ebrahimi:
   role        : "PhD Candidate"
 
 Fengjiao Ma:
-  name        : "Fengjiao Ma"
+  name        : "Dr. Fengjiao Ma"
   bio         : ""
   avatar      : "/assets/images/people/ma.jpg"
-  active      : true 
+  active      : false
   role        : "PhD Candidate"
 
 David McFadden:
@@ -170,21 +184,21 @@ Yutong Wang:
   name        : "Yutong Wang"
   bio         : ""
   avatar      : "/assets/images/people/ytwang.jpg"
-  active      : true 
+  active      : false
   role        : "Master's Student"
 
 Lukas Haßfurth:
   name        : "Lukas Haßfurth"
   bio         : ""
   avatar      : "/assets/images/people/Hassfurth.jpg"
-  active      : true 
+  active      : false
   role        : "Master's Student"
   
 Eda Bingöl:
   name        : "Eda Bingöl"
   bio         : ""
   avatar      : "/assets/images/people/Eda-Bingl-2300x300.jpg"
-  active      : true 
+  active      : false
   role        : "Master's Student"
 
 Subham Adak:
@@ -198,5 +212,5 @@ Sobhi Saeed:
   name        : "Sobhi Saeed"
   bio         : ""
   avatar      : "/assets/images/people/saeed.jpg"
-  active      : true 
+  active      : false
   role        : "Master's Student"
