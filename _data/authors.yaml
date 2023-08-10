@@ -52,7 +52,7 @@ Dirk Boonzajer:
   name        : "Dr. Dirk Ewoud Boonzajer Flaes"
   bio         : "" 
   avatar      : "/assets/images/people/Dirk_300x300.jpg"
-  active      : true 
+  active      : false
   role        : "PostDoc"
   
 
@@ -108,6 +108,20 @@ Barbora Marsikova:
   bio         : ""
   avatar      : "/assets/images/people/marsikova.jpg"
   active      : false 
+  role        : "PhD Candidate"
+
+Shangjun Cheng:
+  name        : "Shangjun Cheng"
+  bio         : " PhD Student working on Expansion Microscopy"
+  avatar      : "/assets/images/people/dummy.jpg"
+  active      : true 
+  role        : "PhD Candidate"
+
+Hossein Zarei-Oshtolagh:
+  name        : "Hossein Zarei-Oshtolagh"
+  bio         : " PhD Student working on Lightsheet Microscopy (Polytarget)"
+  avatar      : "/assets/images/people/dummy.jpg"
+  active      : true 
   role        : "PhD Candidate"
 
 Mahyasadat Ebrahimi:
