@@ -1,0 +1,69 @@
+{
+    "version": 1.0,
+    "number": "3",
+    "title": "Beam Expansion Telescope",
+    "steps": [
+        {
+            "type": "addComponent",
+            "component": "Laser",
+            "name": "Laser",
+            "rays": [2,4],
+            "diameter": 0.15,
+            "position": [-4,0],
+            "dof": ""
+        },
+        {
+            "type": "addComponent", "component": "Lens", "name": "L1",
+            "position": [-2.5,0],
+            "rotation": 0,
+            "r1": 0.5,
+            "dof": "",
+            "limits": [[-0.5,0.5],[-0.5,0.5]]
+        },
+        {
+            "type": "addComponent",
+            "component": "Pinhole",
+            "name": "P1",
+            "position": [-1.5,0.2],
+            "diameter": 0.01,
+            "dof": "XYZ",
+            "limits": [[],[-0.4,0.4],[0.5,1.4]]
+        },
+        {
+            "type": "addComponent", "component": "Lens", "name": "Collimator",
+            "position": [3,0],
+            "rotation": 0,
+            "r1": 0.0,
+            "r2": 2.0,
+            "dof": "XY",
+            "limits": [[0,3],[-0.5,0.5],[-0.5,0.5]]
+        },
+        {
+            "type": "addComponent",
+            "component": "Screen",
+            "name": "Screen",
+            "position": [4,0],
+            "dof": "YZ",
+            "limits": [[],[-0.4,0.4],[0.5,1.4]]
+        },
+        {
+            "type": "task",
+            "instruction": "Adjust the beam expansion telescope to get\na collimated laser beam.",
+            "success": {"PosX": 0.01, "PosY": 0.01},
+            "score": 100.0,
+            "music": {
+                "link": "music/forest-with-small-river-birds-and-nature-field-recording-6735.mp3",
+                "credits": "Downloaded from pixabay.\nhttps://pixabay.com/sound-effects/search/forest-birds/"
+            }
+        },
+        {
+            "type": "task",
+            "instruction": "Congratulations! You completed level 2\nPress Done for Lvl 3.",
+            "narration": {
+                "link": "narrations/lvl2t7.m4a",
+                "credits": "Rainer Heintzmann"
+            },
+            "final": true
+        }
+   ]
+}
