@@ -1,0 +1,125 @@
+{
+    "version": 1.0,
+    "number": "1",
+    "title": "Abbe's Experiment",
+    "steps": [
+        {
+            "type": "addComponent",
+            "component": "Laser",
+            "name": "Laser",
+            "rays": [2,4],
+            "diameter": 0.08,
+            "position": [-10,0],
+            "height": 1,
+            "rotation": [0,0,0],
+            "dof": "Zz"
+        },
+        {
+            "type": "addComponent",
+            "component": "Iris",
+            "name": "Position Iris",
+            "position": [-8,0],
+            "diameter": 0.6,
+            "dof": "X",
+            "limits": [[],[-0.4,0.4],[0.5,1.4]]
+        },
+        {
+            "type": "addComponent",
+            "component": "Iris",
+            "name": "Angle Iris",
+            "position": [-2,0],
+            "dof": "XY",
+            "limits": [[],[-0.4,0.4],[0.5,1.4]]
+        },
+        {
+            "type": "addComponent",
+            "component": "Screen",
+            "name": "Screen",
+            "target": true,
+            "position": [3,0],
+            "rotation": 0,
+            "dof": "X"
+        },
+        {
+            "type": "task",
+            "instruction": "Adjust the height and the angle of the laser\nusing two irises to have a well defined optical axis.",
+            "success": {"PosX": 0.01, "PosY": 0.01},
+            "score": 100.0,
+            "music": {
+                "link": "music/Emotional+Ballad+-+320bit.mp3",
+                "credits": "Emotional Ballad by Alexander Nakarada | https://www.serpentsoundstudios.comn\nCreative Commons CC BY 4.0, https://creativecommons.org/licenses/by/4.0/"
+            },
+            "showbeams": false
+        },
+        {
+            "type": "addComponent",
+            "component": "Lens",
+            "name": "Condenser Lens",
+            "rotation": 0,
+            "position": [-1,0],
+            "r1": 1.0,
+            "r2": 1.0,
+            "dof": "XY",
+            "limits": [[-1,2],[],[]]
+        },
+        {
+            "type": "task",
+            "instruction": "By rotating and moving the condenser lens\nalong X- and Y-coordinates, focus the laser beam on the\ncentre of the screen.",
+            "success": {"Std": 0.004, "PosX": 0.005, "PosY": 0.005},
+            "score": 200.0,
+            "showbeams": true
+        },
+        {
+            "type": "addComponent",
+            "component": "Lens",
+            "name": "Field Lens",
+            "rotation": 0,
+            "position": [-6,0],
+            "r1": 2.0,
+            "dof": "X",
+            "limits": [[-7,-1],[],[]]
+        },
+        {
+            "type": "addComponent",
+            "component": "Mirror",
+            "name": "M1",
+            "rotation": 90,
+            "position": [2,-3],
+            "dof": "XY",
+            "limits": [[3,0],[-3,3],[]]
+        },
+        {
+            "type": "addComponent",
+            "component": "Pinhole",
+            "name": "Pinhole",
+            "diameter": 0.08,
+            "position": [-8,-2],
+            "rotation": 0,
+            "dof": "XY"
+        },
+        {
+            "type": "addComponent",
+            "component": "Screen",
+            "name": "Test Screen",
+            "target": true,
+            "position": [-6,-2],
+            "rotation": 0,
+            "dof": "XY"
+        },
+        {
+            "type": "task",
+            "instruction": "Adjust the position of field lens between\nthe two irises in order to obtain a collimated beam after\nthe condenser lens.",
+            "success": {"Std": 0.004, "PosX": 0.005, "PosY": 0.005},
+            "score": 500.0
+        },
+        {
+            "type": "task",
+            "instruction": "Congratulations! You completed level 2\nPress Done for Lvl 3.",
+            "narration": {
+                "link": "narrations/lvl2t7.m4a",
+                "credits": "Rainer Heintzmann"
+            },
+            "final": true
+        }
+   ]
+}
