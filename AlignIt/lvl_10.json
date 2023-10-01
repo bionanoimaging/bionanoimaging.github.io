@@ -16,7 +16,7 @@
             "type": "addComponent",
             "component": "Lens",
             "name": "Lens",
-            "position": [0,1],
+            "position": [-1,1],
             "rotation": 0,
             "r1": 0.0,
             "r2": -2.0,
@@ -26,7 +26,7 @@
             "type": "addComponent",
             "component": "DualPinhole",
             "name": "Colli-Launch",
-            "position": [-1,1],
+            "position": [0,1],
             "launches": true,
             "dof": "XYZxyz"
         },
