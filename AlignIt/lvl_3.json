@@ -8,17 +8,25 @@
             "component": "Laser",
             "name": "Laser",
             "rays": [2,4],
-            "diameter": 0.15,
-            "position": [-4,0],
-            "dof": ""
+            "diameter": 0.05,
+            "position": [-5,0],
+            "dof": "XYZ"
         },
+        {
+            "type": "addComponent",
+            "component": "Pinhole",
+            "name": "P0",
+            "position": [-3.5,0],
+            "rotation": 180,
+            "diameter": 0.09,
+            "dof": "XYZxyz"        },
         {
             "type": "addComponent", "component": "Lens", "name": "L1",
             "position": [-2.5,0],
             "rotation": 0,
             "r1": 0.5,
-            "dof": "",
-            "limits": [[-0.5,0.5],[-0.5,0.5]]
+            "dof": "XYZxyz",
+            "trace_reflection": "true"
         },
         {
             "type": "addComponent",
@@ -36,6 +44,7 @@
             "r1": 0.0,
             "r2": 2.0,
             "dof": "XY",
+            "trace_reflection": "true",
             "limits": [[0,3],[-0.5,0.5],[-0.5,0.5]]
         },
         {
