@@ -10,7 +10,7 @@
             "rays": [2,4],
             "diameter": 0.05,
             "position": [-5,0],
-            "dof": "XYZ"
+            "dof": "XYZxyz"
         },
         {
             "type": "addComponent",
@@ -24,7 +24,7 @@
             "type": "addComponent", "component": "Lens", "name": "L1",
             "position": [-2.5,0],
             "rotation": 0,
-            "r1": 0.5,
+            "r1": 1.0,
             "dof": "XYZxyz",
             "trace_reflection": "true"
         },
@@ -32,10 +32,10 @@
             "type": "addComponent",
             "component": "Pinhole",
             "name": "P1",
-            "position": [-1.5,0.2],
+            "position": [0.5,0.2],
             "diameter": 0.01,
-            "dof": "XYZ",
-            "limits": [[],[-0.4,0.4],[0.5,1.4]]
+            "dof": "XYZxyz",
+            "limits": [[],[-0.4,0.4],[0.5,0.5]]
         },
         {
             "type": "addComponent", "component": "Lens", "name": "Collimator",
