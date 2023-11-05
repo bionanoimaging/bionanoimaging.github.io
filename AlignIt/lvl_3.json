@@ -35,7 +35,7 @@
             "position": [0.5,0.2],
             "diameter": 0.01,
             "dof": "XYZxyz",
-            "limits": [[],[-0.4,0.4],[0.5,0.5]]
+            "limits": [[0,3],[-0.4,0.4],[0.8,1.2]]
         },
         {
             "type": "addComponent", "component": "Lens", "name": "Collimator",
@@ -43,9 +43,9 @@
             "rotation": 0,
             "r1": 0.0,
             "r2": 2.0,
-            "dof": "XYxyz",
+            "dof": "XYZxyz",
             "trace_reflection": "true",
-            "limits": [[0,3],[-0.5,0.5],[-0.5,0.5]]
+            "limits": [[0,3],[-0.5,0.5],[0.5,1.5]]
         },
         {
             "type": "addComponent",
