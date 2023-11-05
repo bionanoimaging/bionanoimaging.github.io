@@ -43,7 +43,7 @@
             "rotation": 0,
             "r1": 0.0,
             "r2": 2.0,
-            "dof": "XY",
+            "dof": "XYxyz",
             "trace_reflection": "true",
             "limits": [[0,3],[-0.5,0.5],[-0.5,0.5]]
         },
