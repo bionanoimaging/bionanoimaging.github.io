@@ -81,6 +81,7 @@
             "name": "Mirror 4",
             "position": [1,-1],
             "rotation": 45,
+            "r1": 2.0,
             "dof": "XYZxyz"
         },
         {
@@ -88,6 +89,7 @@
             "component": "Mirror",
             "name": "Mirror 5",
             "position": [1,-2],
+            "r1": -2.0,
             "rotation": 90,
             "dof": "XYZxyz"
         },
