@@ -7,7 +7,7 @@
             "type": "addComponent",
             "component": "Laser",
             "name": "Laser",
-            "rays": [2,4],
+            "rays": [0,1],
             "diameter": 0.08,
             "position": [-10,0],
             "height": 1,
@@ -21,6 +21,7 @@
             "position": [-8,0],
             "diameter": 0.6,
             "dof": "X",
+            "success": {"diameter": 0.05},
             "limits": [[],[-0.4,0.4],[0.5,1.4]]
         },
         {
@@ -29,6 +30,7 @@
             "name": "Angle Iris",
             "position": [-2,0],
             "dof": "XY",
+            "success": {"diameter": 0.05},
             "limits": [[],[-0.4,0.4],[0.5,1.4]]
         },
         {
@@ -50,6 +52,21 @@
                 "credits": "Emotional Ballad by Alexander Nakarada | https://www.serpentsoundstudios.comn\nCreative Commons CC BY 4.0, https://creativecommons.org/licenses/by/4.0/"
             },
             "showbeams": false
+        },
+        {
+            "type": "modifyComponent",
+            "name": "Laser",
+            "rays": [2,4]
+        },
+        {
+            "type": "modifyComponent",
+            "name": "Position Iris",
+            "success": {}
+        },
+        {
+            "type": "modifyComponent",
+            "name": "Angle Iris",
+            "success": {}
         },
         {
             "type": "addComponent",
