@@ -34,12 +34,12 @@
             "target": false,
             "position": [4,0],
             "dof": "",
+            "success": {"Num": 1},
             "limits": [[],[-0.4,0.4],[0.5,1.4]]
         },
         {
             "type": "task",
             "instruction": "Position both pinholes such that the laser beam passes through them.",
-            "success": {"Num": 1},
             "score": 100.0,
             "music": {
                 "link": "music/Emotional+Ballad+-+320bit.mp3",
@@ -67,7 +67,6 @@
         {
             "type": "task",
             "instruction": "Adjust P1 and P2 to transmit the laser beam.",
-            "success": {"Num": 1},
             "score": 100.0,
             "narration": {
                 "link": "narrations/lvl2t2.m4a",
@@ -91,7 +90,6 @@
         {
             "type": "task",
             "instruction": "Adjust P1 and P2 to transmit the laser beam without seeing the rays.",
-            "success": {"Num": 1},
             "score": 100.0,
             "narration": {
                 "link": "narrations/lvl2t3.m4a",
@@ -118,12 +116,12 @@
             "name": "Laser",
             "height": 1.1,
             "rotation": [0,0,1.5],
+            "limits": [[],[],[],[-10,10],[-10,10],[-10,10]],
             "dof": "Zy"
         },
         {
             "type": "task",
             "instruction": "Adjust the height and the angle of the laser\nto have a well defined optical axis.",
-            "success": {"Num": 1},
             "narration": {
                 "link": "narrations/lvl2t4.m4a",
                 "credits": "Rainer Heintzmann"
@@ -170,12 +168,12 @@
             "height": 1.1,
             "position": [-4, 0.3],
             "rotation": [0, -4, 1.5],
+            "limits": [[],[],[],[-10,10],[-10,10],[-10,10]],
             "dof": "yz"
         },
        {
             "type": "task",
             "instruction": "Without seeing the actual beams,\niris apertures are helpful tools.\nAdjust the angle to hit the angle-aperture.",
-            "success": {"Num": 1},
             "narration": {
                 "link": "narrations/lvl2t5.m4a",
                 "credits": "Rainer Heintzmann"
@@ -185,6 +183,7 @@
         {
             "type": "modifyComponent",
             "name": "Screen",
+            "success": {"Num": 1},
             "position": [0,0],
             "dof": "YZ",
             "limits": [[],[-0.4,0.4],[0.5,1.4]]
@@ -204,7 +203,6 @@
         {
             "type": "task",
             "instruction": "Now move your attention to the \"Position Iris\"\nand adjust the laser position to make the laser pass through.",
-            "success": {"Num": 1},
             "narration": {
                 "link": "narrations/lvl2t6.m4a",
                 "credits": "Rainer Heintzmann"
@@ -216,6 +214,7 @@
             "name": "Screen",
             "position": [4,0],
             "dof": "YZ",
+            "success": {"Num": 1},
             "limits": [[],[-0.4,0.4],[0.5,1.4]]
         },
         {
@@ -233,7 +232,6 @@
        {
             "type": "task",
             "instruction": "Now finish this beam-walk by alternating angle and position apertures.\nKeep closing the front iris.",
-            "success": {"Num": 1},
             "score": 100.0
         },
         {

@@ -33,6 +33,23 @@
         },
         {
             "type": "addComponent",
+            "component": "Mirror",
+            "name": "Mirror 6",
+            "position": [1,-2],
+            "rotation": 90,
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component": "Mirror",
+            "name": "Mirror 5",
+            "position": [1,2],
+            "r1": -1.0,
+            "rotation": 90,
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
             "component": "Screen",
             "name": "Screen",
             "target": false,

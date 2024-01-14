@@ -19,9 +19,9 @@
             "component": "Iris",
             "name": "Position Iris",
             "position": [-8,0],
-            "diameter": 0.6,
-            "dof": "X",
-            "success": {"diameter": 0.05},
+            "diameter": 0.4,
+            "dof": "Xz",
+            "success": {"diameter": 0.5},
             "limits": [[],[-0.4,0.4],[0.5,1.4]]
         },
         {
@@ -29,8 +29,9 @@
             "component": "Iris",
             "name": "Angle Iris",
             "position": [-2,0],
-            "dof": "XY",
-            "success": {"diameter": 0.05},
+            "dof": "XYz",
+            "diameter": 0.4,
+            "success": {"diameter": 0.5},
             "limits": [[],[-0.4,0.4],[0.5,1.4]]
         },
         {
@@ -38,20 +39,38 @@
             "component": "Screen",
             "name": "Screen",
             "target": true,
+            "success": {"PosX": 0.1, "PosY": 0.1},
             "position": [3,0],
-            "rotation": 0,
-            "dof": "X"
+            "rotation": 30,
+            "dof": "XYZ"
+        },
+        {
+            "type": "addComponent",
+            "component": "Screen",
+            "name": "TestScreen 2",
+            "target": true,
+            "success": {"PosX": 0.1, "PosY": 0.1},
+            "position": [2,-1],
+            "rotation": 90,
+            "dof": "XYz"
+        },
+        {
+            "type": "addComponent",
+            "component": "Beamsplitter",
+            "name": "Beam Splitter",
+            "position": [2, 0],
+            "rotation": 45,
+            "dof": "XYz",
+            "limits": [[2,3.3],[-1,1],[],[],[],[35,50]]
         },
         {
             "type": "task",
             "instruction": "Adjust the height and the angle of the laser\nusing two irises to have a well defined optical axis.",
-            "success": {"PosX": 0.01, "PosY": 0.01},
             "score": 100.0,
             "music": {
                 "link": "music/Emotional+Ballad+-+320bit.mp3",
                 "credits": "Emotional Ballad by Alexander Nakarada | https://www.serpentsoundstudios.comn\nCreative Commons CC BY 4.0, https://creativecommons.org/licenses/by/4.0/"
-            },
-            "showbeams": false
+            }
         },
         {
             "type": "modifyComponent",
@@ -82,7 +101,6 @@
         {
             "type": "task",
             "instruction": "By rotating and moving the condenser lens\nalong X- and Y-coordinates, focus the laser beam on the\ncentre of the screen.",
-            "success": {"Std": 0.004, "PosX": 0.005, "PosY": 0.005},
             "score": 200.0,
             "showbeams": true
         },
@@ -117,16 +135,16 @@
         {
             "type": "addComponent",
             "component": "Screen",
-            "name": "Test Screen",
+            "name": "Aperture Screen",
             "target": true,
+            "success": {"Std": 0.004, "PosX": 0.005, "PosY": 0.005},
             "position": [-6,-2],
-            "rotation": 0,
+            "rotation": 90,
             "dof": "XY"
         },
         {
             "type": "task",
             "instruction": "Adjust the position of field lens between\nthe two irises in order to obtain a collimated beam after\nthe condenser lens.",
-            "success": {"Std": 0.004, "PosX": 0.005, "PosY": 0.005},
             "score": 500.0
         },
         {

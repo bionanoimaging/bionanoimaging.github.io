@@ -38,7 +38,9 @@
             "limits": [[0,3],[-0.4,0.4],[0.8,1.2]]
         },
         {
-            "type": "addComponent", "component": "Lens", "name": "Collimator",
+            "type": "addComponent", 
+            "component": "Lens",
+            "name": "Collimator",
             "position": [3,0],
             "rotation": 0,
             "r1": 0.0,

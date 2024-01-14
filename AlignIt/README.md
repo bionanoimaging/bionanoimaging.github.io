@@ -4,9 +4,9 @@ a VR/AR web app game for practising optical alignment
 
 The game can be accessed under the followin links:
 
-[Standard and Virtual Reality (VR) Version](https://rainerheintzmann.github.io/AlignIt/?mode=vr)
+[Standard and Virtual Reality (VR) Version](https://www.nanoimaging.de/AlignIt/?mode=vr)
 
-[Augmented Reality (AR) Version](https://rainerheintzmann.github.io/AlignIt/?mode=ar)
+[Augmented Reality (AR) Version](https://www.nanoimaging.de/AlignIt/?mode=ar)
 
 The game is organized in level, each of which consists of several consecutive alignment tasks. Their relevance is often explained via narrations.
 By completing all tasks of a level, a score is obtained and entered into a global leaderboard (highscore), if you make it to the best 10 players.
@@ -43,14 +43,14 @@ In VR mode the same controls are available via the small joystick on each contro
 ## Define your own level
 To define your own levels and task you can provide your own level files, each of which should consist of several tasks. You then need to host these levels somewhere on the web (or store them locally on your computer). There is no need to copy the AlignIt! sofware since you can provide the folder where your levels are stored via the ?levels=http:// arguments. E.g. if you stored your levels in the folder https://rainerheintzmann.github.io/AlignIt/levels for the username "someone" you should simply enter the following adress into your browser:
 
-[https://rainerheintzmann.github.io/AlignIt/?user=someone&levels=https://rainerheintzmann.github.io/AlignIt/levels](https://rainerheintzmann.github.io/AlignIt/?user=someone&levels=https://rainerheintzmann.github.io/AlignIt/levels)
+[https://www.nanoimaging.de/AlignIt/?user=someone&levels=https://rainerheintzmann.github.io/AlignIt/levels](https://rainerheintzmann.github.io/AlignIt/?user=someone&levels=https://rainerheintzmann.github.io/AlignIt/levels)
 
 In this folder all the level files need to be called "lvl_1.json", "lvl_2.json" etc. They all need to be in JSON file format and follow the guidelines.
 To get an idea about the format, which is pretty straight-forward, simply look at the existing levels
-- [lvl_1.json](https://rainerheintzmann.github.io/AlignIt/lvl_1.json)
-- [lvl_2.json](https://rainerheintzmann.github.io/AlignIt/lvl_2.json)
-- [lvl_3.json](https://rainerheintzmann.github.io/AlignIt/lvl_3.json)
-- And the example file with various components: [lvl_5.json](https://rainerheintzmann.github.io/AlignIt/testlevels/lvl_5.json)
+- [lvl_1.json](https://www.nanoimaging.de/AlignIt/lvl_1.json)
+- [lvl_2.json](https://www.nanoimaging.de/AlignIt/lvl_2.json)
+- [lvl_3.json](https://www.nanoimaging.de/AlignIt/lvl_3.json)
+- And the example file with various components: [lvl_5.json](https://www.nanoimaging.de/AlignIt/testlevels/lvl_5.json)
 
 The following key-words are useful for designing levels:
 - "addComponent": adds a component to the currect setup for the next task
@@ -71,15 +71,24 @@ All components have the possibility to specify degrees of freedom ("dof"). For t
 - "S": enables "snap mode" for position, which limits them to be on an integer grid
 
 ## Components
-Currently a number of components are supported, with their arguments exemplified in the list. All components support the arguments ("name": MyName, "position": [-4, 2], "rotation": [0,0,0], "dof": "XYZxyzSs"). Note that postion accepts a 2D position on the table, rotation accepts eiter a simple value referring to the rotation around the Y-axis or a vector, referring to three Euler angles. For "dof" see above. As for the dimensions it is useful to know, that the diameter of a lens corresponds to the value 1.0, the Post height is 2.0 and the beam heigth over a post is 0.5. The distance of the holes on the table is also 1.0. In real space units, 1.0 corresponds roughly to 5 cm.
+Currently a number of components are supported, with their arguments exemplified in the list. All components support the arguments ("name": MyName, "position": [-4, 2], "rotation": [0,0,0], "dof": "XYZxyzSs"). Note that postion accepts a 2D position on the table, rotation accepts eiter a simple value (in degreess) referring to the rotation around the Y-axis or a vector, referring to three Euler angles. For "dof" see above. As for the dimensions it is useful to know, that the diameter of a lens corresponds to the value 1.0, the Post height is 2.0 and the beam heigth over a post is 0.5. The distance of the holes on the table is also 1.0. In real space units, 1.0 corresponds roughly to 5 cm.
 
 List of possible components:
 - Laser ("rays": [0,0], "diameter": 0.3), the two numbers refer to the number or radial layers and azimuthal rays in each layer. "diameter" refers to the total diameter of the outer layer of laser rays.
-- Lens ("r1": 1.0, "r2": 2.0,), with r1 and r2 referring to the radius of curvature of each lens surface. If not given the value of zero is assumed, which really means infinite, i.e. a flat surface. Note that also negative values are allowed, referring to a concave surface.
+- Lens ("r1": 1.0, "r2": 2.0,), with r1 and r2 referring to the radius of curvature of each lens surface. If not given the value of zero is assumed, which really means infinite, i.e. a flat surface. Note that also negative values are allowed, referring to a concave surface. If "trace_reflection" is set to `true`, weak reflection beams will be launched.
 - Mirror
 - Beamsplitter
 - Grating ("pitch"), the pitch corresponding to the grating pitch in µm.
 - Pinhole ("diameter")
+- Iris ("diameter", "success"), if the "success" parameter is provided (e.g. "success": {"diameter": 0.03},) the adjustable diameter needs to be below the stated value, to contribute to an overall success in the task (see components bar).
+- DualPinhole ("diameter", "separation", "launches"), where "separation" indicates the distance between the two pinholes. If "lauches" is `true` this pinhole will (like a screen) analyse the impinging beams and launch two beams from its center.
+- Screen ("success"), the "success" of the screen is often the most important component to fullfill a given task. The following options are supported for screen "success":
+    - "Num": the minimal number of beams hitting the screen. If not specified it is allumed that this corresponds to the number of beams launched by the laser.
+    - "Std": the maximally allowed standard deviation of the spot. This is also shown by the attached indicator bar.
+    - "PosX": maximal lateral distance to the center of the screen. This is also shown by the attached indicator bar.
+    - "PosY": maximal vertical distance to the center of the screen. This is also shown by the attached indicator bar.
+    - "Curv": maximally allowed curvature. If not provided, any curvature is accepted. No indicator bar is provided.
+e.g. "success": {"Std": 0.004, "PosX": 0.005, "PosY": 0.005}
 
 Some components (e.g. Iris) also support the  argument "success" (with the parameter "diameter"):
 
@@ -89,4 +98,4 @@ meaning that this maximum diameter has to be adjusted by the user for this compo
 
 ## License
 Currently the software is reased under the [Commons Attribution-NonCommercial-NoDerivs}(https://creativecommons.org/licenses/by-nc-nd/4.0/) (CC-BY-NC-ND) License.
-Classical geometrical optics alignment can currently be used free of charge. For interference-based feature support (Mach-Zehnder, Michelson, Shear-Plates), please contact the author (Rainer Heintzmann) using his surname at gmail.com.
+Classical geometrical optics alignment can currently be used free of charge. For interference-based feature support (Mach-Zehnder, Michelson, Shear-Plates) and more realistic lens-rendering, please contact the author (Rainer Heintzmann) using his surname at gmail.com.

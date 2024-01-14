@@ -55,7 +55,8 @@
                 "link": "music/forest-with-small-river-birds-and-nature-field-recording-6735.mp3",
                 "credits": "Downloaded from pixabay.\nhttps://pixabay.com/sound-effects/search/forest-birds/"
             },
-            "score": 100.0
+            "score": 100.0,
+            "showbeams": true
         },
         {
             "type": "modifyComponent",
@@ -63,11 +64,15 @@
             "dof": "SsYZyz"
         },
         {
+            "type": "removeComponent",
+            "name": "Colli-Check"
+        },
+        {
             "type": "modifyComponent",
-            "name": "Screen",
-            "position": [0,0],
-            "dof": "SsYZ",
-            "limits": [[],[-0.4,0.4],[0.5,1.4]]
+            "name": "Test Screen",
+            "position": [3, 1.2],
+            "dof": "YZ",
+            "limits": [[],[-5, 5],[1.5,1.4]]
         },
         {
             "type": "task",
