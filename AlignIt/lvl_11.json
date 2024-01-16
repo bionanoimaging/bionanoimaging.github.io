@@ -1,151 +1,181 @@
 {
     "version": 1.0,
-    "number": "1",
-    "title": "Abbe's Experiment",
+    "number": "6",
+    "title": "Selected Components",
     "steps": [
         {
             "type": "addComponent",
             "component": "Laser",
             "name": "Laser",
-            "rays": [0,1],
-            "diameter": 0.08,
-            "position": [-10,0],
-            "height": 1,
-            "rotation": [0,0,0],
-            "dof": "Zz"
+            "rays": [0,0],
+            "position": [-4,0],
+            "rotation": 0,
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component": "Lens",
+            "name": "Biconvex L1",
+            "position": [2,2],
+            "rotation": 0,
+            "r1": 1.0,
+            "r2": 2.0,
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component": "Lens",
+            "name": "Planconvex L2",
+            "position": [2,3],
+            "rotation": 0,
+            "r1": 0.6,
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component": "Lens",
+            "name": "Plan Plate",
+            "position": [1,2],
+            "rotation": 0,
+            "r1": 0,
+            "r2": 0,
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component": "Lens",
+            "name": "Meniscus L4",
+            "position": [1,3],
+            "rotation": 0,
+            "r1": 1.0,
+            "r2": -2.0,
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component": "Mirror",
+            "name": "Mirror 1",
+            "position": [2,-1],
+            "rotation": -135,
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component": "Mirror",
+            "name": "Mirror 2",
+            "position": [2,-2],
+            "rotation": 135,
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component": "Mirror",
+            "name": "Mirror 3",
+            "position": [2,-3],
+            "rotation": 0,
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component": "Mirror",
+            "name": "Mirror 4",
+            "position": [1,-1],
+            "rotation": 45,
+            "r1": 2.0,
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component": "Mirror",
+            "name": "Mirror 5",
+            "position": [1,-2],
+            "r1": -2.0,
+            "rotation": 90,
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component": "Beamsplitter",
+            "name": "Beamsplitter 1",
+            "position": [1,-3],
+            "height": 1.0,
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component": "Beamsplitter",
+            "name": "Beamsplitter 2",
+            "position": [1,-4],
+            "height": 1.0,
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component": "Grating",
+            "name": "Grating 2µm",
+            "position": [0,-1],
+            "height": 1.0,
+            "pitch": 2.0,
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component": "Grating",
+            "name": "Grating 20µm",
+            "position": [0,-2],
+            "height": 1.0,
+            "pitch": 20.0,
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component": "Pinhole",
+            "name": "Pinhole 1",
+            "position": [-1,-1],
+            "diameter": 0.1,
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component": "Pinhole",
+            "name": "Pinhole 2",
+            "position": [-1,-2],
+            "diameter": 0.2,
+            "rotation": -45,
+            "dof": "XYZxyz"
         },
         {
             "type": "addComponent",
             "component": "Iris",
-            "name": "Position Iris",
-            "position": [-8,0],
-            "diameter": 0.4,
-            "dof": "Xz",
-            "success": {"diameter": 0.5},
-            "limits": [[],[-0.4,0.4],[0.5,1.4]]
+            "name": "Iris 1",
+            "position": [-2,-1],
+            "rotation": 0,
+            "dof": "XYZ"
         },
         {
             "type": "addComponent",
             "component": "Iris",
-            "name": "Angle Iris",
-            "position": [-2,0],
-            "dof": "XYz",
-            "diameter": 0.4,
-            "success": {"diameter": 0.5},
-            "limits": [[],[-0.4,0.4],[0.5,1.4]]
+            "name": "Iris 2",
+            "position": [-2,-2],
+            "rotation": 0,
+            "dof": "XYZxyz"
         },
         {
             "type": "addComponent",
             "component": "Screen",
             "name": "Screen",
-            "target": true,
-            "success": {"PosX": 0.1, "PosY": 0.1},
             "position": [3,0],
-            "rotation": 30,
-            "dof": "XYZ"
-        },
-        {
-            "type": "addComponent",
-            "component": "Screen",
-            "name": "TestScreen 2",
-            "target": true,
-            "success": {"PosX": 0.1, "PosY": 0.1},
-            "position": [2,-1],
-            "rotation": 90,
-            "dof": "XYz"
-        },
-        {
-            "type": "addComponent",
-            "component": "Beamsplitter",
-            "name": "Beam Splitter",
-            "position": [2, 0],
-            "rotation": 45,
-            "dof": "XYz",
-            "limits": [[2,3.3],[-1,1],[],[],[],[35,50]]
+            "rotation": 0
         },
         {
             "type": "task",
-            "instruction": "Adjust the height and the angle of the laser\nusing two irises to have a well defined optical axis.",
-            "score": 100.0,
+            "instruction": "This testlevel contains all currently available components.",
             "music": {
-                "link": "music/Emotional+Ballad+-+320bit.mp3",
-                "credits": "Emotional Ballad by Alexander Nakarada | https://www.serpentsoundstudios.comn\nCreative Commons CC BY 4.0, https://creativecommons.org/licenses/by/4.0/"
-            }
-        },
-        {
-            "type": "modifyComponent",
-            "name": "Laser",
-            "rays": [2,4]
-        },
-        {
-            "type": "modifyComponent",
-            "name": "Position Iris",
-            "success": {}
-        },
-        {
-            "type": "modifyComponent",
-            "name": "Angle Iris",
-            "success": {}
-        },
-        {
-            "type": "addComponent",
-            "component": "Lens",
-            "name": "Condenser Lens",
-            "rotation": 0,
-            "position": [-1,0],
-            "r1": 1.0,
-            "r2": 1.0,
-            "dof": "XY",
-            "limits": [[-1,2],[],[]]
-        },
-        {
-            "type": "task",
-            "instruction": "By rotating and moving the condenser lens\nalong X- and Y-coordinates, focus the laser beam on the\ncentre of the screen.",
-            "score": 200.0,
-            "showbeams": true
-        },
-        {
-            "type": "addComponent",
-            "component": "Lens",
-            "name": "Field Lens",
-            "rotation": 0,
-            "position": [-6,0],
-            "r1": 2.0,
-            "dof": "X",
-            "limits": [[-7,-1],[],[]]
-        },
-        {
-            "type": "addComponent",
-            "component": "Mirror",
-            "name": "M1",
-            "rotation": 90,
-            "position": [2,-3],
-            "dof": "XY",
-            "limits": [[3,0],[-3,3],[]]
-        },
-        {
-            "type": "addComponent",
-            "component": "Pinhole",
-            "name": "Pinhole",
-            "diameter": 0.08,
-            "position": [-8,-2],
-            "rotation": 0,
-            "dof": "XY"
-        },
-        {
-            "type": "addComponent",
-            "component": "Screen",
-            "name": "Aperture Screen",
-            "target": true,
-            "success": {"Std": 0.004, "PosX": 0.005, "PosY": 0.005},
-            "position": [-6,-2],
-            "rotation": 90,
-            "dof": "XY"
-        },
-        {
-            "type": "task",
-            "instruction": "Adjust the position of field lens between\nthe two irises in order to obtain a collimated beam after\nthe condenser lens.",
-            "score": 500.0
+                "link": "music/forest-with-small-river-birds-and-nature-field-recording-6735.mp3",
+                "credits": "Downloaded from pixabay.\nhttps://pixabay.com/sound-effects/search/forest-birds/"
+            },
+            "success": {"Std": 0.01, "PosX": 0.01, "PosY": 0.01},
+            "score": 100.0
         },
         {
             "type": "task",

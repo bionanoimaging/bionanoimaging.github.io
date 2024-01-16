@@ -8,6 +8,7 @@
             "component": "Laser",
             "name": "Laser",
             "rays": [1, 4],
+            "diameter": 0.2,
             "position": [-3, 1],
             "limits": [[-3,3],[-3,3],[-4,4],[-5,5],[-5,5],[-5,5]],
             "dof": "XYxyz"

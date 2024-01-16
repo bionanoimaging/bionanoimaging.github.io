@@ -1,67 +1,82 @@
 {
     "version": 1.0,
     "number": "4",
-    "title": "Michelson Interferometer",
+    "title": "Pellicle",
     "steps": [
         {
             "type": "addComponent",
             "component": "Laser",
             "name": "Laser",
-            "rays": [1,3],
-            "diameter": 0.25,
-            "position": [-2,-6],
-            "rotation": -90,
-            "dof": "xyz"
-        },
-        {
-            "type": "addComponent",
-            "component": "Lens",
-            "name": "Planconvex L2",
-            "position": [-2,-4],
-            "rotation": -90,
-            "r1": -10.0,
-            "dof": "XYZxyz"
+            "rays": [2,4],
+            "diameter": 0.02,
+            "position": [-5,0]
         },
         {
             "type": "addComponent",
             "component": "Beamsplitter",
-            "name": "Beamsplitter 1",
-            "position": [-2,-2],
-            "rotation": 45,
-            "dof": "XYZxyz"
+            "name": "Pellicle",
+            "position": [-3, 0],
+            "rotation": -45
         },
         {
             "type": "addComponent",
-            "component": "Mirror",
-            "name": "Mirror 1",
-            "position": [-2,1],
-            "rotation": [0.0,0.00025,0.00025],
-            "dof": "XYZxyz"
+            "component": "Pinhole",
+            "name": "P0",
+            "position": [-2,0],
+            "rotation": 180,
+            "diameter": 0.09
+        },
+        {
+            "type": "addComponent", "component": "Lens", "name": "L1",
+            "position": [0,0.1],
+            "height": 1.1, 
+            "rotation": 0.5,
+            "r1": 0.0,
+            "r2": 1.0,
+            "dof": "ZYyz",
+            "trace_reflection": "true"
         },
         {
             "type": "addComponent",
-            "component": "Mirror",
-            "name": "Mirror 2",
-            "position": [-4,-2],
-            "rotation": -90,
-            "dof": "XYZxyz"
+            "component": "Pinhole",
+            "name": "P1",
+            "position": [4.5,0],
+            "diameter": 0.01,
+            "limits": [[0,3],[-0.4,0.4],[0.8,1.2]]
         },
         {
             "type": "addComponent",
             "component": "Screen",
             "name": "Screen",
+            "position": [-3,-2],
+            "rotation": 90,
             "target": false,
-            "position": [2,-2]
+            "dof": "YZ",
+            "success": {"PosX": 0.002, "PosY": 0.002, "Std": 1.0, "Num": 15},
+            "limits": [[],[-0.4,0.4],[0.5,1.4]]
         },
         {
             "type": "task",
-            "instruction": "A Michelson Interferometer to explore\ninterference effects (only in the full version!)",
-            "success": {"PosX": 0.01, "PosY": 0.01, "Curv": 0.01, "RelAng": 0.01},
+            "instruction": "Adjust the beam expansion telescope to get\na collimated laser beam.",
+            "score": 100.0,
             "music": {
                 "link": "music/forest-with-small-river-birds-and-nature-field-recording-6735.mp3",
                 "credits": "Downloaded from pixabay.\nhttps://pixabay.com/sound-effects/search/forest-birds/"
-            },
-            "score": 100.0
+            }
+        },
+        {
+            "type": "modifyComponent", 
+            "name": "L1",
+            "r1": 1.0,
+            "r2": 0.0
+        },
+       {
+            "type": "task",
+            "instruction": "Congratulations! You completed level 2\nPress Done for Lvl 3.",
+            "narration": {
+                "link": "narrations/lvl2t7.m4a",
+                "credits": "Rainer Heintzmann"
+            }
         },
         {
             "type": "task",
