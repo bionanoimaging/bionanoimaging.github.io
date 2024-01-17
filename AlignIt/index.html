@@ -6,7 +6,7 @@
 
         <title>AlignIt! - Optical Alignment</title>
         <link rel="canonical" href="https://nanoimaging.de/AlignIt/alignit-pwa/" />
-        <link rel="manifest" href="alignit-pwa/manifest.webmanifest">
+        <link rel="manifest" href="/AlignIt/alignit-pwa/manifest.webmanifest">
             
         <!-- Babylon.js -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.2/dat.gui.min.js"></script>
@@ -54,8 +54,8 @@
     <script>
         if (navigator.serviceWorker) {
             navigator.serviceWorker.register (
-            'alignit-pwa/sw.js',
-            {scope: 'alignit-pwa/'}
+            '/AlignIt/alignit-pwa/sw.js',
+            {scope: '/AlignIt/alignit-pwa/'}
             )
         }
     </script>

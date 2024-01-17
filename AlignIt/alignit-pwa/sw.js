@@ -1,6 +1,6 @@
 // based on the instructions at https://github.com/codepo8/github-page-pwa
 // Change this to your repository name
-var GHPATH = 'alignit-pwa';
+var GHPATH = '/AlignIt/alignit-pwa';
 
 // Choose a different app prefix name
 var APP_PREFIX = 'alignitpwa_';
