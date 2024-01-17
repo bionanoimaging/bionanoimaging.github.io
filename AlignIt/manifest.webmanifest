@@ -6,8 +6,8 @@
     "description": "A game for learning how to align an optical.",
   
     // Scope and start URL - these need to change to yours
-    "scope": "/AlignIt/alignit-pwa/",
-    "start_url": "/AlignIt/alignit-pwa/",
+    "scope": "/AlignIt/",
+    "start_url": "/AlignIt/",
   
     // colours of the app as displayed in the installer
     "background_color": "#ffffff",
@@ -22,7 +22,7 @@
     // you may not be able to install the app. 
     "icons": [
         {
-          "src": "/AlignIt/alignit-pwa/img/icon.png",
+          "src": "/AlignIt/img/icon.png",
           "type": "image/png",
           "sizes": "512x512"
         }
