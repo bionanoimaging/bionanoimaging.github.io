@@ -5,7 +5,7 @@
 // Names of the two caches used in this version of the service worker.
 // Change to v2, etc. when you update any of the local resources, which will
 // in turn trigger the install event again.
-const PRECACHE = 'precache-v2';
+const PRECACHE = 'precache-v3';
 const RUNTIME = 'runtime';
 
 // The files to make available for offline use. make sure to add 
@@ -85,26 +85,18 @@ const filesToCache = [
 
 // From https://googlechrome.github.io/samples/service-worker/basic/
 
-// const PRECACHE_URLS = [
-//   "index.html", "js/babylon.js", "js/babylon.glTFFileLoader.js", "js/babylon.gui.min.js", "js/pep.min.js", "js/applecrushervr.js",
-//   "textures/environment.dds", "textures/flare.png", "images/LogoApplesCrusher300transparent.png", "css/main.css",
-//   "assets/ApplesCrusherBackground.glb.manifest", "assets/Apple.glb.manifest", "assets/AppleCrushed.wav", "assets/RunningForGlory.mp3",
-//   "manifest.json", "assets/186950__readeonly__toy-cannon-shot.wav", "assets/bananapistolwithammo.glb.manifest", "assets/lasersaber.glb.manifest"
-// ];
-
-
 // The install handler takes care of precaching the resources we always need.
 self.addEventListener('install', event => {
-    console.log("sw install event triggered")
+  // console.log("sw install event triggered")
   event.waitUntil(
       caches.open(PRECACHE)
           .then((cache) => {
-            console.log("sw adding cache files to cache: "+cache)
+            // console.log("sw adding cache files to cache: "+cache)
             cache.addAll(filesToCache)
-            console.log("sw added cache files")
+            // console.log("sw added cache files")
         })
           .then((msg)=> {
-            console.log("cache promise finished: "+msg);
+            // console.log("cache promise finished: "+msg);
             self.skipWaiting()
           })
   );
@@ -113,15 +105,15 @@ self.addEventListener('install', event => {
 // The activate handler takes care of cleaning up old caches.
 self.addEventListener('activate', event => {
   const currentCaches = [PRECACHE, RUNTIME];
-  console.log("sw activated")
+  // console.log("sw activated")
   event.waitUntil(
       caches.keys().then(cacheNames => {
-        console.log("sw chacheNames: "+cacheNames)
+        // console.log("sw chacheNames: "+cacheNames)
         return cacheNames.filter(cacheName => !currentCaches.includes(cacheName));
       }).then(cachesToDelete => {
-            console.log("sw deleting all: "+cachesToDelete);
+          // console.log("sw deleting all: "+cachesToDelete);
           return Promise.all(cachesToDelete.map(cacheToDelete => {
-            console.log("sw deleting: "+cacheToDelete);
+            // console.log("sw deleting: "+cacheToDelete);
               return caches.delete(cacheToDelete);
           }));
       }).then(() => self.clients.claim())
@@ -132,20 +124,20 @@ self.addEventListener('activate', event => {
 // If no response is found, it populates the runtime cache with the response
 // from the network before returning it to the page.
 self.addEventListener('fetch', event => {
-    console.log("sw fetch event: "+event)
+  // console.log("sw fetch event: "+event)
   // Skip cross-origin requests, like those for Google Analytics.
   if (event.request.url.startsWith(self.location.origin)) {
       event.respondWith(
           caches.match(event.request, {ignoreSearch: true}).then(cachedResponse => {
               if (cachedResponse) {
-                console.log("sw fetch event cache responded"+cachedResponse)
+                // console.log("sw fetch event cache responded"+cachedResponse)
                 return cachedResponse;
               }
 
               return caches.open(RUNTIME).then(cache => {
                   return fetch(event.request).then(response => {
                       // Put a copy of the response in the runtime cache.
-                      console.log("sw fetched something to cache: "+response)
+                      // console.log("sw fetched something to cache: "+response)
                       return cache.put(event.request, response.clone()).then(() => {
                           return response;
                       });
