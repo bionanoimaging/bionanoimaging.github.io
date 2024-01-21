@@ -34,7 +34,7 @@ const filesToCache = [
 //   'https://cdn.babylonjs.com/postProcessesLibrary/babylonjs.postProcess.min.js',
 //   'https://cdn.babylonjs.com/loaders/babylonjs.loaders.js',
 //   'https://cdn.babylonjs.com/gui/babylon.gui.min.js',
-  'music/Be+Jammin\'+-+320bit.mp3',
+//  'music/Be+Jammin\'+-+320bit.mp3',
   'music/Emotional+Balad+-+320bit.mp3',
   'music/forest-with-small-river-birds-and-nature-field-recording-6735.mp3',
   'music/Melodic+Overflow+-+320bit.mp3',
