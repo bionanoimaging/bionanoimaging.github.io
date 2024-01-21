@@ -26,14 +26,14 @@ const filesToCache = [
   'js/lasershaders.mjs',
   'js/lens.js',
   'img/icon.png',
-  'https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.2/dat.gui.min.js',
-  'https://cdn.babylonjs.com/earcut.min.js',
-  'https://cdn.babylonjs.com/babylon.js',
-  'https://cdn.babylonjs.com/materialsLibrary/babylonjs.materials.min.js',
-  'https://cdn.babylonjs.com/proceduralTexturesLibrary/babylonjs.proceduralTextures.min.js',
-  'https://cdn.babylonjs.com/postProcessesLibrary/babylonjs.postProcess.min.js',
-  'https://cdn.babylonjs.com/loaders/babylonjs.loaders.js',
-  'https://cdn.babylonjs.com/gui/babylon.gui.min.js',
+//   'https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.2/dat.gui.min.js',
+//   'https://cdn.babylonjs.com/earcut.min.js',
+//   'https://cdn.babylonjs.com/babylon.js',
+//   'https://cdn.babylonjs.com/materialsLibrary/babylonjs.materials.min.js',
+//   'https://cdn.babylonjs.com/proceduralTexturesLibrary/babylonjs.proceduralTextures.min.js',
+//   'https://cdn.babylonjs.com/postProcessesLibrary/babylonjs.postProcess.min.js',
+//   'https://cdn.babylonjs.com/loaders/babylonjs.loaders.js',
+//   'https://cdn.babylonjs.com/gui/babylon.gui.min.js',
   'music/Be+Jammin\'+-+320bit.mp3',
   'music/Emotional+Balad+-+320bit.mp3',
   'music/forest-with-small-river-birds-and-nature-field-recording-6735.mp3',
@@ -95,9 +95,14 @@ const filesToCache = [
 
 // The install handler takes care of precaching the resources we always need.
 self.addEventListener('install', event => {
+    console.log("sw install event triggered")
   event.waitUntil(
       caches.open(PRECACHE)
-          .then(cache => cache.addAll(filesToCache))
+          .then((cache) => {
+            console.log("sw adding cache files")
+            cache.addAll(filesToCache)
+            console.log("sw added cache files")
+        })
           .then(self.skipWaiting())
   );
 });
@@ -120,17 +125,20 @@ self.addEventListener('activate', event => {
 // If no response is found, it populates the runtime cache with the response
 // from the network before returning it to the page.
 self.addEventListener('fetch', event => {
+    console.log("sw fetch event: "+event)
   // Skip cross-origin requests, like those for Google Analytics.
   if (event.request.url.startsWith(self.location.origin)) {
       event.respondWith(
           caches.match(event.request, {ignoreSearch: true}).then(cachedResponse => {
               if (cachedResponse) {
-                  return cachedResponse;
+                console.log("sw fetch event cache responded"+cachedResponse)
+                return cachedResponse;
               }
 
               return caches.open(RUNTIME).then(cache => {
                   return fetch(event.request).then(response => {
                       // Put a copy of the response in the runtime cache.
+                      console.log("sw fetched something to cache: "+response)
                       return cache.put(event.request, response.clone()).then(() => {
                           return response;
                       });
