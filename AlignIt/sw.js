@@ -103,18 +103,25 @@ self.addEventListener('install', event => {
             cache.addAll(filesToCache)
             console.log("sw added cache files")
         })
-          .then(self.skipWaiting())
+          .then((msg)=> {
+            console.log("cache promise finished: "+msg);
+            self.skipWaiting()
+          })
   );
 });
 
 // The activate handler takes care of cleaning up old caches.
 self.addEventListener('activate', event => {
   const currentCaches = [PRECACHE, RUNTIME];
+  console.log("sw activated")
   event.waitUntil(
       caches.keys().then(cacheNames => {
-          return cacheNames.filter(cacheName => !currentCaches.includes(cacheName));
+        console.log("sw chacheNames: "+cacheNames)
+        return cacheNames.filter(cacheName => !currentCaches.includes(cacheName));
       }).then(cachesToDelete => {
+            console.log("sw deleting all: "+cachesToDelete);
           return Promise.all(cachesToDelete.map(cacheToDelete => {
+            console.log("sw deleting: "+cacheToDelete);
               return caches.delete(cacheToDelete);
           }));
       }).then(() => self.clients.claim())
