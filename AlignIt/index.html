@@ -5,8 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>AlignIt! - Optical Alignment</title>
-        <link rel="canonical" href="https://nanoimaging.de/AlignIt/" />
-        <link rel="manifest" href="/AlignIt/manifest.webmanifest">
+        <link rel="manifest" href="manifest.webmanifest">
+        <link rel="stylesheet" href="css/style.css">
+        <meta name="msapplication-TileColor" content="#B6B9B7">
+        <meta name="msapplication-TileImage" content="./icons/ms-icon-144x144.png">
+        <meta name="theme-color" content="#B6B9B7">
             
         <!-- Babylon.js -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.2/dat.gui.min.js"></script>
@@ -20,6 +23,7 @@
         <script src="js/lasershaders.obfuscated.js"></script>
         <script src="js/lens.obfuscated.js"></script>
         <script src="js/components.obfuscated.js"></script>
+
         <!-- 
         Assets
         Physics engines
@@ -43,20 +47,26 @@
         <script src="https://cdn.babylonjs.com/inspector/babylon.inspector.bundle.js"></script>
         <script src="./lasershaders.mjs"></script>
         -->
-        <link rel="stylesheet" href="css/style.css">
 
     </head>
 <body>
     <div id="canvasZone"><canvas id="renderCanvas"></canvas></div>
     <div id="fps">0</div>
     <script src="js/alignit.obfuscated.js"> </script>
+
     <!-- Code for PWA support -->
     <script>
-        if (navigator.serviceWorker) {
-            navigator.serviceWorker.register (
-            '/AlignIt/sw.js',
-            {scope: '/AlignIt/'}
-            )
+        if ('serviceWorker' in navigator) {
+            if (navigator.serviceWorker.controller) {
+                console.log('[PWA Builder] active service worker found, no need to register')
+            } else {
+                //Register the ServiceWorker
+                navigator.serviceWorker.register('sw.js', {
+                    scope: './'
+                }).then(function (reg) {
+                    console.log('Service worker has been registered for scope:' + reg.scope);
+                });
+            }
         }
     </script>
 </body>

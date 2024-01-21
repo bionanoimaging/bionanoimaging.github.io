@@ -1,31 +1,17 @@
 {
-    // Name of the app and short name in case there isn't enough space
-    "name": "AlignIt! PWA",
-    "short_name": "AlignItPWA",
-    // Description what your app is
-    "description": "A game for learning how to align an optical.",
-  
-    // Scope and start URL - these need to change to yours
-    "scope": "/AlignIt/",
-    "start_url": "/AlignIt/",
-  
-    // colours of the app as displayed in the installer
-    "background_color": "#ffffff",
-    "theme_color": "#ffffff",
-  
-    // Display of the app. 
-    //This could be "standalone", "fullscreen", "minimal-ui" or "browser"
-    "display": "standalone", 
-    
+    "dir": "ltr",
     "lang": "en",
+    "name": "AlignIt! PWA",
+    "scope": "/AlignIt/index.html",
+    "display": "standalone", 
     "start_url": "https://www.nanoimaging.de/AlignIt/index.html",
+    "short_name": "AlignItPWA",
+    "theme_color": "#ffffff",
+    "description": "A game for learning how to align an optical.",
     "orientation": "landscape",
+    "background_color": "#ffffff",
     "related_applications": [],
     "prefer_related_applications": false,
-    
-    // The possible icons to display. Make sure to change the src URL,
-    // the type and the size to your needs. If the size isn't correct, 
-    // you may not be able to install the app. 
     "icons": [
         {
           "src": "/AlignIt/img/icon.png",
