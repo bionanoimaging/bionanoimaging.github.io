@@ -8,19 +8,27 @@
             "component": "Laser",
             "name": "Laser",
             "rays": [1, 4],
-            "diameter": 0.2,
-            "position": [-3, 1],
-            "limits": [[-3,3],[-3,3],[-4,4],[-5,5],[-5,5],[-5,5]],
+            "diameter": 0.3,
+            "position": [-6, 1]
+        },
+        {
+            "type": "addComponent",
+            "component": "Lens",
+            "name": "L1",
+            "position": [-4,1],
+            "rotation": 0,
+            "r1": 0.7,
+            "r2": 0.0,
             "dof": "XYxyz"
         },
         {
             "type": "addComponent",
             "component": "Lens",
-            "name": "Lens",
+            "name": "L2",
             "position": [-1,1],
             "rotation": 0,
             "r1": 0.0,
-            "r2": -2.0,
+            "r2": 0.7,
             "dof": "XYxyz"
         },
         {
@@ -44,20 +52,19 @@
             "component": "Screen",
             "name": "Test Screen",
             "target": true,
-            "position": [4, 1.2],
+            "position": [4, 1],
             "rotation": 0,
+            "success": {"Num": 2},
             "dof": "XY"
         },
        {
             "type": "task",
             "instruction": "Just to see if the laser gets unwillingly modified.",
-            "success": {"Num": 2},
             "music": {
                 "link": "music/forest-with-small-river-birds-and-nature-field-recording-6735.mp3",
                 "credits": "Downloaded from pixabay.\nhttps://pixabay.com/sound-effects/search/forest-birds/"
             },
-            "score": 100.0,
-            "showbeams": true
+            "score": 100.0
         },
         {
             "type": "modifyComponent",
