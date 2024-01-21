@@ -1,19 +1,12 @@
 
-// based on the instructions at https://github.com/codepo8/github-page-pwa
-// Change this to your repository name
-var GHPATH = '/AlignIt';
-var WPATH = 'https://www.nanoimaging.de/AlignIt'
+// var GHPATH = '/AlignIt';
+/// var WPATH = 'https://nanoimaging.de/AlignIt'
 
-// Choose a different app prefix name
-var APP_PREFIX = 'alignit_';
-
-// The version of the cache. Every time you change any of the files
-// you need to change this version (version_01, version_02…). 
-// If you don't change the version, the service worker will give your
-// users the old files!
-var VERSION = 'version_00';
-
-const cacheName = APP_PREFIX+VERSION;
+// Names of the two caches used in this version of the service worker.
+// Change to v2, etc. when you update any of the local resources, which will
+// in turn trigger the install event again.
+const PRECACHE = 'precache-v2';
+const RUNTIME = 'runtime';
 
 // The files to make available for offline use. make sure to add 
 // others to this list
@@ -25,15 +18,14 @@ const cacheName = APP_PREFIX+VERSION;
 // ]
 
 const filesToCache = [
-  GHPATH+'/',
-  GHPATH+'/index.html',
-  GHPATH+'/manifest.webmanifest',
-  GHPATH+'/css/style.css',
-  GHPATH+'/js/alignit.js',
-  GHPATH+'/js/components.js',
-  GHPATH+'/js/lasershaders.mjs',
-  GHPATH+ '/js/lens.js',
-  GHPATH+ '/img/icon.png',
+  'index.html',
+  'manifest.webmanifest',
+  'css/style.css',
+  'js/alignit.js',
+  'js/components.js',
+  'js/lasershaders.mjs',
+  'js/lens.js',
+  'img/icon.png',
   'https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.2/dat.gui.min.js',
   'https://cdn.babylonjs.com/earcut.min.js',
   'https://cdn.babylonjs.com/babylon.js',
@@ -42,52 +34,52 @@ const filesToCache = [
   'https://cdn.babylonjs.com/postProcessesLibrary/babylonjs.postProcess.min.js',
   'https://cdn.babylonjs.com/loaders/babylonjs.loaders.js',
   'https://cdn.babylonjs.com/gui/babylon.gui.min.js',
-  GHPATH+'/music/Be+Jammin\'+-+320bit.mp3',
-  GHPATH+'/music/Emotional+Balad+-+320bit.mp3',
-  GHPATH+'/music/forest-with-small-river-birds-and-nature-field-recording-6735.mp3',
-  GHPATH+'/music/Melodic+Overflow+-+320bit.mp3',
-  GHPATH+'/music/Now+We+Ride+-+320bit.mp3',
-  GHPATH+'/music/The+Sad+Piano+Background+Song+-+320bit.mp3',
-  GHPATH+'/narrations/lvl1t1.m4a',
-  GHPATH+'/narrations/lvl1t2.m4a',
-  GHPATH+'/narrations/lvl1t3.m4a',
-  GHPATH+'/narrations/lvl1t4.m4a',
-  GHPATH+'/narrations/lvl1t5.m4a',
-  GHPATH+'/narrations/lvl1t6.m4a',
-  GHPATH+'/narrations/lvl2t1.m4a',
-  GHPATH+'/narrations/lvl2t2.m4a',
-  GHPATH+'/narrations/lvl2t3.m4a',
-  GHPATH+'/narrations/lvl2t4.m4a',
-  GHPATH+'/narrations/lvl2t5.m4a',
-  GHPATH+'/narrations/lvl2t6.m4a',
-  GHPATH+'/narrations/lvl2t7.m4a',
-  GHPATH+'/sound/interface-button-154180.mp3',
-  GHPATH+'/sound/running-gear-6403.mp3',
-  GHPATH+'/sound/stone_sliding-54021.mp3',
-  GHPATH+'/sound/switch-150130.mp3',
-  GHPATH+'/sound/switchbigpowerwav-14710.mp3',
-  GHPATH+'/textures/floor.png',
-  GHPATH+'/textures/forest.env',
-  GHPATH+'/textures/forest.hdr',
-  GHPATH+'/textures/metallic-with-scratches-stains.jpg',
-  GHPATH+'/textures/mr.jpg',
-  GHPATH+'/textures/reflectivity.png',
-  GHPATH+'/textures/room.env',
-  GHPATH+'/textures/room.hdr',
-  GHPATH+'/textures/satara.env',
-  GHPATH+'/favicon.ico',
-  WPATH+'/lvl_1.json',
-  WPATH+'/lvl_2.json',
-  WPATH+'/lvl_3.json',
-  WPATH+'/lvl_4.json',
-  WPATH+'/lvl_5.json',
-  WPATH+'/lvl_6.json',
-  WPATH+'/lvl_7.json',
-  WPATH+'/lvl_8.json',
-  WPATH+'/lvl_9.json',
-  WPATH+'/lvl_10.json',
-  WPATH+'/lvl_11.json',
-  WPATH+'/lvl_12.json'
+  'music/Be+Jammin\'+-+320bit.mp3',
+  'music/Emotional+Balad+-+320bit.mp3',
+  'music/forest-with-small-river-birds-and-nature-field-recording-6735.mp3',
+  'music/Melodic+Overflow+-+320bit.mp3',
+  'music/Now+We+Ride+-+320bit.mp3',
+  'music/The+Sad+Piano+Background+Song+-+320bit.mp3',
+  'narrations/lvl1t1.m4a',
+  'narrations/lvl1t2.m4a',
+  'narrations/lvl1t3.m4a',
+  'narrations/lvl1t4.m4a',
+  'narrations/lvl1t5.m4a',
+  'narrations/lvl1t6.m4a',
+  'narrations/lvl2t1.m4a',
+  'narrations/lvl2t2.m4a',
+  'narrations/lvl2t3.m4a',
+  'narrations/lvl2t4.m4a',
+  'narrations/lvl2t5.m4a',
+  'narrations/lvl2t6.m4a',
+  'narrations/lvl2t7.m4a',
+  'sound/interface-button-154180.mp3',
+  'sound/running-gear-6403.mp3',
+  'sound/stone_sliding-54021.mp3',
+  'sound/switch-150130.mp3',
+  'sound/switchbigpowerwav-14710.mp3',
+  'textures/floor.png',
+  'textures/forest.env',
+  'textures/forest.hdr',
+  'textures/metallic-with-scratches-stains.jpg',
+  'textures/mr.jpg',
+  'textures/reflectivity.png',
+  'textures/room.env',
+  'textures/room.hdr',
+  'textures/satara.env',
+  'favicon.ico',
+  'lvl_1.json',
+  'lvl_2.json',
+  'lvl_3.json',
+  'lvl_4.json',
+  'lvl_5.json',
+  'lvl_6.json',
+  'lvl_7.json',
+  'lvl_8.json',
+  'lvl_9.json',
+  'lvl_10.json',
+  'lvl_11.json',
+  'lvl_12.json'
 ];
 
 
@@ -100,11 +92,6 @@ const filesToCache = [
 //   "manifest.json", "assets/186950__readeonly__toy-cannon-shot.wav", "assets/bananapistolwithammo.glb.manifest", "assets/lasersaber.glb.manifest"
 // ];
 
-// Names of the two caches used in this version of the service worker.
-// Change to v2, etc. when you update any of the local resources, which will
-// in turn trigger the install event again.
-const PRECACHE = 'precache-v1';
-const RUNTIME = 'runtime';
 
 // The install handler takes care of precaching the resources we always need.
 self.addEventListener('install', event => {

@@ -4,7 +4,7 @@
     "name": "AlignIt! PWA",
     "scope": "/AlignIt/index.html",
     "display": "standalone", 
-    "start_url": "https://nanoimaging.de/AlignIt/index.html?user=Max&level=2",
+    "start_url": "https://nanoimaging.de/AlignIt/index.html?user=DefaultUser&level=2",
     "short_name": "AlignItPWA",
     "theme_color": "#ffffff",
     "description": "A game for learning how to align an optical.",
