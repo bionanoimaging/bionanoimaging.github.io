@@ -20,12 +20,13 @@
             "diameter": 0.09
         },
         {
-            "type": "addComponent", "component": "Lens", "name": "L1",
+            "type": "addComponent", "component": "Lens",
+            "name": "L1",
             "position": [0,0.02],
             "height": 1.02, 
             "rotation": 2,
             "r1": 0.0,
-            "r2": 1.0,
+            "r2": 2.0,
             "dof": "ZYyz",
             "trace_reflection": "true"
         },
