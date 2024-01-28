@@ -19,7 +19,7 @@
         },
         {
             "type": "addComponent", "component": "Screen", "name": "S1",
-            "success": {"Std": 0.01, "PosX": 0.01, "PosY": 0.01},
+            "success": {"Std": 0.01},
             "position": [2,0.0],
             "rotation": 0
         },
