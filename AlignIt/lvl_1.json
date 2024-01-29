@@ -42,7 +42,7 @@
         },
         {
             "type": "modifyComponent", "name": "S1",
-            "success": {"Std": 0.005, "PosX": 0.01}
+            "success": {"_Std": 0.005, "PosX": 0.01}
         },
         {
             "type": "task",
@@ -62,7 +62,7 @@
         },
         {
             "type": "modifyComponent", "name": "S1",
-            "success": {"Std": 0.004, "PosX": 0.005, "PosY": 0.01}
+            "success": {"_Std": 0.004, "_PosX": 0.005, "PosY": 0.01}
         },
         {
             "type": "task",
@@ -87,7 +87,7 @@
         },
         {
             "type": "modifyComponent", "name": "S1",
-            "success": {"Std": 0.004, "PosX": 0.005, "PosY": 0.005}
+            "success": {"Std": 0.004, "_PosX": 0.005, "_PosY": 0.005}
         },
         {
             "type": "task",
@@ -108,6 +108,10 @@
             "position": [-2,-1],
             "rotation": [163,-163,0],
             "height": 0.9
+        },
+        {
+            "type": "modifyComponent", "name": "S1",
+            "success": {"_Std": 0.004, "_PosX": 0.005, "_PosY": 0.005}
         },
         {
             "type": "task",

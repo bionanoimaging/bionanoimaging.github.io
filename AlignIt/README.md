@@ -21,9 +21,17 @@ Currently only a few levels available:
 
 ## Keyboard control
 In the plain mode on a computer, there are a few hotkeys available, if an optical component has been selected by clicking on it:
+- "b" toggles the rendering of the laser beams (if not deactivated by the level).
+- "u" brings up a menu to enter the user-name.
+- "p" brings up a menu to enter the password enabling interference features.
+In rotation mode:
 - "w" and "s" allows for fine-control of the pitch angle.
 - "a" and "d" allows for fine-control of the yaw angle.
 - "q" toggles the angular adjustment sensitivity by a factor of 256.
+In translation mode (for the activated axes):
+- "w" and "s" allows for fine-control of the x-movement over the table.
+- "a" and "d" allows for fine-control of the y-movement over the table.
+- "q" toggles the adjustment sensitivity by a factor of 256.
 In VR mode the same controls are available via the small joystick on each controller. The "X" button toggles the sensitivity, whereas the "Y" button toggles the visibility of the laser beams.
 
 ## Features
@@ -89,12 +97,19 @@ List of possible components:
     - "PosY": maximal vertical distance to the center of the screen. This is also shown by the attached indicator bar.
     - "Curv": maximally allowed curvature. If not provided, any curvature is accepted. No indicator bar is provided.
 e.g. "success": {"Std": 0.004, "PosX": 0.005, "PosY": 0.005}
-
+All features can be started by a "_" (e.g. "_Std": 0.004), which disables their display on the indicators panel, but they still need to be fulfilled. In this case the panel only turns green if all of these measures are fulfilled and no indication is given, which one may still be lacking.
 Some components (e.g. Iris) also support the  argument "success" (with the parameter "diameter"):
+    - "success": {"diameter": 0.05}
+    meaning that this maximum diameter has to be adjusted by the user for this component to turn green and thus contribute to the "components" bar which needs all such components to be have reached their individual "success" criteria.
 
-"success": {"diameter": 0.05}
-
-meaning that this maximum diameter has to be adjusted by the user for this component to turn green and thus contribute to the "components" bar which needs all such components to be have reached their individual "success" criteria.
+## Visual Appearance
+There are some html-query parameters, which modify the visual appearance, rendering quality and rendering speed:
+    - `lens=true`: switches to a realistic rendering of the lenses
+    - `pbr=true`: renders the posts in a nicer finish
+    - `fps=true`: shows the frames per second `fps` in the top right corner
+    - `env=name`: changes the background setting. Allowed entries for `name` are "forest", "night", "room", "astro"
+    - `teleport=false`: disables the teleportation in VR mode, switching to a moving motion (beware motion thickness!).
+Remember to use them like in this example: `?lens=true&pbr=true&env=night`.
 
 ## License
 Currently the software is reased under the [Commons Attribution-NonCommercial-NoDerivs}(https://creativecommons.org/licenses/by-nc-nd/4.0/) (CC-BY-NC-ND) License.
