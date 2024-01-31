@@ -28,8 +28,8 @@
         },
         {
             "type": "addComponent", "component": "Lens", "name": "L1",
-            "position": [0,0.1],
-            "height": 1.1, 
+            "position": [0, 0.01],
+            "height": 1.01, 
             "rotation": 0.5,
             "r1": 0.0,
             "r2": 1.0,
@@ -52,7 +52,7 @@
             "rotation": 90,
             "target": false,
             "dof": "YZ",
-            "success": {"PosX": 0.002, "PosY": 0.002, "Std": 1.0, "Num": 15},
+            "success": {"Std": 1.0, "Num": 15, "DeltaX": 0.01, "DeltaY": 0.01},
             "limits": [[],[-0.4,0.4],[0.5,1.4]]
         },
         {
