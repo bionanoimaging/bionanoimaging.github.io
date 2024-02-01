@@ -214,3 +214,10 @@ Sobhi Saeed:
   avatar      : "/assets/images/people/saeed.jpg"
   active      : false
   role        : "Master's Student"
+
+Alexander Knauss:
+  name        : "Alexander Knauss"
+  bio         : "PhD student focusing on the imaging methods for nematostella"
+  avatar      : "/assets/images/people/dummy.jpg"
+  active      : true
+  role        : "PhD Candidate"
