@@ -5,7 +5,7 @@
 // Names of the two caches used in this version of the service worker.
 // Change to v2, etc. when you update any of the local resources, which will
 // in turn trigger the install event again.
-const PRECACHE = 'precache-v014';
+const PRECACHE = 'precache-v015';
 const RUNTIME = 'runtime';
 
 // The files to make available for offline use. make sure to add 
