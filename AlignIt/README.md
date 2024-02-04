@@ -83,20 +83,21 @@ Currently a number of components are supported, with their arguments exemplified
 
 List of possible components:
 - Laser ("rays": [0,0], "diameter": 0.3), the two numbers refer to the number or radial layers and azimuthal rays in each layer. "diameter" refers to the total diameter of the outer layer of laser rays.
-- Lens ("r1": 1.0, "r2": 2.0,), with r1 and r2 referring to the radius of curvature of each lens surface. If not given the value of zero is assumed, which really means infinite, i.e. a flat surface. Note that also negative values are allowed, referring to a concave surface. If "trace_reflection" is set to `true`, weak reflection beams will be launched.
+- Lens ("r1": 1.0, "r2": 2.0, "wedge_angle": 0.0), with r1 and r2 referring to the radius of curvature of each lens surface. If not given the value of zero is assumed, which really means infinite, i.e. a flat surface. Note that also negative values are allowed, referring to a concave surface. If "trace_reflection" is set to `true`, weak reflection beams will be launched. "wedge_angle" (only for r0=0.0 and r1=0.0) allows to create a weak prism, e.g. for shear-plates.
 - Mirror
 - Beamsplitter
 - Grating ("pitch"), the pitch corresponding to the grating pitch in µm.
 - Pinhole ("diameter")
 - Iris ("diameter", "success"), if the "success" parameter is provided (e.g. "success": {"diameter": 0.03},) the adjustable diameter needs to be below the stated value, to contribute to an overall success in the task (see components bar).
 - DualPinhole ("diameter", "separation", "launches"), where "separation" indicates the distance between the two pinholes. If "lauches" is `true` this pinhole will (like a screen) analyse the impinging beams and launch two beams from its center.
-- Screen ("success"), the "success" of the screen is often the most important component to fullfill a given task. The following options are supported for screen "success":
+- Screen ("success", "target"), the "success" of the screen is often the most important component to fullfill a given task. The following options are supported for screen "success":
     - "Num": the minimal number of beams hitting the screen. If not specified it is allumed that this corresponds to the number of beams launched by the laser.
     - "Std": the maximally allowed standard deviation of the spot. This is also shown by the attached indicator bar.
     - "PosX": maximal lateral distance to the center of the screen. This is also shown by the attached indicator bar.
     - "PosY": maximal vertical distance to the center of the screen. This is also shown by the attached indicator bar.
     - "Curv": maximally allowed curvature. If not provided, any curvature is accepted. No indicator bar is provided.
 e.g. "success": {"Std": 0.004, "PosX": 0.005, "PosY": 0.005}
+if "target" is specified (e.g. true) a screen target is drawn. If "target" is set to "line" a line-target is drawn.
 All features can be started by a "_" (e.g. "_Std": 0.004), which disables their display on the indicators panel, but they still need to be fulfilled. In this case the panel only turns green if all of these measures are fulfilled and no indication is given, which one may still be lacking.
 Some components (e.g. Iris) also support the  argument "success" (with the parameter "diameter"):
     - "success": {"diameter": 0.05}

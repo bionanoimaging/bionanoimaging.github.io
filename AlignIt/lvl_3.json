@@ -1,74 +1,121 @@
 {
     "version": 1.0,
     "number": "3",
-    "title": "Backreflections",
+    "title": "Beam Collimation",
     "steps": [
         {
             "type": "addComponent",
             "component": "Laser",
             "name": "Laser",
-            "rays": [2,4],
-            "diameter": 0.02,
-            "position": [-5,0]
+            "rays": [1, 4],
+            "diameter": 0.2,
+            "position": [-6, 1]
         },
         {
             "type": "addComponent",
-            "component": "Pinhole",
-            "name": "P0",
-            "position": [-2,0],
-            "rotation": 180,
-            "diameter": 0.09
+            "component": "Lens",
+            "name": "L1",
+            "position": [-4,1],
+            "rotation": 0,
+            "r1": 0.7,
+            "r2": 0.0,
+            "dof": ""
         },
         {
-            "type": "addComponent", "component": "Lens",
-            "name": "L1",
-            "position": [0,0.02],
-            "height": 1.02, 
-            "rotation": 2,
+            "type": "addComponent",
+            "component": "Lens",
+            "name": "L2",
+            "position": [-1,1],
+            "rotation": 0,
             "r1": 0.0,
-            "r2": 2.0,
-            "dof": "ZYyz",
-            "trace_reflection": "true"
+            "r2": 0.7,
+            "dof": "X"
+        },
+        {
+            "type": "addComponent",
+            "component": "DualPinhole",
+            "name": "Colli-Launch",
+            "position": [0,1],
+            "diameter": 0.01,
+            "rotation": [0,0,0],
+            "launches": true,
+            "dof": ""
+        },
+        {
+            "type": "addComponent",
+            "component": "DualPinhole",
+            "name": "Colli-Check",
+            "position": [3,1],
+            "diameter": 0.02,
+            "limits": [[],[0.8,1.2],[-1.2,1.2]],
+            "dof": ""
         },
         {
             "type": "addComponent",
             "component": "Screen",
-            "name": "Screen",
-            "position": [3,0],
+            "name": "Test Screen",
+            "target": true,
+            "position": [5, 1],
             "rotation": 0,
-            "target": false,
-            "dof": "YZ",
-            "success": {"PosX": 0.002, "PosY": 0.002, "Std": 1.0, "Num": 15},
-            "limits": [[],[-0.4,0.4],[0.5,1.4]]
-        },
-        {
-            "type": "task",
-            "instruction": "Adjust the back reflections to both be centered sending light back towards the laser.",
-            "score": 100.0,
-            "music": {
-                "link": "music/forest-with-small-river-birds-and-nature-field-recording-6735.mp3",
-                "credits": "Downloaded from pixabay.\nhttps://pixabay.com/sound-effects/search/forest-birds/"
-            }
-        },
-        {
-            "type": "modifyComponent", 
-            "name": "L1",
-            "r1": 1.0,
-            "r2": 0.0
+            "success": {"Num": 2},
+            "dof": "XY"
         },
        {
             "type": "task",
-            "instruction": "Congratulations! You completed level 2\nPress Done for Lvl 3.",
-            "narration": {
-                "link": "narrations/lvl2t7.m4a",
-                "credits": "Rainer Heintzmann"
-            }
+            "instruction": "Collimate the laser by adjusting the expansion telescope passing both double-pinholes.",
+            "music": {
+                "link": "music/forest-with-small-river-birds-and-nature-field-recording-6735.mp3",
+                "credits": "Downloaded from pixabay.\nhttps://pixabay.com/sound-effects/search/forest-birds/"
+            },
+            "score": 100.0
+        },
+        {
+            "type": "removeComponent",
+            "name": "Colli-Check"
+        },
+        {
+            "type": "removeComponent",
+            "name": "Colli-Launch"
+        },
+        {
+            "type": "modifyComponent",
+            "name": "Laser",
+            "diameter": 0.2,
+            "dof": ""
+        },
+        {
+            "type": "addComponent",
+            "component": "Lens",
+            "name": "Shear Plate",
+            "position": [2,1],
+            "rotation": [0,-45, 0],
+            "r1": 0,
+            "r2": 0,
+            "thickness": 0.2,
+            "trace_reflection": "true",
+            "wedge_angle": 0.002,
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component": "Screen",
+            "name": "Shear-Screen",
+            "position": [2, 0],
+            "rotation": 90,
+            "target": "line",
+            "success": {"Curv": 0.002},
+            "dof": "YZ"
         },
         {
             "type": "task",
-            "instruction": "Congratulations! You completed level 2\nPress Done for Lvl 3.",
+            "instruction": "Now use the shear-plate for fine-adjustment.\nArrange the fringes along the reference line",
+            "score": 100.0
+        },
+        {
+            "type": "task",
+            "instruction": "Congratulations! You completed this level!\nPress Done for Lvl 2.",
             "narration": {
-                "link": "narrations/lvl2t7.m4a",
+                "link": "narrations/lvl1t6.m4a",
                 "credits": "Rainer Heintzmann"
             },
             "final": true

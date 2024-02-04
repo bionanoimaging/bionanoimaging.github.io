@@ -1,92 +1,77 @@
 {
     "version": 1.0,
     "number": "10",
-    "title": "Test for laser positioning",
+    "title": "Back-Reflections",
     "steps": [
         {
             "type": "addComponent",
             "component": "Laser",
             "name": "Laser",
-            "rays": [1, 4],
-            "diameter": 0.3,
-            "position": [-6, 1]
+            "rays": [2,4],
+            "diameter": 0.02,
+            "position": [-5,0]
         },
         {
             "type": "addComponent",
-            "component": "Lens",
+            "component": "Pinhole",
+            "name": "P0",
+            "position": [-2,0],
+            "rotation": 180,
+            "diameter": 0.09
+        },
+        {
+            "type": "addComponent", "component": "Lens",
             "name": "L1",
-            "position": [-4,1],
-            "rotation": 0,
-            "r1": 0.7,
-            "r2": 0.0,
-            "dof": "XYxyz"
-        },
-        {
-            "type": "addComponent",
-            "component": "Lens",
-            "name": "L2",
-            "position": [-1,1],
-            "rotation": 0,
+            "position": [0,0.02],
+            "height": 1.02, 
+            "rotation": 2,
             "r1": 0.0,
-            "r2": 0.7,
-            "dof": "XYxyz"
-        },
-        {
-            "type": "addComponent",
-            "component": "DualPinhole",
-            "name": "Colli-Launch",
-            "position": [0,1],
-            "launches": true,
-            "dof": "XYZxyz"
-        },
-        {
-            "type": "addComponent",
-            "component": "DualPinhole",
-            "name": "Colli-Check",
-            "position": [3,1],
-            "limits": [[],[0.8,1.2],[-1.2,1.2]],
-            "dof": "XYZxyz"
+            "r2": 2.0,
+            "dof": "ZYyz",
+            "trace_reflection": "true"
         },
         {
             "type": "addComponent",
             "component": "Screen",
-            "name": "Test Screen",
-            "target": true,
-            "position": [4, 1],
+            "name": "Screen",
+            "position": [3,0],
             "rotation": 0,
-            "success": {"Num": 2},
-            "dof": "XY"
+            "target": false,
+            "dof": "YZ",
+            "success": {"PosX": 0.002, "PosY": 0.002, "Std": 1.0, "Num": 15},
+            "limits": [[],[-0.4,0.4],[0.5,1.4]]
         },
-       {
+        {
             "type": "task",
-            "instruction": "Just to see if the laser gets unwillingly modified.",
+            "instruction": "Adjust the back reflections to both be centered sending light back towards the laser.",
+            "score": 100.0,
             "music": {
                 "link": "music/forest-with-small-river-birds-and-nature-field-recording-6735.mp3",
                 "credits": "Downloaded from pixabay.\nhttps://pixabay.com/sound-effects/search/forest-birds/"
-            },
-            "score": 100.0
+            }
         },
         {
-            "type": "modifyComponent",
-            "name": "Laser",
-            "dof": "SsYZyz"
+            "type": "modifyComponent", 
+            "name": "L1",
+            "r1": 1.0,
+            "r2": 0.0
         },
-        {
-            "type": "removeComponent",
-            "name": "Colli-Check"
-        },
-        {
-            "type": "modifyComponent",
-            "name": "Test Screen",
-            "position": [3, 1.2],
-            "dof": "YZ",
-            "limits": [[],[-5, 5],[1.5,1.4]]
+       {
+            "type": "task",
+            "instruction": "Congratulations! You completed level 2\nPress Done for Lvl 3.",
+            "narration": {
+                "link": "narrations/lvl2t7.m4a",
+                "credits": "Rainer Heintzmann"
+            }
         },
         {
             "type": "task",
-            "instruction": "You did it and finished this level!",
-            "success": {"Num": 1},
-            "score": 100.0
+            "instruction": "Congratulations! You completed level 2\nPress Done for Lvl 3.",
+            "narration": {
+                "link": "narrations/lvl2t7.m4a",
+                "credits": "Rainer Heintzmann"
+            },
+            "final": true
         }
    ]
 }
