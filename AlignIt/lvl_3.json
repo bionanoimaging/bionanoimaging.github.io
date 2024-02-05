@@ -16,9 +16,9 @@
             "component": "Lens",
             "name": "L1",
             "position": [-4,1],
-            "rotation": 0,
-            "r1": 0.7,
-            "r2": 0.0,
+            "rotation": 180,
+            "r1": 0.0,
+            "r2": 0.7,
             "dof": ""
         },
         {

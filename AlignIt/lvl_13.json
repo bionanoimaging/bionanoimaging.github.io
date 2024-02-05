@@ -31,7 +31,8 @@
             "position": [2, -2],
             "rotation": 90,
             "target": "line",
-            "dof": "YZ"
+            "success": {"Num": 2},
+            "dof": "XYZxyz"
         },
         {
             "type": "task",
