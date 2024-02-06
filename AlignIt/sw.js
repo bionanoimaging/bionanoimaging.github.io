@@ -5,7 +5,7 @@
 // Names of the two caches used in this version of the service worker.
 // Change to v2, etc. when you update any of the local resources, which will
 // in turn trigger the install event again.
-const PRECACHE = 'precache-v017';
+const PRECACHE = 'precache-v018';
 const RUNTIME = 'runtime';
 
 // The files to make available for offline use. make sure to add 
@@ -34,6 +34,11 @@ const filesToCache = [
   // 'https://cdn.babylonjs.com/postProcessesLibrary/babylonjs.postProcess.min.js',
   // 'https://cdn.babylonjs.com/loaders/babylonjs.loaders.js',
   // 'https://cdn.babylonjs.com/gui/babylon.gui.min.js',
+  'babylon/assets/Droid Sans_Regular.json',
+  'babylon/assets/mrtk-fluent-backplate.glb',
+  'babylon/assets/mrtk-mrdl-backplate-iridescence.png',
+  'babylon/assets/profilesList.json',
+  'babylon/assets/right.babylon',
   'babylon/dat.gui.min.js',
   'babylon/earcut.min.js',
   'babylon/babylon.js',
