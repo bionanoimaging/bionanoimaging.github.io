@@ -42,8 +42,8 @@ In VR mode the same controls are available via the small joystick on each contro
 - A number of environment files are avaiable via the `?env=` argument, using `?env=forest` (default), `?env=square`, `?env=astro`, `?env=room`
 - The rendering can be switched to nicer textures using `?pbr=true`, but this degrades performance, which may lead to jittering.
 - Currently supported optical components: Planoconvex and biconvex lenses, Laser, Screen, pinhole, iris-aperture, mirror, semi-reflective mirror
-- Music (switchable)
-- Narrations (switchable)
+- Music (switchable). 
+- Narrations (switchable). 
 - Leaderboard
 - Can parse user-defined levels via the ?levels=path_to_levels argument. See details below.
 - To combined several arguments use the following syntax: `?user=fred&scale=0.7&mode=vr&levels=https://localhost:8000` or a different web-link in the `levels` argument. Note that, due to CORS policy, working with local test-levels requires to start a local http server with a python script as described [here](https://stackoverflow.com/questions/21956683/enable-access-control-on-simple-http-server).
@@ -88,7 +88,8 @@ List of possible components:
 - Beamsplitter
 - Grating ("pitch"), the pitch corresponding to the grating pitch in µm.
 - Pinhole ("diameter")
-- Iris ("diameter", "success"), if the "success" parameter is provided (e.g. "success": {"diameter": 0.03},) the adjustable diameter needs to be below the stated value, to contribute to an overall success in the task (see components bar).
+- Iris ("diameter", "success"), if the "success" parameter is provided (e.g. "success": {"diameter": 0.03},) the adjustable diameter needs to be below the stated value, to contribute to an overall success in the task (see components bar). If a success value is provided the minimum size is automatically limited to that value.
+- Slit ("diameter", "success"), if the "success" parameter is provided (e.g. "success": {"diameter": 0.03},) the adjustable diameter needs to be below the stated value, to contribute to an overall success in the task (see components bar). If a success value is provided the minimum size is automatically limited to that value.
 - DualPinhole ("diameter", "separation", "launches"), where "separation" indicates the distance between the two pinholes. If "lauches" is `true` this pinhole will (like a screen) analyse the impinging beams and launch two beams from its center.
 - Screen ("success", "target"), the "success" of the screen is often the most important component to fullfill a given task. The following options are supported for screen "success":
     - "Num": the minimal number of beams hitting the screen. If not specified it is allumed that this corresponds to the number of beams launched by the laser.
@@ -102,6 +103,15 @@ All features can be started by a "_" (e.g. "_Std": 0.004), which disables their 
 Some components (e.g. Iris) also support the  argument "success" (with the parameter "diameter"):
     - "success": {"diameter": 0.05}
     meaning that this maximum diameter has to be adjusted by the user for this component to turn green and thus contribute to the "components" bar which needs all such components to be have reached their individual "success" criteria.
+
+## Tasks
+tasks are defined by a `task` json tag within the list of other actions. This will interrupt the flow until this task is solved. The task is solved when all the components present on the table have been sucessfully solved. `task` supports the following tags:
+- `instruction`: The text entered here will be shown on the screen until this task is solved
+- `score`: The maximum score to earn for solving this task
+- `music`: with the fields `link` for the link to the narration file, `credits` for the text to display for credits.
+- `narration`: with has the fields `link` for the link to the narration file, `credits` for the text to display for credits and optionally `force`, which will prevent movement user interaction until the sound was played fully.
+- `showbeams`: if this optional boolean tag is provided the state of the `Beams` button is forced to the value given here and the button is disabled for this task.
+- `final`: can be present to indicate that this is the final task of this level
 
 ## Visual Appearance
 There are some html-query parameters, which modify the visual appearance, rendering quality and rendering speed:
