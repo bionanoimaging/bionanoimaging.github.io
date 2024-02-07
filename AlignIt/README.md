@@ -55,19 +55,28 @@ To define your own levels and task you can provide your own level files, each of
 
 In this folder all the level files need to be called "lvl_1.json", "lvl_2.json" etc. They all need to be in JSON file format and follow the guidelines.
 To get an idea about the format, which is pretty straight-forward, simply look at the existing levels
+
 - [lvl_1.json](https://www.nanoimaging.de/AlignIt/lvl_1.json)
 - [lvl_2.json](https://www.nanoimaging.de/AlignIt/lvl_2.json)
 - [lvl_3.json](https://www.nanoimaging.de/AlignIt/lvl_3.json)
 - And the example file with various components: [lvl_5.json](https://www.nanoimaging.de/AlignIt/testlevels/lvl_5.json)
 
-The following key-words are useful for designing levels:
-- "addComponent": adds a component to the currect setup for the next task
-- "removeComponent": removes a particular component. The component is always adressed by its name
-- "modifyComponent": modifies an existing component. Note that all properties are kept as they currently are, if no further statements are made.
-If you want to reset the position, you need to state it.
-- "resetComponent": resets the component to its original properties, including position and and angle.
+## Steps
+Each level description in the json file corresponding to a level consists of steps. Each step needs to be one of the following entries:
+
+- `add_component`: adds a new component to the current task. It supports the tags `type`, `name` and others (see below)
+- `remove_component`: removes an existing component
+- `modify_component`: modifies a component. This actually removes the old component and creates a new one in its place.
+- `rename_component`: renames a component. From now on it needs to be referred to by the new name.
+- `reset_component`:  places the component in its initial configuration cancelling modifications by the user.
+- `task`: defines a task to be performed (see details below).
+Components (see detals below) are always identified by the name you give to them
+
+## Components
+Currently a number of components are supported, with their arguments exemplified in the list. All components support the arguments ("name": MyName, "position": [-4, 2], "rotation": [0,0,0], "dof": "XYZxyzSs"). Note that postion accepts a 2D position on the table, rotation accepts eiter a simple value (in degreess) referring to the rotation around the Y-axis or a vector, referring to three Euler angles. For "dof" see above. As for the dimensions it is useful to know, that the diameter of a lens corresponds to the value 1.0, the Post height is 2.0 and the beam heigth over a post is 0.5. The distance of the holes on the table is also 1.0. In real space units, 1.0 corresponds roughly to 5 cm.
 
 All components have the possibility to specify degrees of freedom ("dof"). For those the following code applies:
+
 - "X": movement along the X direction
 - "Y": movement along the Y direction
 - "Z": movement along the height direction
@@ -78,10 +87,8 @@ All components have the possibility to specify degrees of freedom ("dof"). For t
 - "s": enables "snap mode" for rotation, which limits them to 45 degree multiplies
 - "S": enables "snap mode" for position, which limits them to be on an integer grid
 
-## Components
-Currently a number of components are supported, with their arguments exemplified in the list. All components support the arguments ("name": MyName, "position": [-4, 2], "rotation": [0,0,0], "dof": "XYZxyzSs"). Note that postion accepts a 2D position on the table, rotation accepts eiter a simple value (in degreess) referring to the rotation around the Y-axis or a vector, referring to three Euler angles. For "dof" see above. As for the dimensions it is useful to know, that the diameter of a lens corresponds to the value 1.0, the Post height is 2.0 and the beam heigth over a post is 0.5. The distance of the holes on the table is also 1.0. In real space units, 1.0 corresponds roughly to 5 cm.
+### List of possible components:
 
-List of possible components:
 - Laser ("rays": [0,0], "diameter": 0.3), the two numbers refer to the number or radial layers and azimuthal rays in each layer. "diameter" refers to the total diameter of the outer layer of laser rays.
 - Lens ("r1": 1.0, "r2": 2.0, "wedge_angle": 0.0), with r1 and r2 referring to the radius of curvature of each lens surface. If not given the value of zero is assumed, which really means infinite, i.e. a flat surface. Note that also negative values are allowed, referring to a concave surface. If "trace_reflection" is set to `true`, weak reflection beams will be launched. "wedge_angle" (only for r0=0.0 and r1=0.0) allows to create a weak prism, e.g. for shear-plates.
 - Mirror
@@ -106,6 +113,7 @@ Some components (e.g. Iris) also support the  argument "success" (with the param
 
 ## Tasks
 tasks are defined by a `task` json tag within the list of other actions. This will interrupt the flow until this task is solved. The task is solved when all the components present on the table have been sucessfully solved. `task` supports the following tags:
+
 - `instruction`: The text entered here will be shown on the screen until this task is solved
 - `score`: The maximum score to earn for solving this task
 - `music`: with the fields `link` for the link to the narration file, `credits` for the text to display for credits.

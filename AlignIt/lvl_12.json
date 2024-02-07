@@ -54,6 +54,16 @@
             "showbeams": true
         },
         {
+            "type": "renameComponent",
+            "name": "Angle Iris",
+            "newname": "Condenser Aperture"
+        },
+        {
+            "type": "renameComponent",
+            "name": "Position Iris",
+            "newname": "Field Aperture"
+        },
+        {
             "type": "addComponent",
             "component": "Lens",
             "name": "Condenser Lens",
@@ -70,13 +80,13 @@
         },
         {
             "type": "modifyComponent",
-            "name": "Position Iris",
+            "name": "Field Aperture",
             "diameter": 0.4,
             "dof": "f"
         },
         {
             "type": "modifyComponent",
-            "name": "Angle Iris",
+            "name": "Condenser Aperture",
             "diameter": 0.4,
             "position": [-3,0],
             "dof": "f"
@@ -149,7 +159,7 @@
         },
         {
             "type": "modifyComponent",
-            "name": "Angle Iris",
+            "name": "Condenser Aperture",
             "diameter": 0.2,
             "success": {"diameter": 0.02},
             "dof": "X",
@@ -164,7 +174,7 @@
         },
         {
             "type": "task",
-            "instruction": "Adjust the position of angle iris to the first conjugate plane\ni.e the front focal plane of field lens.",
+            "instruction": "Adjust the position of condenser aperture to the first conjugate plane\ni.e the front focal plane of field lens.",
             "score": 400.0,
             "showbeams": true
         },
@@ -181,7 +191,7 @@
         },
         {
             "type": "modifyComponent",
-            "name": "Angle Iris",
+            "name": "Condenser Aperture",
             "diameter": 0.03,
             "dof": "f"
         },
