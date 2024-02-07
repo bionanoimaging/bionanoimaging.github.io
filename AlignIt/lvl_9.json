@@ -23,8 +23,8 @@
         },
         {
             "type": "addComponent",
-            "component": "Iris",
-            "name": "Angle Iris",
+            "component": "Slit",
+            "name": "A Slit",
             "position": [1,0],
             "height": 1.0,
             "diameter": 0.05,
