@@ -105,11 +105,13 @@ All components have the possibility to specify degrees of freedom ("dof"). For t
     - "PosY": maximal vertical distance to the center of the screen. This is also shown by the attached indicator bar.
     - "Curv": maximally allowed curvature. If not provided, any curvature is accepted. No indicator bar is provided.
 e.g. "success": {"Std": 0.004, "PosX": 0.005, "PosY": 0.005}
-if "target" is specified (e.g. true) a screen target is drawn. If "target" is set to "line" a line-target is drawn.
+if "target" is specified (e.g. true) a screen target is drawn. If "target" is set to "line", "lineh" or "linev" a (horizontal or vertical) line-target is drawn.
 All features can be started by a "_" (e.g. "_Std": 0.004), which disables their display on the indicators panel, but they still need to be fulfilled. In this case the panel only turns green if all of these measures are fulfilled and no indication is given, which one may still be lacking.
 Some components (e.g. Iris) also support the  argument "success" (with the parameter "diameter"):
     - "success": {"diameter": 0.05}
     meaning that this maximum diameter has to be adjusted by the user for this component to turn green and thus contribute to the "components" bar which needs all such components to be have reached their individual "success" criteria.
+Note that the user interface panel is usually attached to the first screen, but you can also supply
+- PanelPost  which serves as a (potentially movable) post on which the panel is placed. Note that in VR the presence of the left control takes over the panel.
 
 ## Tasks
 tasks are defined by a `task` json tag within the list of other actions. This will interrupt the flow until this task is solved. The task is solved when all the components present on the table have been sucessfully solved. `task` supports the following tags:
