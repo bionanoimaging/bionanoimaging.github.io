@@ -42,6 +42,8 @@ const filesToCache = [
   'babylon/earcut.min.js',
   'babylon/babylon.js',
   'babylon/babylon.js.map',
+  'babylon/babylon.gui.min.js',
+  'babylon/babylon.gui.min.js.map',
   'babylon/Oimo.js',
   'babylon/recast.js',
   'babylon/Assets.js',
