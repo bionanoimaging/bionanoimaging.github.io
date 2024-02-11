@@ -5,7 +5,7 @@
 // Names of the two caches used in this version of the service worker.
 // Change to v2, etc. when you update any of the local resources, which will
 // in turn trigger the install event again.
-const PRECACHE = 'precache-v020';
+const PRECACHE = 'precache-v021';
 const RUNTIME = 'runtime';
 
 // The files to make available for offline use. make sure to add 
@@ -39,20 +39,9 @@ const filesToCache = [
   'babylon/assets/mrtk-mrdl-backplate-iridescence.png',
   'babylon/assets/profilesList.json',
   'babylon/assets/right.babylon',
-  'babylon/dat.gui.min.js',
   'babylon/earcut.min.js',
   'babylon/babylon.js',
   'babylon/babylon.js.map',
-  'babylon/babylonjs.materials.min.js',
-  'babylon/babylonjs.materials.min.js.map',
-  'babylon/babylonjs.proceduralTextures.min.js',
-  'babylon/babylonjs.proceduralTextures.min.js.map',
-  'babylon/babylonjs.postProcess.min.js',
-  'babylon/babylonjs.postProcess.min.js.map',
-  'babylon/babylonjs.loaders.js',
-  'babylon/babylonjs.loaders.js.map',
-  'babylon/babylon.gui.min.js',
-  'babylon/babylon.gui.min.js.map',
   'music/Be+Jammin\'+-+320bit.mp3',
   'music/Emotional+Ballad+-+320bit.mp3',
   'music/forest-with-small-river-birds-and-nature-field-recording-6735.mp3',

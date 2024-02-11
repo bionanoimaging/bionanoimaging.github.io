@@ -20,9 +20,20 @@
         {
             "type": "addComponent", "component": "Screen", "name": "S1",
             "success": {"Std": 0.01},
-            "position": [2,0.0],
-            "rotation": 0
+            "position": [2, 0.0],
+            "rotation": 0,
+            "dof": ""
         },
+        {
+            "type": "addComponent",
+            "component": "PanelPost",
+            "name": "Panel Post",
+            "height": 2,
+            "position": [1, -1],
+            "rotation": 0,
+            "dof": "XYZ"
+        },
+
         {
             "type": "task",
             "instruction": "Move L1 along the X-coordinate until\n the beam is focussed on the screen. Grab the bottom pedestal.",
