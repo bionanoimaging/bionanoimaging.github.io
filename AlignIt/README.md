@@ -22,7 +22,10 @@ Currently only a few levels available:
 ## Keyboard control
 In the plain mode on a computer, there are a few hotkeys available, if an optical component has been selected by clicking on it:
 - "b" toggles the rendering of the laser beams (if not deactivated by the level).
+- "l" switches the laser off/on.
 - "u" brings up a menu to enter the user-name.
+- "n" toggles the narrations off/on. Sometimes movements are blocked while the narration is running, but possible in pause.
+- "m" toggles the music off/on.
 - "p" brings up a menu to enter the password enabling interference features.
 In rotation mode:
 - "w" and "s" allows for fine-control of the pitch angle.
@@ -63,7 +66,7 @@ To get an idea about the format, which is pretty straight-forward, simply look a
 
 ## Steps
 Each level description in the json file corresponding to a level consists of steps. Each step needs to be one of the following entries:
-
+- `setObserverPosition`: allows to force the observer to an initial position. Allowed (optional) arguments are `position` defining the new observer position coordinates and `look_at` defining where to first look (default is [0,0] at the beam height). Note that every reset of the level will also force this action to be taken.
 - `add_component`: adds a new component to the current task. It supports the tags `type`, `name` and others (see below)
 - `remove_component`: removes an existing component
 - `modify_component`: modifies a component. This actually removes the old component and creates a new one in its place.
