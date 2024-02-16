@@ -115,7 +115,7 @@
             "name": "Laser",
             "height": 1.1,
             "rotation": [0,0,1.5],
-            "limits": [[],[],[],[-10,10],[-10,10],[-10,10]],
+            "limits": [[],[],[0.4,1.4],[-10,10],[-10,10],[-10,10]],
             "dof": "Zy"
         },
         {
@@ -226,7 +226,8 @@
         {
             "type": "modifyComponent",
             "name": "Laser",
-            "dof": "YZyz"
+            "dof": "YZyz",
+            "limits": [[],[-0.4,0.4],[0.5,1.4]]
         },
        {
             "type": "task",
