@@ -124,6 +124,9 @@ tasks are defined by a `task` json tag within the list of other actions. This wi
 - `music`: with the fields `link` for the link to the narration file, `credits` for the text to display for credits.
 - `narration`: with has the fields `link` for the link to the narration file, `credits` for the text to display for credits and optionally `force`, which will prevent movement user interaction until the sound was played fully.
 - `showbeams`: if this optional boolean tag is provided the state of the `Beams` button is forced to the value given here and the button is disabled for this task.
+- `focus`, `focus1`, `focus2`: if true both focal planes or a specific focal plane can optionally be shown.
+- `principle`, `principle1`, `principle2`: if true both priciple planes or a specific principle plane can optionally be shown.
+- `showplanes`: if true, the aforementioned planes will be shown on start of the task (they can still be switched on and off).
 - `final`: can be present to indicate that this is the final task of this level
 
 ## Visual Appearance

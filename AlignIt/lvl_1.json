@@ -39,6 +39,9 @@
             "type": "task",
             "instruction": "Move L1 along the X-coordinate until\n the beam is focussed on the screen. Grab the bottom pedestal.",
             "score": 100.0,
+            "principle1": true,
+            "focus1": true,
+            "showplanes": true,
             "music": {
                 "link": "music/Now+We+Ride+-+320bit.mp3", "credits": "Now We Ride by Alexander Nakarada | https://www.serpentsoundstudios.com\nCreative Commons CC BY 4.0, https://creativecommons.org/licenses/by/4.0/"
             },
@@ -60,6 +63,7 @@
             "type": "task",
             "instruction": "Move L1 along the X- and Y-coordinate\n until the beam is focussed on the screen.",
             "score": 100.0,
+            "principle1": true,
             "narration": {
                 "link": "narrations/lvl1t2.m4a",
                 "credits": "Rainer Heintzmann"
@@ -74,12 +78,13 @@
         },
         {
             "type": "modifyComponent", "name": "S1",
-            "success": {"_Std": 0.004, "_PosX": 0.005, "PosY": 0.01}
+            "success": {"_Std": 0.004, "_PosX": 0.01, "PosY": 0.01}
         },
         {
             "type": "task",
             "instruction": "Focus L1 by X-,Y- and Z control\n Grab the mounting rod to move Z.",
             "score": 150.0,
+            "principle1": true,
             "music": {
                 "link": "music/Melodic+Overflow+-+320bit.mp3", 
                 "credits": "Melodic Overflow by Alexander Nakarada | https://www.serpentsoundstudios.com\nCreative Commons CC BY 4.0, https://creativecommons.org/licenses/by/4.0/"
@@ -99,7 +104,7 @@
         },
         {
             "type": "modifyComponent", "name": "S1",
-            "success": {"Std": 0.004, "_PosX": 0.005, "_PosY": 0.005}
+            "success": {"Std": 0.004, "_PosX": 0.01, "_PosY": 0.01}
         },
         {
             "type": "task",
@@ -123,7 +128,7 @@
         },
         {
             "type": "modifyComponent", "name": "S1",
-            "success": {"_Std": 0.004, "_PosX": 0.005, "_PosY": 0.005}
+            "success": {"_Std": 0.004, "_PosX": 0.01, "_PosY": 0.01}
         },
         {
             "type": "task",
