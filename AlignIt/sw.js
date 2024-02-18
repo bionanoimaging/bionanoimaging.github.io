@@ -5,7 +5,7 @@
 // Names of the two caches used in this version of the service worker.
 // Change to v2, etc. when you update any of the local resources, which will
 // in turn trigger the install event again.
-const PRECACHE = 'precache-v025';
+const PRECACHE = 'precache-v026';
 const RUNTIME = 'runtime';
 
 // The files to make available for offline use. make sure to add 
@@ -75,7 +75,7 @@ const filesToCache = [
   'sound/switch-150130.mp3',
   'sound/switchbigpowerwav-14710.mp3',
   'sound/notification-5-140376.mp3',
-  'sound/interface-button-154180.mp3',
+  'sound/wrong-answer-126515.mp3',
   'textures/floor.png',
   'textures/forest.env',
   'textures/forest.hdr',
