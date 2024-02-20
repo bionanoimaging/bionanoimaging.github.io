@@ -128,7 +128,7 @@
         },
         {
             "type": "modifyComponent", "name": "S1",
-            "success": {"_Std": 0.004, "_PosX": 0.01, "_PosY": 0.01}
+            "success": {"_Std": 0.006, "_PosX": 0.02, "_PosY": 0.02}
         },
         {
             "type": "task",

@@ -23,6 +23,7 @@ Currently only a few levels available:
 In the plain mode on a computer, there are a few hotkeys available, if an optical component has been selected by clicking on it:
 - "b" toggles the rendering of the laser beams (if not deactivated by the level).
 - "l" switches the laser off/on.
+- "+" presses the green "Done" button
 - "u" brings up a menu to enter the user-name.
 - "n" toggles the narrations off/on. Sometimes movements are blocked while the narration is running, but possible in pause.
 - "m" toggles the music off/on.
@@ -35,7 +36,8 @@ In translation mode (for the activated axes):
 - "w" and "s" allows for fine-control of the x-movement over the table.
 - "a" and "d" allows for fine-control of the y-movement over the table.
 - "q" toggles the adjustment sensitivity by a factor of 256.
-In VR mode the same controls are available via the small joystick on each controller. The "X" button toggles the sensitivity, whereas the "Y" button toggles the visibility of the laser beams.
+In VR mode the same controls are available via the small joystick on each controller. The "A" button toggles the sensitivity, whereas the "B" button toggles the visibility of the laser beams.
+The "X"-button toggles the visibility of the screen (which is in your left hand), the "Y" button is equivalent to the green "Done" button on the screen
 
 ## Features
 - this game can be played on a PC, laptop, tablet or mobile phone
