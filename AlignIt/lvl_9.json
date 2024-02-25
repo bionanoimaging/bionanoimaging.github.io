@@ -9,15 +9,16 @@
             "name": "Laser",
             "rays": [0,0],
             "rotation": [0,2.1,2.2],
-            "position": [-3,1.1],
-            "height": 1.2,
+            "position": [-3, 0],
+            "height": 1.1,
             "dof": "XYxyz"
         },
         {
             "type": "modifyComponent",
             "name": "Laser",
+            "rays": [2,4],
             "height": 1.1,
-            "position": [-4, 0.3],
+            "position": [-4, 0],
             "rotation": [-2.5, 0, 1.5],
             "dof": "yz"
         },
@@ -26,7 +27,7 @@
             "component": "Slit",
             "name": "A Slit",
             "position": [1,0],
-            "height": 1.0,
+            "height": 1.1,
             "diameter": 0.05,
             "dof": "XYZ",
             "success": {"diameter": 0.05},
@@ -34,11 +35,22 @@
             "comment": "This iris cannot be adjusted."
         },
         {
+            "type": "addComponent", "component": "Lens",
+            "name": "L1",
+            "position": [-1, 0],
+            "r1": 1.0,
+            "r2": 0.0,
+            "height": 1.1,
+            "cylinder": true,
+            "dof": "XYZxyz",
+            "trace_reflection": true
+        },
+        {
             "type": "addComponent",
             "component": "Screen",
             "name": "Screen",
             "target": false,
-            "position": [4,0],
+            "position": [2,0],
             "dof": "XYZ"
         },
        {

@@ -7,7 +7,7 @@
             "type": "addComponent",
             "component": "Laser",
             "name": "Laser",
-            "rays": [0,0],
+            "rays": [0, 0],
             "position": [-4,0],
             "dof": ""
         },

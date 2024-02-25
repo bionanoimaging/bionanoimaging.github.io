@@ -42,6 +42,7 @@
             "principle1": true,
             "focus1": true,
             "showplanes": true,
+            "teleportation": false,
             "music": {
                 "link": "music/Now+We+Ride+-+320bit.mp3", "credits": "Now We Ride by Alexander Nakarada | https://www.serpentsoundstudios.com\nCreative Commons CC BY 4.0, https://creativecommons.org/licenses/by/4.0/"
             },

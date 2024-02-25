@@ -95,7 +95,7 @@ All components have the possibility to specify degrees of freedom ("dof"). For t
 ### List of possible components:
 
 - Laser ("rays": [0,0], "diameter": 0.3), the two numbers refer to the number or radial layers and azimuthal rays in each layer. "diameter" refers to the total diameter of the outer layer of laser rays.
-- Lens ("r1": 1.0, "r2": 2.0, "wedge_angle": 0.0), with r1 and r2 referring to the radius of curvature of each lens surface. If not given the value of zero is assumed, which really means infinite, i.e. a flat surface. Note that also negative values are allowed, referring to a concave surface. If "trace_reflection" is set to `true`, weak reflection beams will be launched. "wedge_angle" (only for r0=0.0 and r1=0.0) allows to create a weak prism, e.g. for shear-plates.
+- Lens ("r1": 1.0, "r2": 2.0, "wedge_angle": 0.0), with r1 and r2 referring to the radius of curvature of each lens surface. If not given the value of zero is assumed, which really means infinite, i.e. a flat surface. Note that also negative values are allowed, referring to a concave surface. If "trace_reflection" is set to `true`, weak reflection beams will be launched. "wedge_angle" (only for r0=0.0 and r1=0.0) allows to create a weak prism, e.g. for shear-plates. If `cylinder` is set to `true`, the lens will be interpreted as a cylinder lens.
 - Mirror
 - Beamsplitter
 - Grating ("pitch"), the pitch corresponding to the grating pitch in µm.
@@ -133,11 +133,11 @@ tasks are defined by a `task` json tag within the list of other actions. This wi
 
 ## Visual Appearance
 There are some html-query parameters, which modify the visual appearance, rendering quality and rendering speed:
-    - `lens=true`: switches to a realistic rendering of the lenses
+    - `lens=true`: switches to a realistic rendering of the lenses. `lens=all` has the best rendering, including also other meshes in the lens effects.
     - `pbr=true`: renders the posts in a nicer finish
     - `fps=true`: shows the frames per second `fps` in the top right corner
     - `env=name`: changes the background setting. Allowed entries for `name` are "forest", "night", "room", "astro"
-    - `teleport=false`: disables the teleportation in VR mode, switching to a moving motion (beware motion thickness!).
+    - `teleport`: `true` or `false` enables/disables the teleportation in VR mode, switching to a moving motion (beware motion thickness!). `off` disables all movemnt in VR mode (recommended for absolute beginners)
 Remember to use them like in this example: `?lens=true&pbr=true&env=night`.
 
 ## License
