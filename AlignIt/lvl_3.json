@@ -87,7 +87,7 @@
             "r2": 0,
             "thickness": 0.15,
             "trace_reflection": "true",
-            "wedge_angle": 0.002,
+            "wedge_lambda": 0.002,
             "dof": ""
         },
         {

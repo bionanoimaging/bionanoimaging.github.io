@@ -95,7 +95,7 @@ All components have the possibility to specify degrees of freedom ("dof"). For t
 ### List of possible components:
 
 - Laser ("rays": [0,0], "diameter": 0.3), the two numbers refer to the number or radial layers and azimuthal rays in each layer. "diameter" refers to the total diameter of the outer layer of laser rays.
-- Lens ("r1": 1.0, "r2": 2.0, "wedge_angle": 0.0), with r1 and r2 referring to the radius of curvature of each lens surface. If not given the value of zero is assumed, which really means infinite, i.e. a flat surface. Note that also negative values are allowed, referring to a concave surface. If "trace_reflection" is set to `true`, weak reflection beams will be launched. "wedge_angle" (only for r0=0.0 and r1=0.0) allows to create a weak prism, e.g. for shear-plates. If `cylinder` is set to `true`, the lens will be interpreted as a cylinder lens.
+- Lens ("r1": 1.0, "r2": 2.0, "wedge_angle": 0.0), with r1 and r2 referring to the radius of curvature of each lens surface. If not given the value of zero is assumed, which really means infinite, i.e. a flat surface. Note that also negative values are allowed, referring to a concave surface. If "trace_reflection" is set to `true`, weak reflection beams will be launched. "wedge_angle" (only for r0=0.0 and r1=0.0) allows to create a weak prism, e.g. for shear-plates. "wedge_lambda" is an alternative method, which scales slightly better to show interference fringes for small angles, to be used in shear-plates. If `cylinder` is set to `true`, the lens will be interpreted as a cylinder lens.
 - Mirror
 - Beamsplitter
 - Grating ("pitch"), the pitch corresponding to the grating pitch in µm.
