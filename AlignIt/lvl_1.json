@@ -17,6 +17,8 @@
             "r1": 1.0,
             "r2": 0.0,
             "dof": "X",
+            "principle1": true,
+            "focus1": true,
             "limits": [[-2.5,1]]
         },
         {
@@ -40,9 +42,7 @@
             "type": "task",
             "instruction": "Move L1 along the X-coordinate until\n the beam is focussed on the screen. Grab the bottom pedestal.",
             "score": 100.0,
-            "principle1": true,
-            "focus1": true,
-            "showplanes": true,
+            "showplanes": false,
             "music": {
                 "link": "music/Now+We+Ride+-+320bit.mp3", "credits": "Now We Ride by Alexander Nakarada | https://www.serpentsoundstudios.com\nCreative Commons CC BY 4.0, https://creativecommons.org/licenses/by/4.0/"
             },

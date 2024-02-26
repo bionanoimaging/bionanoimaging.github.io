@@ -17,6 +17,8 @@
             "name": "L1",
             "position": [-4,1],
             "rotation": 180,
+            "focus1": true,
+            "principle1": true,
             "r1": 0.0,
             "r2": 0.7,
             "dof": ""
@@ -29,6 +31,8 @@
             "rotation": 0,
             "r1": 0.0,
             "r2": 0.7,
+            "focus1": true,
+            "principle1": true,
             "limits": [[-2.5, -0.5]],
             "dof": "X"
         },
