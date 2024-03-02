@@ -10,58 +10,26 @@
             "rays": [2, 4],
             "diameter": 0.3,
             "position": [-10,0],
-            "height": 0.6,
+            "height": 1.0,
             "rotation": 0.0,
-            "dof": "Z",
+            "dof": "",
             "limits": [[],[],[0.6,1.2]]
         },
         {
             "type": "addComponent",
             "component": "Iris",
-            "name": "Position Iris",
-            "position": [-8,0],
+            "name": "Condenser Aperture",
+            "position": [-3,0],
             "diameter": 0.4,
-            "success": {"diameter": 0.04},
-            "dof": ""
+            "dof": "f"
         },
         {
             "type": "addComponent",
             "component": "Iris",
-            "name": "Angle Iris",
-            "position": [0,0],
-            "diameter": 0.08,
-            "success": {"diameter": 0.04},
-            "dof": ""
-        },
-        {
-            "type": "addComponent",
-            "component": "Screen",
-            "name": "Screen",
-            "success": {"PosX": 0.01, "PosY": 0.01,"Num": 1},
-            "position": [6,0],
-            "target": true,
-            "dof": "",
-            "rotation": 0
-        },
-        {
-            "type": "task",
-            "instruction": "Adjust the height of the laser\nusing two irises to have a well defined optical axis.",
-            "score": 100.0,
-            "music": {
-                "link": "music/Emotional+Ballad+-+320bit.mp3",
-                "credits": "Emotional Ballad by Alexander Nakarada | https://www.serpentsoundstudios.comn\nCreative Commons CC BY 4.0, https://creativecommons.org/licenses/by/4.0/"
-            },
-            "showbeams": true
-        },
-        {
-            "type": "renameComponent",
-            "name": "Angle Iris",
-            "newname": "Condenser Aperture"
-        },
-        {
-            "type": "renameComponent",
-            "name": "Position Iris",
-            "newname": "Field Aperture"
+            "name": "Field Aperture",
+            "position": [-8,0],
+            "diameter": 0.4,
+            "dof": "f"
         },
         {
             "type": "addComponent",
@@ -74,25 +42,8 @@
             "limits": [[-2,-0.8],[-0.8,1],[]]
         },
         {
-            "type": "modifyComponent",
-            "name": "Laser",
-            "dof": ""
-        },
-        {
-            "type": "modifyComponent",
-            "name": "Field Aperture",
-            "diameter": 0.4,
-            "dof": "f"
-        },
-        {
-            "type": "modifyComponent",
-            "name": "Condenser Aperture",
-            "diameter": 0.4,
-            "position": [-3,0],
-            "dof": "f"
-        },
-        {
-            "type": "modifyComponent",
+            "type": "addComponent",
+            "component": "Screen",
             "name": "Screen",
             "success": {"PosX": 0.008,"PosY": 0.008, "Std": 0.008},
             "position": [0,0],
@@ -100,9 +51,22 @@
             "dof": ""
         },
         {
+            "type": "addComponent",
+            "component": "PanelPost",
+            "name": "Panel Post",
+            "height": 2.2,
+            "position": [1, -1],
+            "rotation": 0,
+            "dof": "XY"
+        },
+        {
             "type": "task",
             "instruction": "By moving the condenser lens\nalong X- and Y-coordinates, focus the laser beam on the\ncentre of the screen.",
-            "score": 200.0,
+            "score": 100.0,
+            "music": {
+                "link": "music/Emotional+Ballad+-+320bit.mp3",
+                "credits": "Emotional Ballad by Alexander Nakarada | https://www.serpentsoundstudios.comn\nCreative Commons CC BY 4.0, https://creativecommons.org/licenses/by/4.0/"
+            },
             "showbeams": true
         },
         {
@@ -147,7 +111,7 @@
         {
             "type": "task",
             "instruction": "Adjust the position of field lens between\nthe two irises in order to obtain a collimated beam after\nthe condenser lens.",
-            "score": 300.0
+            "score": 200.0
         },
         {
             "type": "removeComponent",
@@ -175,18 +139,18 @@
         {
             "type": "task",
             "instruction": "Adjust the position of condenser aperture to the first conjugate plane\ni.e the front focal plane of field lens.",
-            "score": 400.0,
+            "score": 300.0,
             "showbeams": true
         },
         {
             "type": "addComponent",
             "component": "Lens",
             "name": "Objective Lens",
-            "rotation": [0,-45,0],
+            "rotation": [0,0,0],
             "position": [0,1],
             "r1": 1.0,
             "r2": 1.0,
-            "dof": "XYz",
+            "dof": "XY",
             "limits": [[0,1.6],[-0.1,1],[],[],[-180,180],[]]
         },
         {
@@ -204,8 +168,8 @@
         },
         {
             "type": "task",
-            "instruction": "By rotating and moving the objective lens\nalong X- and Y-coordinates, focus the laser beam on the\ncentre of the screen.",
-            "score": 500.0,
+            "instruction": "By moving the objective lens\nalong X- and Y-coordinates, focus the laser beam on the\ncentre of the screen.",
+            "score": 400.0,
             "showbeams": true
         },
         {
@@ -251,7 +215,7 @@
         {
             "type": "task",
             "instruction": "Position of tube lens at the back focal plane\nof the objevtive lens and adjust to obtain a collimated beam after\nat the screen.",
-            "score": 800.0
+            "score": 500.0
         },
         {
             "type": "removeComponent",
@@ -308,7 +272,7 @@
         {
             "type": "task",
             "instruction": "Position and adjust the beamsplitter between the objective\nand tube lens, and adjust the reflected beam path using two pinholes.\nYou might need to adjust the tube lens as well. ",
-            "score": 850.0
+            "score": 750.0
         },
         {
             "type": "task",

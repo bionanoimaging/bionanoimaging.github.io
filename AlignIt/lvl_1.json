@@ -32,15 +32,14 @@
             "type": "addComponent",
             "component": "PanelPost",
             "name": "Panel Post",
-            "height": 2,
+            "height": 2.2,
             "position": [1, -1],
             "rotation": 0,
-            "dof": "XYZ"
+            "dof": ""
         },
-
         {
             "type": "task",
-            "instruction": "Move L1 along the X-coordinate until\n the beam is focussed on the screen. Grab the bottom pedestal.",
+            "instruction": "Move L1 along the X-coordinate until\nthe beam is focussed on the screen. Grab the bottom pedestal.",
             "score": 100.0,
             "showplanes": false,
             "music": {
@@ -62,7 +61,7 @@
         },
         {
             "type": "task",
-            "instruction": "Move L1 along the X- and Y-coordinate\n until the beam is focussed on the screen.",
+            "instruction": "Move L1 along the X- and Y-coordinate\nuntil the beam is focussed on the screen.",
             "score": 100.0,
             "principle1": true,
             "narration": {
@@ -83,7 +82,7 @@
         },
         {
             "type": "task",
-            "instruction": "Focus L1 by X-,Y- and Z control\n Grab the mounting rod to move Z.",
+            "instruction": "Focus L1 by X-,Y- and Z control\nGrab the mounting rod to move Z.",
             "score": 150.0,
             "principle1": true,
             "music": {
@@ -109,7 +108,7 @@
         },
         {
             "type": "task",
-            "instruction": "Focus L1 by X-,Y-, Z- and rotation-control\n Click on the lens to activate rotation gizmos.\nThe flat side should point towards the screen!",
+            "instruction": "Focus L1 by X-,Y-, Z- and rotation-control\nClick on the lens to activate rotation gizmos.\nThe flat side should point towards the screen!",
             "score": 200.0,
             "music": {
                 "link": "music/The+Sad+Piano+Background+Song+-+320bit.mp3", 
