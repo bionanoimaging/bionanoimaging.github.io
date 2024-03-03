@@ -1,7 +1,7 @@
 {
     "version": 1.0,
     "number": "7",
-    "title": "Mach Zehnder Interferometer",
+    "title": "Mach Zehnder Interf.",
     "steps": [
         {
             "type": "addComponent",

@@ -1,7 +1,7 @@
 {
     "version": 1.0,
     "number": "5",
-    "title": "Beam Expansion Telescope",
+    "title": "Beam Expansion",
     "steps": [
         {
             "type": "addComponent",
