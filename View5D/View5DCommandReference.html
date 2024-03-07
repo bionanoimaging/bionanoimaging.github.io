@@ -1,0 +1,446 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Bio-Nanoimaging Group - Bio-Nanoimaging in Jena</title>
+<meta name="description" content="Webpage of the Nanoimaging group affiliated with the Leibniz Institute of  Photonic Technology and the Friedrich Schiller University of Jena.">
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Bio-Nanoimaging in Jena">
+<meta property="og:title" content="Bio-Nanoimaging Group">
+<meta property="og:url" content="https://bionanoimaging.github.io/nanoimaging.de/View5D/View5DCommandReference.html">
+
+
+  <meta property="og:description" content="Webpage of the Nanoimaging group affiliated with the Leibniz Institute of  Photonic Technology and the Friedrich Schiller University of Jena.">
+
+
+
+  <meta property="og:image" content="https://bionanoimaging.github.io/nanoimaging.de/assets/images/banner.jpg">
+
+
+
+
+
+
+
+
+
+
+<link rel="canonical" href="https://bionanoimaging.github.io/nanoimaging.de/View5D/View5DCommandReference.html">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Rainer Heintzmann, Felix Wechsler",
+      "url": "https://bionanoimaging.github.io/nanoimaging.de/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--splash">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/site-logo.jpg" alt="Bio-Nanoimaging in Jena"></a>
+        
+        <a class="site-title" href="/">
+          Bio-Nanoimaging in Jena
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/research/">RESEARCH OVERVIEW</a>
+            </li><li class="masthead__menu-item">
+              <a href="/team/">TEAM</a>
+            </li><li class="masthead__menu-item">
+              <a href="/publications/">PUBLICATIONS</a>
+            </li><li class="masthead__menu-item">
+              <a href="/teaching/">TEACHING</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style=" background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/assets/images/banner.jpg');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          Bio-Nanoimaging Group
+
+        
+      </h1>
+      
+      
+
+
+      
+      
+    </div>
+  
+  
+</div>
+
+
+
+<div id="main" role="main">
+  <article class="splash" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Bio-Nanoimaging Group">
+    
+    
+    
+
+    <section class="page__content" itemprop="text">
+      <br>
+
+    
+    
+      <h1 id="view5d-command-reference">View5D Command Reference</h1>
+<p><span style="font-family: 'arial';"><span style="font-weight: bold;"></span></span>The command reference is structured into different subjects, wich roughly correspond to the menu in the 5DViewer (accessible in ImageJ at the top or the viewer, or by right mouse click in the applet versions).<br />
+Most of the View5D commands are accessible via context menus (right mouse button in Windows) and each command has a hot-key as stated in the menu (be careful hitting keys!). The mouse wheel allows to zoom and shift-mouse-wheel modifies the gamma-curve of this color channel (shift-click mouse wheel resets gamma to one).</p>
+<h2 id="span-stylefont-weight-bold-font-size-14pt-font-family-ariala-nameimportexportaimport--export-of-dataspan"><span style="font-weight: bold; font-size: 14pt; font-family: 'Arial';"><a name="ImportExport"></a>Import / Export of data</span></h2>
+<p><span style="font-weight: bold; font-size: 14pt; font-family: 'Arial';"></span>Usually the data is automatically imported at the start of View5D. It supports a number of data types: byte, 12-bit, 16-bit and floating-point (32 bit).</p>
+<ul>
+<li>
+<p>By pressing &quot;l&quot; (lower case &quot;L&quot;) the <span style="font-weight: bold;">data is reloaded</span> (if run as an applet) or the currently active window in ImageJ is imported as a new element. For the import to work the datasizes have to be identical to the previously existing datasizes (X-, Y-, Z-) in the viewer. The data-type, however, can differ between elements. Within ImageJ, it is important to assure that the datasizes of 4 or 5D volumes are set correctly within ImageJ: &quot;Slices (z)&quot; and &quot;Frames (t)&quot;. If they are not correct, you can do this by changing the entries in the &quot;Image-&gt;Properies&quot; menu of ImageJ.</p>
+</li>
+<li>
+<p>If an image in ImageJ possesses a non-grayscale colormap, this colormap will be imported into the viewer and added to the menu as &quot;user defined&quot;.</p>
+</li>
+<li>
+<p>&quot;s&quot; <span style="font-weight: bold;">spawns a new data-view window</span>. This is useful, if multiple slices need to be investigated simultaneously. The viewers can be resized! Press &quot;i&quot; to let the data adapt to the new size of the viewer.</p>
+</li>
+<li>
+<p><span style="font-weight: bold;">Marker lists</span> can be <span style="font-weight: bold;">exported and imported</span> (see Matlab support above and for applets below: &quot;m&quot; in the element display and &quot;L&quot; in one of the views).</p>
+</li>
+<li>
+<p>In many systems the java runtime environment is by default not allowed to save any data. In Linux, this security restrictions can be relaxed by placing a file (click <a href="file:///tmp/View5D_web/java.policy">here</a>) into the user's home directory. This file should be renamed to &quot;.java.policy&quot; with the initial dot at the beginning of the file name.</p>
+</li>
+<li>
+<p>In <span style="font-weight: bold;">ImageJ</span> &quot;X&quot; will <span style="font-weight: bold;">export data</span> and generates an image in ImageJ, which can then be saved to the harddisc.<br />
+Note that exporting via &quot;X&quot; has different behaviours depending on the mode, the Viewer is in and on where it is pressed.</p>
+<ul>
+<li>
+<p>&quot;X&quot; in a viewer window and in single-channel display (see toggle &quot;C&quot;) will export the 16 bit internal single-color data.  The colormap is not considered here.</p>
+</li>
+<li>
+<p>&quot;X&quot; pressed in a viewer window when this window is in the line-plot display will export a plot to ImageJ. This plot is immediately displayed and can further be saved and processed. From ImageJ is is then also possible to cut-and-paste the individual data values to other applications such as Microsoft Excel for further processing.</p>
+</li>
+<li>
+<p>&quot;X&quot; pressed in a viewer window when viewing data of complex data type will export a real-valued image of the current display mode (abs, phase angle, real, imaginary) which can be changed by &quot;^&quot;</p>
+</li>
+<li>
+<p>&quot;X&quot; in multi-color-mode will export a 24-bit (8 bit per RGB channel) color image considering only the colors currently active (see &quot;v&quot;).</p>
+</li>
+<li>
+<p>&quot;X&quot; pressed in the element display (lower right corner) will export the raw-data to ImageJ. The viewer has to be in the single color mode(via &quot;C&quot;). This is especially useful for computed data such as multidimensional histograms.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="span-stylefont-weight-bold-font-size-14pt-font-family-arialthe-3-display-windowsspan"><span style="font-weight: bold; font-size: 14pt; font-family: 'Arial';">The 3 display windows</span></h2>
+<p>The main display windows (top left, top right and bottom left) show mutually orthogonal slices of a 3-dimensional dataset. These windows are linked together.</p>
+<ul>
+<li>
+<p>&quot;i&quot; resets the scaling and thresholds of the currently active view (defined by the mouse position and outlined with a red line boarder).</p>
+</li>
+<li>
+<p>&quot;I&quot; does the same for all data elements (if multiple color elements are present).</p>
+</li>
+<li>
+<p>A <span style="font-style: italic;">mouse click</span> sets the cross-hair to the clicked positions. The original data value underlying the clicked pixel is indicated in the text panel (central right side). The positions of the crosshair are given in pixel coordinates and in a more meaningful real-world unit (if supplied in the data). Note that by default the (0,0,0) position starts in the top left corner, similar to ImageJ!</p>
+</li>
+<li>
+<p>The <span style="font-style: italic;">arrow keys</span> adjust the position of the cross-hair by exactly one voxel in the appropriate direction.<br />
+When the cross-hair changes its position, the orthogonal slicing positions are updated accordingly. If a click somewhere on the axial slice is performed (top left) the sagittal view (top right) will update to refer to the slice indicated with the green line along Y in the axial (XY) view. Similarly the frontal view always corresponds to the green line along X in the axial view. A corresponding behavior hold for the cross-hairs indicated in the other views.</p>
+</li>
+<li>
+<p>&quot;(&quot;, &quot;)&quot; or &quot;next page&quot; &quot;prev. page&quot; keys allow for changes in the slicing position.</p>
+</li>
+<li>
+<p>&quot;,&quot; and &quot;.&quot; adjust the time when multiple time-frames are present, as does the slider seen at the right side in this case.</p>
+</li>
+<li>
+<p>&quot;a&quot; and &quot;A&quot; enable the user to zoom in and out of the current view.</p>
+</li>
+<li>
+<p>&quot;&lt;&quot; and &quot;&gt;&quot; change the display scaling of the orthogonal axis. This is very useful to alter the aspect ratio of the display, especially since the program optimizes the available space for display sometimes resulting in very odd aspect ratios.</p>
+</li>
+<li>
+<p>&quot;Z&quot; zooms this view to fit the rectangular ROI defined in this view (see ROIs).</p>
+</li>
+<li>
+<p>A mouse drag, adjusts the displayed sub-position in the image. This is useful if displaying a zoomed part of the data.</p>
+</li>
+<li>
+<p>&quot;q&quot; toggles between displaying slices and line-plots along the appropriate line indicated by a line of the cross-hair in another view. If  &quot;q&quot; is pressed in the axial (XY) view the line-scan will be along Z at the current crosshair position in this XY window. Linescans update according to changes in the cross-hair position caused by pressing the arrow keys or by mouse clicks.</p>
+</li>
+<li>
+<p>&quot;^&quot; runs through the different display modes (absolute magnitude, phase angle in degree, real part, imaginary part) of data of complex data type. Applicable for COMPLEX data type only! The currently displayed mode will also be used for projections, all quantifications and export functions to ImageJ.</p>
+</li>
+</ul>
+<p>Note that context menus are available by right-clicking into one of the 3 display windows or the spectral (element) display window respectively.</p>
+<h2 id="span-stylefont-weight-bold-font-size-14pt-font-family-arialmeasuringspan"><span style="font-weight: bold; font-size: 14pt; font-family: 'Arial';">Measuring</span></h2>
+<p>A number of parameters are displayed in the text window (lower right panel). These include</p>
+<ul>
+<li>&quot;N&quot; allows the user to interactively change the scalings and units of the coordinate and value axes.</li>
+<li>position of the cross-hair in pixel units</li>
+<li>position of the cross-hair in real-words units</li>
+<li>value of the active element at the cross-hair position in real world units</li>
+<li>size of the rectangular 3D ROI in pixels and real-world units</li>
+<li>lower and upper threshold of the active element</li>
+<li>Average, Maximum and Minimum value of this element in the currently selected ROI.</li>
+</ul>
+<h3 id="a-namemarkersamarkers"><a name="Markers"></a>Markers</h3>
+<p>Markers are an important tool for measuring positions, distances and slopes or velocity inside the multidimensional dataset. They are organized by multiple lists of ordered (connected) markers. The distance of a marker to the position of the previous marker is displayed in the text window. The slope of the line connecting successive markers is also given. This is useful for estimating the speed of movement in 2D+time datasets, where the time-direction was stacked along Z. The speed of movement in 3D datasets can be measured by setting the markers in 3D at different timepoints. The &quot;TimeSlope&quot; in the text-display yields the 3D speed. All markers can be dragged with the mouse after they have been set, to allow for minor corrections of their positions. A summary of all marker positions can be printed (see below: &quot;m&quot; in the spectral display window).<br />
+In the line-plot spectral window the spectrum on each marker is displayed in addition to the spectrum at the cross-hair position. For simultaneous display of multiple spectra, it is best to open a new list with every marker (&quot;k&quot;) since then the markers and thus the spectra will have different colors.</p>
+<ul>
+<li>
+<p>&quot;m&quot; sets a markers in 3D at the current cross-hair position. The distance to the preceding marker (if any) is displayed in the text window (lower right panel).</p>
+</li>
+<li>
+<p>&quot;M&quot; deletes the currently active (as shown in white) marker.</p>
+</li>
+<li>
+<p>&quot;W&quot; tries to track the allready set marker throughout the stack or time series.</p>
+</li>
+<li>
+<p>&quot;Q&quot; deletes all marker from the active marker position on to the end of this marker list. This is very convenient, if the trace of a particle is lost due to bleaching or leaving the image frame.</p>
+</li>
+<li>
+<p>&quot;#&quot; subtracts a Gaussian of known size and intensity determined from the surrounding at this marker position from the data. If multiple markers are present this is repeated for this current list.</p>
+</li>
+<li>
+<p>&quot;9&quot; and &quot;0&quot; advances/devances to the next/previous marker</p>
+</li>
+<li>
+<p>&quot;|&quot; aligns the display to the active track (over time or element direction only)</p>
+</li>
+<li>
+<p>&quot;shift - cursor keys&quot; adjust the display positions with respect to other time or element positions</p>
+</li>
+<li>
+<p>&quot;&quot; pressed at the end of a track will generate two daugther tracks with appropriate names, which can then be continued.</p>
+</li>
+<li>
+<p>&quot;{&quot; resets the alignment to zero</p>
+</li>
+<li>
+<p>&quot;}&quot; opens a menu for the current track, which allows to set names, color and the connectivity with ther tracks (parent, child1 and child2)</p>
+</li>
+<li>
+<p>&quot;n&quot;, if pressed in a view panel or &quot;M&quot; in the spectral display window opens a panel that lets you select several properties of the display and behavior of markers. These include what subset to show (only active list or all lists), and how to set the markers. The markers can either be set directly or they automatically drag to the closest maximum pixel in the active element. The region to search can be defined in 3D. Once the maximum is found, another maximum search in the neighborhood is started, such that markers can iteratively &quot;slide&quot; uphill over longer distances. When this maximum is found, a further automatic refinement (if selected in the panel) is performed on the basis of the computation of the center of mass (or better center of intensity COI). For this computation the &quot;COI region&quot; defines the voxels to consider and the minimum pixel within this region is subtracted prior to COI evaluation. If the automatic positioning is active it will also be performed after each mouse-drag of a marker.</p>
+</li>
+<li>
+<p>&quot;&amp;&quot; tags/untags a marker. (This is useful for counting purposes, e.g. to first identify nuclei in the DAPI channel, and then tag, which ones have an associated other feature in the cell.)</p>
+</li>
+<li>
+<p>&quot;k&quot; opens a new list of markers, whilst setting a new marker. This will have a new color.</p>
+</li>
+<li>
+<p>&quot;w&quot; changes the color of the active marker list.</p>
+</li>
+<li>
+<p>&quot;K&quot; deletes the whole currently active list of markers.</p>
+</li>
+<li>
+<p>&quot;m&quot; pressed in the spectral display window (lower right corner) prints a list to the text window with all marker positions given in pixel and real-words coordinates. Also included are the maximum and integrated intensity, if the markers were generated using the &quot;Subpixel positions by Center of Mass&quot; option. You should be able to cut-and-paste the textual list from there into any editor of your system. If a marker file name was given (Tag: markerOutFile) during startup, &quot;m&quot; will OVERWRITE or create the marker file.</p>
+</li>
+<li>
+<p>&quot;L&quot; pressed in one of the views loads the markers from the ASCII marker file (markerInFile as given during startup). According to the list and marker numbers, the current marker positions will be updated. If the list or marker is not present, it is created.</p>
+</li>
+</ul>
+<p>Note that the intensity-related information in each marker list can be plotted in the element window (see &quot;q&quot; in element window).</p>
+<h2 id="span-stylefont-weight-bold-font-size-14pt-font-family-arialcolorsspan"><span style="font-weight: bold; font-size: 14pt; font-family: 'Arial';">Colors</span></h2>
+<p>If multiple color datasets are present or data of the same size but in different modes was acquired, the program will sort these into different “elements”. When importing the data as a 24-bit RGB image from ImageJ (either by starting the plugin) or by pressing “l” if the plugin is already running, multiple elements will result in View5D. Multiple elements can also be used working with different modes of data acquisition (MRI, PET, CT) or as results from various data processing steps (e.g. anisotropy imaging, of tau-phase and tau-mod in frequency domain fluorescence lifetime microscopy).</p>
+<ul>
+<li>
+<p>&quot;e&quot; and &quot;E&quot; step forward and backwards through the elements to define the currently active element. In single color mode the currently displayed element is the active element. In general the active element defines the value given in the text display. Many operations such as automated thresholding (&quot;t&quot;) are carried out on the active element.</p>
+</li>
+<li>
+<p>&quot;C&quot; toggles between multicolor display and display of only the active element. In multicolor mode only the elements marked for combined display are displayed. This can be done either by defining an element as red &quot;r&quot;, green &quot;g&quot; or blue &quot;b&quot; (the big letters &quot;R,G,B&quot; clears them from combined display) or by marking an element for combined display with the &quot;v&quot; toggle.</p>
+</li>
+<li>
+<p>&quot;v&quot; toggles an element in and out of the multicolor overlay display.</p>
+</li>
+<li>
+<p>&quot;V&quot; toggles an element in and out of being displayed in a multiplicative mode in the multicolor overlay. A channel displayed in the multiplicative mode will have its color values being multiplied by the so-far computed display (all elements with lower numbers). E.i. for displaying fluorescence lifetime images, select the intensity image in grayscale and choose the multiplicative mode and the RGB-rainbow colormap for the lifetime information. Then the intensity image will be displayed with a color as given by the lifetime image.</p>
+</li>
+<li>
+<p>&quot;c&quot; steps through the available color-maps for the active element. Some are linear, some are non-linear to enhance dim details.</p>
+</li>
+<li>
+<p>&quot;O&quot; toggles in and out of logarithmic display mode. Usually it is important to define the lower threshold well (&quot;5&quot;-&quot;8&quot;), since this has a major influence on the display quality. The logarithmic mode also affects the linescans.</p>
+</li>
+<li>
+<p>&quot;o&quot; toggles the range indicators for the active element. If the range indicators are active, values &gt;= the upper threshold are indicated in dark blue and values &lt;= the lower threshold in dark green. If multiple elements are present, the range indicator toggle has to be changed for every element individually.<br />
+If &quot;o&quot; is pressed with the multi-color mode active, the range indicator will toggle on/off for all elements. The state of the current element dictates the state of the others.</p>
+</li>
+<li>
+<p>&quot;1&quot;, &quot;2&quot; and &quot;3&quot;,&quot;4&quot; adjust the lower and upper color thresholds. This is useful for enhancing the brightness and contrast of the display. Also the line scans are affected accordingly. The color threshold just affects the colormap. Changing it is relatively fast. If the data is to be affected, the treshold has to be trasferred to a datathreshold (see &quot;!&quot; below). Note that with the gate active, changing thresholds automatically affect the data thresholds.</p>
+</li>
+<li>
+<p>&quot;5&quot;,&quot;6&quot; and &quot;7&quot;,&quot;8&quot; do the same in a finer stepping.</p>
+</li>
+<li>
+<p>&quot;!&quot; transfers the color thresholds to the data threshold.</p>
+</li>
+<li>
+<p>&quot;t&quot; adjusts the thresholds to minimum and maximum of the ROI for the currently active element. &quot;T&quot; does the same for all elements. As indicated above &quot;i&quot; resets the values to the initial values.</p>
+</li>
+<li>
+<p>&quot;u&quot; registers this element to act as a gating-mask for all other elements. Everything below lower and above upper data threshold (as displayed green and blue when range indicators are on, see &quot;o&quot;) is considered invalid and excluded from the analysis if the mask is activated (see &quot;U&quot; below). This influences the display as well as projections and histograms for at voxels at corresponding positions in <span style="font-weight: bold;">all elements</span>. At the same time an element marked as gate will be used together with the active element for mathematical operations such as &quot;+&quot;, &quot;-&quot; and &quot;*&quot;. When using gates, the color threshold is automatically transferred to the data threshold.</p>
+</li>
+<li>
+<p>&quot;U&quot; toggles the mask activity of the mask element on and off. The mask element (as set by &quot;u&quot;) may differs from the active element, which allows for a convenient on/off toggle e.g. of an intensity mask on lifetime data (channel 1 = intensity, channel 2 = fluorescence lifetime tau-phase).</p>
+</li>
+<li>
+<p>&quot;D&quot; deletes the currently active element</p>
+</li>
+<li>
+<p>&quot;q&quot; in the element window (lower right corner) toggles between spectral plot display, display of multiple marker traces (the X-axis is determined by the Track direction) and colorbars with the multiple elements.</p>
+</li>
+<li>
+<p>&quot;n&quot; in the element window (lower right corner) toggles between a normalized and non-normalized display of multiple spectra</p>
+</li>
+<li>
+<p>&quot;s&quot; pressed in the spectral display spawns a bigger separate window with the spectral display. This also frees some space for the display of textual information. By closing the seperate window, it will be inserted back into place.</p>
+</li>
+<li>
+<p>&quot;O&quot; pressed in the spectral display window will toggle the logarithmic display in this window.</p>
+</li>
+<li>
+<p>&quot;1&quot;-&quot;4&quot; and &quot;5&quot;-&quot;8&quot; will contrast enhance the spectral plot, if pressed in the spectral display window.</p>
+</li>
+<li>
+<p>&quot;_&quot; is a useful tool to adjust the backround level of  an image to zero. The offset will be adjusted such, that the mean of the actual ROI in the current element will be zero.</p>
+</li>
+</ul>
+
+    </section>
+  </article>
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2024 Rainer Heintzmann, Felix Wechsler. <br>Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a><br>
+<a href="https://www.leibniz-ipht.de/en/imprint/" rel="nofollow">Imprint</a>
+</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

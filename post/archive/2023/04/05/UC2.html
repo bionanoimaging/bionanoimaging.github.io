@@ -1,0 +1,353 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>UC2 - You.See.Too. A modular toolbox for microscopy - Bio-Nanoimaging in Jena</title>
+<meta name="description" content="UC2, also known as &quot;You. See. Too.&quot;, is an open-source optical toolbox designed for building microscopes. Unlike many modern microscopes used for biological imaging, UC2 is not a black box and allows users to understand its operating principle. Additionally, UC2 is low-cost, 3D-printed, and modular, making it accessible to a wide range of users, including students, educators, and researchers. UC2 has been used to create a brightfield microscope that monitors monocyte to macrophage cell differentiation for seven days at a cellular resolution level of 2 μm. The microscope is self-contained and incubator-enclosed, making it a versatile tool for biological imaging. In addition, UC2 can be easily adapted to create other types of microscopes, such as a light sheet fluorescence microscope for volumetric observations of a transgenic Zebrafish expressing green fluorescent protein (GFP). By making the content and comprehensive documentation publicly available, UC2 aims to establish an open standard in optics that facilitates interfacing with various complementary platforms. This means that the microscope can be easily replicated, modified, and extended by users who wish to adapt it to their specific needs. In summary, UC2 is a modular, open-source, and low-cost optical toolbox that allows users to build microscopes for a variety of applications. Its versatility, accessibility, and transparency make it a valuable tool for students, educators, and researchers in the field of biological imaging.  (E-L) Over the years the open-source microscopy toolbox called &quot;UC2&quot; has been adapted by research labs worldwide and used for various applications, including multi-color fluorescence imaging and single molecule localization microscopy for studying virus-host and bacteria-host interactions. A crucial next step is to connect the various different laboratory experiments to get more out of the acquired data. Selected References B Diederich, R Lachmann, S Carlstedt,, A versatile and customizable low-cost 3D-printed open standard for microscopic imaging, Nature communications, 2020; B Diederich, C Müllenbroich, N Vladimirov, CAD we share? Publishing reproducible microscope hardware, Nature Methods, 2022; J Hohlbein, B Diederich, B Marsikova, Open microscopy in the life sciences: quo vadis? Nature Methods, 2022 „Optik mit Klick: UC2-Modulbaukasten“, Make Magazin, Sabine Best, Benedict Diederich, Barbora Maršíková und David Zakoth; Step-by-step: A microfluidic (PDMS) staircase device for size sorting microparticles down to 25 µm using a 3D-printed mold, AH Velders, L van Lieshout, EAT Brienen, B Diederich - 2023">
+
+
+  <meta name="author" content="Dr. Benedict Diederich">
+  
+  <meta property="article:author" content="Dr. Benedict Diederich">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Bio-Nanoimaging in Jena">
+<meta property="og:title" content="UC2 - You.See.Too. A modular toolbox for microscopy">
+<meta property="og:url" content="https://bionanoimaging.github.io/nanoimaging.de/post/archive/2023/04/05/UC2.html">
+
+
+  <meta property="og:description" content="UC2, also known as &quot;You. See. Too.&quot;, is an open-source optical toolbox designed for building microscopes. Unlike many modern microscopes used for biological imaging, UC2 is not a black box and allows users to understand its operating principle. Additionally, UC2 is low-cost, 3D-printed, and modular, making it accessible to a wide range of users, including students, educators, and researchers. UC2 has been used to create a brightfield microscope that monitors monocyte to macrophage cell differentiation for seven days at a cellular resolution level of 2 μm. The microscope is self-contained and incubator-enclosed, making it a versatile tool for biological imaging. In addition, UC2 can be easily adapted to create other types of microscopes, such as a light sheet fluorescence microscope for volumetric observations of a transgenic Zebrafish expressing green fluorescent protein (GFP). By making the content and comprehensive documentation publicly available, UC2 aims to establish an open standard in optics that facilitates interfacing with various complementary platforms. This means that the microscope can be easily replicated, modified, and extended by users who wish to adapt it to their specific needs. In summary, UC2 is a modular, open-source, and low-cost optical toolbox that allows users to build microscopes for a variety of applications. Its versatility, accessibility, and transparency make it a valuable tool for students, educators, and researchers in the field of biological imaging.  (E-L) Over the years the open-source microscopy toolbox called &quot;UC2&quot; has been adapted by research labs worldwide and used for various applications, including multi-color fluorescence imaging and single molecule localization microscopy for studying virus-host and bacteria-host interactions. A crucial next step is to connect the various different laboratory experiments to get more out of the acquired data. Selected References B Diederich, R Lachmann, S Carlstedt,, A versatile and customizable low-cost 3D-printed open standard for microscopic imaging, Nature communications, 2020; B Diederich, C Müllenbroich, N Vladimirov, CAD we share? Publishing reproducible microscope hardware, Nature Methods, 2022; J Hohlbein, B Diederich, B Marsikova, Open microscopy in the life sciences: quo vadis? Nature Methods, 2022 „Optik mit Klick: UC2-Modulbaukasten“, Make Magazin, Sabine Best, Benedict Diederich, Barbora Maršíková und David Zakoth; Step-by-step: A microfluidic (PDMS) staircase device for size sorting microparticles down to 25 µm using a 3D-printed mold, AH Velders, L van Lieshout, EAT Brienen, B Diederich - 2023">
+
+
+
+  <meta property="og:image" content="https://bionanoimaging.github.io/nanoimaging.de/assets/posts/color-deconv.jpg">
+
+
+
+
+
+  <meta property="article:published_time" content="2023-04-05T17:16:06+00:00">
+
+
+
+
+
+
+<link rel="canonical" href="https://bionanoimaging.github.io/nanoimaging.de/post/archive/2023/04/05/UC2.html">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Rainer Heintzmann, Felix Wechsler",
+      "url": "https://bionanoimaging.github.io/nanoimaging.de/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/site-logo.jpg" alt="Bio-Nanoimaging in Jena"></a>
+        
+        <a class="site-title" href="/">
+          Bio-Nanoimaging in Jena
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/research/">RESEARCH OVERVIEW</a>
+            </li><li class="masthead__menu-item">
+              <a href="/team/">TEAM</a>
+            </li><li class="masthead__menu-item">
+              <a href="/publications/">PUBLICATIONS</a>
+            </li><li class="masthead__menu-item">
+              <a href="/teaching/">TEACHING</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/assets/images/people/diederich.jpg" alt="Dr. Benedict Diederich" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Dr. Benedict Diederich</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="UC2 - You.See.Too. A modular toolbox for microscopy">
+    <meta itemprop="description" content="UC2, also known as &quot;You. See. Too.&quot;, is an open-source optical toolbox designed for building microscopes. Unlike many modern microscopes used for biological imaging, UC2 is not a black box and allows users to understand its operating principle. Additionally, UC2 is low-cost, 3D-printed, and modular, making it accessible to a wide range of users, including students, educators, and researchers.UC2 has been used to create a brightfield microscope that monitors monocyte to macrophage cell differentiation for seven days at a cellular resolution level of 2 μm. The microscope is self-contained and incubator-enclosed, making it a versatile tool for biological imaging. In addition, UC2 can be easily adapted to create other types of microscopes, such as a light sheet fluorescence microscope for volumetric observations of a transgenic Zebrafish expressing green fluorescent protein (GFP).By making the content and comprehensive documentation publicly available, UC2 aims to establish an open standard in optics that facilitates interfacing with various complementary platforms. This means that the microscope can be easily replicated, modified, and extended by users who wish to adapt it to their specific needs.In summary, UC2 is a modular, open-source, and low-cost optical toolbox that allows users to build microscopes for a variety of applications. Its versatility, accessibility, and transparency make it a valuable tool for students, educators, and researchers in the field of biological imaging.(E-L) Over the years the open-source microscopy toolbox called &quot;UC2&quot; has been adapted by research labs worldwide and used for various applications, including multi-color fluorescence imaging and single molecule localization microscopy for studying virus-host and bacteria-host interactions. A crucial next step is to connect the various different laboratory experiments to get more out of the acquired data.Selected ReferencesB Diederich, R Lachmann, S Carlstedt,, A versatile and customizable low-cost 3D-printed open standard for microscopic imaging, Nature communications, 2020;B Diederich, C Müllenbroich, N Vladimirov, CAD we share? Publishing reproducible microscope hardware, Nature Methods, 2022;J Hohlbein, B Diederich, B Marsikova, Open microscopy in the life sciences: quo vadis? Nature Methods, 2022„Optik mit Klick: UC2-Modulbaukasten“, Make Magazin, Sabine Best, Benedict Diederich, Barbora Maršíková und David Zakoth;Step-by-step: A microfluidic (PDMS) staircase device for size sorting microparticles down to 25 µm using a 3D-printed mold, AH Velders, L van Lieshout, EAT Brienen, B Diederich - 2023">
+    <meta itemprop="datePublished" content="2023-04-05T17:16:06+00:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">UC2 - You.See.Too. A modular toolbox for microscopy
+</h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p>UC2, also known as &quot;You. See. Too.&quot;, is an open-source optical toolbox designed for building microscopes. Unlike many modern microscopes used for biological imaging, UC2 is not a black box and allows users to understand its operating principle. Additionally, UC2 is low-cost, 3D-printed, and modular, making it accessible to a wide range of users, including students, educators, and researchers.</p>
+<p>UC2 has been used to create a brightfield microscope that monitors monocyte to macrophage cell differentiation for seven days at a cellular resolution level of 2 μm. The microscope is self-contained and incubator-enclosed, making it a versatile tool for biological imaging. In addition, UC2 can be easily adapted to create other types of microscopes, such as a light sheet fluorescence microscope for volumetric observations of a transgenic Zebrafish expressing green fluorescent protein (GFP).</p>
+<p>By making the content and comprehensive documentation publicly available, UC2 aims to establish an open standard in optics that facilitates interfacing with various complementary platforms. This means that the microscope can be easily replicated, modified, and extended by users who wish to adapt it to their specific needs.</p>
+<p>In summary, UC2 is a modular, open-source, and low-cost optical toolbox that allows users to build microscopes for a variety of applications. Its versatility, accessibility, and transparency make it a valuable tool for students, educators, and researchers in the field of biological imaging.</p>
+<p><img src="/assets/images/uc2.png" alt="UC2 Worldwide" /></p>
+<p><em>(E-L) Over the years the open-source microscopy toolbox called &quot;UC2&quot; has been adapted by research labs worldwide and used for various applications, including multi-color fluorescence imaging and single molecule localization microscopy for studying virus-host and bacteria-host interactions. A crucial next step is to connect the various different laboratory experiments to get more out of the acquired data.</em></p>
+<h2 id="selected-references">Selected References</h2>
+<pre><code>B Diederich, R Lachmann, S Carlstedt,, A versatile and customizable low-cost 3D-printed open standard for microscopic imaging, Nature communications, 2020;
+B Diederich, C Müllenbroich, N Vladimirov, CAD we share? Publishing reproducible microscope hardware, Nature Methods, 2022;
+J Hohlbein, B Diederich, B Marsikova, Open microscopy in the life sciences: quo vadis? Nature Methods, 2022
+„Optik mit Klick: UC2-Modulbaukasten“, Make Magazin, Sabine Best, Benedict Diederich, Barbora Maršíková und David Zakoth;
+Step-by-step: A microfluidic (PDMS) staircase device for size sorting microparticles down to 25 µm using a 3D-printed mold, AH Velders, L van Lieshout, EAT Brienen, B Diederich - 2023
+</code></pre>
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2023-04-05T17:16:06+00:00">April 5, 2023</time></p>
+
+
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/post/archive/2022/02/17/DeconvOptim.html" class="pagination--pager" title="DeconvOptim.jl
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2024 Rainer Heintzmann, Felix Wechsler. <br>Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a><br>
+<a href="https://www.leibniz-ipht.de/en/imprint/" rel="nofollow">Imprint</a>
+</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

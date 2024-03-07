@@ -1,0 +1,286 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Bio-Nanoimaging Group - Bio-Nanoimaging in Jena</title>
+<meta name="description" content="Webpage of the Nanoimaging group affiliated with the Leibniz Institute of  Photonic Technology and the Friedrich Schiller University of Jena.">
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Bio-Nanoimaging in Jena">
+<meta property="og:title" content="Bio-Nanoimaging Group">
+<meta property="og:url" content="https://bionanoimaging.github.io/nanoimaging.de/View5D/View5DasMatlab.html">
+
+
+  <meta property="og:description" content="Webpage of the Nanoimaging group affiliated with the Leibniz Institute of  Photonic Technology and the Friedrich Schiller University of Jena.">
+
+
+
+  <meta property="og:image" content="https://bionanoimaging.github.io/nanoimaging.de/assets/images/banner.jpg">
+
+
+
+
+
+
+
+
+
+
+<link rel="canonical" href="https://bionanoimaging.github.io/nanoimaging.de/View5D/View5DasMatlab.html">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Rainer Heintzmann, Felix Wechsler",
+      "url": "https://bionanoimaging.github.io/nanoimaging.de/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--splash">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/site-logo.jpg" alt="Bio-Nanoimaging in Jena"></a>
+        
+        <a class="site-title" href="/">
+          Bio-Nanoimaging in Jena
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/research/">RESEARCH OVERVIEW</a>
+            </li><li class="masthead__menu-item">
+              <a href="/team/">TEAM</a>
+            </li><li class="masthead__menu-item">
+              <a href="/publications/">PUBLICATIONS</a>
+            </li><li class="masthead__menu-item">
+              <a href="/teaching/">TEACHING</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style=" background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/assets/images/banner.jpg');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          Bio-Nanoimaging Group
+
+        
+      </h1>
+      
+      
+
+
+      
+      
+    </div>
+  
+  
+</div>
+
+
+
+<div id="main" role="main">
+  <article class="splash" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Bio-Nanoimaging Group">
+    
+    
+    
+
+    <section class="page__content" itemprop="text">
+      <br>
+
+    
+    
+      <h1 id="view5d-as-applet-within-matlab">View5D as applet within Matlab</h1>
+<p>View5D can be easily integrated into MATLAB using the applet version of View5D. Since recently, MATLAB versions support Java, marker data can be conveniently im- and exported from and to MATLAB.</p>
+<p>To install, copy the java archieve View5D.jar into the &quot;java/jar/toolbox/&quot; subfolder of your MARLAB installation. To make this file visible to MATLAB add the following line to the file &quot;$matlabroot/toolbox/local/classpath.txt&quot; :<br />
+$matlabroot/java/jar/toolbox/View5D.jar</p>
+<p>In the class View5D the function</p>
+<ul>
+<li>Start5DViewer(byte [] data, int SizeX, int SizeY, int SizeZ, int Elements, int Times)</li>
+</ul>
+<p>and similar functions for float[], double[], complex[], short[], and int[] as datatypes generate a new viewer. These functions return an object of type &quot;View5D&quot;, which should be stored as a MATLAB variable (e.g. myviewer1=View5D.Start5DViewer(mybytes, mysizeX,mysizeY,mysizeZ,myelems,mytimes) ). This can then be used to import and export markers to/from this viewer:</p>
+<ul>
+<li>&quot;myviewer1.ExportMarkers()&quot;  will export a string containing the marker list as text.</li>
+<li>&quot;myviewer1.ExportMarkers(int ListNum)&quot; exports a matrix with the marker data of this marker-list number (type: double [][])</li>
+<li>&quot;myviewer1.ExportMarkerLists()&quot; exports a matrix with the information about all the markers. The first two columns are the listnumber and marker number within the list (type: double [][])</li>
+<li>&quot;myviewer1.ImportMarkers(float[][])&quot; imports the markers from a MATLAB matrix into the viewer. A new marker list will be generated with this command.</li>
+<li>&quot;myviewer1.ImportMarkerLists(float[][])&quot; imports a whole set of marker lists with their intedependencies from a MATLAB matrix into the viewer. If the lists exist, they will simply be updated, if they do not exist they will be generated.</li>
+<li>&quot;myviewer1.DeleteAllMarkerLists()&quot; deletes all existing marker lists. This avoids having to restart the viewer when the tracking data needs to be updated</li>
+<li>&quot;myviewer1.AddElement(byte [] data, int SizeX, int SizeY, int SizeZ, int Elements, int Times)&quot; adds another element (color channel) to into the viewer.</li>
+<li>&quot;myviewer1.AddElementC(double [] data, int SizeX, int SizeY, int SizeZ, int Elements, int Times)&quot; adds another element of datatype complex to into the viewer. The data should be alternating values of real and imaginary part.</li>
+<li>&quot;myviewer1.ProcessKeyMainWindow('g')&quot;  will send the key even &quot;g&quot; to the main window and execute its action (changing the colormap to green).</li>
+<li>&quot;myviewer1.ProcessKeyElementWindow('N')&quot;  will send the key even &quot;N&quot; to the element window and execute its action (promting the user to enter scaling data).</li>
+</ul>
+<p>One problem of the java-support of Matlab seems to be that matlab does not release the memory after a java application has finished. This memory is also not reused when the viewer is started a second time. As a consequence there will be a java out-of-memory error after having started the viewer a few times. One way to deal with it is to increase the total amount of memory allocated to java within matlab by putting a file named &quot;java.opts&quot; containing the line &quot;-Xmx900000000&quot; into your local matlab operation directory (e.g. /home/matlab). Another possibility is to use the appletviewer (under linux) and the script given below (for DIPimage only).</p>
+<h2 id="view5d-a-hrefhttpwwwphtntudelftnldiplibdipimagea-and-matlab">View5D, <a href="http://www.ph.tn.tudelft.nl/DIPlib/">DIPimage</a> and Matlab</h2>
+<p>View5D can be nicely called also in the &quot;extern&quot; mode if the <a href="http://www.ph.tn.tudelft.nl/DIPlib/">DIPimage</a> toolbox is installed by using the <a href="view5d.m">view5d.m</a> script. Place this script into the matlab .... toolboxes/dipimage/ directory and copy the View5D.jar file into your &quot;/tmp/&quot; directory. The program &quot;appletviewer&quot; which is part of the java development (not runtime) package by Sun can be useful. Alternatively any Web-browser capable of java can be used to look at the file &quot;/tmp/dipimage_view5d.html&quot; that will be generated when &quot;view5d( imagename, 0, 'extern') is called. To learn more try &quot;help view5d&quot; from within matlab after installing view5d.<br />
+With the distribution of View5D comes another useful file &quot;view5dAddElem(</p>
+<p>Below follows a detailed description of how to get it running under a Microsoft Windows system (curtesy of Stefan Schaefer):<br />
+The matlab script is based on assuming &quot;explorer&quot; in windows to be able to handle web-pages with java. This is not necessarily guaranteed and some Windows systems need the java-plugin as given below to be installed.</p>
+<p>Requirements: The following programs must be installed:</p>
+<ul>
+<li>
+<p>MATLAB</p>
+</li>
+<li>
+<p>DIPimage: download from <a href="http://www.diplib.org/">http://www.diplib.org/</a> and follow the instructions);<br />
+add  the path /DIPimage/dipimage to MATLAB:   Menu File -&gt; Set Path… -&gt; Add with Subfolders</p>
+</li>
+<li>
+<p>JAVA-Plugin<br />
+download “j2re-1_4_2_05-windows-i586-p.exe” e.g. from <a href="http://www.gwdg.de/samba/windows/j2re-1_4_2_05-windows-i586-p.exe">http://www.gwdg.de/samba/windows/j2re-1_4_2_05-windows-i586-p.exe</a></p>
+</li>
+<li>
+<p>view5D.m<br />
+download view5D.m from <a href="http://www.nanoimaging.de/View5D/view5d.m">http://www.nanoimaging.de/View5D/view5d.m</a><br />
+follow the instructions as given <a href="View5DasMatlab.html">above</a>.<br />
+view5D.m must be accessible to MATLAB (in the folder /DIPimage/dipimage with the path added to the MATLAB paths)</p>
+</li>
+<li>
+<p>view5dAddElem(aviewer, dataToDisplay)<br />
+Allows to add another channel into a viewer which is already running.</p>
+</li>
+<li>
+<p>View5D<br />
+download from <a href="http://www.nanoimaging.de/View5D/">http://www.nanoimaging.de/View5D/</a><br />
+create folder /View5D, e.g., and unpack it there<br />
+copy View5D.jar into MATLAB path (/MATLAB_6.0/java/jar/toolbox, e.g.)</p>
+</li>
+</ul>
+<p>Typing view5d(readim,0,’extern’) into the MATLAB command line should now launch the standard web browser with the viewer</p>
+<hr />
+<p><a href="View5D.html">Back to the View5D homepage</a><br />
+For hints and suggestions, contact the author under heintzmann at gmail dot com</p>
+
+    </section>
+  </article>
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2024 Rainer Heintzmann, Felix Wechsler. <br>Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a><br>
+<a href="https://www.leibniz-ipht.de/en/imprint/" rel="nofollow">Imprint</a>
+</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
