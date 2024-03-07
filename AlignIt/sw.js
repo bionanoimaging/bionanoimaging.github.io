@@ -5,7 +5,7 @@
 // Names of the two caches used in this version of the service worker.
 // Change to v2, etc. when you update any of the local resources, which will
 // in turn trigger the install event again.
-const PRECACHE = 'precache-v033';
+const PRECACHE = 'precache-v035';
 const RUNTIME = 'runtime';
 
 // The files to make available for offline use. make sure to add 
@@ -26,6 +26,7 @@ const filesToCache = [
   'js/lasershaders.obfuscated.js',
   'js/lens.obfuscated.js',
   'js/utils.obfuscated.js',
+  'js/panels.obfuscated.js',
   'img/icon.png',
   // 'https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.2/dat.gui.min.js',
   // 'https://cdn.babylonjs.com/earcut.min.js',
@@ -37,9 +38,11 @@ const filesToCache = [
   // 'https://cdn.babylonjs.com/gui/babylon.gui.min.js',
   'babylon/assets/Droid Sans_Regular.json',
   'babylon/assets/mrtk-fluent-backplate.glb',
+  'babylon/assets/mrtk-mrdl-blue-gradient.png',
   'babylon/assets/mrtk-mrdl-backplate-iridescence.png',
   'babylon/assets/profilesList.json',
   'babylon/assets/right.babylon',
+  'babylon/assets/left.babylon',
   'babylon/earcut.min.js',
   'babylon/babylon.js',
   'babylon/babylon.js.map',
