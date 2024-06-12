@@ -221,3 +221,11 @@ Alexander Knauss:
   avatar      : "/assets/images/people/knauss.jpg"
   active      : true
   role        : "PhD Candidate"
+
+Zihao Xiao:
+  name        : "Zihao Xiao"
+  bio         : "Master student working in holoMINFLUX"
+  avatar      : "assets/images/people/Zihao.jpg"
+  active      : true 
+  role        : "Master's Student"
+  
