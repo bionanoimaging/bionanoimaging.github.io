@@ -1,0 +1,122 @@
+{
+    "version": 1.0,
+    "number": "3",
+    "title": "Beam Collimation",
+    "steps": [
+        {
+            "type": "addComponent",
+            "component": "Laser",
+            "name": "Laser",
+            "rays": [1, 4],
+            "diameter": 0.3,
+            "position": [-6, 1]
+        },
+        {
+            "type": "addComponent",
+            "component": "Lens",
+            "name": "L1",
+            "position": [-4,1],
+            "rotation": 180,
+            "focus1": true,
+            "principle1": true,
+            "r1": 0.0,
+            "r2": 0.7,
+            "dof": ""
+        },
+        {
+            "type": "addComponent",
+            "component": "Lens",
+            "name": "L2",
+            "position": [-1,1],
+            "rotation": 0,
+            "r1": 0.0,
+            "r2": 0.7,
+            "focus1": true,
+            "principle1": true,
+            "limits": [[-2.5, -0.5]],
+            "dof": "X"
+        },
+        {
+            "type": "addComponent",
+            "component": "DualPinhole",
+            "name": "Colli-Launch",
+            "position": [0,1],
+            "diameter": 0.01,
+            "rotation": [0,0,0],
+            "launches": true,
+            "dof": ""
+        },
+        {
+            "type": "addComponent",
+            "component": "DualPinhole",
+            "name": "Colli-Check",
+            "position": [3,1],
+            "diameter": 0.02,
+            "dof": ""
+        },
+        {
+            "type": "addComponent",
+            "component": "Screen",
+            "name": "Test Screen",
+            "target": true,
+            "position": [5, 1],
+            "rotation": 0,
+            "success": {"Num": 2},
+            "dof": ""
+        },
+       {
+            "type": "task",
+            "instruction": "Collimate the laser by adjusting the expansion telescope passing both double-pinholes.",
+            "music": {
+                "link": "music/forest-with-small-river-birds-and-nature-field-recording-6735.mp3",
+                "credits": "Downloaded from pixabay.\nhttps://pixabay.com/sound-effects/search/forest-birds/"
+            },
+            "score": 100.0
+        },
+        {
+            "type": "removeComponent",
+            "name": "Colli-Check"
+        },
+        {
+            "type": "removeComponent",
+            "name": "Colli-Launch"
+        },
+        {
+            "type": "addComponent",
+            "component": "Lens",
+            "name": "Shear Plate",
+            "position": [2,1],
+            "rotation": [0,-45, 0],
+            "r1": 0,
+            "r2": 0,
+            "thickness": 0.15,
+            "trace_reflection": "true",
+            "wedge_lambda": 0.002,
+            "dof": ""
+        },
+        {
+            "type": "addComponent",
+            "component": "Screen",
+            "name": "Shear-Screen",
+            "position": [2, 0],
+            "rotation": 90,
+            "target": "line",
+            "success": {"Curv": 0.002},
+            "dof": ""
+        },
+        {
+            "type": "task",
+            "instruction": "Now use the shear-plate for fine-adjustment.\nArrange the fringes along the reference line",
+            "score": 100.0
+        },
+        {
+            "type": "task",
+            "instruction": "Congratulations! You completed this level!\nPress Done for Lvl 2.",
+            "narration": {
+                "link": "narrations/lvl1t6.m4a",
+                "credits": "Rainer Heintzmann"
+            },
+            "final": true
+        }
+   ]
+}
