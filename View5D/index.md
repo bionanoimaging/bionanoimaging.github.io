@@ -29,10 +29,12 @@ The program View5D interactively displays of up to 5 dimensional volumetric data
 
 Multi-dimensional data frequently arises in confocal microscopy and medical imaging applications. The applet can be tested by clicking the links below, however a Java runtime environment (preferably from Sun Microsystems) must have been installed and Java activated in the preferences of your browser!
 
-Here are some [example screen shots](examples/index.html) and the applet version can be [tested](examples/index.html#Testing) or the [interactive online tutorials](View5DOnlineTutorials.html) can be used.  
-There is also a [reference of all commands](View5DCommandReference.html).
-Most of its commands are accessible via context menus (right mouse button in Windows) and each command has a hot-key as stated in the menu (be careful hitting keys!). The mouse wheel allows to zoom and shift-mouse-wheel modifies the gamma-curve of this color channel (shift-click mouse wheel resets gamma to one).
+Here are some [example screen shots](examples/index.html). 
+The applet version can be [tested](examples/index.html#Testing) and the [interactive online tutorials](View5DOnlineTutorials.html) are not working properly any more, since current browsers do not support applets.  
+There is also a [reference of all commands](View5DCommandReference.html) and a [cheat-sheet](CheatSheet.pdf).
 
+Most of its commands are accessible via context menus (right mouse button in Windows) and each command has a hot-key as stated in the menu (be careful hitting keys!). The mouse wheel allows to zoom and shift-mouse-wheel modifies the gamma-curve of this color channel (shift-click of the mouse wheel resets gamma to one).
+Note that divergin colormaps have appropriately adjusted gamma and log behaviour to keept the zero at the center of the colormap.
 
 ### Main features of View5D are: <img src="examples/MRIOvUn.jpg" title="" alt="Example displaying an MRI dataset" style="border: 0px solid ; width: 260px; height: 274px;" align ="right" />
 *   Simultaneous display of 3 orthogonal slices: axial (XY), sigittal (YZ) and frontal (XZ). Continuous update of the slicing positions by mouse clicks /drags.
