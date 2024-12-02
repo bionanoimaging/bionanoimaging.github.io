@@ -30,8 +30,8 @@ The program View5D interactively displays of up to 5 dimensional volumetric data
 Multi-dimensional data frequently arises in confocal microscopy and medical imaging applications. The applet can be tested by clicking the links below, however a Java runtime environment (preferably from Sun Microsystems) must have been installed and Java activated in the preferences of your browser!
 
 Here are some [example screen shots](examples/index.html). 
-The applet version can be [tested](examples/index.html#Testing) and the [interactive online tutorials](View5DOnlineTutorials.html) are not working properly any more, since current browsers do not support applets.  
-There is also a [reference of all commands](View5DCommandReference.html) and a [cheat-sheet](CheatSheet.pdf).
+The applet version can be [tested](examples/index.html#Testing) and the [interactive online tutorials](View5DOnlineTutorials.html) are not working properly any more, since current browsers do not support applets.
+There is also a [reference of all commands](View5DCommandReference.html) and a [cheat-sheet](CheatSheet.pdf). A YouTube playlist with a few explanatory videos is found [here}(https://www.youtube.com/watch?v=fqa82MmJlAA&list=PL3LueK3ij6Wm2VjaaibNdulxFvA6VhVRv).
 
 Most of its commands are accessible via context menus (right mouse button in Windows) and each command has a hot-key as stated in the menu (be careful hitting keys!). The mouse wheel allows to zoom and shift-mouse-wheel modifies the gamma-curve of this color channel (shift-click of the mouse wheel resets gamma to one).
 Note that divergin colormaps have appropriately adjusted gamma and log behaviour to keept the zero at the center of the colormap.
