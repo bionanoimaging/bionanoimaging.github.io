@@ -155,7 +155,7 @@ Fengjiao Ma:
 David McFadden:
   name        : "David McFadden"
   bio         : "PhD student working on quantum-enhanced imaging."
-  avatar      : "/assets/images/people/mcfadden.jpg"
+  avatar      : "/assets/images/people/dummy.jpg"
   active      : true 
   role        : "PhD Candidate"
 
@@ -205,7 +205,7 @@ Subham Adak:
   name        : "Subham Adak"
   bio         : ""
   avatar      : "/assets/images/people/adak.jpg"
-  active      : true 
+  active      : false 
   role        : "Master's Student"
 
 Sobhi Saeed:
@@ -225,7 +225,7 @@ Alexander Knauss:
 Zihao Xiao:
   name        : "Zihao Xiao"
   bio         : "Master student working in holoMINFLUX"
-  avatar      : "assets/images/people/Zihao.jpg"
+  avatar      : "/assets/images/people/Zihao.jpg"
   active      : true 
   role        : "Master's Student"
   
