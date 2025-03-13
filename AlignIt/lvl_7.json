@@ -1,0 +1,84 @@
+{
+    "version": 1.0,
+    "number": "7",
+    "title": "Mach Zehnder Interf.",
+    "steps": [
+        {
+            "type": "addComponent",
+            "component": "Laser",
+            "name": "Laser",
+            "rays": [2,4],
+            "diameter": 0.25,
+            "position": [-6,-2],
+            "rotation": 0,
+            "dof": ""
+        },
+        {
+            "type": "addComponent",
+            "component": "Lens",
+            "name": "Planconvex L2",
+            "position": [-3,-2],
+            "rotation": 0,
+            "r1": -10.0,
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component": "Beamsplitter",
+            "name": "Beamsplitter 1",
+            "position": [-2,-2],
+            "rotation": -45,
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component": "Mirror",
+            "name": "Mirror 1",
+            "position": [-2,0],
+            "rotation": -45.0005,
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component": "Mirror",
+            "name": "Mirror 2",
+            "position": [0,-2],
+            "rotation": 135,
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component": "Beamsplitter",
+            "name": "Beamsplitter 1",
+            "position": [0,0],
+            "rotation": -45,
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component": "Screen",
+            "name": "Screen",
+            "target": false,
+            "position": [2,0]
+        },
+        {
+            "type": "task",
+            "instruction": "A Mach-Zehnder Interferometer to explore\ninterference effects (only in the full version!)",
+            "success": {"PosX": 0.01, "PosY": 0.01, "Curv": 0.01, "RelAng": 0.01},
+            "music": {
+                "link": "music/forest-with-small-river-birds-and-nature-field-recording-6735.mp3",
+                "credits": "Downloaded from pixabay.\nhttps://pixabay.com/sound-effects/search/forest-birds/"
+            },
+            "score": 100.0
+        },
+        {
+            "type": "task",
+            "instruction": "Congratulations! You completed level 2\nPress Done for Lvl 3.",
+            "narration": {
+                "link": "narrations/lvl2t7.m4a",
+                "credits": "Rainer Heintzmann"
+            },
+            "final": true
+        }
+   ]
+}
