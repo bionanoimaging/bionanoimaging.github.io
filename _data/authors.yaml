@@ -17,7 +17,7 @@ Rainer Heintzmann:
 
 Ondrej Stranik:
   name        : "Dr. Ondrej Stranik"
-  bio         : "Focus on a label-free imaging, hyperspectral imaging and 2-photon 3D print"
+  bio         : "label-free imaging, hyperspectral imaging and 2-photon 3D-print"
   avatar      : "/assets/images/people/stranik.jpg"
   active      : true 
   role        : "PostDoc"
@@ -92,14 +92,14 @@ Yubraj Gupta:
   name        : "Yubraj Gupta"
   bio         : "PhD student focusing in microscope 3D visualization" 
   avatar      : "/assets/images/people/IMG_Yuvi.jpg"
-  active      : true
+  active      : false
   role        : "PhD Candidate"
 
 Dina Ratsimandresi:
   name        : "Dina Ratsimandresi"
   bio         : "" 
   avatar      : "/assets/images/people/dina.jpg"
-  active      : true
+  active      : false
   role        : "PhD Candidate"
 
 
@@ -177,7 +177,7 @@ Mohammad Soltaninezhad:
   name        : "Mohammad Soltaninezhad"
   bio         : " Polarization Microscopy + Python "
   avatar      : "/assets/images/people/Soltaninezhad.jpeg"
-  active      : true 
+  active      : false
   role        : "PhD Candidate"
 
 Yutong Wang:
@@ -228,4 +228,25 @@ Zihao Xiao:
   avatar      : "/assets/images/people/Zihao.jpg"
   active      : true 
   role        : "Master's Student"
-  
+
+Mariia Kurilenko:
+  name        : "Mariia Kurilenko"
+  bio         : "Master student working on Raman 3D imaging"
+  avatar      : "/assets/images/people/dummy.jpg"
+  active      : true 
+  role        : "Master's Student"
+
+Felix Kreter:
+  name        : "Felix Kreter"
+  bio         : "Master student working on UZ Interferometer"
+  avatar      : "/assets/images/people/dummy.jpg"
+  active      : true 
+  role        : "Master's Student"
+
+Morteza Babazadeh Shareh:
+  name        : "Morteza Babazadeh Shareh"
+  bio         : "PostDoc working on pandemic modeling"
+  avatar      : "/assets/images/people/MortezaBabazadeh.jpg"
+  active      : true 
+  role        : "PostDoc"
+

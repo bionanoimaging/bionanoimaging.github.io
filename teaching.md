@@ -9,8 +9,9 @@ header:
 
 Our lab regularly offers courses about microscopy and image processing in microscopy.
 
+## Previous years
 
-## Winter Term 2022/23 
+### Winter Term 2022/23 
 <details>
     <summary>Click to expand!</summary>
 
@@ -21,16 +22,14 @@ Our lab regularly offers courses about microscopy and image processing in micros
 * Register via Friedolin for both the course and the exercise and you should be able to see the Moodle course.
 * [GitHub repository](https://github.com/bionanoimaging/Image-Processing-In-Microscopy-2022-2023) contains the exercises
 
+</details>
+
 
 #### Computational Imaging
 * Tuesday 12:00PM in PC Pool at ACP
 * Teachers: Lars Loetgering, Rainer Heintzmann
 * Register via Friedolin for both the course and the exercise and you should be able to see the Moodle course.
 
-
-</details>
-
-## Previous years
 
 ### Summer Term 2022
 <details>

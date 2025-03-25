@@ -9,5 +9,5 @@ A separate list of Rainer Heintzmann can be found on [Google Scholar](https://sc
 An additional list of publication in the group "Microscopy" at the Leibniz-IPHT can be found in this [database](https://www.leibniz-ipht.de/de/abteilungen/mikroskopie/publikationen).
 
 
-## 2022
+
 

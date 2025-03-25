@@ -1,5 +1,7 @@
 main:
-  - title: "RESEARCH OVERVIEW"
+  - title: "NEWS"
+    url: /news/
+  - title: "RESEARCH"
     url: /research/
   - title: "TEAM"
     url: /team/
