@@ -27,20 +27,20 @@ Ondrej Stranik:
   avatar      : "/assets/images/people/stranik.jpg"
   active      : true 
   role        : "PostDoc"
-  links:
-    - label: "Daniela Website"
-      icon: "fas fa-fw fa-link"
-      url: "http://www.biopolim.de"
 
 Daniela Täuber:
   name        : "Dr. Daniela Täuber"
-  bio         : "" 
+  bio         : "Heads a team working on polarization-resolved fluorescence microscopy and nanoscale infrared spectroscopic imaging" 
   avatar      : "/assets/images/people/taeuber.jpg"
   active      : true 
   role        : "PostDoc"
   links:
-      -label: ""
-        url: "https://www.leibniz-ipht.de/de/abteilungen/mikroskopie/"
+    - label: "Research Website"
+      icon: "fas fa-fw fa-link"
+      url: "http://www.biopolim.de"
+    - label: "ResearchGate"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.researchgate.net/profile/Daniela-Taeuber"
 
 René Lachmann:
   name        : "Dr. René Lachmann"
@@ -137,7 +137,7 @@ Yunhao Mei:
   name        : "Yunhao Mei"
   bio         : "Master Student working on 2D-POLIM"
   avatar      : "/assets/images/people/dummy.jpg"
-  active      : true 
+  active      : false 
   role        : "Master Student"
 
 Hossein Zarei-Oshtolagh:
@@ -242,7 +242,7 @@ Mariia Kurilenko:
   name        : "Mariia Kurilenko"
   bio         : "Master student working on Raman 3D imaging"
   avatar      : "/assets/images/people/dummy.jpg"
-  active      : true 
+  active      : false 
   role        : "Master's Student"
 
 Felix Kreter:
