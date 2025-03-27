@@ -22,9 +22,9 @@ Ondrej Stranik:
   active      : true 
   role        : "PostDoc"
   links:
-    - label: "Website"
+    - label: "Daniela Website"
       icon: "fas fa-fw fa-link"
-      url: "https://www.leibniz-ipht.de/de/author/372/"
+      url: "http://www.biopolim.de"
 
 Daniela Täuber:
   name        : "Dr. Daniela Täuber"
@@ -32,6 +32,9 @@ Daniela Täuber:
   avatar      : "/assets/images/people/taeuber.jpg"
   active      : true 
   role        : "PostDoc"
+  links:
+      -label: ""
+        url: "https://www.leibniz-ipht.de/de/abteilungen/mikroskopie/"
 
 René Lachmann:
   name        : "Dr. René Lachmann"
