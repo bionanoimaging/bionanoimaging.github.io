@@ -1,0 +1,43 @@
+{
+    "version": 1.0,
+    "number": "10",
+    "title": "Test for laser positioning",
+    "steps": [
+        {
+            "type": "addComponent",
+            "component": "Laser",
+            "name": "Laser",
+            "rays": [1, 4],
+            "diameter": 0.25,
+            "position": [-6, 1]
+        },
+        {
+            "type": "addComponent",
+            "component": "Lens",
+            "name": "Shear Plate",
+            "position": [2,1],
+            "rotation": [0,-45,0],
+            "r1": 0,
+            "r2": 0,
+            "thickness": 0.2,
+            "trace_reflection": "true",
+            "wedge_angle": 0.0018,
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component": "Screen",
+            "name": "Shear-Screen",
+            "position": [2, -2],
+            "rotation": 90,
+            "target": "line",
+            "success": {"Num": 2},
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "task",
+            "instruction": "You did it and finished this level!",
+            "score": 100.0
+        }
+   ]
+}

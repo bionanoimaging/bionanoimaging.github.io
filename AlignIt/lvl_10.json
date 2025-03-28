@@ -1,0 +1,77 @@
+{
+    "version": 1.0,
+    "number": "10",
+    "title": "Back-Reflections",
+    "steps": [
+        {
+            "type": "addComponent",
+            "component": "Laser",
+            "name": "Laser",
+            "rays": [2,4],
+            "diameter": 0.02,
+            "position": [-5,0]
+        },
+        {
+            "type": "addComponent",
+            "component": "Pinhole",
+            "name": "P0",
+            "position": [-2,0],
+            "rotation": 180,
+            "diameter": 0.09
+        },
+        {
+            "type": "addComponent", "component": "Lens",
+            "name": "L1",
+            "position": [0,0.02],
+            "height": 1.02, 
+            "rotation": 2,
+            "r1": 0.0,
+            "r2": 2.0,
+            "dof": "ZYyz",
+            "trace_reflection": "true"
+        },
+        {
+            "type": "addComponent",
+            "component": "Screen",
+            "name": "Screen",
+            "position": [3,0],
+            "rotation": 0,
+            "target": false,
+            "dof": "YZ",
+            "success": {"PosX": 0.002, "PosY": 0.002, "Std": 1.0, "Num": 15},
+            "limits": [[],[-0.4,0.4],[0.5,1.4]]
+        },
+        {
+            "type": "task",
+            "instruction": "Adjust the back reflections to both be centered sending light back towards the laser.",
+            "score": 100.0,
+            "music": {
+                "link": "music/forest-with-small-river-birds-and-nature-field-recording-6735.mp3",
+                "credits": "Downloaded from pixabay.\nhttps://pixabay.com/sound-effects/search/forest-birds/"
+            }
+        },
+        {
+            "type": "modifyComponent", 
+            "name": "L1",
+            "r1": 1.0,
+            "r2": 0.0
+        },
+       {
+            "type": "task",
+            "instruction": "Congratulations! You completed level 2\nPress Done for Lvl 3.",
+            "narration": {
+                "link": "narrations/lvl2t7.m4a",
+                "credits": "Rainer Heintzmann"
+            }
+        },
+        {
+            "type": "task",
+            "instruction": "Congratulations! You completed level 2\nPress Done for Lvl 3.",
+            "narration": {
+                "link": "narrations/lvl2t7.m4a",
+                "credits": "Rainer Heintzmann"
+            },
+            "final": true
+        }
+   ]
+}
