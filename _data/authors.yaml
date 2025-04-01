@@ -132,6 +132,10 @@ Maryam Ali:
   avatar      : "/assets/images/people/Maryam_Ali.jpg"
   active      : true 
   role        : "PhD Candidate"
+  links:
+    - label: "LinkedIn"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.linkedin.com/in/maryam-ali-71414191/"
 
 Yunhao Mei:
   name        : "Yunhao Mei"
