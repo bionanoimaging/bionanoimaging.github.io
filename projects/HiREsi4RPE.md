@@ -1,7 +1,6 @@
 ---
 layout: single
-title:  "Characterization of pathogenic oraganella retinal pigment epithelial cells using high-resolution fluorescence lifetime and 
-infrared spectroscopy imaging (HiResi4RPE)"
+title:  "Characterization of pathogenic oraganella retinal pigment epithelial cells using high-resolution fluorescence lifetime and infrared spectroscopy imaging (HiResi4RPE)"
 date:   2025-04-01
 author: Maryam Ali
 author_profile: true
@@ -17,5 +16,5 @@ Moreover, chemical characterization of these cells will be investigated using mi
 combines nanoscaled spatial resolution with localized spectroscopy.  
 These results will be compared with clinical investigations.
 
-This project is supported by a funded project by the by German Reseach Foundation (DFG) that aims to examine the pathogenic inception of this disease [HiResi4RPE 542825796] (https://gepris.dfg.de/gepris/projekt/542825796?context=projekt&task=showDetail&id=542825796&).
+This project is supported by a funded project by the by German Reseach Foundation (DFG) that aims to examine the pathogenic inception of this disease [HiResi4RPE 542825796](https://gepris.dfg.de/gepris/projekt/542825796?context=projekt&task=showDetail&id=542825796&).
 

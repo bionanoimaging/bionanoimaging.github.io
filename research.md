@@ -13,6 +13,7 @@ Also see this [Software page](/software) for details on our developed packages.
 * [Snapshot hyperspectral imaging for plasmon biosensors](/projects/plasmonSensing)
 * [Raman 3D imaging of cells](/projects/3DRaman)
 * [UC2](/projects/UC2)
+* [Characterization of retinal cells](/projects/HiREsi4RPE)
 
 
 ## Past Projects
