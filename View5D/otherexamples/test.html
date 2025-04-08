@@ -1,0 +1,45 @@
+<html>
+  <head>
+      <! -- @(#)beri.html
+      *
+      *  by Rainer Heintzmann
+      *
+      *-->
+      <title>3D Viewer</title>
+  </head>
+  <body>
+      <h1>3D Viewer</h1>
+	  Java-Applet by Rainer Heintzmann
+      <p>
+      Image Data : Painted Chromosome Terrirories in a Human Female Cell
+      <p>
+      Laser Scanning Datastack by Peter Edelmann
+      <hr>
+	 please wait for image data to be loaded (THIS MIGHT TAKE SOME TIME) !
+	 <p>
+	 There seems to be a problem loading the 3d image data from the net with some java runtime machines (browsers). 
+      <applet archive=View3D.jar code=View3D.class width=800 height=525>
+      <param name=file value=file:test.raw>
+      <param name=sizex value=10>
+      <param name=sizey value=10>
+      <param name=sizez value=10>
+      <param name=elements value=2>
+      <param name=bytes value=-1>
+      <param name=bits value=32>
+      <param name=scalex value=5>
+      <param name=scaley value=1>
+      <param name=scalez value=1>
+      <param name=scalev1 value=10>
+      <param name=scalev2 value=0.1>
+      <param name=units value=nm>
+      <param name=unitsv1 value=Intensity>
+      <param name=unitsv2 value=Anisotropy>
+
+
+	alt="Your browser understands the &lt;APPLET&gt; tag but isn't running the applet, for some reason."
+	Your browser is completely ignoring the &lt;APPLET&gt; tag!
+      </applet>
+      <hr>
+  </body>
+</html>
+
