@@ -28,6 +28,15 @@ Ondrej Stranik:
   active      : true 
   role        : "PostDoc"
 
+
+Georg Bergner:
+  name        : "PD Dr. Georg Berger"
+  bio         : ""
+  avatar      : "/assets/images/people/dummy.jpg"
+  active      : true 
+  role        : "PostDoc"
+
+
 Daniela Täuber:
   name        : "Dr. Daniela Täuber"
   bio         : "Heads a team working on polarization-resolved fluorescence microscopy and nanoscale infrared spectroscopic imaging" 
