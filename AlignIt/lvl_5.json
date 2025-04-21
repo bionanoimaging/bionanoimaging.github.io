@@ -1,8 +1,60 @@
 {
     "version": 1.0,
     "number": "5",
-    "title": "Beam Expansion",
+    "title": "Fibre Coupling",
     "steps": [
+        {
+            "type": "addComponent",
+            "component": "FibreCouple",
+            "name": "FibreCouple 1",
+            "position": [-1.0, 1.1],
+            "diameter": 0.0005,
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component": "FibreCouple",
+            "name": "FibreCouple 2",
+            "position": [1, 0],
+            "diameter": 0.0005,
+            "rotation": 180,
+            "dof": ""
+        },
+        {
+            "type": "addComponent",
+            "component": "Laser",
+            "name": "Laser",
+            "rays": [2,4],
+            "position": [-4,1],
+            "rotation": 0,
+            "dof": ""
+        },
+        {
+            "type": "addComponent",
+            "component": "Lens",
+            "name": "Lens 1",
+            "position": [-3,1],
+            "rotation": 0,
+            "r1": 1.0,
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component": "Screen",
+            "name": "Screen",
+            "position": [3,0],
+            "rotation": 0
+        },
+        {
+            "type": "task",
+            "instruction": "Couple the laser into the fibre.",
+            "success": {"Std": 0.01, "PosX": 0.01, "PosY": 0.01},
+            "score": 100.0
+        },
+        {
+            "type": "removeComponent",
+            "name": ["Lens 1","FibreCouple 1","FibreCouple 2","Screen", "Laser"]
+        },
         {
             "type": "addComponent",
             "component": "Laser",
