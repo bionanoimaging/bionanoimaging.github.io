@@ -9,6 +9,7 @@
             "name": "FibreCouple 1",
             "position": [-1.0, 1.1],
             "diameter": 0.0005,
+            "NA": 0.05,
             "dof": "XYZxyz"
         },
         {
@@ -18,7 +19,8 @@
             "position": [1, 0],
             "diameter": 0.0005,
             "rotation": 180,
-            "dof": ""
+            "NA": 0.05,
+            "dof": "XYZxyz"
         },
         {
             "type": "addComponent",
@@ -27,15 +29,7 @@
             "rays": [2,4],
             "position": [-4,1],
             "rotation": 0,
-            "dof": ""
-        },
-        {
-            "type": "addComponent",
-            "component": "Lens",
-            "name": "Lens 1",
-            "position": [-3,1],
-            "rotation": 0,
-            "r1": 1.0,
+            "divergence": -0.05,
             "dof": "XYZxyz"
         },
         {
@@ -48,12 +42,16 @@
         {
             "type": "task",
             "instruction": "Couple the laser into the fibre.",
+            "music": {
+                "link": "music/forest-with-small-river-birds-and-nature-field-recording-6735.mp3",
+                "credits": "Downloaded from pixabay.\nhttps://pixabay.com/sound-effects/search/forest-birds/"
+            },
             "success": {"Std": 0.01, "PosX": 0.01, "PosY": 0.01},
             "score": 100.0
         },
         {
             "type": "removeComponent",
-            "name": ["Lens 1","FibreCouple 1","FibreCouple 2","Screen", "Laser"]
+            "name": ["FibreCouple 1","FibreCouple 2","Screen", "Laser"]
         },
         {
             "type": "addComponent",
