@@ -17,8 +17,4 @@ We are now able to follow binding kinetics of protein (BSA) on more than 50 sens
 
 *Measurement of adsorption/desorption of a protein monolayer using the integral field camera (IFC) system. A solution of bovine serum albumin (BSA) and dextran sulfate flows over the plasmonic chip, leading to the formation of alternating monolayers on its surface. At the end of the process, the layers are removed by the flow of a basic solution (NaOH). The change in signal caused by adsorption at each individual spot, recorded by the IFC system, is shown in the graph. The curves from each spot exhibit distinct steps, well above the noise level, during protein layer adsorption. The spatial distribution of the signal at each spot after the adsorption of the first BSA layer is shown in the image on the right (signal change from the blue to red line—graph on the left). This distribution is overlaid with the image of the plasmonic chip*
 
-## Selected References
 
-```
-
-```

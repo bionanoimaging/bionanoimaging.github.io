@@ -17,4 +17,10 @@ In Raman imaging, we prioritized high spectral resolution with moderate spatial 
 
 *Left: 3D image of different subcellular components of a cell. Right top: 2D map (horizontal cut) of different subcellular components of a cell (scalebar 5 mm) Right bottom: : corresponding average Raman spectral*
 
+## Selected References
 
+```
+Kurilenko, M. Integral field Raman spectroscopy, MSc. Thesis, FSU Jena, 2024
+Valverde, E. A. Z. Light Sheet Integral Field Raman Microspectroscopy, PhD. Thesis, FSU Jena, 2022
+
+```
