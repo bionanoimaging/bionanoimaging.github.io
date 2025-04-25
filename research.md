@@ -14,6 +14,6 @@ Also see this [Software page](/software) for details on our developed packages.
 * [Raman 3D imaging of cells](/projects/3DRaman)
 * [UC2](/projects/UC2)
 * [Characterization of retinal cells](/projects/HiREsi4RPE)
-* [3D printed dual wavefront sensor](/project/wavefrontSensor)
+* [3D printed dual wavefront sensor](/projects/wavefrontSensor)
 * [Deconvolution toolbox](/projects/DeconvOptim)
 
