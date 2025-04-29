@@ -41,6 +41,7 @@
             "component": "DualPinhole",
             "name": "Colli-Launch",
             "position": [0,1],
+            "rays": [0, 1],
             "diameter": 0.01,
             "rotation": [0,0,0],
             "launches": true,
