@@ -21,13 +21,22 @@ Hosted still [here](https://bionanoimaging.github.io).
 ## A few notes for maintaining
 * Please check always locally if the webpage still builds!
 * For posts, generate a file in the same date format as [_posts/2022-02-17-DeconvOptim.md](_posts/2022-02-17-DeconvOptim.md). Data for posts belongs in [assets/posts/](assets/posts/). I would recommend to simply copy it.
-
+* Do not commit changes in the files _Gemfile_ and _Gemfile.lock_
 
 ## Hosting for Development
 Navigate to the folder and then call:
 ```
 bundle exec jekyll serve
 ```
+
+## Installation (window)
+
+Follow the instruction from [here](https://jekyllrb.com/docs/installation/windows/).
+if you have a problem starting the server comment following line from _Gemfile_
+```
+# Performance-booster for watching directories on Windows
+#gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
+``` 
 
 ## Installation (Linux)
 
