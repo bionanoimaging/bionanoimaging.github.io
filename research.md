@@ -17,5 +17,6 @@ Also see this [Software page](/software) for details on our developed packages.
 * [Characterization of retinal cells](/projects/HiREsi4RPE)
 * [3D printed dual wavefront sensor](/projects/wavefrontSensor)
 * [Lensless interferometric scattering microscopy](/projects/liSCAT)
+* [Smart inventory for optical laboratory](/projects/tiptoi)
 * [Deconvolution toolbox](/projects/DeconvOptim)
 
