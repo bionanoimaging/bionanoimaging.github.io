@@ -1,0 +1,153 @@
+{
+    "version": 1.0,
+    "number": "1",
+    "title": "Find the focus!",
+    "steps": [
+        {
+            "type": "addComponent", "component": "Laser", "name": "Laser",
+            "rays": [2,4],
+            "position": [-4,0],
+            "rotation": 0,
+            "dof": ""
+        },
+        {
+            "type": "addComponent", "component": "Lens", "name": "L1",
+            "position": [-2,0],
+            "rotation": 0,
+            "r1": 1.0,
+            "r2": 0.0,
+            "dof": "X",
+            "principle1": true,
+            "focus1": true,
+            "limits": [[-2.5,1]]
+        },
+        {
+            "type": "addComponent", "component": "Screen", "name": "S1",
+            "success": {"Std": 0.01},
+            "position": [2, 0.0],
+            "rotation": 0,
+            "dof": ""
+        },
+        {
+            "type": "addComponent",
+            "component": "PanelPost",
+            "name": "Panel Post",
+            "height": 2.2,
+            "position": [1, -1],
+            "rotation": 0,
+            "dof": ""
+        },
+        {
+            "type": "task",
+            "instruction": "Move L1 along the X-coordinate until\nthe beam is focussed on the screen. Grab the bottom pedestal.",
+            "score": 100.0,
+            "showplanes": false,
+            "music": {
+                "link": "music/Now+We+Ride+-+320bit.mp3", "credits": "Now We Ride by Alexander Nakarada | https://www.serpentsoundstudios.com\nCreative Commons CC BY 4.0, https://creativecommons.org/licenses/by/4.0/"
+            },
+            "narration": {
+                "link": "narrations/lvl1t1.m4a", "credits": "Rainer Heintzmann"
+            }
+        },
+        {
+            "type": "modifyComponent", "name": "L1",
+            "position": [-2,-1],
+            "dof": "XY",
+            "limits": [[-2.5,1],[-2.5,1],[0.5,1.4]]
+        },
+        {
+            "type": "modifyComponent", "name": "S1",
+            "success": {"_Std": 0.005, "PosX": 0.01}
+        },
+        {
+            "type": "task",
+            "instruction": "Move L1 along the X- and Y-coordinate\nuntil the beam is focussed on the screen.",
+            "score": 100.0,
+            "principle1": true,
+            "narration": {
+                "link": "narrations/lvl1t2.m4a",
+                "credits": "Rainer Heintzmann"
+            }
+        },
+        {
+            "type": "modifyComponent",
+            "name": "L1",
+            "position": [-2,-1],
+            "height": 0.9,
+            "dof": "XYZ"
+        },
+        {
+            "type": "modifyComponent", "name": "S1",
+            "success": {"_Std": 0.004, "_PosX": 0.01, "PosY": 0.01}
+        },
+        {
+            "type": "task",
+            "instruction": "Focus L1 by X-,Y- and Z control\nGrab the mounting rod to move Z.",
+            "score": 150.0,
+            "principle1": true,
+            "music": {
+                "link": "music/Melodic+Overflow+-+320bit.mp3", 
+                "credits": "Melodic Overflow by Alexander Nakarada | https://www.serpentsoundstudios.com\nCreative Commons CC BY 4.0, https://creativecommons.org/licenses/by/4.0/"
+            },
+            "narration": {
+                "link": "narrations/lvl1t3.m4a",
+                "credits": "Narration by Rainer Heintzmann"
+            }
+        },
+        {
+            "type": "modifyComponent",
+            "name": "L1",
+            "position": [-2,-1],
+            "rotation": [163,-163,0],
+            "height": 0.9,
+            "dof": "XYZzy"
+        },
+        {
+            "type": "modifyComponent", "name": "S1",
+            "success": {"Std": 0.004, "_PosX": 0.01, "_PosY": 0.01}
+        },
+        {
+            "type": "task",
+            "instruction": "Focus L1 by X-,Y-, Z- and rotation-control\nClick on the lens to activate rotation gizmos.\nThe flat side should point towards the screen!",
+            "score": 200.0,
+            "music": {
+                "link": "music/The+Sad+Piano+Background+Song+-+320bit.mp3", 
+                "credits": "The Sad Piano Background Song by Alexander Nakarada | https://www.serpentsoundstudios.com\nCreative Commons CC BY 4.0, https://creativecommons.org/licenses/by/4.0/"
+            },
+            "narration": {
+                "link": "narrations/lvl1t4.m4a",
+                "credits": "Rainer Heintzmann"
+            }
+        },
+        {
+            "type": "modifyComponent",
+            "name": "L1",
+            "position": [-2,-1],
+            "rotation": [163,-163,0],
+            "height": 0.9
+        },
+        {
+            "type": "modifyComponent", "name": "S1",
+            "success": {"_Std": 0.006, "_PosX": 0.02, "_PosY": 0.02}
+        },
+        {
+            "type": "task",
+            "instruction": "Finally more realistically, the laserbeams are not shown.\nAlign the lens! Rememeber the correct rotation\nand overall orientation of the lens!",
+            "narration": {
+                "link": "narrations/lvl1t5.m4a",
+                "credits": "Rainer Heintzmann"
+            },
+           "showbeams": false,
+           "score": 250.0
+        },
+        {
+            "type": "task",
+            "instruction": "Congratulations! You completed this level!\nPress Done for Lvl 2.",
+            "narration": {
+                "link": "narrations/lvl1t6.m4a",
+                "credits": "Rainer Heintzmann"
+            },
+            "final": true
+        }
+    ]
+}

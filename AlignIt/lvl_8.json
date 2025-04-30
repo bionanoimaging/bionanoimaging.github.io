@@ -1,0 +1,80 @@
+{
+    "version": 1.0,
+    "number": "8",
+    "title": "Grating Interferometer",
+    "steps": [
+        {
+            "type": "addComponent",
+            "component": "Laser",
+            "name": "Laser",
+            "rays": [1,3],
+            "position": [-4,0],
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component": "Grating",
+            "name": "Gr 1",
+            "position": [-2,0],
+            "rotation": -90,
+            "height": 1.0,
+            "pitch": 2.0,
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component": "Grating",
+            "name": "Gr 2",
+            "position": [-1,0],
+            "rotation": -90,
+            "height": 1.0,
+            "pitch": 2.0,
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component": "Mirror",
+            "name": "Mirror 6",
+            "position": [1,-2],
+            "rotation": 90,
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component": "Mirror",
+            "name": "Mirror 5",
+            "position": [1, 3],
+            "r1": -1.0,
+            "rotation": 90,
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component": "Screen",
+            "name": "Screen",
+            "target": false,
+            "position": [4,0],
+            "dof": "XYZ"
+        },
+       {
+            "type": "task",
+            "instruction": "Without seeing the actual beams,\niris apertures are helpful tools.\nAdjust the angle to hit the angle-aperture.",
+            "success": {"Num": 1},
+            "music": {
+                "link": "music/forest-with-small-river-birds-and-nature-field-recording-6735.mp3",
+                "credits": "Downloaded from pixabay.\nhttps://pixabay.com/sound-effects/search/forest-birds/"
+            },
+            "final": true,
+            "score": 100.0
+        },
+        {
+            "type": "task",
+            "instruction": "Congratulations! You completed level 2\nPress Done for Lvl 3.",
+            "narration": {
+                "link": "narrations/lvl2t7.m4a",
+                "credits": "Rainer Heintzmann"
+            },
+            "final": true
+        }
+   ]
+}
