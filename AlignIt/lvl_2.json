@@ -1,0 +1,247 @@
+{
+    "version": 1.0,
+    "number": "2",
+    "title": "Optical Axis",
+    "steps": [
+        {
+            "type": "addComponent",
+            "component": "Laser",
+            "name": "Laser",
+            "rays": [0, 0],
+            "position": [-4,0],
+            "dof": ""
+        },
+        {
+            "type": "addComponent",
+            "component": "Pinhole",
+            "name": "P1",
+            "position": [-2,0.2],
+            "dof": "Y",
+            "limits": [[],[-0.4,0.4],[0.5,1.4]]
+        },
+        {
+            "type": "addComponent",
+            "component": "Pinhole",
+            "name": "P2",
+            "position": [1,-0.2],
+            "dof": "Y",
+            "limits": [[],[-0.4,0.4],[0.5,1.4]]
+        },
+        {
+            "type": "addComponent",
+            "component": "Screen",
+            "name": "Screen",
+            "target": false,
+            "position": [4,0],
+            "success": {"Num": 1},
+            "limits": [[],[-0.4,0.4],[0.5,1.4]]
+        },
+        {
+            "type": "task",
+            "instruction": "Position both pinholes such that the laser beam passes through them.",
+            "score": 100.0,
+            "music": {
+                "link": "music/Emotional+Ballad+-+320bit.mp3",
+                "credits": "Emotional Ballad by Alexander Nakarada | https://www.serpentsoundstudios.comn\nCreative Commons CC BY 4.0, https://creativecommons.org/licenses/by/4.0/"
+            },
+            "narration": {
+                "link": "narrations/lvl2t1.m4a",
+                "credits": "Rainer Heintzmann"
+            }
+        },
+        {
+            "type": "modifyComponent",
+            "name": "P1",
+            "position": [-2,0.2],
+            "height": 1.1,
+            "dof": "YZ"
+        },
+        {
+            "type": "modifyComponent",
+            "name": "P2",
+            "position": [1,0.2],
+            "height": 0.9,
+            "dof": "YZ"
+        },
+        {
+            "type": "task",
+            "instruction": "Adjust P1 and P2 to transmit the laser beam.",
+            "score": 100.0,
+            "narration": {
+                "link": "narrations/lvl2t2.m4a",
+                "credits": "Rainer Heintzmann"
+            }
+        },
+        {
+            "type": "modifyComponent",
+            "name": "P1",
+            "position": [-2,0.2],
+            "height": 1.1,
+            "dof": "YZ"
+        },
+        {
+            "type": "modifyComponent",
+            "name": "P2",
+            "position": [1,0.2],
+            "height": 0.9,
+            "dof": "YZ"
+        },
+        {
+            "type": "task",
+            "instruction": "Adjust P1 and P2 to transmit the laser beam without seeing the rays.",
+            "score": 100.0,
+            "narration": {
+                "link": "narrations/lvl2t3.m4a",
+                "credits": "Rainer Heintzmann"
+            },
+            "showbeams": false
+        },
+        {
+            "type": "modifyComponent",
+            "name": "P1",
+            "position": [-2,0],
+            "height": 1.0,
+            "dof": ""
+        },
+        {
+            "type": "modifyComponent",
+            "name": "P2",
+            "position": [1,0],
+            "height": 1.0,
+            "dof": ""
+        },
+        {
+            "type": "modifyComponent",
+            "name": "Laser",
+            "height": 1.1,
+            "rotation": [0,0,1.5],
+            "limits": [[],[],[0.4,1.4],[-10,10],[-10,10],[-10,10]],
+            "dof": "Zy"
+        },
+        {
+            "type": "task",
+            "instruction": "Adjust the height and the angle of the laser\nto have a well defined optical axis.",
+            "narration": {
+                "link": "narrations/lvl2t4.m4a",
+                "credits": "Rainer Heintzmann"
+            },
+            "score": 100.0
+        },
+        {
+            "type": "removeComponent",
+            "name": "P1"
+        },
+        {
+            "type": "removeComponent",
+            "name": "P2"
+        },
+        {
+            "type": "resetComponent",
+            "name": "Laser"
+        },
+        {
+            "type": "addComponent",
+            "component": "Iris",
+            "name": "Position Iris",
+            "position": [-2,0],
+            "height": 1.0,
+            "diameter": 0.6,
+            "dof": "f",
+            "limits": [[],[-0.4,0.4],[0.5,1.4]],
+            "comment": "This iris cannot be adjusted."
+        },
+        {
+            "type": "addComponent",
+            "component": "Iris",
+            "name": "Angle Iris",
+            "position": [1,0],
+            "height": 1.0,
+            "diameter": 0.05,
+            "dof": "f",
+            "limits": [[],[-0.4,0.4],[0.5,1.4]],
+            "comment": "This iris cannot be adjusted."
+        },
+        {
+            "type": "modifyComponent",
+            "name": "Laser",
+            "height": 1.1,
+            "position": [-4, 0.3],
+            "rotation": [0, -4, 1.5],
+            "limits": [[],[],[],[-10,10],[-10,10],[-10,10]],
+            "dof": "yz"
+        },
+       {
+            "type": "task",
+            "instruction": "Without seeing the actual beams,\niris apertures are helpful tools.\nAdjust the angle to hit the angle-aperture.",
+            "narration": {
+                "link": "narrations/lvl2t5.m4a",
+                "credits": "Rainer Heintzmann"
+            },
+            "score": 100.0
+        },
+        {
+            "type": "modifyComponent",
+            "name": "Screen",
+            "success": {"Num": 1},
+            "position": [0,0],
+            "dof": "YZ",
+            "limits": [[],[-0.4,0.4],[0.5,1.4]]
+        },
+        {
+            "type": "modifyComponent",
+            "name": "Position Iris",
+            "diameter": 0.049,
+            "dof": "f"
+        },
+        {
+            "type": "modifyComponent",
+            "name": "Laser",
+            "dof": "YZ",
+            "limits": [[],[-0.4,0.4],[0.5,1.4]]
+        },
+        {
+            "type": "task",
+            "instruction": "Now move your attention to the \"Position Iris\"\nand adjust the laser position to make the laser pass through.",
+            "narration": {
+                "link": "narrations/lvl2t6.m4a",
+                "credits": "Rainer Heintzmann"
+            },
+            "score": 100.0
+        },
+        {
+            "type": "modifyComponent",
+            "name": "Screen",
+            "position": [4,0],
+            "dof": "YZ",
+            "success": {"Num": 1},
+            "limits": [[],[-0.4,0.4],[0.5,1.4]]
+        },
+        {
+            "type": "modifyComponent",
+            "name": "Position Iris",
+            "diameter": 0.2,
+            "dof": "",
+            "success": {"diameter": 0.05}
+        },
+        {
+            "type": "modifyComponent",
+            "name": "Laser",
+            "dof": "YZyz",
+            "limits": [[],[-0.4,0.4],[0.5,1.4]]
+        },
+       {
+            "type": "task",
+            "instruction": "Now finish this beam-walk by alternating angle and position apertures.\nKeep closing the front iris.",
+            "score": 100.0
+        },
+        {
+            "type": "task",
+            "instruction": "Congratulations! You completed level 2\nPress Done for Lvl 3.",
+            "narration": {
+                "link": "narrations/lvl2t7.m4a",
+                "credits": "Rainer Heintzmann"
+            },
+            "final": true
+        }
+   ]
+}
