@@ -29,6 +29,7 @@
         <script src="babylon/recast.js"></script> -->
         <script src="js/utils.obfuscated.js"></script>
         <script src="js/lasershaders.obfuscated.js"></script>
+        <script src="js/rays.obfuscated.js"></script>
         <script src="js/lens.obfuscated.js"></script>
         <script src="js/components.obfuscated.js"></script>
         <script src="js/panels.obfuscated.js"></script>
@@ -68,7 +69,7 @@
                 console.log('[PWA Builder] active service worker found, no need to register')
             } else {
                 //Register the ServiceWorker
-                navigator.serviceWorker.register('sw.js', {
+                navigator.serviceWorker.register('./sw.mjs', {
                     scope: './'
                 }).then(function (reg) {
                     console.log('Service worker has been registered for scope:' + reg.scope);

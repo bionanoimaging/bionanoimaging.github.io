@@ -5,7 +5,7 @@
 // Names of the two caches used in this version of the service worker.
 // Change to v2, etc. when you update any of the local resources, which will
 // in turn trigger the install event again.
-const PRECACHE = 'precache-v035';
+const PRECACHE = 'precache-v4';
 const RUNTIME = 'runtime';
 
 // The files to make available for offline use. make sure to add 
@@ -21,39 +21,50 @@ const filesToCache = [
   'index.html',
   'manifest.webmanifest',
   'css/style.css',
-  'js/alignit.obfuscated.js',
-  'js/components.obfuscated.js',
-  'js/lasershaders.obfuscated.js',
-  'js/lens.obfuscated.js',
-  'js/utils.obfuscated.js',
-  'js/panels.obfuscated.js',
+  'js/alignit.js',
+  'js/components.js',
+  'js/lasershaders.js',
+  'js/lens.js',
+  'js/panels.js',
+  'js/rays.js',
+  'js/utils.js',
   'img/icon.png',
-  // 'https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.2/dat.gui.min.js',
-  // 'https://cdn.babylonjs.com/earcut.min.js',
-  // 'https://cdn.babylonjs.com/babylon.js',
-  // 'https://cdn.babylonjs.com/materialsLibrary/babylonjs.materials.min.js',
-  // 'https://cdn.babylonjs.com/proceduralTexturesLibrary/babylonjs.proceduralTextures.min.js',
-  // 'https://cdn.babylonjs.com/postProcessesLibrary/babylonjs.postProcess.min.js',
-  // 'https://cdn.babylonjs.com/loaders/babylonjs.loaders.js',
-  // 'https://cdn.babylonjs.com/gui/babylon.gui.min.js',
-  'babylon/assets/Droid Sans_Regular.json',
-  'babylon/assets/mrtk-fluent-backplate.glb',
-  'babylon/assets/mrtk-mrdl-blue-gradient.png',
-  'babylon/assets/mrtk-mrdl-backplate-iridescence.png',
-  'babylon/assets/profilesList.json',
-  'babylon/assets/right.babylon',
-  'babylon/assets/left.babylon',
-  'babylon/earcut.min.js',
-  'babylon/babylon.js',
-  'babylon/babylon.js.map',
-  'babylon/babylon.gui.min.js',
-  'babylon/babylon.gui.min.js.map',
-  'babylon/babylonjs.loaders.min.js',
-  'babylon/babylonjs.loaders.min.js.map',
-  // 'babylon/Oimo.js',
-  // 'babylon/recast.js',
-  // 'babylon/Assets.js',
-  'music/Be+Jammin\'+-+320bit.mp3',
+//   'https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.2/dat.gui.min.js',
+//   'https://cdn.babylonjs.com/earcut.min.js',
+//   'https://cdn.babylonjs.com/babylon.js',
+//   'https://cdn.babylonjs.com/materialsLibrary/babylonjs.materials.min.js',
+//   'https://cdn.babylonjs.com/proceduralTexturesLibrary/babylonjs.proceduralTextures.min.js',
+//   'https://cdn.babylonjs.com/postProcessesLibrary/babylonjs.postProcess.min.js',
+//   'https://cdn.babylonjs.com/loaders/babylonjs.loaders.js',
+//   'https://cdn.babylonjs.com/gui/babylon.gui.min.js',
+'babylon/assets/Droid Sans_Regular.json',
+'babylon/assets/mrtk-fluent-backplate.glb',
+'babylon/assets/mrtk-mrdl-backplate-iridescence.png',
+'babylon/assets/mrtk-mrdl-blue-gradient.png',
+'babylon/assets/profilesList.json',
+'babylon/assets/right.babylon',
+'babylon/assets/left.babylon',
+//'babylon/dat.gui.min.js',
+'babylon/profilesList.json',
+'babylon/earcut.min.js',
+'babylon/babylon.js',
+'babylon/babylon.js.map',
+'babylon/babylonjs.loaders.min.js',
+'babylon/babylonjs.loaders.min.js.map',
+// 'babylon/Oimo.js',
+// 'babylon/recast.js',
+// 'babylon/Assets.js',
+//'babylon/babylonjs.materials.min.js',
+//'babylon/babylonjs.materials.min.js.map',
+//'babylon/babylonjs.proceduralTextures.min.js',
+//'babylon/babylonjs.proceduralTextures.min.js.map',
+//'babylon/babylonjs.postProcess.min.js',
+//'babylon/babylonjs.postProcess.min.js.map',
+//'babylon/babylonjs.loaders.js',
+//'babylon/babylonjs.loaders.js.map',
+//'babylon/babylon.gui.min.js',
+//'babylon/babylon.gui.min.js.map',
+'music/Be+Jammin\'+-+320bit.mp3',
   'music/Emotional+Ballad+-+320bit.mp3',
   'music/forest-with-small-river-birds-and-nature-field-recording-6735.mp3',
   'music/Melodic+Overflow+-+320bit.mp3',
@@ -101,7 +112,9 @@ const filesToCache = [
   'lvl_9.json',
   'lvl_10.json',
   'lvl_11.json',
-  'lvl_12.json'
+  'lvl_12.json',
+  'lvl_13.json',
+  'lvl_14.json'
 ];
 
 
@@ -109,20 +122,35 @@ const filesToCache = [
 
 // The install handler takes care of precaching the resources we always need.
 self.addEventListener('install', event => {
-  // console.log("sw install event triggered")
+//   // console.log("sw install event triggered")
   event.waitUntil(
-      caches.open(PRECACHE)
-          .then((cache) => {
-            // console.log("sw adding cache files to cache: "+cache)
-            cache.addAll(filesToCache)
-            // console.log("sw added cache files")
-        })
-          .then((msg)=> {
-            // console.log("cache promise finished: "+msg);
-            self.skipWaiting()
-          })
+    caches.open(PRECACHE).then(async (cache) => {
+      try {
+        await cache.addAll(filesToCache);
+        console.log("All files cached successfully.");
+      } catch (error) {
+        console.error("Failed to cache files:", error);
+      }
+    }).then(() => {
+      self.skipWaiting();
+    })
   );
 });
+// self.addEventListener('install', event => {
+//   // console.log("sw install event triggered")
+//   event.waitUntil(
+//       caches.open(PRECACHE)
+//           .then((cache) => {
+//             // console.log("sw adding cache files to cache: "+cache)
+//             cache.addAll(filesToCache)
+//             // console.log("sw added cache files")
+//         })
+//           .then((msg)=> {
+//             // console.log("cache promise finished: "+msg);
+//             self.skipWaiting()
+//           })
+//   );
+// });
 
 // The activate handler takes care of cleaning up old caches.
 self.addEventListener('activate', event => {
@@ -133,7 +161,7 @@ self.addEventListener('activate', event => {
         // console.log("sw chacheNames: "+cacheNames)
         return cacheNames.filter(cacheName => !currentCaches.includes(cacheName));
       }).then(cachesToDelete => {
-          // console.log("sw deleting all: "+cachesToDelete);
+            // console.log("sw deleting all: "+cachesToDelete);
           return Promise.all(cachesToDelete.map(cacheToDelete => {
             // console.log("sw deleting: "+cacheToDelete);
               return caches.delete(cacheToDelete);
@@ -146,7 +174,7 @@ self.addEventListener('activate', event => {
 // If no response is found, it populates the runtime cache with the response
 // from the network before returning it to the page.
 self.addEventListener('fetch', event => {
-  // console.log("sw fetch event: "+event)
+    // console.log("sw fetch event: "+event)
   // Skip cross-origin requests, like those for Google Analytics.
   if (event.request.url.startsWith(self.location.origin)) {
       event.respondWith(
