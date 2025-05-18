@@ -53,7 +53,7 @@
             "target": false,
             "dof": "YZ",
             "success": {"Std": 1.0, "Num": 15, "DeltaX": 0.01, "DeltaY": 0.01},
-            "limits": [[],[-0.4,0.4],[0.5,1.4]]
+            "limits": [[],[-4,0.4],[-3,1.4]]
         },
         {
             "type": "task",
@@ -69,14 +69,6 @@
             "name": "L1",
             "r1": 1.0,
             "r2": 0.0
-        },
-       {
-            "type": "task",
-            "instruction": "Congratulations! You completed level 2\nPress Done for Lvl 3.",
-            "narration": {
-                "link": "narrations/lvl2t7.m4a",
-                "credits": "Rainer Heintzmann"
-            }
         },
         {
             "type": "task",

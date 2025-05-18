@@ -6,6 +6,7 @@
         {
             "type": "addComponent", "component": "Laser", "name": "Laser",
             "rays": [2,4],
+            "diameter": 0.7,
             "position": [-4,0],
             "rotation": 0,
             "dof": ""

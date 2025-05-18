@@ -100,13 +100,15 @@ All components have the possibility to specify degrees of freedom ("dof"). For t
 - Mirror
 - Beamsplitter
 - Grating ("pitch"), the pitch corresponding to the grating pitch in µm.
-- Pinhole ("diameter")
+- Pinhole ("diameter", "lauches", "rays", "NA", "separation", "launch_power"), if "launches": true is provided, independed rays are lauched depending on how this pinhole (acting as a "screen") is hit. Via the "rays" argument you can provide the number of rings and axial positions on each ring of launched rays (e.g. "rays": [1,4]   launches 1 ring of 4 beams plus the central beam). IF "NA" is provided, the impining convergence/divergence of the beams will be ignored and the outgoing beam will be launched with a direction orthogonal to the pinhole and the provided NA. However directions are kepts. "separation" defines an offset to the center, if provided. "launch_power" resets the current power of beams and launches beams according to the provided value.
+
 - Iris ("diameter", "success"), if the "success" parameter is provided (e.g. "success": {"diameter": 0.03},) the adjustable diameter needs to be below the stated value, to contribute to an overall success in the task (see components bar). If a success value is provided the minimum size is automatically limited to that value.
 - Slit ("diameter", "success"), if the "success" parameter is provided (e.g. "success": {"diameter": 0.03},) the adjustable diameter needs to be below the stated value, to contribute to an overall success in the task (see components bar). If a success value is provided the minimum size is automatically limited to that value.
-- DualPinhole ("diameter", "separation", "launches"), where "separation" indicates the distance between the two pinholes. If "lauches" is `true` this pinhole will (like a screen) analyse the impinging beams and launch two beams from its center.
+- DualPinhole ("diameter", "separation", "launches", "NA"), where "separation" indicates the distance between the two pinholes. If "lauches" is `true` this pinhole will (like a screen) analyse the impinging beams and launch two beams from its center. For other arguments see "pinhole".
 - Screen ("success", "target"), the "success" of the screen is often the most important component to fullfill a given task. The following options are supported for screen "success":
     - "Num": the minimal number of beams hitting the screen. If not specified it is allumed that this corresponds to the number of beams launched by the laser.
     - "Std": the maximally allowed standard deviation of the spot. This is also shown by the attached indicator bar.
+    - "Power": minimal required power (integral over intensity) of all spots. This is also shown by the attached indicator bar.
     - "PosX": maximal lateral distance to the center of the screen. This is also shown by the attached indicator bar.
     - "PosY": maximal vertical distance to the center of the screen. This is also shown by the attached indicator bar.
     - "Curv": maximally allowed curvature. If not provided, any curvature is accepted. No indicator bar is provided.

@@ -8,19 +8,19 @@
             "component": "FibreCouple",
             "name": "FibreCouple 1",
             "position": [-1.0, 1.1],
-            "diameter": 0.0005,
+            "diameter": 0.01,
             "NA": 0.05,
-            "dof": "XYZxyz"
+            "dof": "XY"
         },
         {
             "type": "addComponent",
             "component": "FibreCouple",
             "name": "FibreCouple 2",
             "position": [1, 0],
-            "diameter": 0.0005,
+            "diameter": 0.001,
             "rotation": 180,
             "NA": 0.05,
-            "dof": "XYZxyz"
+            "dof": ""
         },
         {
             "type": "addComponent",
@@ -30,14 +30,16 @@
             "position": [-4,1],
             "rotation": 0,
             "divergence": -0.05,
-            "dof": "XYZxyz"
+            "dof": ""
         },
         {
             "type": "addComponent",
             "component": "Screen",
             "name": "Screen",
+            "success": {"Power": 0.99},
             "position": [3,0],
-            "rotation": 0
+            "rotation": 0,
+            "dof": ""
         },
         {
             "type": "task",
@@ -46,82 +48,65 @@
                 "link": "music/forest-with-small-river-birds-and-nature-field-recording-6735.mp3",
                 "credits": "Downloaded from pixabay.\nhttps://pixabay.com/sound-effects/search/forest-birds/"
             },
-            "success": {"Std": 0.01, "PosX": 0.01, "PosY": 0.01},
             "score": 100.0
         },
         {
-            "type": "removeComponent",
-            "name": ["FibreCouple 1","FibreCouple 2","Screen", "Laser"]
-        },
-        {
-            "type": "addComponent",
-            "component": "Laser",
-            "name": "Laser",
-            "rays": [2,4],
-            "diameter": 0.05,
-            "position": [-5,0],
+            "type": "modifyComponent",
+            "name": "FibreCouple 1",
+            "position": [-1.0, 1.1, 1.0],
+            "diameter": 0.01,
+            "NA": 0.15,
+            "rotation": [0, 3, 4],
             "dof": "XYZxyz"
         },
         {
-            "type": "addComponent",
-            "component": "Pinhole",
-            "name": "P0",
-            "position": [-3.5,0],
-            "rotation": 180,
-            "diameter": 0.09,
-            "dof": "XYZxyz"        },
-        {
-            "type": "addComponent", "component": "Lens", "name": "L1",
-            "position": [-2.5,0],
-            "rotation": 0,
-            "r1": 1.0,
-            "dof": "XYZxyz",
-            "trace_reflection": "true"
-        },
-        {
-            "type": "addComponent",
-            "component": "Pinhole",
-            "name": "P1",
-            "position": [0.5,0.2],
-            "diameter": 0.01,
-            "dof": "XYZxyz",
-            "limits": [[0,3],[-0.4,0.4],[0.8,1.2]]
-        },
-        {
-            "type": "addComponent", 
-            "component": "Lens",
-            "name": "Collimator",
+            "type": "modifyComponent",
+            "name": "Screen",
+            "success": {"Power": 0.90},
             "position": [3,0],
             "rotation": 0,
-            "r1": 0.0,
-            "r2": 2.0,
-            "dof": "XYZxyz",
-            "trace_reflection": "true",
-            "limits": [[0,3],[-0.5,0.5],[0.5,1.5]]
-        },
-        {
-            "type": "addComponent",
-            "component": "Screen",
-            "name": "Screen",
-            "position": [4,0],
-            "dof": "YZ",
-            "limits": [[],[-0.4,0.4],[0.5,1.4]]
+            "dof": ""
         },
         {
             "type": "task",
-            "instruction": "Adjust the beam expansion telescope to get\na collimated laser beam.",
-            "success": {"PosX": 0.01, "PosY": 0.01},
-            "score": 100.0,
+            "instruction": "Now the fibre is misaligned more. Also the angles are wrong!",
             "music": {
                 "link": "music/forest-with-small-river-birds-and-nature-field-recording-6735.mp3",
                 "credits": "Downloaded from pixabay.\nhttps://pixabay.com/sound-effects/search/forest-birds/"
-            }
+            },
+            "score": 200.0
+        },
+        {
+            "type": "modifyComponent",
+            "name": "FibreCouple 1",
+            "position": [-1.0, 1.1, 1.0],
+            "diameter": 0.001,
+            "NA": 0.15,
+            "rotation": [0, 4, 3],
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "modifyComponent",
+            "name": "Screen",
+            "success": {"Power": 0.85},
+            "position": [3,0],
+            "rotation": 0,
+            "dof": ""
         },
         {
             "type": "task",
-            "instruction": "Congratulations! You completed level 2\nPress Done for Lvl 3.",
+            "instruction": "Now the fibre core is also a lot smaller (single mode).",
+            "music": {
+                "link": "music/forest-with-small-river-birds-and-nature-field-recording-6735.mp3",
+                "credits": "Downloaded from pixabay.\nhttps://pixabay.com/sound-effects/search/forest-birds/"
+            },
+            "score": 200.0
+        },
+        {
+            "type": "task",
+            "instruction": "Congratulations! You completed fibre coupling\nPress Done for Lvl 6.",
             "narration": {
-                "link": "narrations/lvl2t7.m4a",
+                "link": "narrations/lvl1t6.m4a",
                 "credits": "Rainer Heintzmann"
             },
             "final": true

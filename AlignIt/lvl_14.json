@@ -7,11 +7,22 @@
             "type": "addComponent",
             "component": "Laser",
             "name": "Laser",
-            "rays": [3, 2],
+            "rays": [2, 4],
             "height": 1.5,
             "diameter": 0.25,
-            "rotation": [0,180,0],
+            "rotation": [0, 180,0],
             "position": [5, 1]
+        },
+        {
+            "type": "addComponent", "component": "Lens", "name": "L1",
+            "position": [3,1],
+            "rotation": 0,
+            "height": 1.5,
+            "r1": 3.0,
+            "r2": 0.0,
+            "dof": "XYZxyz",
+            "principle1": true,
+            "focus1": true
         },
         {
             "type": "addComponent", "component": "Beamsplitter", 
