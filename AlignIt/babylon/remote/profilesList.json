@@ -2,6 +2,9 @@
   "generic-button": {
     "path": "generic-button/profile.json"
   },
+  "generic-fixed-hand": {
+    "path": "generic-fixed-hand/profile.json"
+  },
   "generic-hand": {
     "path": "generic-hand/profile.json"
   },
@@ -53,8 +56,14 @@
   "htc-vive": {
     "path": "htc-vive/profile.json"
   },
+  "logitech-mx-ink": {
+    "path": "logitech-mx-ink/profile.json"
+  },
   "magicleap-one": {
     "path": "magicleap-one/profile.json"
+  },
+  "magicleap-two": {
+    "path": "magicleap-two/profile.json"
   },
   "meta-quest-touch-plus": {
     "path": "meta-quest-touch-plus/profile.json"
@@ -101,6 +110,9 @@
   },
   "valve-index": {
     "path": "valve-index/profile.json"
+  },
+  "yvr-touch-v2": {
+    "path": "yvr-touch-v2/profile.json"
   },
   "yvr-touch": {
     "path": "yvr-touch/profile.json"
