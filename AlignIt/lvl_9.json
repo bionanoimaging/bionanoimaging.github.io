@@ -1,0 +1,85 @@
+{
+    "version": 1.0,
+    "number": "9",
+    "title": "Test for laser positioning",
+    "steps": [
+        {
+            "type": "addComponent",
+            "component": "Laser",
+            "name": "Laser",
+            "rays": [0,0],
+            "rotation": [0,2.1,2.2],
+            "position": [-3, 0],
+            "height": 1.1,
+            "dof": "XYxyz"
+        },
+        {
+            "type": "modifyComponent",
+            "name": "Laser",
+            "rays": [2,4],
+            "height": 1.1,
+            "position": [-4, 0],
+            "rotation": [-2.5, 0, 1.5],
+            "dof": "yz"
+        },
+        {
+            "type": "addComponent",
+            "component": "Slit",
+            "name": "A Slit",
+            "position": [1,0],
+            "height": 1.1,
+            "diameter": 0.05,
+            "dof": "XYZ",
+            "success": {"diameter": 0.05},
+            "limits": [[],[-0.4,0.4],[0.5,1.4]],
+            "comment": "This iris cannot be adjusted."
+        },
+        {
+            "type": "addComponent", "component": "Lens",
+            "name": "L1",
+            "position": [-1, 0],
+            "r1": 1.0,
+            "r2": 0.0,
+            "height": 1.1,
+            "cylinder": true,
+            "dof": "XYZxyz",
+            "trace_reflection": true
+        },
+        {
+            "type": "addComponent",
+            "component": "Screen",
+            "name": "Screen",
+            "target": false,
+            "position": [2,0],
+            "dof": "XYZ"
+        },
+       {
+            "type": "task",
+            "instruction": "Just to see if the laser gets unwillingly modified.",
+            "success": {"Num": 1},
+            "music": {
+                "link": "music/forest-with-small-river-birds-and-nature-field-recording-6735.mp3",
+                "credits": "Downloaded from pixabay.\nhttps://pixabay.com/sound-effects/search/forest-birds/"
+            },
+            "score": 100.0
+        },
+        {
+            "type": "modifyComponent",
+            "name": "Laser",
+            "dof": "YZyz"
+        },
+        {
+            "type": "modifyComponent",
+            "name": "Screen",
+            "position": [0,0],
+            "dof": "YZ",
+            "limits": [[],[-0.4,0.4],[0.5,1.4]]
+        },
+        {
+            "type": "task",
+            "instruction": "You did it and finished this level!",
+            "success": {"Num": 1},
+            "score": 100.0
+        }
+   ]
+}
