@@ -1,7 +1,7 @@
 // Names of the two caches used in this version of the service worker.
 // Change to v2, etc. when you update any of the local resources, which will
 // in turn trigger the install event again.
-const PRECACHE = 'precache-v6';
+const PRECACHE = 'precache-v7';
 const RUNTIME = 'runtime';
 
 // The files we want to cache for offline use. These are all relative to the
@@ -27,6 +27,11 @@ const filesToCache = [
   'babylon/babylonjs.loaders.min.js.map',
   'babylon/earcut.min.js',
   'babylon/remote/mrtk-fluent-backplate.glb',
+  'babylon/remote/r_hand_rhs.glb',
+  'babylon/remote/l_hand_rhs.glb',
+  'babylon/remote/handsShader.json',
+  'babylon/remote/3',
+  'babylon/remote/profile.json',
   'babylon/remote/mrtk-mrdl-backplate-iridescence.png',
   'babylon/remote/mrtk-mrdl-blue-gradient.png',
   'babylon/remote/profilesList.json',
