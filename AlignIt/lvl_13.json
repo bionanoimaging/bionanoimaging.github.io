@@ -5,7 +5,7 @@
     "steps": [
         {
             "type": "addComponent",
-            "component": "Laser",
+            "component_type": "Laser",
             "name": "Laser",
             "rays": [1, 4],
             "diameter": 0.25,
@@ -13,7 +13,7 @@
         },
         {
             "type": "addComponent",
-            "component": "Lens",
+            "component_type": "Lens",
             "name": "Shear Plate",
             "position": [2,1],
             "rotation": [0,-45,0],
@@ -26,7 +26,7 @@
         },
         {
             "type": "addComponent",
-            "component": "Screen",
+            "component_type": "Screen",
             "name": "Shear-Screen",
             "position": [2, -2],
             "rotation": 90,

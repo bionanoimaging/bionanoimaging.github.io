@@ -5,7 +5,7 @@
     "steps": [
         {
             "type": "addComponent",
-            "component": "Laser",
+            "component_type": "Laser",
             "name": "Laser",
             "rays": [1,3],
             "position": [-4,0],
@@ -13,7 +13,7 @@
         },
         {
             "type": "addComponent",
-            "component": "Grating",
+            "component_type": "Grating",
             "name": "Gr 1",
             "position": [-2,0],
             "rotation": -90,
@@ -23,7 +23,7 @@
         },
         {
             "type": "addComponent",
-            "component": "Grating",
+            "component_type": "Grating",
             "name": "Gr 2",
             "position": [-1,0],
             "rotation": -90,
@@ -33,7 +33,7 @@
         },
         {
             "type": "addComponent",
-            "component": "Mirror",
+            "component_type": "Mirror",
             "name": "Mirror 6",
             "position": [1,-2],
             "rotation": 90,
@@ -41,7 +41,7 @@
         },
         {
             "type": "addComponent",
-            "component": "Mirror",
+            "component_type": "Mirror",
             "name": "Mirror 5",
             "position": [1, 3],
             "r1": -1.0,
@@ -50,7 +50,7 @@
         },
         {
             "type": "addComponent",
-            "component": "Screen",
+            "component_type": "Screen",
             "name": "Screen",
             "target": false,
             "position": [4,0],

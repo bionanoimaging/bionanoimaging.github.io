@@ -5,7 +5,7 @@
     "steps": [
         {
             "type": "addComponent",
-            "component": "Laser",
+            "component_type": "Laser",
             "name": "Laser",
             "rays": [2,4],
             "diameter": 0.02,
@@ -13,21 +13,21 @@
         },
         {
             "type": "addComponent",
-            "component": "Beamsplitter",
+            "component_type": "Beamsplitter",
             "name": "Pellicle",
             "position": [-3, 0],
             "rotation": -45
         },
         {
             "type": "addComponent",
-            "component": "Pinhole",
+            "component_type": "Pinhole",
             "name": "P0",
             "position": [-2,0],
             "rotation": 180,
             "diameter": 0.09
         },
         {
-            "type": "addComponent", "component": "Lens", "name": "L1",
+            "type": "addComponent", "component_type": "Lens", "name": "L1",
             "position": [0, 0.01],
             "height": 1.01, 
             "rotation": 0.5,
@@ -38,7 +38,7 @@
         },
         {
             "type": "addComponent",
-            "component": "Pinhole",
+            "component_type": "Pinhole",
             "name": "P1",
             "position": [4.5,0],
             "diameter": 0.01,
@@ -46,7 +46,7 @@
         },
         {
             "type": "addComponent",
-            "component": "Screen",
+            "component_type": "Screen",
             "name": "Screen",
             "position": [-3,-2],
             "rotation": 90,

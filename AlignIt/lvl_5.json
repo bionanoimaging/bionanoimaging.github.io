@@ -5,7 +5,7 @@
     "steps": [
         {
             "type": "addComponent",
-            "component": "FibreCouple",
+            "component_type": "FibreCouple",
             "name": "FibreCouple 1",
             "position": [-1.0, 1.1],
             "diameter": 0.01,
@@ -14,7 +14,7 @@
         },
         {
             "type": "addComponent",
-            "component": "FibreCouple",
+            "component_type": "FibreCouple",
             "name": "FibreCouple 2",
             "position": [1, 0],
             "diameter": 0.001,
@@ -24,7 +24,7 @@
         },
         {
             "type": "addComponent",
-            "component": "Laser",
+            "component_type": "Laser",
             "name": "Laser",
             "rays": [2,4],
             "position": [-4,1],
@@ -34,7 +34,7 @@
         },
         {
             "type": "addComponent",
-            "component": "Screen",
+            "component_type": "Screen",
             "name": "Screen",
             "success": {"Power": 0.99},
             "position": [3,0],

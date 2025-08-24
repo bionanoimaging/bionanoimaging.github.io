@@ -5,7 +5,7 @@
     "steps": [
         {
             "type": "addComponent",
-            "component": "Laser",
+            "component_type": "Laser",
             "name": "Laser",
             "rays": [2,4],
             "diameter": 0.02,
@@ -13,14 +13,14 @@
         },
         {
             "type": "addComponent",
-            "component": "Pinhole",
+            "component_type": "Pinhole",
             "name": "P0",
             "position": [-2,0],
             "rotation": 180,
             "diameter": 0.09
         },
         {
-            "type": "addComponent", "component": "Lens",
+            "type": "addComponent", "component_type": "Lens",
             "name": "L1",
             "position": [0,0.02],
             "height": 1.02, 
@@ -32,7 +32,7 @@
         },
         {
             "type": "addComponent",
-            "component": "Screen",
+            "component_type": "Screen",
             "name": "Screen",
             "position": [3,0],
             "rotation": 0,

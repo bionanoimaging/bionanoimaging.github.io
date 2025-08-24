@@ -5,7 +5,7 @@
     "steps": [
         {
             "type": "addComponent",
-            "component": "Laser",
+            "component_type": "Laser",
             "name": "Laser",
             "rays": [2,4],
             "diameter": 0.25,
@@ -15,7 +15,7 @@
         },
         {
             "type": "addComponent",
-            "component": "Lens",
+            "component_type": "Lens",
             "name": "Planconvex L2",
             "position": [-3,-2],
             "rotation": 0,
@@ -24,7 +24,7 @@
         },
         {
             "type": "addComponent",
-            "component": "Beamsplitter",
+            "component_type": "Beamsplitter",
             "name": "Beamsplitter 1",
             "position": [-2,-2],
             "rotation": -45,
@@ -32,7 +32,7 @@
         },
         {
             "type": "addComponent",
-            "component": "Mirror",
+            "component_type": "Mirror",
             "name": "Mirror 1",
             "position": [-2,0],
             "rotation": -45.0005,
@@ -40,7 +40,7 @@
         },
         {
             "type": "addComponent",
-            "component": "Mirror",
+            "component_type": "Mirror",
             "name": "Mirror 2",
             "position": [0,-2],
             "rotation": 135,
@@ -48,7 +48,7 @@
         },
         {
             "type": "addComponent",
-            "component": "Beamsplitter",
+            "component_type": "Beamsplitter",
             "name": "Beamsplitter 1",
             "position": [0,0],
             "rotation": -45,
@@ -56,7 +56,7 @@
         },
         {
             "type": "addComponent",
-            "component": "Screen",
+            "component_type": "Screen",
             "name": "Screen",
             "target": false,
             "position": [2,0]

@@ -1,7 +1,7 @@
 // Names of the two caches used in this version of the service worker.
 // Change to v2, etc. when you update any of the local resources, which will
 // in turn trigger the install event again.
-const PRECACHE = 'precache-v7';
+const PRECACHE = 'precache-v9';
 const RUNTIME = 'runtime';
 
 // The files we want to cache for offline use. These are all relative to the
@@ -14,10 +14,13 @@ const filesToCache = [
   'js/components.obfuscated.js',
   'js/lasershaders.obfuscated.js',
   'js/lens.obfuscated.js',
-  'js/panels.obfuscated.js',
   'js/rays.obfuscated.js',
   'js/utils.obfuscated.js',
+  'js/animations.obfuscated.js',
+  'js/editor.obfuscated.js',
+  'js/panels.obfuscated.js',
   'img/icon.png',
+  'img/RetinaDamage_ImgGen2_inv.jpg',
   'babylon/assets/Droid Sans_Regular.json',
   'babylon/assets/left.babylon',
   'babylon/assets/right.babylon',
@@ -25,16 +28,19 @@ const filesToCache = [
   'babylon/babylon.js.map',
   'babylon/babylonjs.loaders.min.js',
   'babylon/babylonjs.loaders.min.js.map',
+  'babylon/babylon.gui.min.js',
   'babylon/earcut.min.js',
   'babylon/remote/mrtk-fluent-backplate.glb',
   'babylon/remote/r_hand_rhs.glb',
   'babylon/remote/l_hand_rhs.glb',
   'babylon/remote/handsShader.json',
   'babylon/remote/3',
-  'babylon/remote/profile.json',
   'babylon/remote/mrtk-mrdl-backplate-iridescence.png',
   'babylon/remote/mrtk-mrdl-blue-gradient.png',
+  'babylon/remote/profile.json',
   'babylon/remote/profilesList.json',
+  'babylon/remote/right.glb',
+  'babylon/remote/left.glb',
   'music/Be+Jammin\'+-+320bit.mp3',
   'music/Emotional+Ballad+-+320bit.mp3',
   'music/forest-with-small-river-birds-and-nature-field-recording-6735.mp3',
@@ -93,7 +99,17 @@ const cached_files = [
   'https://immersive-web.github.io/webxr-input-profiles/packages/viewer/dist/profiles/profilesList.json',
   'https://assets.babylonjs.com/core/MRTK/mrtk-fluent-backplate.glb',
   'https://assets.babylonjs.com/core/MRTK/MRDL/mrtk-mrdl-backplate-iridescence.png',
-  'https://assets.babylonjs.com/core/MRTK/MRDL/mrtk-mrdl-blue-gradient.png'
+  'https://assets.babylonjs.com/core/MRTK/MRDL/mrtk-mrdl-blue-gradient.png',
+  'https://assets.babylonjs.com/core/HandMeshes/r_hand_rhs.glb',
+  'https://assets.babylonjs.com/core/HandMeshes/l_hand_rhs.glb',
+  'https://snippet.babylonjs.com/8RUNKL/3',
+  'https://controllers.babylonjs.com/oculus/right.babylon',
+  'https://controllers.babylonjs.com/oculus/left.babylon',
+  'https://immersive-web.github.io/webxr-input-profiles/packages/viewer/dist/profiles/meta-quest-touch-plus/profile.json',
+  'https://immersive-web.github.io/webxr-input-profiles/packages/viewer/dist/profiles/meta-quest-touch-plus/right.glb',
+  'https://immersive-web.github.io/webxr-input-profiles/packages/viewer/dist/profiles/meta-quest-touch-plus/left.glb',
+  'https://assets.babylonjs.com/core/HandMeshes/handsShader.json',
+  'https://nanoimaging.de/favicon.ico'
 ]
 
 //   'https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.2/dat.gui.min.js',
@@ -117,7 +133,6 @@ const cached_files = [
 //'babylon/babylonjs.postProcess.min.js.map',
 //'babylon/babylonjs.loaders.js',
 //'babylon/babylonjs.loaders.js.map',
-//'babylon/babylon.gui.min.js',
 //'babylon/babylon.gui.min.js.map',
 
 // From https://googlechrome.github.io/samples/service-worker/basic/
@@ -191,15 +206,21 @@ self.addEventListener('fetch', event => {
   // If the request is for the remote profilesList.json, serve the local one
   // console.log("fetching url: "+url)
   for (let fn of cached_files) {
-    if (event.request.url.startsWith(fn) ) {
-      const filename = url.substring(url.lastIndexOf('/') + 1);
-      // console.log("loading from cache: "+filename)
-      event.respondWith(
-        caches.match('babylon/remote/'+filename, {ignoreSearch: true})
-          .then(response => response || fetch(event.request))
-      );
-      return;
-    }
+    if (event.request.url === fn) {
+    // Map the remote URL to the local cache key
+    const filename = fn.substring(fn.lastIndexOf('/') + 1);
+    const localCacheKey = 'babylon/remote/' + filename;
+    event.respondWith(
+        caches.match(localCacheKey, {ignoreSearch: true})
+            .then(response => {
+                if (!response) {
+                    console.warn("Service Worker: Cache miss for", localCacheKey, "when handling", event.request.url);
+                }
+                return response || fetch(event.request);
+            })
+    );
+    return;
+  }
   }
     // console.log("sw fetch event: "+event)
   // Skip cross-origin requests, like those for Google Analytics.

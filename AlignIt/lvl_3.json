@@ -5,7 +5,7 @@
     "steps": [
         {
             "type": "addComponent",
-            "component": "Laser",
+            "component_type": "Laser",
             "name": "Laser",
             "rays": [1, 4],
             "diameter": 0.3,
@@ -13,7 +13,7 @@
         },
         {
             "type": "addComponent",
-            "component": "Lens",
+            "component_type": "Lens",
             "name": "L1",
             "position": [-4,1],
             "rotation": 180,
@@ -25,7 +25,7 @@
         },
         {
             "type": "addComponent",
-            "component": "Lens",
+            "component_type": "Lens",
             "name": "L2",
             "position": [-1,1],
             "rotation": 0,
@@ -38,7 +38,7 @@
         },
         {
             "type": "addComponent",
-            "component": "DualPinhole",
+            "component_type": "DualPinhole",
             "name": "Colli-Launch",
             "position": [0,1],
             "rays": [0, 1],
@@ -50,7 +50,7 @@
         },
         {
             "type": "addComponent",
-            "component": "DualPinhole",
+            "component_type": "DualPinhole",
             "name": "Colli-Check",
             "position": [3,1],
             "diameter": 0.02,
@@ -58,7 +58,7 @@
         },
         {
             "type": "addComponent",
-            "component": "Screen",
+            "component_type": "Screen",
             "name": "Test Screen",
             "target": true,
             "position": [5, 1],
@@ -92,7 +92,7 @@
         },
         {
             "type": "addComponent",
-            "component": "Lens",
+            "component_type": "Lens",
             "name": "Shear Plate",
             "position": [2,1],
             "rotation": [0,-45, 0],
@@ -107,7 +107,7 @@
         },
         {
             "type": "addComponent",
-            "component": "Screen",
+            "component_type": "Screen",
             "name": "Shear-Screen",
             "position": [2, 0],
             "rotation": 90,
@@ -122,7 +122,7 @@
         },
         {
             "type": "task",
-            "instruction": "Congratulations! You completed this level!\nPress Done for Lvl 2.",
+            "instruction": "Congratulations! You completed this level!\nPress Done for Lvl 4.",
             "narration": {
                 "link": "narrations/lvl1t6.m4a",
                 "credits": "Rainer Heintzmann"

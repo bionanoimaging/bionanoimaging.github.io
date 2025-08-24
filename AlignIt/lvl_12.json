@@ -5,7 +5,7 @@
     "steps": [
         {
             "type": "addComponent",
-            "component": "Laser",
+            "component_type": "Laser",
             "name": "Laser",
             "rays": [2, 4],
             "diameter": 0.3,
@@ -17,7 +17,7 @@
         },
         {
             "type": "addComponent",
-            "component": "Iris",
+            "component_type": "Iris",
             "name": "Condenser Aperture",
             "position": [-3,0],
             "diameter": 0.4,
@@ -25,7 +25,7 @@
         },
         {
             "type": "addComponent",
-            "component": "Iris",
+            "component_type": "Iris",
             "name": "Field Aperture",
             "position": [-8,0],
             "diameter": 0.4,
@@ -33,7 +33,7 @@
         },
         {
             "type": "addComponent",
-            "component": "Lens",
+            "component_type": "Lens",
             "name": "Condenser Lens",
             "rotation": [0,0,0],
             "position": [-2,1],
@@ -43,7 +43,7 @@
         },
         {
             "type": "addComponent",
-            "component": "Screen",
+            "component_type": "Screen",
             "name": "Screen",
             "success": {"PosX": 0.008,"PosY": 0.008, "Std": 0.008},
             "position": [0,0],
@@ -52,7 +52,7 @@
         },
         {
             "type": "addComponent",
-            "component": "PanelPost",
+            "component_type": "PanelPost",
             "name": "Panel Post",
             "height": 2.2,
             "position": [1, -1],
@@ -71,7 +71,7 @@
         },
         {
             "type": "addComponent",
-            "component": "Lens",
+            "component_type": "Lens",
             "name": "Field Lens",
             "rotation": [0,0,0],
             "position": [-6,1],
@@ -81,7 +81,7 @@
         },
         {
             "type": "addComponent",
-            "component": "DualPinhole",
+            "component_type": "DualPinhole",
             "name": "P1",
             "position": [1,0],
             "diameter": 0.02,
@@ -92,7 +92,7 @@
         },
         {
             "type": "addComponent",
-            "component": "DualPinhole",
+            "component_type": "DualPinhole",
             "name": "P2",
             "position": [8,0],
             "rotation": 0,
@@ -144,7 +144,7 @@
         },
         {
             "type": "addComponent",
-            "component": "Lens",
+            "component_type": "Lens",
             "name": "Objective Lens",
             "rotation": [0,0,0],
             "position": [0,1],
@@ -174,7 +174,7 @@
         },
         {
             "type": "addComponent",
-            "component": "Lens",
+            "component_type": "Lens",
             "name": "Tube Lens",
             "rotation": [0,0,0],
             "position": [3,1],
@@ -185,7 +185,7 @@
         },
         {
             "type": "addComponent",
-            "component": "DualPinhole",
+            "component_type": "DualPinhole",
             "name": "DP1",
             "position": [5.4,0],
             "diameter": 0.02,
@@ -196,7 +196,7 @@
         },
         {
             "type": "addComponent",
-            "component": "DualPinhole",
+            "component_type": "DualPinhole",
             "name": "DP2",
             "position": [9,0],
             "rotation": 0,
@@ -227,7 +227,7 @@
         },
         {
             "type": "addComponent",
-            "component": "Beamsplitter",
+            "component_type": "Beamsplitter",
             "name": "Beam Splitter",
             "position": [2,1],
             "rotation": 40,
@@ -236,7 +236,7 @@
         },
         {
             "type": "addComponent",
-            "component": "Pinhole",
+            "component_type": "Pinhole",
             "name": "P3",
             "position": [2.7,-2],
             "diameter": 0.05,
@@ -245,7 +245,7 @@
         },
         {
             "type": "addComponent",
-            "component": "Pinhole",
+            "component_type": "Pinhole",
             "name": "P4",
             "position": [2.7,-6],
             "diameter": 0.05,
@@ -261,7 +261,7 @@
         },
         {
             "type": "addComponent",
-            "component": "Screen",
+            "component_type": "Screen",
             "name": "Projection Screen",
             "position": [2.7,-8],
             "success": {"PosX": 0.01, "PosY": 0.01, "Num": 1},

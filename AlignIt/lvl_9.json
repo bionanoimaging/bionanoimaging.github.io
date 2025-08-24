@@ -5,7 +5,7 @@
     "steps": [
         {
             "type": "addComponent",
-            "component": "Laser",
+            "component_type": "Laser",
             "name": "Laser",
             "rays": [0,0],
             "rotation": [0,2.1,2.2],
@@ -24,7 +24,7 @@
         },
         {
             "type": "addComponent",
-            "component": "Slit",
+            "component_type": "Slit",
             "name": "A Slit",
             "position": [1,0],
             "height": 1.1,
@@ -35,7 +35,7 @@
             "comment": "This iris cannot be adjusted."
         },
         {
-            "type": "addComponent", "component": "Lens",
+            "type": "addComponent", "component_type": "Lens",
             "name": "L1",
             "position": [-1, 0],
             "r1": 1.0,
@@ -47,7 +47,7 @@
         },
         {
             "type": "addComponent",
-            "component": "Screen",
+            "component_type": "Screen",
             "name": "Screen",
             "target": false,
             "position": [2,0],
