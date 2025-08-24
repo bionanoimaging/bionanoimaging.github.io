@@ -35,6 +35,7 @@ const filesToCache = [
   'babylon/remote/l_hand_rhs.glb',
   'babylon/remote/handsShader.json',
   'babylon/remote/3',
+  'babylon/remote/favicon.ico',
   'babylon/remote/mrtk-mrdl-backplate-iridescence.png',
   'babylon/remote/mrtk-mrdl-blue-gradient.png',
   'babylon/remote/profile.json',
