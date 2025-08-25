@@ -1,58 +1,51 @@
 {
     "version": 1.0,
-    "number": "6",
-    "title": "Michelson Interferometer",
+    "number": "8",
+    "title": "Grating Interferometer",
     "steps": [
-        {
-            "type": "addComponent",
-            "component_type": "PanelPost",
-            "name": "Panel Post",
-            "height": 2.2,
-            "position": [1, -1],
-            "rotation": 0,
-            "dof": ""
-        },
         {
             "type": "addComponent",
             "component_type": "Laser",
             "name": "Laser",
             "rays": [1,3],
-            "diameter": 0.25,
-            "position": [-2,-6],
-            "rotation": -90,
-            "dof": "xyz"
-        },
-        {
-            "type": "addComponent",
-            "component_type": "Lens",
-            "name": "Planconvex L2",
-            "position": [-2,-4],
-            "rotation": -90,
-            "r1": -10.0,
+            "position": [-4,0],
             "dof": "XYZxyz"
         },
         {
             "type": "addComponent",
-            "component_type": "Beamsplitter",
-            "name": "Beamsplitter 1",
-            "position": [-2,-2],
-            "rotation": 45,
+            "component_type": "Grating",
+            "name": "Gr 1",
+            "position": [-2,0],
+            "rotation": -90,
+            "height": 1.0,
+            "pitch": 2.0,
             "dof": "XYZxyz"
         },
         {
             "type": "addComponent",
-            "component_type": "Mirror",
-            "name": "Mirror 1",
-            "position": [-2,1],
-            "rotation": [0.0,0.00025,0.00025],
+            "component_type": "Grating",
+            "name": "Gr 2",
+            "position": [-1,0],
+            "rotation": -90,
+            "height": 1.0,
+            "pitch": 2.0,
             "dof": "XYZxyz"
         },
         {
             "type": "addComponent",
             "component_type": "Mirror",
-            "name": "Mirror 2",
-            "position": [-4,-2],
-            "rotation": -90,
+            "name": "Mirror 6",
+            "position": [1,-2],
+            "rotation": 90,
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component_type": "Mirror",
+            "name": "Mirror 5",
+            "position": [1, 3],
+            "r1": -1.0,
+            "rotation": 90,
             "dof": "XYZxyz"
         },
         {
@@ -60,16 +53,18 @@
             "component_type": "Screen",
             "name": "Screen",
             "target": false,
-            "position": [2,-2]
+            "position": [4,0],
+            "dof": "XYZ"
         },
-        {
+       {
             "type": "task",
-            "instruction": "A Michelson Interferometer to explore\ninterference effects (only in the full version!)",
-            "success": {"PosX": 0.01, "PosY": 0.01, "Curv": 0.01, "RelAng": 0.01},
+            "instruction": "Without seeing the actual beams,\niris apertures are helpful tools.\nAdjust the angle to hit the angle-aperture.",
+            "success": {"Num": 1},
             "music": {
                 "link": "music/forest-with-small-river-birds-and-nature-field-recording-6735.mp3",
                 "credits": "Downloaded from pixabay.\nhttps://pixabay.com/sound-effects/search/forest-birds/"
             },
+            "final": true,
             "score": 100.0
         },
         {

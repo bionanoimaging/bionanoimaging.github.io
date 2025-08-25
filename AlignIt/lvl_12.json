@@ -5,6 +5,15 @@
     "steps": [
         {
             "type": "addComponent",
+            "component_type": "PanelPost",
+            "name": "Panel Post",
+            "height": 2.2,
+            "position": [1, -1],
+            "rotation": 0,
+            "dof": "XY"
+        },
+        {
+            "type": "addComponent",
             "component_type": "Laser",
             "name": "Laser",
             "rays": [2, 4],
@@ -49,15 +58,6 @@
             "position": [0,0],
             "rotation": 0,
             "dof": ""
-        },
-        {
-            "type": "addComponent",
-            "component_type": "PanelPost",
-            "name": "Panel Post",
-            "height": 2.2,
-            "position": [1, -1],
-            "rotation": 0,
-            "dof": "XY"
         },
         {
             "type": "task",

@@ -5,15 +5,6 @@
     "steps": [
         {
             "type": "addComponent",
-            "component_type": "PanelPost",
-            "name": "Panel Post",
-            "height": 2.2,
-            "position": [1, -1],
-            "rotation": 0,
-            "dof": ""
-        },
-        {
-            "type": "addComponent",
             "component_type": "FibreCouple",
             "name": "FibreCouple 1",
             "position": [-1.0, 1.1],
