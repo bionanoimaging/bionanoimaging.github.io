@@ -10,7 +10,7 @@
             "height": 2.2,
             "position": [1, -1],
             "rotation": 0,
-            "dof": ""
+            "dof": "XY"
         },
         {
             "type": "addComponent", "component_type": "Laser", "name": "Laser",
