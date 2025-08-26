@@ -43,7 +43,7 @@
             "r1": 0.0,
             "r2": 1.0,
             "dof": "ZYyz",
-            "trace_reflection": "true"
+            "trace_reflection": true
         },
         {
             "type": "addComponent",

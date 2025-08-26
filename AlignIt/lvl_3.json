@@ -110,7 +110,7 @@
             "reflectivity1": 0.2,
             "reflectivity2": 0.2,
             "thickness": 0.10,
-            "trace_reflection": "true",
+            "trace_reflection": true,
             "wedge_lambda": 0.001,
             "dof": ""
         },
