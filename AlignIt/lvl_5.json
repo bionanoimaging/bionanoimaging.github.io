@@ -45,6 +45,8 @@
             "type": "addComponent",
             "component_type": "Screen",
             "name": "Screen",
+            "design": "Powermeter",
+            "target": false,
             "success": {"Power": 0.99},
             "position": [3,0],
             "rotation": 0,
