@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "number": "1",
+  "title": "Scan-Level",
+  "steps": [
+    {
+      "type": "addComponent",
+      "component_type": "PanelPost",
+      "name": "Panel Post",
+      "height": 2.2,
+      "position": [
+        1,
+        -1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "dof": "",
+      "target": true
+    },
+    {
+      "name": "Laser1",
+      "type": "addComponent",
+      "dof": "",
+      "component_type": "Laser",
+      "position": [-4,0]
+    },
+    {
+      "name": "Mirror1",
+      "type": "addComponent",
+      "dof": "XYxyz",
+      "component_type": "Mirror",
+      "rotation": [0,45,0],
+      "scan_angle": 2,
+      "scan_period": 50,
+      "scan_type": "triangle",
+      "scan_cycles": 20
+    },
+    {
+      "name": "Mirror2",
+      "type": "addComponent",
+      "dof": "XYxyz",
+      "component_type": "Mirror",
+      "position": [0,-1],
+      "rotation": [0,-135,90],
+      "trace_reflection": false,
+      "scan_angle": 2,
+      "scan_period": 500,
+      "scan_cycles": 2
+    },
+    {
+      "name": "Screen1",
+      "type": "addComponent",
+      "dof": "XY",
+      "component_type": "Screen",
+      "position": [3.461666917800903, -0.674636948108673],
+      "target": true
+    },
+    {
+      "name": "L1",
+      "type": "addComponent",
+      "dof": "XY",
+      "component_type": "Lens",
+      "position": [1.5990032672882086, -0.6750410079956058],
+      "r1": 1
+    },
+    {
+      "type": "task",
+      "music": {
+        "link": "music/Now+We+Ride+-+320bit.mp3",
+        "credits": "Now We Ride by Alexander Nakarada | https://www.serpentsoundstudios.com\nCreative Commons CC BY 4.0, https://creativecommons.org/licenses/by/4.0/"
+      },
+      "instruction": "Here is a task to perform\n",
+      "showbeams": true,
+      "score": 100,
+      "showplanes": false
+    },
+    {
+      "type": "task",
+      "instruction": "Congratulations! You completed this level!\nPress Done for the next level.",
+      "final": true
+    }
+  ]
+}
