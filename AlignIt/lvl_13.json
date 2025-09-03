@@ -3,8 +3,7 @@
   "number": "1",
   "title": "Scan-Level",
   "steps": [
-    {
-      "type": "addComponent",
+    { "type": "addComponent",
       "component_type": "PanelPost",
       "name": "Panel Post",
       "height": 2.2,
@@ -56,7 +55,8 @@
       "dof": "XY",
       "component_type": "Screen",
       "position": [3.461666917800903, -0.674636948108673],
-      "target": true
+      "design": "Camera",
+      "target": false
     },
     {
       "name": "L1",

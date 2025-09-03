@@ -1,7 +1,7 @@
 // Names of the two caches used in this version of the service worker.
 // Change to v2, etc. when you update any of the local resources, which will
 // in turn trigger the install event again.
-const PRECACHE = 'precache-v18';
+const PRECACHE = 'precache-v20';
 const RUNTIME = 'runtime';
 
 // The files we want to cache for offline use. These are all relative to the
@@ -16,6 +16,7 @@ const filesToCache = [
   'js/lens.obfuscated.js',
   'js/rays.obfuscated.js',
   'js/utils.obfuscated.js',
+  'js/image_blur.obfuscated.js',
   'js/animations.obfuscated.js',
   'js/editor.obfuscated.js',
   'js/panels.obfuscated.js',
@@ -42,6 +43,7 @@ const filesToCache = [
   'babylon/remote/profilesList.json',
   'babylon/remote/right.glb',
   'babylon/remote/left.glb',
+  'babylon/remote/FluorescentCells.jpg',
   'music/Be+Jammin\'+-+320bit.mp3',
   'music/Emotional+Ballad+-+320bit.mp3',
   'music/forest-with-small-river-birds-and-nature-field-recording-6735.mp3',
@@ -110,7 +112,8 @@ const cached_files = [
   'https://immersive-web.github.io/webxr-input-profiles/packages/viewer/dist/profiles/meta-quest-touch-plus/right.glb',
   'https://immersive-web.github.io/webxr-input-profiles/packages/viewer/dist/profiles/meta-quest-touch-plus/left.glb',
   'https://assets.babylonjs.com/core/HandMeshes/handsShader.json',
-  'https://nanoimaging.de/favicon.ico'
+  'https://nanoimaging.de/favicon.ico',
+  'https://upload.wikimedia.org/wikipedia/commons/0/09/FluorescentCells.jpg'
 ]
 
 //   'https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.2/dat.gui.min.js',
