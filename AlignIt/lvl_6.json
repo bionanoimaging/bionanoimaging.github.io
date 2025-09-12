@@ -8,9 +8,9 @@
             "component_type": "PanelPost",
             "name": "Panel Post",
             "height": 2.2,
-            "position": [1, -1],
+            "position": [2, -1],
             "rotation": 0,
-            "dof": ""
+            "dof": "XY"
         },
         {
             "type": "addComponent",

@@ -1,7 +1,9 @@
-# Narrations and Ideas for AlignIt!
+# Narrations and Ideas for AlignIt
 
-# Level 1 - Find the Focus
+## Level 1 - Find the Focus
+
 ## Task 1
+
 Welcome to this optics education game,
 where you will learn how to align optical elements.
 
@@ -31,8 +33,8 @@ and you should THEN press the green button with the label "DONE".
 
 To listen to this narration again, press the blue "NARRATION" button.
 
-
 ## Task 2
+
 Great! You managed to complete your first alignment task.
 You can see the points you collected on the top line of the panel.
 
@@ -45,6 +47,7 @@ That last indicator visualizes the number of movements spent,
 which gives you a rough idea about the score to expect.
 
 ## Task 3
+
 Fantastic! You completed the second alignment task!
 Now we add ONE MORE degree of freedom. Note the little upwards-pointing arrow next to the lens mount which you can grab.
 
@@ -53,6 +56,7 @@ To move a component upwards, you can also simply grab the rod on which the lens 
 Remember to monitor the indicators while adjusting.
 
 ## Task 4
+
 Wow! You also passed this test.
 Now there are another two degrees of freedom, which are the ROTATIONS of the lens.
 To control these rotations, you need to click the mounted lens,
@@ -65,12 +69,14 @@ Note that the focus quality of a plano-convex lens depends on which side its fla
 The largest ray bending angles typically introduce the largest optical aberrations. Therefore the flat side of the lens should point towards the focus meaning towards the screen.
 
 ## Task 5
+
 Perfect! Of course in real life you typically cannot see the laser beam as nicely as you see it here.
 Therefore we now deactivated this helpful visualization of light rays.
 Lets SEE, if you can repeat the previous alignment task,
 with only being able to see the laserspot on the screen.
 
 ## Task 6
+
 I am impressed. You completed all the tasks of this level.
 Your final score is shown on the top right.
 Maybe you even made it into the top ten?
@@ -81,7 +87,9 @@ A second click hides the leaderboard.
 Clicking "Done" again will get you to level 2.
 
 # Level 2 - Optical Axis
+
 ## Task 1
+
 This level is about a very essential idea in optical alignment, which is the definition of an optical axis.
 In this first example, we assume that the optical axis was already defined by a well adjusted laser beam and your task is to establish a MEMORY of this axis
 by passing the laser beam though two pinholes.
@@ -89,15 +97,18 @@ by passing the laser beam though two pinholes.
 This allows you to always reestablish the optical axis, as longs as you do not modify these pinholes afterwards.
 
 ## Task 2
+
 Nice! Of course the pinholes typically need to be adjusted in both transversal coordinates.
 Start with the pinhole closes to the laser. Position yourself upstream near the laser,
 to get a nice view along the laser beam and see where its hits the first pinhole.
 
 ## Task 3
+
 Well done! Can you also do this without seeing the laser rays?
 The spot should be faintly visible on the first pinhole, if it does not pass through it.
 
 ## Task 4
+
 We started with the optical axis predefined by a preadjusted laser. But in real life,
 it is often the other way round and you are given two pinholes or adjustment targets of the same height.
 
@@ -106,6 +117,7 @@ Remember to click on the laser to activate its rotation gizmo and also remember 
 you can get a better accuracy by moving your controller far away from the rotation gizmo while still holding the trigger.
 
 ## Task 5
+
 Great! To make it even more realistic,
 you NOW have to adjust all degrees of freedom of the laser.
 
@@ -117,12 +129,14 @@ Since this one is further away from the laser, we call this aperture the
 By adjusting the angles of the laser, you can pass it through this "angle" aperture, keeping the front iris open, to complete this task.
 
 ## Task 6
+
 Now you can continue your beamwalk by closing the front aperture and adjusting the laser position to pass through it. This will, of course mess up the position at the second aperture, which you should again correct using the angles of the laser. 
 By iterating between the adjustments, you should be able to pass through both apertures even when they are quite small. 
 This principle is called a "beam walk" and we will see more of this in other levels.
 Note that you can only complete the level, if the pinholes are below a certain miminmum size. Once this is achieved, the component whos requirement are met will also turn green and the "component" indicator on the indicator bar will take notice.
 
 ## Task 7
+
 This was impressive! Your score is saved.
 Maybe you made it into the leaderboard?
 
@@ -135,6 +149,7 @@ Maybe you made it into the leaderboard?
 # Level 6 - Beam Expanson with Pinhole
 
 # ToDo
+
 - Laser-Ring rendering
 - Alignment Card
 - Shear-Plate
