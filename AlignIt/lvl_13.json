@@ -47,7 +47,7 @@
       "type": "addComponent",
       "dof": "XYZ",
       "component_type": "Screen",
-      "position": [11, -0.68],
+      "position": [11, -0.7],
       "design": "ColorCamera",
       "target": false
     },
@@ -55,7 +55,7 @@
       "type": "addComponent",
       "component_type": "Beamsplitter",
       "name": "Dichromatic 1",
-      "position": [5.5,-0.68],
+      "position": [5.5,-0.7],
       "dichromatic": true,
       "dof": "XYZxyz"
     },
@@ -63,7 +63,7 @@
       "type": "addComponent",
       "component_type": "Filter",
       "name": "LP 1",
-      "position": [6,-0.68],
+      "position": [6,-0.7],
       "dof": "XYZxyz"
     },
     {
@@ -76,7 +76,7 @@
       "focus1": true,
       "principle2": true,
       "focus2": true,
-      "position": [4.5, -0.68],
+      "position": [4.5, -0.7],
       "focal_length": 0.05
     },
     {
@@ -84,7 +84,7 @@
       "type": "addComponent",
       "dof": "XY",
       "component_type": "Lens",
-      "position": [7.5, -0.68],
+      "position": [7.5, -0.7],
       "r1": 1
     },
     {
@@ -92,17 +92,31 @@
       "type": "addComponent",
       "dof": "XYZxyz",
       "component_type": "Sample",
-      "position": [3.5, -0.68],
+      "position": [3.476, -0.7],
       "dir_em": 1,
       "launches": true,
       "design": "Slide"
     },
     {
+        "type": "addComponent",
+        "component_type": "Pinhole",
+        "name": "PH-True",
+        "position": [3.5, 2],
+        "diameter": 0.4,
+        "rotation": [0,0,0],
+        "separation": 0.3,
+        "launches": true,
+        "launch_power": 0.8,
+        "rays": [1,4],
+        "dof": "XYZxyz"
+    },
+
+    {
       "name": "L1",
       "type": "addComponent",
       "dof": "XYZ",
       "component_type": "Lens",
-      "position": [1.6, -0.68],
+      "position": [1.736, -0.7],
       "r1": 1
     },
     {
