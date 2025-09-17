@@ -12,7 +12,7 @@ A separate list of Daniela Täuber can be found on [Google Scholar](https://scho
 
 A separate list of the BioPOLIM team can be found on [BioPOLIM/Publications](https://biopolim.de/publications.htm).
 
-An additional list of publication in the group "Microscopy" at the Leibniz-IPHT can be found in this [database](https://www.leibniz-ipht.de/de/abteilungen/mikroskopie/publikationen).
+An additional list of publications in the department of "Microscopy" at the Leibniz-IPHT can be found in this [database](https://www.leibniz-ipht.de/de/abteilungen/mikroskopie/publikationen).
 
 
 
