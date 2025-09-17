@@ -4,7 +4,6 @@ title:  "CHigh-resolution fluorescence lifetime and infrared spectroscopic chara
 date:   2025-09-17
 author: Maryam Ali
 author_profile: true
-%%date:   2025-04-01
 author: Daniela Täuber
 author_profile: true
 ---
