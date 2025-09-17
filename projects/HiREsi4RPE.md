@@ -1,9 +1,10 @@
 ---
 layout: single
-title:  "CHigh-resolution fluorescence lifetime and infrared spectroscopic characterization of pathogenic retinal pigment epithelium cell organelles (HiResi4RPE)"
-date:   2025-09-17
+title:  "High-resolution fluorescence lifetime and infrared spectroscopic characterization of pathogenic retinal pigment epithelium cell organelles (HiResi4RPE)"
+date:   2025-04-01
 author: Maryam Ali
 author_profile: true
+date:   2025-09-17
 author: Daniela Täuber
 author_profile: true
 ---
