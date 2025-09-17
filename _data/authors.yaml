@@ -42,7 +42,7 @@ Daniela Täuber:
   bio         : "Heads the BioPOLIM team working on anisotropy in microscopic imaging in Life and Materials Sciences" 
   avatar      : "/assets/images/people/taeuber.jpg"
   active      : true 
-  role        : "PostDoc"
+  role        : "Head of Team [BioPOLIM](https://www.biopolim.de)"
   links:
     - label: "ResearchGate"
       icon: "fas fa-fw fa-link"
