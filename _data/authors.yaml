@@ -47,12 +47,15 @@ Daniela Täuber:
     - label: "ResearchGate"
       icon: "fas fa-fw fa-link"
       url: "https://www.researchgate.net/profile/Daniela-Taeuber"
-    - label: "LinkedIn"
-      icon: "fas fa-fw fa-link"
-      url: "https://www.linkedin.com/in/daniela-t%C3%A4uber-84405b86/"
     - label: "Research Website"
       icon: "fas fa-fw fa-link"
       url: "https://www.biopolim.de"
+    - label: "LinkedIn"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.linkedin.com/in/daniela-t%C3%A4uber-84405b86/"
+    - label: "Scientific CV"
+      icon: "fas fa-fw fa-link"
+      url: "https://biopolim.de/curriculumvita.htm"
 
 René Lachmann:
   name        : "Dr. René Lachmann"
