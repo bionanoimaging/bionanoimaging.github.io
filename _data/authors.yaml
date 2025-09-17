@@ -39,17 +39,20 @@ Georg Bergner:
 
 Daniela Täuber:
   name        : "Dr. Daniela Täuber"
-  bio         : "Heads a team working on polarization-resolved fluorescence microscopy and nanoscale infrared spectroscopic imaging" 
+  bio         : "Heads the BioPOLIM team working on anisotropy in microscopic imaging in Life and Materials Sciences" 
   avatar      : "/assets/images/people/taeuber.jpg"
   active      : true 
   role        : "PostDoc"
   links:
-    - label: "Research Website"
-      icon: "fas fa-fw fa-link"
-      url: "http://www.biopolim.de"
     - label: "ResearchGate"
       icon: "fas fa-fw fa-link"
       url: "https://www.researchgate.net/profile/Daniela-Taeuber"
+    - label: "LinkedIn"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.linkedin.com/in/daniela-t%C3%A4uber-84405b86/"
+    - label: "Research Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.biopolim.de"
 
 René Lachmann:
   name        : "Dr. René Lachmann"
@@ -130,14 +133,14 @@ Barbora Marsikova:
 
 Shangjun Cheng:
   name        : "Shangjun Cheng"
-  bio         : "PhD Student working on Expansion Microscopy"
+  bio         : "PhD Student in the BioPOLIM team working on Expansion Microscopy"
   avatar      : "/assets/images/people/ShangjunCheng.jpg"
   active      : true 
   role        : "PhD Candidate"
 
 Maryam Ali:
   name        : "Maryam Ali"
-  bio         : "PhD Student working on high-resolved characterization of retinal cells"
+  bio         : "PhD Student in the BioPOLIM team working on high-resolved characterization of retinal cells"
   avatar      : "/assets/images/people/Maryam_Ali.jpg"
   active      : true 
   role        : "PhD Candidate"
@@ -148,7 +151,7 @@ Maryam Ali:
 
 Yunhao Mei:
   name        : "Yunhao Mei"
-  bio         : "Master Student working on 2D-POLIM"
+  bio         : "Master Student in the BioPOLIM team working on 2D-POLIM"
   avatar      : "/assets/images/people/dummy.jpg"
   active      : false 
   role        : "Master Student"
@@ -204,7 +207,7 @@ Mohammad Soltaninezhad:
 
 Yutong Wang:
   name        : "Yutong Wang"
-  bio         : ""
+  bio         : "Master Student in the BioPOLIM team working on 2D-POLIM"
   avatar      : "/assets/images/people/ytwang.jpg"
   active      : false
   role        : "Master's Student"
@@ -272,3 +275,30 @@ Morteza Babazadeh Shareh:
   active      : true 
   role        : "PostDoc"
 
+Sharon Xavi:
+  name        : "Sharon Xavi"
+  bio         : "Master student in the BioPOLIM team working on COMSOL Modeling of nearfield coupling on nanostructured surfaces"
+  avatar      : "/assets/images/people/dummy.jpg"
+  active      : true 
+  role        : "Master's Student"
+
+Zilong Huang:
+  name        : "Zilong Huang"
+  bio         : "Master student in the BioPOLIM team working 2DPOLIM"
+  avatar      : "/assets/images/people/dummy.jpg"
+  active      : true 
+  role        : "Master's Student"
+
+Lizhong Mou:
+  name        : "Lizhong Mou"
+  bio         : "Master student in the BioPOLIM team working on polarization-resolved FLIM"
+  avatar      : "/assets/images/people/dummy.jpg"
+  active      : true 
+  role        : "Master's Student"
+
+Sicheng Tian:
+  name        : "Sicheng Tian"
+  bio         : "Master student in the BioPOLIM team working on the application of IR-spectroscopic photo-induced force microscopy and complementary methods to retinal materials"
+  avatar      : "/assets/images/people/dummy.jpg"
+  active      : true 
+  role        : "Master's Student"
