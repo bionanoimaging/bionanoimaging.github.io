@@ -20,3 +20,8 @@ Retinal materials are obtained from or collaborators at the university hospital.
 
 This project is funded by the by German Reseach Foundation (DFG) that aims to examine the pathogenic inception of this disease [HiResi4RPE 542825796](https://gepris.dfg.de/gepris/projekt/542825796?context=projekt&task=showDetail&id=542825796&).
 
+People working on the project:
+"Daniela Täuber"
+"Rainer Heintzmann"
+"Maryam Ali"
+"Sicheng Tian"
