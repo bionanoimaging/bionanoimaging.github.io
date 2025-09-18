@@ -56,7 +56,7 @@ Daniela Täuber:
     - label: "Scientific CV"
       icon: "fas fa-fw fa-link"
       url: "https://biopolim.de/curriculumvita.htm"
-   - label: "BioPOLIM on github"
+    - label: "BioPOLIM on github"
       url: "https://github.com/BioPOLIM"
 
 René Lachmann:
