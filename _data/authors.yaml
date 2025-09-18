@@ -1,6 +1,6 @@
 Rainer Heintzmann:
   name        : "Prof. Dr. Rainer Heintzmann"
-  bio         : "Head of the Microscopy Department (Leibniz IPHT) and Chair of Nanobiophotonics in the Department of Physical Chemistry" 
+  bio         : "Head of the Microscopy Department (Leibniz-IPHT) and Chair of Nanobiophotonics in the Department of Physical Chemistry at the Friedrich Schiller University Jena" 
   avatar      : "/assets/images/people/heintzmann.jpg"
   active      : true 
   role        : "Group Leader"
@@ -71,7 +71,7 @@ Benedict Diederich:
   bio         : "" 
   avatar      : "/assets/images/people/diederich.jpg"
   active      : true 
-  role        : "PostDoc"
+  role        : "Head of openUC2"
   
   
 Dirk Boonzajer:
