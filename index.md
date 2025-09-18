@@ -8,17 +8,19 @@ header:
   overlay_image: assets/images/banner.jpg
   overlay_filter: 0.4 # same as adding an opacity
 ---
-We are a research group located at the [Leibniz Institute of Photonics Technology (IPHT)](https://www.leibniz-ipht.de/en/homepage/) and the [Institute of Physical Chemistry](https://www.ipc.uni-jena.de/en/research-groups/heintzmann-group) in Jena, Germany.
+We are a research group located at the [Leibniz Institute of Photonic Technology (LIPHT)](https://www.leibniz-ipht.de/en/homepage/) and the [Institute of Physical Chemistry](https://www.ipc.uni-jena.de/en/research-groups/heintzmann-group) in Jena, Germany.
 The group is led by Rainer Heintzmann.
 
 # Our Mission
 
-Our workgroup focuses both on developing novel methods and devices for light microscopy as well as on improving established techniques. 
+Our group focuses both on developing novel methods and devices for light microscopy as well as on improving established techniques. 
 We work on computational algorithms enhancing properties such as the resolution of microscopes using structured illumination (SIM).
 
 Furthermore, We aim to support researchers around the world with imaging devices which are easy replicate. This includes low-cost (microscopic) imaging devices, but also image processing algorithms. See the [GitHub page of UC2](http://youseetoo.org) for further reference.
 
 Recently, we started to work more on open source software regarding microscopy image processing in [Julia Lang](https://julialang.org/) on [GitHub](https://github.com/bionanoimaging/?q=&type=all&language=&sort=stargazers). See also [this software page](/software).
+
+Our group has been supporting the development of [openUc2](https://github.com/openUC2/UC2-GIT), a modular optical toolbox enabling optical rapid prototyping, as well as the team [BioPOLIM](https://biopolim.de/) focussing on Anisotropy in Microscopic imaging in the Life and Materials Sciences
 
 ### Interested to join?
 [See this page](/open_positions) for open positions and topics.
@@ -31,4 +33,5 @@ _Phone: +49.(0)3641 206 431_<br>
 _Leibniz-Institut für Photonische Technologien e.V._<br>
 _Albert-Einstein-Straße 9_<br>
 _07745 Jena, Germany_<br>
+
 
