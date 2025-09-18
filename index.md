@@ -8,7 +8,7 @@ header:
   overlay_image: assets/images/banner.jpg
   overlay_filter: 0.4 # same as adding an opacity
 ---
-We are a research group located at the [Leibniz Institute of Photonic Technology (LIPHT)](https://www.leibniz-ipht.de/en/homepage/) and the [Institute of Physical Chemistry](https://www.ipc.uni-jena.de/en/research-groups/heintzmann-group) in Jena, Germany.
+We are a research group located at the [Leibniz Institute of Photonic Technology (LIPHT)](https://www.leibniz-ipht.de/en/homepage/) and the [Institute of Physical Chemistry at the Friedrich Schiller University](https://www.ipc.uni-jena.de/en/research-groups/heintzmann-group) in Jena, Germany.
 The group is led by Rainer Heintzmann.
 
 # Our Mission
@@ -33,6 +33,7 @@ _Phone: +49.(0)3641 206 431_<br>
 _Leibniz-Institut für Photonische Technologien e.V._<br>
 _Albert-Einstein-Straße 9_<br>
 _07745 Jena, Germany_<br>
+
 
 
 
