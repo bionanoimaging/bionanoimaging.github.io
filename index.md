@@ -20,7 +20,7 @@ Furthermore, We aim to support researchers around the world with imaging devices
 
 Recently, we started to work more on open source software regarding microscopy image processing in [Julia Lang](https://julialang.org/) on [GitHub](https://github.com/bionanoimaging/?q=&type=all&language=&sort=stargazers). See also [this software page](/software).
 
-The team [BioPOLIM](https://biopolim.de/) is focussing on Anisotropy in Microscopic imaging in the Life and Materials Sciences
+The [BioPOLIM](https://biopolim.de/) team is focussing on Anisotropy in Microscopic imaging in the Life and Materials Sciences
 
 ### Interested to join?
 [See this page](/open_positions) for open positions and topics.
@@ -33,6 +33,7 @@ _Phone: +49.(0)3641 206 431_<br>
 _Leibniz-Institut für Photonische Technologien e.V._<br>
 _Albert-Einstein-Straße 9_<br>
 _07745 Jena, Germany_<br>
+
 
 
 
