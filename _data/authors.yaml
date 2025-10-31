@@ -211,7 +211,7 @@ Sebastian Unger:
   role        : "PhD Candidate"
     - label: "LinkedIn"
       icon: "fas fa-fw fa-link"
-      url:"https://www.linkedin.com/in/sebastian-unger-034093150/"
+      url: "https://www.linkedin.com/in/sebastian-unger-034093150/"
 
 Mohammad Soltaninezhad:
   name        : "Mohammad Soltaninezhad"
@@ -298,7 +298,7 @@ Shohely Anindo:
   role        : "Master's Student"
     - label: "LinkedIn"
       icon: "fas fa-fw fa-link"
-      url:"https://www.linkedin.com/in/anindyodip/"
+      url: "https://www.linkedin.com/in/anindyodip/"
 
 Mashiat Ibida Huq:
   name        : "Mashiat Ibida Huq"
@@ -308,7 +308,7 @@ Mashiat Ibida Huq:
   role        : "Master's Student"
     - label: "LinkedIn"
       icon: "fas fa-fw fa-link"
-      url:"https://www.linkedin.com/in/mashiat-ibt-h/"
+      url: "https://www.linkedin.com/in/mashiat-ibt-h/"
 
 Sharon Xavi:
   name        : "Sharon Xavi"
