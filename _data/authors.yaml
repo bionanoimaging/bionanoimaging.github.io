@@ -209,6 +209,7 @@ Sebastian Unger:
   avatar      : "/assets/images/people/goswami.jpg"
   active      : false 
   role        : "PhD Candidate"
+  links:
     - label: "LinkedIn"
       icon: "fas fa-fw fa-link"
       url: "https://www.linkedin.com/in/sebastian-unger-034093150/"
@@ -296,6 +297,7 @@ Shohely Anindo:
   avatar      : "/assets/images/people/dummy.jpg"
   active      : false 
   role        : "Master's Student"
+  links:
     - label: "LinkedIn"
       icon: "fas fa-fw fa-link"
       url: "https://www.linkedin.com/in/anindyodip/"
@@ -306,6 +308,7 @@ Mashiat Ibida Huq:
   avatar      : "/assets/images/people/dummy.jpg"
   active      : false 
   role        : "Master's Student"
+  links:
     - label: "LinkedIn"
       icon: "fas fa-fw fa-link"
       url: "https://www.linkedin.com/in/mashiat-ibt-h/"
