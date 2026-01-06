@@ -165,7 +165,7 @@ Hossein Zarei-Oshtolagh:
   name        : "Hossein Zarei-Oshtolagh"
   bio         : " PhD Student working on Lightsheet Microscopy (Polytarget)"
   avatar      : "/assets/images/people/dummy.jpg"
-  active      : true 
+  active      : false 
   role        : "PhD Candidate"
 
 Mahyasadat Ebrahimi:
@@ -206,7 +206,7 @@ Martin Buchmann:
 Sebastian Unger:
   name        : "Sebastian Unger"
   bio         : ""
-  avatar      : "/assets/images/people/goswami.jpg"
+  avatar      : "/assets/images/people/dummy.jpg"
   active      : false 
   role        : "PhD Candidate"
   links:
@@ -267,7 +267,7 @@ Zihao Xiao:
   name        : "Zihao Xiao"
   bio         : "Master student working in holoMINFLUX"
   avatar      : "/assets/images/people/Zihao.jpg"
-  active      : true 
+  active      : false 
   role        : "Master's Student"
 
 Mariia Kurilenko:
