@@ -8,7 +8,7 @@ Here, we highlight some of our projects.
 
 This projects could be a basis for further projects such as internships. [See this page](/open_positions) for other projects ideas.
 
-Also see this [Software page](/software) for details on our developed packages.
+Also see this [Software page](/software) for details on our developed packages or this [gadget page](/toolsForLab) for details on our developed gadgets.
 
 ## Selected projects
 * [Snapshot hyperspectral imaging for plasmon biosensors](/projects/plasmonSensing)
@@ -19,4 +19,4 @@ Also see this [Software page](/software) for details on our developed packages.
 * [Lensless interferometric scattering microscopy](/projects/liSCAT)
 * [Smart inventory for optical laboratory](/projects/tiptoi)
 * [Deconvolution toolbox](/projects/DeconvOptim)
-
+* [Software for instruments' control](/projects/viscope)

@@ -1,5 +1,5 @@
 ---
 layout: splash
-title: toolForLab
-permalink: /toolForLab
+title: toolsForLab
+permalink: /toolsForLab
 ---
