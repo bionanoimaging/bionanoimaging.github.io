@@ -22,7 +22,7 @@ Recently, we started to work more on open source software regarding microscopy i
 
 The [BioPOLIM](https://biopolim.de/) team is focussing on Anisotropy in Microscopic imaging in the Life and Materials Sciences
 
-Additionally, we made tiny apps and hardware gadgets, which target to ease daily work in the optical laboratory. See [this page](/toolsforLab) with the list of the gadget. 
+Additionally, we made tiny apps and hardware gadgets, which target to ease daily work in the optical laboratory. See [this page](/toolsForLab) with the list of the gadget. 
 
 
 
