@@ -1,0 +1,138 @@
+{
+  "version": 1,
+  "number": "1",
+  "title": "Scan-Level",
+  "steps": [
+    { "type": "addComponent",
+      "component_type": "PanelPost",
+      "name": "Panel Post",
+      "height": 2.2,
+      "position": [1,-2],
+      "dof": "XY",
+      "target": true
+    },
+    {
+      "name": "Laser1",
+      "type": "addComponent",
+      "dof": "XY",
+      "component_type": "Laser",
+      "position": [-4, 0],
+      "diameter": 0.15
+    },
+    {
+      "name": "Mirror1",
+      "type": "addComponent",
+      "dof": "XYxyz",
+      "component_type": "Mirror",
+      "rotation": [0,45,0],
+      "scan_angle": 0.1,
+      "scan_period": 100,
+      "scan_type": "triangle",
+      "scan_cycles": 20
+    },
+    {
+      "name": "Mirror2",
+      "type": "addComponent",
+      "dof": "XYxyz",
+      "component_type": "Mirror",
+      "position": [0,-1],
+      "rotation": [0,-135,90],
+      "trace_reflection": false,
+      "scan_angle": 0.1,
+      "scan_period": 1000,
+      "scan_cycles": 2
+    },
+    {
+      "name": "Camera 1",
+      "type": "addComponent",
+      "dof": "XYZ",
+      "component_type": "Screen",
+      "position": [11, -0.7],
+      "design": "ColorCamera",
+      "target": false
+    },
+    {
+      "type": "addComponent",
+      "component_type": "Beamsplitter",
+      "name": "Dichromatic 1",
+      "position": [5.5,-0.7],
+      "dichromatic": true,
+      "dof": "XYZxyz"
+    },
+    {
+      "type": "addComponent",
+      "component_type": "Filter",
+      "name": "LP 1",
+      "position": [6,-0.7],
+      "dof": "XYZxyz"
+    },
+    {
+      "name": "Objective",
+      "type": "addComponent",
+      "dof": "XYZxyz",
+      "rotation": 180,
+      "component_type": "Objective",
+      "principle1": true,
+      "focus1": true,
+      "principle2": true,
+      "focus2": true,
+      "position": [4.5, -0.7],
+      "focal_length": 0.05
+    },
+    {
+      "name": "TL",
+      "type": "addComponent",
+      "dof": "XY",
+      "component_type": "Lens",
+      "position": [7.5, -0.7],
+      "r1": 1
+    },
+    {
+      "name": "FluoCells1",
+      "type": "addComponent",
+      "dof": "XYZxyz",
+      "component_type": "Sample",
+      "position": [3.476, -0.7],
+      "dir_em": 1,
+      "launches": true,
+      "design": "Slide"
+    },
+    {
+        "type": "addComponent",
+        "component_type": "Pinhole",
+        "name": "PH-True",
+        "position": [3.5, 2],
+        "diameter": 0.4,
+        "rotation": [0,0,0],
+        "separation": 0.3,
+        "launches": true,
+        "launch_power": 0.8,
+        "rays": [1,4],
+        "dof": "XYZxyz"
+    },
+
+    {
+      "name": "L1",
+      "type": "addComponent",
+      "dof": "XYZ",
+      "component_type": "Lens",
+      "position": [1.736, -0.7],
+      "r1": 1
+    },
+    {
+      "type": "task",
+      "music": {
+        "link": "music/Now+We+Ride+-+320bit.mp3",
+        "credits": "Now We Ride by Alexander Nakarada | https://www.serpentsoundstudios.com\nCreative Commons CC BY 4.0, https://creativecommons.org/licenses/by/4.0/"
+      },
+      "instruction": "Here is a task to perform\n",
+      "showbeams": true,
+      "score": 100
+    },
+    {
+      "type": "task",
+      "instruction": "Congratulations! You completed this level!\nPress Done for the next level.",
+      "final": true
+    }
+  ]
+}
