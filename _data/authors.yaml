@@ -340,3 +340,14 @@ Sicheng Tian:
   avatar      : "/assets/images/people/dummy.jpg"
   active      : true 
   role        : "Master's Student"
+
+Kiril Armstrong:
+  name        : "Kiril Armstrong"
+  bio         : "Master student working on 3-dimensional label-free imagaing using holography techniques."
+  avatar      : "/assets/images/people/kiril-armstrong.jpg"
+  active      : true 
+  role        : "Master's Student"
+  links:
+    - label: "LinkedIn"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.linkedin.com/in/kirilarmstrong"
