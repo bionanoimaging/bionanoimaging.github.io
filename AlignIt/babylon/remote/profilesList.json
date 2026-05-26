@@ -84,6 +84,9 @@
   "oculus-go": {
     "path": "oculus-go/profile.json"
   },
+  "oculus-hand": {
+    "path": "oculus-hand/profile.json"
+  },
   "oculus-touch-v2": {
     "path": "oculus-touch-v2/profile.json"
   },
@@ -107,6 +110,9 @@
   },
   "pico-neo3": {
     "path": "pico-neo3/profile.json"
+  },
+  "samsung-galaxyxr": {
+    "path": "samsung-galaxyxr/profile.json"
   },
   "samsung-gearvr": {
     "path": "samsung-gearvr/profile.json"

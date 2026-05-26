@@ -10,7 +10,7 @@
             "height": 2.2,
             "position": [1, -1],
             "rotation": 0,
-            "dof": "XY"
+            "dof": ""
         },
         {
             "type": "addComponent", "component_type": "Laser", "name": "Laser",
@@ -33,12 +33,12 @@
         },
         {
             "type": "solution", "name": "L1",
-            "position": [0, 0]
+            "position": [0.28, 0]
         },
         {
             "type": "addComponent", "component_type": "Screen", "name": "S1",
             "success": {"Std": 0.01},
-            "position": [2, 0.0],
+            "position": [2.2, 0.0],
             "rotation": 0,
             "dof": ""
         },
@@ -56,13 +56,13 @@
         },
         {
             "type": "modifyComponent", "name": "L1",
-            "position": [-2,-1],
+            "position": [-2.3,-1],
             "dof": "XY",
             "limits": [[-2.5,1],[-2.5,1],[0.5,1.4]]
         },
         {
             "type": "solution", "name": "L1",
-            "position": [0.05, 0],
+            "position": [0.28, 0],
             "height": 1.0
         },
         {
@@ -88,7 +88,7 @@
         },
         {
             "type": "solution", "name": "L1",
-            "position": [0.05, 0],
+            "position": [0.28, 0],
             "height": 1.0
         },
         {
@@ -113,13 +113,13 @@
             "type": "modifyComponent",
             "name": "L1",
             "position": [-2,-1],
-            "rotation": [0,163,-20],
+            "rotation": [0,163,0],
             "height": 0.9,
-            "dof": "XYZzy"
+            "dof": "XYZz"
         },
         {
             "type": "solution", "name": "L1",
-            "position": [0.05, 0],
+            "position": [0.28, 0],
             "height": 1.0,
             "rotation": 0
         },
@@ -145,17 +145,23 @@
             "name": "L1",
             "position": [-2,-1],
             "rotation": [0,-163,20],
-            "height": 0.9
+            "height": 0.9,
+            "dof": "XYZzyx"
         },
         {
             "type": "solution", "name": "L1",
-            "position": [0.05, 0],
+            "position": [0.28, 0],
             "height": 1.0,
             "rotation": 0
         },
         {
             "type": "modifyComponent", "name": "S1",
             "success": {"Std": 0.006, "PosX": 0.02, "PosY": 0.02}
+        },
+        {
+            "type": "activate",
+            "name": "L1",
+            "dof": "yz"
         },
         {
             "type": "task",

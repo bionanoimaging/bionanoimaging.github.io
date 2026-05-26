@@ -8,16 +8,29 @@ The game can be accessed under the followin links:
 
 [Augmented Reality (AR) Version](https://www.nanoimaging.de/AlignIt/?mode=ar)
 
-The game is organized in level, each of which consists of several consecutive alignment tasks. Their relevance is often explained via narrations.
+The game is organized in levels, each of which consists of several consecutive alignment tasks. Their relevance is often explained via narrations.
 By completing all tasks of a level, a score is obtained and entered into a global leaderboard (highscore), if you make it to the best 10 players.
+
+## Premium Features
+
+Most features of this game can be used in the basic version, free of charge. However, some premium features require to purchase a license.
+Such features include:
+- Beam Interference. Interferometers such as the Michelson and Mach-Zehnder Interferometer only work properly in premium mode.
+- Camera. The camera allows to image samples in a microcope mode. Without premium mode activated, only a screen is visible instead of a camera with a display.
+- Editor. The level editor can be tried for free. However, saving your edits is only possible in premium mode.
+- Realistic Lens rendering. In premium mode a special (albeit slower) mode of lens rendering can be activated, which renders lenses with close-to real properties. This includes being able to use a lens as a magnifying glass as the observer.
+
+However, most features including ray tracing and all elements work also fine in the basic mode and most levels can be played in basic mode.
+
+## Levels
 
 Currently only a few levels available:
 
 1. Level one teaches the user how to focus a plano-convex lens onto the screen. The various task increase in complexity starting from only allowing movement of the focus direction and ending with a lens that has 5 degrees of freedom.
 2. Level two teaches the importance of the optical axis and how to align it.
-3. A rudimentary beam expander.
-4. A Michelson interferometer. Note that interference fringes are only visible in the pro version.
-5. A Mach-Zehnder interferometer. Note that interference fringes are only visible in the pro version.
+3. A rudimentary beam expander to teach collimation.
+4. A Michelson interferometer (premium only). Note that interference fringes are only visible in the pro version.
+5. A Mach-Zehnder interferometer (premium only). Note that interference fringes are only visible in the pro version.
 6. Level three is currently not a real level, but it just presents all the currently implemented component types which can be (mostly) moved freely.
 
 ## Keyboard control
@@ -55,7 +68,7 @@ The "X"-button toggles the visibility of the screen (which is in your left hand)
 - Narrations (switchable).
 - Leaderboard
 - Can parse user-defined levels via the ?levels=path_to_levels argument. See details below.
-- To combined several arguments use the following syntax: `?user=fred&scale=0.7&mode=vr&levels=https://localhost:8000` or a different web-link in the `levels` argument. Note that, due to CORS policy, working with local test-levels requires to start a local http server with a python script as described [in this document](https://stackoverflow.com/questions/21956683/enable-access-control-on-simple-http-server).
+- To combined several arguments use the following syntax: `?user=fred&scale=0.7&mode=vr&levels=https://localhost:8000&level=3` or a different web-link in the `levels` argument. Note that, due to CORS policy, working with local test-levels requires to start a local http server with a python script as described [in this document](https://stackoverflow.com/questions/21956683/enable-access-control-on-simple-http-server).
 
 ## Define your own level
 
@@ -102,7 +115,7 @@ All components have the possibility to specify degrees of freedom ("dof"). For t
 
 ### List of possible component types
 
-- `Laser` ("rays": [0,0], "diameter": 0.3), the two numbers refer to the number or radial layers and azimuthal rays in each layer. "diameter" refers to the total diameter of the outer layer of laser rays.
+- `Laser` ("rays": [0,0], "diameter": 0.3, "power": 1.0, "divergence": 0.0, "divergencex": 0.0, "divergencey": 0.0, "wavelength": 488.0), the two numbers refer to the number or radial layers and azimuthal rays in each layer. "diameter" refers to the total diameter of the outer layer of laser rays. "power" specifies the brightness of the laser. The various "divergence" values specify how much divergence the rays leaving the laser have (..x and ..y mean along the x and y direction). "wavelength" specifies the wavelengths in nanometer.
 - `Lens` ("r1": 1.0, "r2": 2.0, "wedge_angle": 0.0), with r1 and r2 referring to the radius of curvature of each lens surface. If not given the value of zero is assumed, which really means infinite, i.e. a flat surface. Note that also negative values are allowed, referring to a concave surface. If "trace_reflection" is set to `true`, weak reflection beams will be launched. "wedge_angle" (only for r0=0.0 and r1=0.0) allows to create a weak prism, e.g. for shear-plates. "wedge_lambda" is an alternative method, which scales slightly better to show interference fringes for small angles, to be used in shear-plates. If `cylinder` is set to `true`, the lens will be interpreted as a cylinder lens. The refrative index has the default 1.52 but can be specified (e.g. "refractive_index": 1.33). If a range ("refractive_index": [1.0, 1.6]) is specified, a slider will be diplayed allowing to change the refractive index. A third value can specify its initial setting.
 - `Mirror`
 - `Beamsplitter`
