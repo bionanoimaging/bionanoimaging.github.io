@@ -61,7 +61,7 @@
         },
         {
             "type": "task",
-            "instruction": "Position both pinholes such that the laser beam passes through them.",
+            "instruction": "Position both pinholes such that\nthe laser beam passes through them.",
             "score": 100.0,
             "music": {
                 "link": "music/Emotional+Ballad+-+320bit.mp3",
@@ -323,7 +323,7 @@
         },
        {
             "type": "task",
-            "instruction": "Now finish this beam-walk by alternating angle and position apertures.\nKeep closing the front iris.",
+            "instruction": "Now finish this beam-walk by alternating angle\nand position apertures.\nKeep closing the front iris.",
             "score": 100.0
         },
         {
