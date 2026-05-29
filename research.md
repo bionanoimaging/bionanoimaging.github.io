@@ -20,3 +20,4 @@ Also see this [Software page](/software) for details on our developed packages o
 * [Smart inventory for optical laboratory](/projects/tiptoi)
 * [Deconvolution toolbox](/projects/DeconvOptim)
 * [Software for instruments' control](/projects/viscope)
+* [Segmentation and classification of FLIM data for retinal granules](/projects/Classi4RPE)
