@@ -129,7 +129,7 @@
         },
         {
             "type": "task",
-            "instruction": {"de": "Fokussiere L1 mittels X-, Y-, Z- und Drehsteuerung.\nKlicke auf die Linse, um die Dreh-Gizmos zu aktivieren.\nDie flache Seite sollte zum Bildschirm zeigen!", "en": "Focus L1 by X-,Y-, Z- and rotation-control\nClick on the lens to activate rotation gizmos.\nThe flat side should point towards the screen!", "no": "Fokuser L1 med X-, Y-, Z- og rotasjonskontroll.\nKlikk på linsen for å aktivere rotasjons-gizmos.\nDen flate siden skal peke mot skjermen!"},
+            "instruction": {"de": "Fokussiere L1 mittels X-, Y-, Z- und Drehsteuerung.\nKlicke auf die Linse, um die Dreh-Ring zu aktivieren.\nDie flache Seite sollte zum Bildschirm zeigen!", "en": "Focus L1 by X-,Y-, Z- and rotation-control\nClick on the lens to activate rotation gizmos.\nThe flat side should point towards the screen!", "no": "Fokuser L1 med X-, Y-, Z- og rotasjonskontroll.\nKlikk på linsen for å aktivere rotasjons-gizmos.\nDen flate siden skal peke mot skjermen!"},
             "score": 200.0,
             "music": {
                 "link": "music/The+Sad+Piano+Background+Song+-+320bit.mp3", 
