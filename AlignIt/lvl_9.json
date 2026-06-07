@@ -1,7 +1,7 @@
 {
     "version": 1.0,
     "number": "9",
-    "title": "Test for laser positioning",
+    "title": {"de": "Test für Laserpositionierung", "en": "Test for laser positioning", "no": "Test for laserposisjonering"},
     "steps": [
         {
             "type": "addComponent",
@@ -64,7 +64,7 @@
         },
        {
             "type": "task",
-            "instruction": "Just to see if the laser gets unwillingly modified.",
+            "instruction": {"de": "Nur um zu sehen, ob der Laser ungewollt verändert wird.", "en": "Just to see if the laser gets unwillingly modified.", "no": "Bare for å se om laseren blir utilsiktet endret."},
             "success": {"Num": 1},
             "music": {
                 "link": "music/forest-with-small-river-birds-and-nature-field-recording-6735.mp3",
@@ -86,7 +86,7 @@
         },
         {
             "type": "task",
-            "instruction": "You did it and finished this level!",
+            "instruction": {"de": "Du hast es geschafft und dieses Level beendet!", "en": "You did it and finished this level!", "no": "Du klarte det og fullførte dette nivået!"},
             "success": {"Num": 1},
             "score": 100.0
         }

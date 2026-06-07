@@ -1,7 +1,7 @@
 {
     "version": 1.0,
     "number": "3",
-    "title": "Beam Collimation",
+    "title": {"de": "Strahlkollimation", "en": "Beam Collimation", "no": "Strålekollimering"},
     "steps": [
         {
             "type": "addComponent",
@@ -18,7 +18,8 @@
             "name": "Laser",
             "rays": [1, 4],
             "diameter": 0.3,
-            "position": [-6, 1]
+            "position": [-6, 1],
+            "power": 40.0
         },
         {
             "type": "addComponent",
@@ -77,7 +78,7 @@
         },
        {
             "type": "task",
-            "instruction": "Collimate the laser by adjusting the expansion telescope passing both double-pinholes.",
+            "instruction": {"de": "Kollimiere den Laser, indem du das Expansionsfernrohr so einstellst, dass es beide Doppelblenden passiert.", "en": "Collimate the laser by adjusting the expansion telescope passing both double-pinholes.", "no": "Kollimer laseren ved å justere ekspansjonsteleskopet slik at det passerer begge dobbelthullene."},
             "music": {
                 "link": "music/forest-with-small-river-birds-and-nature-field-recording-6735.mp3",
                 "credits": "Downloaded from pixabay.\nhttps://pixabay.com/sound-effects/search/forest-birds/"
@@ -126,12 +127,12 @@
         },
         {
             "type": "task",
-            "instruction": "Now use the shear-plate for fine-adjustment.\nArrange the fringes along the reference line",
+            "instruction": {"de": "Verwende nun die Scherplatte für die Feineinstellung.\nOrdne die Streifen entlang der Referenzlinie an.", "en": "Now use the shear-plate for fine-adjustment.\nArrange the fringes along the reference line", "no": "Bruk nå skjærplaten for finjustering.\nArranger stripene langs referanselinjen."},
             "score": 100.0
         },
         {
             "type": "task",
-            "instruction": "Congratulations! You completed this level!\nPress Done for Lvl 4.",
+            "instruction": {"de": "Herzlichen Glückwunsch! Du hast dieses Level abgeschlossen!\nDrücke Fertig für Level 4.", "en": "Congratulations! You completed this level!\nPress Done for Lvl 4.", "no": "Gratulerer! Du har fullført dette nivået!\nTrykk Ferdig for nivå 4."},
             "narration": {
                 "link": "narrations/lvl1t6.m4a",
                 "credits": "Rainer Heintzmann"

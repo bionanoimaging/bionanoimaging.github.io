@@ -1,7 +1,7 @@
 {
     "version": 1.0,
     "number": "6",
-    "title": "Michelson Interferometer",
+    "title": {"de": "Michelson-Interferometer", "en": "Michelson Interferometer", "no": "Michelson-interferometer"},
     "steps": [
         {
             "type": "addComponent",
@@ -64,7 +64,7 @@
         },
         {
             "type": "task",
-            "instruction": "A Michelson Interferometer to explore\ninterference effects (only in the full version!)",
+            "instruction": {"de": "Ein Michelson-Interferometer zum Erkunden\nvon Interferenzeffekten (nur in der Vollversion!)", "en": "A Michelson Interferometer to explore\ninterference effects (only in the full version!)", "no": "Et Michelson-interferometer for å utforske\ninterferenseffekter (kun i fullversjonen!)"},
             "success": {"PosX": 0.01, "PosY": 0.01, "Curv": 0.01, "RelAng": 0.01},
             "music": {
                 "link": "music/forest-with-small-river-birds-and-nature-field-recording-6735.mp3",
@@ -74,7 +74,7 @@
         },
         {
             "type": "task",
-            "instruction": "Congratulations! You completed level 2\nPress Done for Lvl 3.",
+            "instruction": {"de": "Herzlichen Glückwunsch! Du hast Level 2 abgeschlossen.\nDrücke Fertig für Level 3.", "en": "Congratulations! You completed level 2\nPress Done for Lvl 3.", "no": "Gratulerer! Du har fullført nivå 2.\nTrykk Ferdig for nivå 3."},
             "narration": {
                 "link": "narrations/lvl2t7.m4a",
                 "credits": "Rainer Heintzmann"

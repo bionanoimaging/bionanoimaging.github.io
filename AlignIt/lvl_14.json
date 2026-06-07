@@ -1,7 +1,7 @@
 {
     "version": 1.0,
     "number": "14",
-    "title": "U-Z Interferometer",
+    "title": {"de": "U-Z-Interferometer", "en": "U-Z Interferometer", "no": "U-Z-interferometer"},
     "steps": [
         {
             "type": "addComponent",
@@ -107,12 +107,12 @@
         },
         {
             "type": "task",
-            "instruction": "Rotate mirrors to observe the orientation change\nin the projected beams on the screen.\nParticularly Z-Mirror2 and BS 2 have a large influence.",
+            "instruction": {"de": "Drehe die Spiegel, um die Orientierungsänderung\nin den projizierten Strahlen auf dem Bildschirm zu beobachten.\nBesonders Z-Mirror2 und BS 2 haben einen großen Einfluss.", "en": "Rotate mirrors to observe the orientation change\nin the projected beams on the screen.\nParticularly Z-Mirror2 and BS 2 have a large influence.", "no": "Roter speilene for å observere orienteringsendringen\ni de projiserte strålene på skjermen.\nSpesielt Z-Mirror2 og BS 2 har stor innflytelse."},
             "score": 100.0
         },
         {
             "type": "task",
-            "instruction": "You did it and finished this level!",
+            "instruction": {"de": "Du hast es geschafft und dieses Level beendet!", "en": "You did it and finished this level!", "no": "Du klarte det og fullførte dette nivået!"},
             "final": true,
             "score": 100.0
         }

@@ -1,7 +1,7 @@
 {
     "version": 1.0,
     "number": "1",
-    "title": "Abbe's Experiment",
+    "title": {"de": "Abbe-Experiment", "en": "Abbe's Experiment", "no": "Abbes eksperiment"},
     "steps": [
         {
             "type": "addComponent",
@@ -61,7 +61,7 @@
         },
         {
             "type": "task",
-            "instruction": "By moving the condenser lens\nalong X- and Y-coordinates, focus the laser beam on the\ncentre of the screen.",
+            "instruction": {"de": "Bewege die Kondensorlinse\nentlang der X- und Y-Koordinaten, um den Laserstrahl auf die\nMitte des Bildschirms zu fokussieren.", "en": "By moving the condenser lens\nalong X- and Y-coordinates, focus the laser beam on the\ncentre of the screen.", "no": "Ved å bevege kondensorlinsen\nlangs X- og Y-koordinatene, fokuser laserstrålen på\nmidten av skjermen."},
             "score": 100.0,
             "music": {
                 "link": "music/Emotional+Ballad+-+320bit.mp3",
@@ -110,7 +110,7 @@
         },
         {
             "type": "task",
-            "instruction": "Adjust the position of field lens between\nthe two irises in order to obtain a collimated beam after\nthe condenser lens.",
+            "instruction": {"de": "Stelle die Position der Feldlinse zwischen\nden beiden Irisblenden so ein, dass nach der Kondensorlinse\nein kollimierter Strahl entsteht.", "en": "Adjust the position of field lens between\nthe two irises in order to obtain a collimated beam after\nthe condenser lens.", "no": "Juster posisjonen til feltlinsen mellom\nde to irisblender for å få en kollimert strål etter\nkondensorlinsen."},
             "score": 200.0
         },
         {
@@ -138,7 +138,7 @@
         },
         {
             "type": "task",
-            "instruction": "Adjust the position of condenser aperture to the first conjugate plane\ni.e the front focal plane of field lens.",
+            "instruction": {"de": "Stelle die Position der Kondensorblende auf die erste konjugierte Ebene ein,\nd.h. die vordere Brennebene der Feldlinse.", "en": "Adjust the position of condenser aperture to the first conjugate plane\ni.e the front focal plane of field lens.", "no": "Juster posisjonen til kondensorblenden til det første konjugerte planet,\ndvs. den fremre brennplanet til feltlinsen."},
             "score": 300.0,
             "showbeams": true
         },
@@ -168,7 +168,7 @@
         },
         {
             "type": "task",
-            "instruction": "By moving the objective lens\nalong X- and Y-coordinates, focus the laser beam on the\ncentre of the screen.",
+            "instruction": {"de": "Bewege die Objektivlinse\nentlang der X- und Y-Koordinaten, um den Laserstrahl auf die\nMitte des Bildschirms zu fokussieren.", "en": "By moving the objective lens\nalong X- and Y-coordinates, focus the laser beam on the\ncentre of the screen.", "no": "Ved å bevege objektivlinsen\nlangs X- og Y-koordinatene, fokuser laserstrålen på\nmidten av skjermen."},
             "score": 400.0,
             "showbeams": true
         },
@@ -214,7 +214,7 @@
         },
         {
             "type": "task",
-            "instruction": "Position of tube lens at the back focal plane\nof the objevtive lens and adjust to obtain a collimated beam after\nat the screen.",
+            "instruction": {"de": "Positioniere die Tubuslinse in der hinteren Brennebene\nder Objektivlinse und stelle sie so ein, dass nach dem Bildschirm\nein kollimierter Strahl entsteht.", "en": "Position of tube lens at the back focal plane\nof the objevtive lens and adjust to obtain a collimated beam after\nat the screen.", "no": "Posisjoner rørlinsen i den bakre brennplanet\ntil objektivlinsen og juster for å få en kollimert strål\npå skjermen."},
             "score": 500.0
         },
         {
@@ -271,12 +271,12 @@
         },
         {
             "type": "task",
-            "instruction": "Position and adjust the beamsplitter between the objective\nand tube lens, and adjust the reflected beam path using two pinholes.\nYou might need to adjust the tube lens as well. ",
+            "instruction": {"de": "Positioniere und stelle den Strahlteiler zwischen dem Objektiv\nund der Tubuslinse ein, und stelle den reflektierten Strahlengang mit zwei Blenden ein.\nMöglicherweise musst du auch die Tubuslinse justieren.", "en": "Position and adjust the beamsplitter between the objective\nand tube lens, and adjust the reflected beam path using two pinholes.\nYou might need to adjust the tube lens as well. ", "no": "Posisjoner og juster strålesplitteren mellom objektivet\nog rørlinsen, og juster den reflekterte strålegangen ved hjelp av to hull.\nDu kan også trenge å justere rørlinsen."},
             "score": 750.0
         },
         {
             "type": "task",
-            "instruction": "Congratulations! You completed the Abbe's Experiment.",
+            "instruction": {"de": "Herzlichen Glückwunsch! Du hast das Abbe-Experiment abgeschlossen.", "en": "Congratulations! You completed the Abbe's Experiment.", "no": "Gratulerer! Du har fullført Abbes eksperiment."},
             "narration": {
                 "link": "narrations/lvl2t7.m4a",
                 "credits": "Rainer Heintzmann"

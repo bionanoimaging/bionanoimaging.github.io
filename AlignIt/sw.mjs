@@ -1,7 +1,7 @@
 // Names of the two caches used in this version of the service worker.
 // Change to v2, etc. when you update any of the local resources, which will
 // in turn trigger the install event again.
-const PRECACHE = 'precache-v23';
+const PRECACHE = 'precache-v26';
 const RUNTIME = 'runtime';
 
 // The files we want to cache for offline use. These are all relative to the
@@ -19,7 +19,13 @@ const filesToCache = [
   'js/image_blur.obfuscated.js',
   'js/animations.obfuscated.js',
   'js/editor.obfuscated.js',
+  'js/gui.obfuscated.js',
+  'js/i18n.obfuscated.js',
+  'js/inputs.obfuscated.js',
+  'js/levels.obfuscated.js',
   'js/panels.obfuscated.js',
+  'js/scene.obfuscated.js',
+  'js/sound.obfuscated.js',
   'img/icon.png',
   'img/RetinaDamage_ImgGen2_inv.jpg',
   'babylon/assets/Droid Sans_Regular.json',

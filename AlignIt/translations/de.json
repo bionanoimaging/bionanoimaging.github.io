@@ -1,0 +1,192 @@
+{
+  "ui": {
+    "back": "Zurück",
+    "resume": "Fortsetzen",
+    "restart": "Neustart",
+    "settings": "Einstellungen",
+    "level_editor": "Level Editor",
+    "help": "Hilfe",
+    "credits": "Credits",
+    "load_lvl": "Level laden",
+    "hint": "Hinweis",
+    "beams": "Strahlen",
+    "laser": "Laser",
+    "planes": "Ebenen",
+    "scan": "Scan",
+    "password": "Passwort",
+    "done": "Fertig",
+    "music": "Musik",
+    "narration": "Erzählung",
+    "highscore": "Highscore",
+    "next": "Weiter",
+    "new_level": "Neues Level",
+    "write_t": "Schreibe T",
+    "add_t": "Neues T",
+    "remove_t": "Entferne T",
+    "start": "Start",
+    "apply": "Anwenden",
+    "insert": "Einfügen",
+    "remove": "Entfernen",
+    "next_task": "Nächste Aufgabe",
+    "export": "Exportieren",
+    "level_abbr": "Lvl",
+    "save": "Speichern"
+  },
+  "settings_menu": {
+    "rendering": "Rendering",
+    "side_rendering": "Seiten-Rendering",
+    "pbr": "PBR",
+    "fps": "FPS",
+    "environment": "Umgebung",
+    "scale": "Skalierung",
+    "teleportation": "Teleportation",
+    "mode": "Modus",
+    "difficulty": "Schwierigkeit",
+    "sensitivity": "Empfindlichkeit",
+    "language": "Sprache"
+  },
+  "settings": {
+    "rendering": {
+      "light": "Leicht",
+      "normal": "Normal",
+      "full": "Voll"
+    },
+    "side_rendering": {
+      "show_sides": "Seiten anzeigen",
+      "hide_sides": "Seiten verbergen"
+    },
+    "pbr": {
+      "pbr": "PBR",
+      "no_pbr": "kein PBR"
+    },
+    "fps": {
+      "fps": "FPS",
+      "no_fps": "kein FPS"
+    },
+    "environment": {
+      "forest": "Wald",
+      "night_sky": "Nachthimmel",
+      "tee_room": "Tee-Raum",
+      "city_square": "Stadtplatz"
+    },
+    "scale": {
+      "giant": "Riese",
+      "normal": "Normal",
+      "ant": "Ameise"
+    },
+    "teleportation": {
+      "teleportation_on": "Teleportation an",
+      "movement_on": "Bewegung an",
+      "teleportation_off": "Teleportation aus"
+    },
+    "mode": {
+      "plain": "Modus Standard",
+      "vr": "Modus VR",
+      "ar": "Modus AR"
+    },
+    "difficulty": {
+      "hard": "Schwer",
+      "normal": "Normal",
+      "easy": "Einfach"
+    },
+    "sensitivity": {
+      "coarse": "Grob",
+      "medium": "Mittel",
+      "fine": "Fein"
+    },
+    "language": {
+      "de": "Deutsch",
+      "en": "Englisch",
+      "no": "Norwegisch"
+    }
+  },
+  "msg": {
+    "welcome": "AlignIt! - Optische Ausrichtung lernen.\nStarte das Spiel bei Level 1.\n",
+    "loading_highscores": "Lade Highscores ...",
+    "level_loaded": "Level {number} geladen!\n{title}",
+    "congratulations": "Gratulation!\nDu hast Level {number} abgeschlossen\n{title}",
+    "you_won": "Gewonnen!",
+    "animation_running": "Denk nicht einmal daran!\nDie Lösungsanimation läuft noch!",
+    "you_lost": "Verloren! Du hast nur {solved} von {total} Komponenten gelöst.",
+    "laser_eye": "Du hast in den Laser geschaut! Laser ausgeschaltet!\n",
+    "correct": "Richtig!",
+    "wrong_try_again": "Falsch! Nochmal versuchen.",
+    "level_restarted": "Level neu gestartet",
+    "enjoy": "Viel Spaß!",
+    "well_done": "Gut gemacht!"
+  },
+  "editor": {
+    "components": "Komponenten",
+    "tasks": "Aufgaben:",
+    "success": "Erfolg:",
+    "task_step": "Aufgabenschritt:",
+    "question_label": "Frage (leer lassen für normale Aufgabe):",
+    "answers_label": "Antworten (kommagetrennt, erste=richtig):",
+    "step_types": "Schritttypen",
+    "filename_empty": "Dateiname darf nicht leer sein",
+    "step_type": {
+      "addComponent": "Komp. hinzufügen",
+      "modifyComponent": "Komp. ändern",
+      "removeComponent": "Komp. entfernen",
+      "solution": "Lösung",
+      "task": "Aufgabe",
+      "activate": "Aktivieren",
+      "addBaseMesh": "Basis-Mesh hinzufügen",
+      "addLensMesh": "Linsen-Mesh hinzufügen",
+      "setObserverPosition": "Beobachterpos.",
+      "resetComponent": "Komp. zurücksetzen",
+      "renameComponent": "Komp. umbenennen"
+    },
+    "component": {
+      "Lens": "Linse",
+      "Objective": "Objektiv",
+      "Laser": "Laser",
+      "Lightsource": "Lichtquelle",
+      "PanelPost": "Panel-Post",
+      "FibreCouple": "Faserkoppler",
+      "Pinhole": "Lochblende",
+      "DualPinhole": "Doppel-Lochblende",
+      "Iris": "Iris",
+      "Slit": "Spalt",
+      "Grating": "Gitter",
+      "Beamsplitter": "Strahlteiler",
+      "Filter": "Filter",
+      "Mirror": "Spiegel",
+      "Screen": "Schirm",
+      "Sample": "Probe"
+    }
+  },
+  "alerts": {
+    "invalid_level": "Ungültiges Level-Dateiformat",
+    "error_reading": "Fehler beim Lesen der Level-Datei"
+  },
+  "sound": {
+    "music": "Musik:",
+    "music_paused": "Musik: Pausiert.",
+    "narration": "Erzählung:"
+  },
+  "indicator": {
+    "beams": "Strahlen",
+    "focus": "Fokus",
+    "power": "Leistung",
+    "pos_y": "Pos. Y",
+    "pos_z": "Pos. Z",
+    "curvature": "Krümmung",
+    "delta_y": "Delta Y",
+    "delta_z": "Delta Z",
+    "components": "Komponenten",
+    "movements": "Bewegungen",
+    "notsolved_focus": "Fokus",
+    "notsolved_power": "Leistung",
+    "notsolved_beams": "Strahlen {current}/{required}",
+    "notsolved_pos_x": "Pos X",
+    "notsolved_pos_y": "Pos Y",
+    "notsolved_curvature": "Krümmung",
+    "notsolved_delta_x": "Strahlabstand X",
+    "notsolved_delta_y": "Strahlabstand Y"
+  },
+  "score": {
+    "format": "Lvl {level}, Aufg. {task}, Max {maxpts}, Pkt: {total}, Aufg.:{task_score}, Lvl: {level_score}",
+    "placeholder": "Punktestand"
+  }
+}

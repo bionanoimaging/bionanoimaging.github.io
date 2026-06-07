@@ -1,7 +1,7 @@
 {
     "version": 1.0,
     "number": "8",
-    "title": "Grating Interferometer",
+    "title": {"de": "Gitterinterferometer", "en": "Grating Interferometer", "no": "Gitterinterferometer"},
     "steps": [
         {
             "type": "addComponent",
@@ -67,7 +67,7 @@
         },
        {
             "type": "task",
-            "instruction": "Without seeing the actual beams,\niris apertures are helpful tools.\nAdjust the angle to hit the angle-aperture.",
+            "instruction": {"de": "Ohne die tatsächlichen Strahlen zu sehen,\nsind Irisblenden hilfreiche Werkzeuge.\nStelle den Winkel so ein, dass er die Winkelblende trifft.", "en": "Without seeing the actual beams,\niris apertures are helpful tools.\nAdjust the angle to hit the angle-aperture.", "no": "Uten å se de faktiske strålene\ner irisblender nyttige verktøy.\nJuster vinkelen slik at den treffer vinkelblenden."},
             "success": {"Num": 1},
             "music": {
                 "link": "music/forest-with-small-river-birds-and-nature-field-recording-6735.mp3",
@@ -78,7 +78,7 @@
         },
         {
             "type": "task",
-            "instruction": "Congratulations! You completed level 2\nPress Done for Lvl 3.",
+            "instruction": {"de": "Herzlichen Glückwunsch! Du hast Level 2 abgeschlossen.\nDrücke Fertig für Level 3.", "en": "Congratulations! You completed level 2\nPress Done for Lvl 3.", "no": "Gratulerer! Du har fullført nivå 2.\nTrykk Ferdig for nivå 3."},
             "narration": {
                 "link": "narrations/lvl2t7.m4a",
                 "credits": "Rainer Heintzmann"

@@ -1,7 +1,7 @@
 {
     "version": 1.0,
     "number": "6",
-    "title": "Selected Components",
+    "title": {"de": "Ausgewählte Komponenten", "en": "Selected Components", "no": "Valgte komponenter"},
     "steps": [
         {
             "type": "addComponent",
@@ -179,7 +179,7 @@
         },
         {
             "type": "task",
-            "instruction": "This testlevel contains all currently available components.",
+            "instruction": {"de": "Dieses Testlevel enthält alle derzeit verfügbaren Komponenten.", "en": "This testlevel contains all currently available components.", "no": "Dette testnivået inneholder alle tilgjengelige komponenter."},
             "music": {
                 "link": "music/forest-with-small-river-birds-and-nature-field-recording-6735.mp3",
                 "credits": "Downloaded from pixabay.\nhttps://pixabay.com/sound-effects/search/forest-birds/"
@@ -189,7 +189,7 @@
         },
         {
             "type": "task",
-            "instruction": "Congratulations! You completed level 2\nPress Done for Lvl 3.",
+            "instruction": {"de": "Herzlichen Glückwunsch! Du hast Level 2 abgeschlossen.\nDrücke Fertig für Level 3.", "en": "Congratulations! You completed level 2\nPress Done for Lvl 3.", "no": "Gratulerer! Du har fullført nivå 2.\nTrykk Ferdig for nivå 3."},
             "narration": {
                 "link": "narrations/lvl2t7.m4a",
                 "credits": "Rainer Heintzmann"

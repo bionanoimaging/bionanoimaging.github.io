@@ -1,7 +1,7 @@
 {
     "version": 1.0,
     "number": "4",
-    "title": "Pellicle",
+    "title": {"de": "Pellicle", "en": "Pellicle", "no": "Pellicle"},
     "steps": [
         {
             "type": "addComponent",
@@ -66,7 +66,7 @@
         },
         {
             "type": "task",
-            "instruction": "Adjust the beam expansion telescope to get\na collimated laser beam.",
+            "instruction": {"de": "Stelle das Strahlexpansionsteleskop so ein, dass\nein kollimierter Laserstrahl entsteht.", "en": "Adjust the beam expansion telescope to get\na collimated laser beam.", "no": "Juster stråleekspansjonsteleskopet for å få\nen kollimert laserstråle."},
             "score": 100.0,
             "music": {
                 "link": "music/forest-with-small-river-birds-and-nature-field-recording-6735.mp3",
@@ -81,7 +81,7 @@
         },
         {
             "type": "task",
-            "instruction": "Congratulations! You completed level 2\nPress Done for Lvl 3.",
+            "instruction": {"de": "Herzlichen Glückwunsch! Du hast Level 2 abgeschlossen.\nDrücke Fertig für Level 3.", "en": "Congratulations! You completed level 2\nPress Done for Lvl 3.", "no": "Gratulerer! Du har fullført nivå 2.\nTrykk Ferdig for nivå 3."},
             "narration": {
                 "link": "narrations/lvl2t7.m4a",
                 "credits": "Rainer Heintzmann"

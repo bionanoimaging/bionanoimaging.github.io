@@ -1,7 +1,7 @@
 {
     "version": 1.0,
     "number": "10",
-    "title": "Back-Reflections",
+    "title": {"de": "Rückreflexionen", "en": "Back-Reflections", "no": "Tilbakekastinger"},
     "steps": [
         {
             "type": "addComponent",
@@ -52,7 +52,7 @@
         },
         {
             "type": "task",
-            "instruction": "Adjust the back reflections to both be centered sending light back towards the laser.",
+            "instruction": {"de": "Stelle die Rückreflexionen so ein, dass beide zentriert sind und Licht zurück zum Laser senden.", "en": "Adjust the back reflections to both be centered sending light back towards the laser.", "no": "Juster tilbakekastinger slik at begge er sentrert og sender lys tilbake mot laseren."},
             "score": 100.0,
             "music": {
                 "link": "music/forest-with-small-river-birds-and-nature-field-recording-6735.mp3",
@@ -67,7 +67,7 @@
         },
        {
             "type": "task",
-            "instruction": "Congratulations! You completed level 2\nPress Done for Lvl 3.",
+            "instruction": {"de": "Herzlichen Glückwunsch! Du hast Level 2 abgeschlossen.\nDrücke Fertig für Level 3.", "en": "Congratulations! You completed level 2\nPress Done for Lvl 3.", "no": "Gratulerer! Du har fullført nivå 2.\nTrykk Ferdig for nivå 3."},
             "narration": {
                 "link": "narrations/lvl2t7.m4a",
                 "credits": "Rainer Heintzmann"
@@ -75,7 +75,7 @@
         },
         {
             "type": "task",
-            "instruction": "Congratulations! You completed level 2\nPress Done for Lvl 3.",
+            "instruction": {"de": "Herzlichen Glückwunsch! Du hast Level 2 abgeschlossen.\nDrücke Fertig für Level 3.", "en": "Congratulations! You completed level 2\nPress Done for Lvl 3.", "no": "Gratulerer! Du har fullført nivå 2.\nTrykk Ferdig for nivå 3."},
             "narration": {
                 "link": "narrations/lvl2t7.m4a",
                 "credits": "Rainer Heintzmann"

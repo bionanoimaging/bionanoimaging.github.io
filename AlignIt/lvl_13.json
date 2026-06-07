@@ -1,7 +1,7 @@
 {
   "version": 1,
   "number": "1",
-  "title": "Scan-Level",
+  "title": {"de": "Scan-Level", "en": "Scan-Level", "no": "Scan-nivå"},
   "steps": [
     { "type": "addComponent",
       "component_type": "PanelPost",
@@ -119,13 +119,13 @@
         "link": "music/Now+We+Ride+-+320bit.mp3",
         "credits": "Now We Ride by Alexander Nakarada | https://www.serpentsoundstudios.com\nCreative Commons CC BY 4.0, https://creativecommons.org/licenses/by/4.0/"
       },
-      "instruction": "Here is a task to perform\n",
+      "instruction": {"de": "Hier ist eine Aufgabe zu erledigen\n", "en": "Here is a task to perform\n", "no": "Her er en oppgave å utføre\n"},
       "showbeams": true,
       "score": 100
     },
     {
       "type": "task",
-      "instruction": "Congratulations! You completed this level!\nPress Done for the next level.",
+      "instruction": {"de": "Herzlichen Glückwunsch! Du hast dieses Level abgeschlossen!\nDrücke Fertig für das nächste Level.", "en": "Congratulations! You completed this level!\nPress Done for the next level.", "no": "Gratulerer! Du har fullført dette nivået!\nTrykk Ferdig for neste nivå."},
       "final": true
     }
   ]
