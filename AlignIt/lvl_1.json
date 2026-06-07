@@ -1,7 +1,7 @@
 {
     "version": 1.0,
     "number": "1",
-    "title": {"de": "Linsen:\nFinde den Fokus!", "en": "Lenses:\nFind the focus!", "no": "Finn fokus!"},
+    "title": {"de": "Linsen: Finde den Fokus!", "en": "Lenses: Find the focus!", "no": "Finn fokus!"},
     "steps": [
      {
             "type": "addComponent",
