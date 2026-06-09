@@ -1,7 +1,7 @@
 // Names of the two caches used in this version of the service worker.
 // Change to v2, etc. when you update any of the local resources, which will
 // in turn trigger the install event again.
-const PRECACHE = 'precache-v31';
+const PRECACHE = 'precache-v32';
 const RUNTIME = 'runtime';
 
 // The files we want to cache for offline use. These are all relative to the
@@ -40,6 +40,7 @@ const filesToCache = [
   'babylon/babylonjs.loaders.min.js.map',
   'babylon/babylon.gui.min.js',
   'babylon/earcut.min.js',
+  'babylon/recast.js',
   'babylon/remote/r_hand_rhs.glb',
   'babylon/remote/l_hand_rhs.glb',
   'babylon/remote/handsShader.json',
@@ -150,18 +151,22 @@ function getLocalCacheKey(remoteUrl) {
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(PRECACHE).then(async (cache) => {
-      try {
-        await cache.addAll(filesToCache);
-        console.log("All files cached successfully.");
-      } catch (error) {
-        console.error("Failed to cache files:", error);
+      for (const file of filesToCache) {
+        try {
+          await cache.add(file);
+        } catch (error) {
+          console.error(`Failed to cache ${file}:`, error);
+          throw error;
+        }
       }
+      console.log("All files cached successfully.");
     }).then(() => {
       self.skipWaiting();
     })
   );
 });
 
+// useful for debugging, even though the code is currntly not used:
 async function checkCachedFiles() {
     const cache = await caches.open(RUNTIME);
     const requests = await cache.keys();
