@@ -1,7 +1,7 @@
 // Names of the two caches used in this version of the service worker.
 // Change to v2, etc. when you update any of the local resources, which will
 // in turn trigger the install event again.
-const PRECACHE = 'precache-v30';
+const PRECACHE = 'precache-v31';
 const RUNTIME = 'runtime';
 
 // The files we want to cache for offline use. These are all relative to the
@@ -27,6 +27,9 @@ const filesToCache = [
   'js/scene.obfuscated.js',
   'js/sound.obfuscated.js',
   'img/icon.png',
+  'img/Arabidopsis.jpg',
+  'img/FluorescentCells.jpg',
+  'img/RetinaDamage_ImgGen2.jpg',
   'img/RetinaDamage_ImgGen2_inv.jpg',
   'babylon/assets/Droid Sans_Regular.json',
   'babylon/assets/left.babylon',
@@ -69,6 +72,7 @@ const filesToCache = [
   'narrations/lvl2t5.m4a',
   'narrations/lvl2t6.m4a',
   'narrations/lvl2t7.m4a',
+  'narrations/InstructionTask1.m4a',
   'sound/interface-button-154180.mp3',
   'sound/running-gear-6403.mp3',
   'sound/stone_sliding-54021.mp3',
@@ -85,7 +89,9 @@ const filesToCache = [
   'textures/room.env',
   'textures/room.hdr',
   'textures/satara.env',
+  'textures/SetupImage.jpg',
   'textures/SetupImageSmall.jpg',
+  'textures/environment.dds',
   'favicon.ico',
   'lvl_1.json',
   'lvl_2.json',
@@ -100,10 +106,16 @@ const filesToCache = [
   'lvl_11.json',
   'lvl_12.json',
   'lvl_13.json',
-  'lvl_14.json'
+  'lvl_14.json',
+  'lenslevels/lvl_1.json',
+  'lenslevels/lvl_2.json',
+  'lenslevels/lvl_3.json',
+  'translations/de.json',
+  'translations/en.json',
+  'translations/no.json'
 ];
 
-// The fetch handler serves responses for other-origin resources from a cache:
+// Specific remote URLs mapped to local cache keys
 const cached_files = [
   'https://immersive-web.github.io/webxr-input-profiles/packages/viewer/dist/profiles/profilesList.json',
   'https://assets.babylonjs.com/core/MRTK/mrtk-fluent-backplate.glb',
@@ -114,60 +126,44 @@ const cached_files = [
   'https://snippet.babylonjs.com/8RUNKL/3',
   'https://controllers.babylonjs.com/oculus/right.babylon',
   'https://controllers.babylonjs.com/oculus/left.babylon',
-  'https://immersive-web.github.io/webxr-input-profiles/packages/viewer/dist/profiles/meta-quest-touch-plus/profile.json',
-  'https://immersive-web.github.io/webxr-input-profiles/packages/viewer/dist/profiles/meta-quest-touch-plus/right.glb',
-  'https://immersive-web.github.io/webxr-input-profiles/packages/viewer/dist/profiles/meta-quest-touch-plus/left.glb',
   'https://assets.babylonjs.com/core/HandMeshes/handsShader.json',
   'https://nanoimaging.de/favicon.ico',
   'https://upload.wikimedia.org/wikipedia/commons/0/09/FluorescentCells.jpg'
-]
+];
 
-//   'https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.2/dat.gui.min.js',
-//   'https://cdn.babylonjs.com/earcut.min.js',
-//   'https://cdn.babylonjs.com/babylon.js',
-//   'https://cdn.babylonjs.com/materialsLibrary/babylonjs.materials.min.js',
-//   'https://cdn.babylonjs.com/proceduralTexturesLibrary/babylonjs.proceduralTextures.min.js',
-//   'https://cdn.babylonjs.com/postProcessesLibrary/babylonjs.postProcess.min.js',
-//   'https://cdn.babylonjs.com/loaders/babylonjs.loaders.js',
-//   'https://cdn.babylonjs.com/gui/babylon.gui.min.js',
-//'babylon/assets/profilesList.json',
-//'babylon/dat.gui.min.js',
-// 'babylon/Oimo.js',
-// 'babylon/recast.js',
-// 'babylon/Assets.js',
-//'babylon/babylonjs.materials.min.js',
-//'babylon/babylonjs.materials.min.js.map',
-//'babylon/babylonjs.proceduralTextures.min.js',
-//'babylon/babylonjs.proceduralTextures.min.js.map',
-//'babylon/babylonjs.postProcess.min.js',
-//'babylon/babylonjs.postProcess.min.js.map',
-//'babylon/babylonjs.loaders.js',
-//'babylon/babylonjs.loaders.js.map',
-//'babylon/babylon.gui.min.js.map',
+// Map specific remote URLs to local cache keys
+function getLocalCacheKey(remoteUrl) {
+  // Babylon controller meshes — these live in babylon/assets/, not babylon/remote/
+  if (remoteUrl === 'https://controllers.babylonjs.com/oculus/right.babylon') {
+    return 'babylon/assets/right.babylon';
+  }
+  if (remoteUrl === 'https://controllers.babylonjs.com/oculus/left.babylon') {
+    return 'babylon/assets/left.babylon';
+  }
+  // Everything else falls back to stripping the filename and looking in babylon/remote/
+  const filename = remoteUrl.substring(remoteUrl.lastIndexOf('/') + 1);
+  return 'babylon/remote/' + filename;
+}
 
 // From https://googlechrome.github.io/samples/service-worker/basic/
 // The install handler takes care of precaching the resources we always need.
 self.addEventListener('install', event => {
-  // console.log("sw install event triggered")
   event.waitUntil(
     caches.open(PRECACHE).then(async (cache) => {
       try {
-        // await cache.addAll(filesToCache.map(f => new Request(new URL(f, self.location.origin))));
         await cache.addAll(filesToCache);
-          console.log("All files cached successfully.");
+        console.log("All files cached successfully.");
       } catch (error) {
-          console.error("Failed to cache files:", error);
+        console.error("Failed to cache files:", error);
       }
     }).then(() => {
       self.skipWaiting();
-      // Check which files are missing
-      // checkCachedFiles();
     })
   );
 });
 
 async function checkCachedFiles() {
-    const cache = await caches.open(RUNTIME); // PRECACHE
+    const cache = await caches.open(RUNTIME);
     const requests = await cache.keys();
     console.log("Cache contains:");
     for (const req of requests) {
@@ -185,73 +181,95 @@ async function checkCachedFiles() {
         console.log("All files are cached.");
     } else {
         console.warn("Missing files in cache:", missing);
-        console.log(cache)
+        console.log(cache);
     }
 }
 
 // The activate handler takes care of cleaning up old caches.
 self.addEventListener('activate', event => {
   const currentCaches = [PRECACHE, RUNTIME];
-  // console.log("sw activated")
   event.waitUntil(
       caches.keys().then(cacheNames => {
-        // console.log("sw chacheNames: "+cacheNames)
         return cacheNames.filter(cacheName => !currentCaches.includes(cacheName));
       }).then(cachesToDelete => {
-            // console.log("sw deleting all: "+cachesToDelete);
           return Promise.all(cachesToDelete.map(cacheToDelete => {
-            // console.log("sw deleting: "+cacheToDelete);
               return caches.delete(cacheToDelete);
           }));
       }).then(() => self.clients.claim())
   );
 });
 
-
 // The fetch handler serves responses for same-origin resources from a cache.
 // If no response is found, it populates the runtime cache with the response
 // from the network before returning it to the page.
 self.addEventListener('fetch', event => {
   const url = event.request.url;
-  // If the request is for the remote profilesList.json, serve the local one
-  // console.log("fetching url: "+url)
-  for (let fn of cached_files) {
-    if (event.request.url === fn) {
-    // Map the remote URL to the local cache key
-    const filename = fn.substring(fn.lastIndexOf('/') + 1);
-    const localCacheKey = 'babylon/remote/' + filename;
-    event.respondWith(
-        caches.match(localCacheKey, {ignoreSearch: true})
-            .then(response => {
-                if (!response) {
-                    console.warn("Service Worker: Cache miss for", localCacheKey, "when handling", event.request.url);
-                }
-                return response || fetch(event.request);
-            })
-    );
-    return;
-  }
-  }
-    // console.log("sw fetch event: "+event)
-  // Skip cross-origin requests, like those for Google Analytics.
-  if (event.request.url.startsWith(self.location.origin)) {
-      event.respondWith(
-          caches.match(event.request, {ignoreSearch: true}).then(cachedResponse => {
-              if (cachedResponse) {
-                // console.log("sw fetch event cache responded"+cachedResponse)
-                return cachedResponse;
-              }
 
-              return caches.open(RUNTIME).then(cache => {
-                  return fetch(event.request).then(response => {
-                      // Put a copy of the response in the runtime cache.
-                      // console.log("sw fetched something to cache: "+response)
-                      return cache.put(event.request, response.clone()).then(() => {
-                          return response;
-                      });
-                  });
-              });
+  // 1. Handle specific known remote URLs with explicit mappings
+  for (let fn of cached_files) {
+    if (url === fn) {
+      const localCacheKey = getLocalCacheKey(fn);
+      event.respondWith(
+        caches.match(localCacheKey, {ignoreSearch: true})
+          .then(response => {
+            if (!response) {
+              console.warn("Service Worker: Cache miss for", localCacheKey, "when handling", url);
+            }
+            return response || fetch(event.request);
           })
       );
+      return;
+    }
+  }
+
+  // 2. Generic fallback for ANY immersive-web WebXR input profile
+  //    This ensures Pico4, Quest variants, and future headsets work offline
+  //    by serving the cached meta-quest-touch-plus assets as a universal fallback.
+  if (url.includes('immersive-web.github.io/webxr-input-profiles')) {
+    let localCacheKey = null;
+    if (url.endsWith('/profile.json')) {
+      localCacheKey = 'babylon/remote/profile.json';
+    } else if (url.endsWith('/left.glb')) {
+      localCacheKey = 'babylon/remote/left.glb';
+    } else if (url.endsWith('/right.glb')) {
+      localCacheKey = 'babylon/remote/right.glb';
+    }
+
+    if (localCacheKey) {
+      event.respondWith(
+        caches.match(localCacheKey, {ignoreSearch: true})
+          .then(response => {
+            if (!response) {
+              console.warn("Service Worker: Generic cache miss for", localCacheKey, "when handling", url);
+            }
+            return response || fetch(event.request);
+          })
+      );
+      return;
+    }
+  }
+
+  // 3. Same-origin requests — serve from precache, fallback to network + runtime cache
+  if (url.startsWith(self.location.origin)) {
+    event.respondWith(
+      caches.match(event.request, {ignoreSearch: true}).then(cachedResponse => {
+        if (cachedResponse) {
+          return cachedResponse;
+        }
+
+        return caches.open(RUNTIME).then(cache => {
+          return fetch(event.request).then(response => {
+            // Put a copy of the response in the runtime cache.
+            return cache.put(event.request, response.clone()).then(() => {
+              return response;
+            });
+          });
+        });
+      }).catch(error => {
+        console.warn("Service Worker: Fetch failed for same-origin request", url, error);
+        // Return a minimal offline response to prevent unhandled rejections
+        return new Response('Offline', { status: 503, statusText: 'Service Unavailable' });
+      })
+    );
   }
 });
