@@ -351,3 +351,14 @@ Kiril Armstrong:
     - label: "LinkedIn"
       icon: "fas fa-fw fa-link"
       url: "https://www.linkedin.com/in/kirilarmstrong"
+
+Paolo Maran:
+  name        : "Paolo Maran"
+  bio         : "Visiting PhD student from Politecnico di Milano, working on integrated optics for structured illumination microscopy."
+  avatar      : "/assets/images/people/paolomaran.jpg"
+  active      : true 
+  role        : "Visiting PhD Student"
+  links:
+    - label: "LinkedIn"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.linkedin.com/in/paolo-maran"
