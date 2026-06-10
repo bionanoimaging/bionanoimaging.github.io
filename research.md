@@ -30,4 +30,4 @@ Also see this [Software page](/software) for details on our developed packages o
 * [HiResi4RPE](/projects/HiResi4RPE)
 * [nanoSCAN project collaboration: betatesting of PIC-based pattern generator](/projects/nanoSCAN_integrated_SIM.md)
 * [Maximum Likelihood Localization Maps](/projects/MLLocalizationMaps)
-* [Polarization-resolved FLIM](/projects/Polarization-resolved FLIM)
+* [Polarization-resolved FLIM](/projects/Polarization-resolved-FLIM)
