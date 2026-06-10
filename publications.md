@@ -10,6 +10,8 @@ A separate list of Ondrej Stranik can be found on [Google Scholar](https://schol
 
 A separate list of Daniela Täuber can be found on [Google Scholar](https://scholar.google.de/citations?user=rCUm3NwAAAAJ&hl=de).
 
+A separate list of Haoran Wang can be found on [Google Scholar](https://scholar.google.com/citations?hl=de&user=86PSX1oAAAAJ).
+
 A separate list of the BioPOLIM team can be found on [BioPOLIM/Publications](https://biopolim.de/publications.htm).
 
 An additional list of publications in the department of "Microscopy" at the Leibniz-IPHT can be found in this [database](https://www.leibniz-ipht.de/de/abteilungen/mikroskopie/publikationen).

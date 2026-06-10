@@ -2,7 +2,8 @@
 layout: single
 title: "Pandemic Modelling Using Automated Model Discovery"
 date: 2026-06-10
-author: "Morteza Babazadeh Shareh"
+author: Morteza Babazadeh Shareh
+author_profile: true
 categories:
   - research
 tags:
@@ -15,7 +16,6 @@ tags:
 excerpt: "A data-driven framework for discovering compact differential-equation models from COVID-19 epidemiological data in Thuringia."
 ---
 
-**Work package:** WP 8.1  
 **Project:** SARS-CoV-2Dx  
 **Contributors:** Morteza Babazadeh Shareh and Rainer Heintzmann  
 **Institution:** Department of Microscopy, Leibniz Institute of Photonic Technology (Leibniz IPHT)
