@@ -21,3 +21,4 @@ Also see this [Software page](/software) for details on our developed packages o
 * [Deconvolution toolbox](/projects/DeconvOptim)
 * [Software for instruments' control](/projects/viscope)
 * [Segmentation and classification of FLIM data for retinal granules](/projects/Classi4RPE)
+* [Pandemic Modelling Using Automated Model Discovery](/projects/2026-06-10-pandemic-modelling-automated-model-discovery)
