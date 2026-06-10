@@ -21,7 +21,7 @@ author_profile: true
     <td width="25%" valign="top" align="center">
       <img src="https://raw.githubusercontent.com/s1alknau/Nematostella-time-series/Nematostella-time-series-IR/docs/images/Nematostella.png" alt="Nematostella vectensis" width="180" />
       <br/>
-      <em>An adult</em> Nematostella vectensis <em>recorded with the imager.</em>
+      <em>An adult</em> Nematostella vectensis.</em>
     </td>
   </tr>
 </table>
