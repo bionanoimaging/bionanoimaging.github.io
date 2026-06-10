@@ -24,3 +24,4 @@ Also see this [Software page](/software) for details on our developed packages o
 * [Segmentation and classification of FLIM data for retinal granules](/projects/Classi4RPE)
 * [Pandemic Modelling Using Automated Model Discovery](/projects/PandemicModelling)
 * [2DPOLIM of F-actin single fibrils and live cells](/projects/2DPOLIM)
+* [Open source Nematostella vectensis Imager](/projects/Nematostella_circadian_cycle)
