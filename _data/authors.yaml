@@ -203,6 +203,13 @@ Martin Buchmann:
   active      : true 
   role        : "Engineer"
 
+Hossein Zarei Oshtolagh:
+  name        : "Hossein Zarei Oshtolagh"
+  bio         : "PhD student working on super-resolution microscopy."
+  avatar      : "/assets/images/people/dummy.jpg"
+  active      : true 
+  role        : "PhD Candidate"
+
 Sebastian Unger:
   name        : "Sebastian Unger"
   bio         : ""
