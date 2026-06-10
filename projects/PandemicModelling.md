@@ -3,6 +3,7 @@ layout: single
 title: "Pandemic Modelling Using Automated Model Discovery"
 date: 2026-06-10
 author: Morteza Babazadeh Shareh
+author_profile: true
 categories:
   - research
 tags:
