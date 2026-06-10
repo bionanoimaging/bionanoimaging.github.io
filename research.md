@@ -28,3 +28,4 @@ Also see this [Software page](/software) for details on our developed packages o
 * [Polarization-resolved infrared spectroscopic imaging (PolIRim)](/projects/PolIRim)
 * [Photo-INduced Thermal eXpansion of rough SUrface Morphologies (pintXsum)](/projects/pintXsum)
 * [HiResi4RPE](/projects/HiResi4RPE)
+* [nanoSCAN project collaboration: betatesting of PIC-based pattern generator](/projects/nanoSCAN_integrated_SIM.md)
