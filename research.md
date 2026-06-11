@@ -22,6 +22,7 @@ Also see this [Software page](/software) for details on our developed packages o
 * [Deconvolution toolbox](/projects/DeconvOptim)
 * [Software for instruments' control](/projects/viscope)
 * [Segmentation and classification of FLIM data for retinal granules](/projects/Classi4RPE)
+* [chemometrics analysis for hyperspectral data in PiF-IR](/projects/hyp_data)
 * [Pandemic Modelling Using Automated Model Discovery](/projects/PandemicModelling)
 * [2D polarization-resolved fluorescence imaging (2DPOLIM)](/projects/2DPOLIM)
 * [Open source Nematostella vectensis Imager](/projects/Nematostella_circadian_cycle)
