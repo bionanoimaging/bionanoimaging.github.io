@@ -30,8 +30,4 @@ Also see this [Software page](/software) for details on our developed packages o
 * [Photo-INduced Thermal eXpansion of rough SUrface Morphologies (pintXsum)](/projects/pintXsum)
 * [HiResi4RPE](/projects/HiResi4RPE)
 * [nanoSCAN project collaboration: betatesting of PIC-based pattern generator](/projects/nanoSCAN_integrated_SIM.md)
-<<<<<<< HEAD
-=======
-* [Maximum Likelihood Localization Maps](/projects/MLLocalizationMaps)
 * [Polarization-resolved FLIM](/projects/Polarization-resolved-FLIM)
->>>>>>> 09e2500937af9faed655dbca0ac47b42d6f53998
