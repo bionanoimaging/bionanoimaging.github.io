@@ -1,0 +1,1 @@
+python -m edge_tts -t "Hallo Spieler, dieses Spiel bringt Dir optischen justieren bei. Viel Spaß dabei!" --write-media intro.m4a
