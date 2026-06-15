@@ -1,0 +1,171 @@
+{
+    "version": 1.0,
+    "number": "3",
+    "title": "Selected Components",
+    "steps": [
+        {
+            "type": "addComponent",
+            "component_type": "FibreCouple",
+            "name": "Fibre In 1",
+            "rays": [2,4],
+            "position": [-1.5,3],
+            "diameter": 0.1,
+            "NA": 0.1,
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component_type": "FibreCouple",
+            "name": "Fibre Out 1",
+            "rays": [2,4],
+            "position": [-2.5,4],
+            "diameter": 0.1,
+            "NA": 0.1,
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component_type": "DualPinhole",
+            "name": "DualPH-False",
+            "position": [-1.5,2],
+            "diameter": 0.01,
+            "rotation": [0,0,0],
+            "launches": false,
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component_type": "DualPinhole",
+            "name": "DualPH-True",
+            "position": [-2.5,2.5],
+            "diameter": 0.01,
+            "rotation": [0,0,0],
+            "launches": true,
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component_type": "Laser",
+            "name": "Laser",
+            "rays": [2,4],
+            "position": [-4,0],
+            "rotation": 0,
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component_type": "Lens",
+            "name": "Lens 1",
+            "position": [-3,-1],
+            "rotation": 0,
+            "r1": 1.0,
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component_type": "Lens",
+            "name": "L 2",
+            "position": [-2,-1],
+            "rotation": 90,
+            "r1": 0.5,
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component_type": "Lens",
+            "name": "L 3",
+            "position": [-1,-1],
+            "rotation": 0,
+            "r1": 2.0,
+            "plan": false,
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component_type": "Mirror",
+            "name": "Mirror 1",
+            "position": [0,-1],
+            "rotation": -135,
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component_type": "Mirror",
+            "name": "Mirror 2",
+            "position": [1,-1],
+            "rotation": 135,
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component_type": "Mirror",
+            "name": "Mirror 2",
+            "position": [0,-4],
+            "rotation": 0,
+            "dof": "X"
+        },
+        {
+            "type": "addComponent",
+            "component_type": "Mirror",
+            "name": "Mirror 2",
+            "position": [1,-4],
+            "rotation": 45,
+            "dof": "Y"
+        },
+        {
+            "type": "addComponent",
+            "component_type": "Mirror",
+            "name": "Mirror 2",
+            "position": [2,-4],
+            "rotation": 90,
+            "dof": "Z"
+        },
+        {
+            "type": "addComponent",
+            "component_type": "Pinhole",
+            "name": "Pinhole 1",
+            "position": [2,-1],
+            "diameter": 0.1,
+            "launches": true,
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component_type": "Pinhole",
+            "name": "P 2",
+            "position": [2,-3],
+            "diameter": 0.2,
+            "rotation": -45,
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component_type": "Iris",
+            "name": "Iris 1",
+            "position": [0,-3],
+            "rotation": 0,
+            "dof": "XYZ"
+        },
+        {
+            "type": "addComponent",
+            "component_type": "Beamsplitter",
+            "name": "Beamsplitter 1",
+            "position": [-2,-3],
+            "height": 1.0,
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component_type": "Screen",
+            "name": "Screen",
+            "position": [3,0],
+            "rotation": 0
+        },
+        {
+            "type": "task",
+            "instruction": "This testlevel contains all currently available components.",
+            "success": {"Std": 0.01, "PosX": 0.01, "PosY": 0.01},
+            "score": 100.0
+        }
+   ]
+}

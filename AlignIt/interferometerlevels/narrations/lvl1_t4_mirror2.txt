@@ -1,0 +1,38 @@
+LVL1_TASK4_MIRROR2 - Second Mirror (Scanning Mirror) Narration Script
+======================================================================
+
+[Introduction to the second arm]
+Mirror 2 completes the second arm of our interferometer. Unlike Mirror 1, which 
+is relatively fixed, Mirror 2 will serve as your scanning element - you'll move 
+it precisely to change the optical path length in one arm relative to the other.
+
+[Geometric requirement]
+The key alignment goal is this: both beams should emerge from the beamsplitter 
+parallel to each other after reflection. They need to travel together toward 
+the observation screen at exactly the same height and in exactly the same direction.
+
+[Positioning instructions]
+Start by positioning Mirror 2 near [-4, -2] on the table. This places it about 
+two units from the beamsplitter, creating a roughly equal arm length to Mirror 1. 
+Then adjust its rotation so the reflected beam heads back toward the beamsplitter.
+
+[Rotation considerations]
+Mirror 2 is mounted perpendicular to the incoming beam, but unlike Mirror 1's 
+z-axis orientation, this mirror needs a 90-degree rotation around the z-axis 
+because it's in the x-direction arm rather than the y-direction arm.
+
+[Why parallelism matters]
+For interference to occur when the beams recombine, they must be traveling in 
+the same direction. If the beams emerge at different angles, they won't overlap 
+properly at the screen, and you won't see clear interference fringes.
+
+[Degrees of freedom]
+You have considerable freedom with Mirror 2 - you can adjust its position along 
+X, Y, and Z axes, as well as rotate it around all three axes. This flexibility 
+lets you achieve the precise alignment needed for good interference.
+
+[Preparation for next steps]
+Once both mirrors are aligned and both beams emerge parallel, we'll add a 
+diverging lens to spread the beam, then bring both spots to overlap at the 
+screen where interference will become visible.
+

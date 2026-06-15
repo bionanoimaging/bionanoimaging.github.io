@@ -1,7 +1,7 @@
 {
     "version": 1.0,
     "number": "1",
-    "title": {"de": "Linsen: Finde den Fokus!", "en": "Find the focus!", "no": "Finn fokus!"},
+    "title": {"de": "Linsen: Finde den Fokus!", "en": "Lenses: Find the focus!", "no": "Finn fokus!"},
     "steps": [
      {
             "type": "addComponent",
@@ -57,9 +57,9 @@
         {
             "type": "task",
             "instruction": {
-                "de": "Finde den Fokus!\nBewege den Schirm!",
-                "en": "Find the focus!\nMove the screen!",
-                "no": "Finn fokus!\nFlytt skjermen!"
+                "de": "Bewege den Schirm!",
+                "en": "Move the screen!",
+                "no": "Flytt skjermen!"
             },
             "showbeams": false,
             "showplanes": true,
@@ -91,9 +91,9 @@
         {
             "type": "task",
             "instruction": {
-                "de": "Finde den Fokus!\nBewege den Schirm!",
-                "en": "Find the focus!\nMove the screen!",
-                "no": "Finn fokus!\nFlytt skjermen!"
+                "de": "Bewege den Schirm!",
+                "en": "Move the screen!",
+                "no": "Flytt skjermen!"
             },
             "showbeams": false,
             "showplanes": true,

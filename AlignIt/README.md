@@ -115,55 +115,239 @@ All components have the possibility to specify degrees of freedom ("dof"). For t
 
 ### List of possible component types
 
-- `Laser` ("rays": [0,0], "diameter": 0.3, "power": 1.0, "divergence": 0.0, "divergencex": 0.0, "divergencey": 0.0, "wavelength": 488.0), the two numbers refer to the number or radial layers and azimuthal rays in each layer. "diameter" refers to the total diameter of the outer layer of laser rays. "power" specifies the brightness of the laser. The various "divergence" values specify how much divergence the rays leaving the laser have (..x and ..y mean along the x and y direction). "wavelength" specifies the wavelengths in nanometer.
-- `Lens` ("r1": 1.0, "r2": 2.0, "wedge_angle": 0.0), with r1 and r2 referring to the radius of curvature of each lens surface. If not given the value of zero is assumed, which really means infinite, i.e. a flat surface. Note that also negative values are allowed, referring to a concave surface. If "trace_reflection" is set to `true`, weak reflection beams will be launched. "wedge_angle" (only for r0=0.0 and r1=0.0) allows to create a weak prism, e.g. for shear-plates. "wedge_lambda" is an alternative method, which scales slightly better to show interference fringes for small angles, to be used in shear-plates. If `cylinder` is set to `true`, the lens will be interpreted as a cylinder lens. The refrative index has the default 1.52 but can be specified (e.g. "refractive_index": 1.33). If a range ("refractive_index": [1.0, 1.6]) is specified, a slider will be diplayed allowing to change the refractive index. A third value can specify its initial setting.
-- `Mirror`
-- `Beamsplitter`
-- `Grating` ("pitch"), the pitch corresponding to the grating pitch in µm.
-- `Pinhole` ("diameter", "lauches", "rays", "NA", "separation", "launch_power"), if "launches": true is provided, independed rays are lauched depending on how this pinhole (acting as a "screen") is hit. Via the "rays" argument you can provide the number of rings and axial positions on each ring of launched rays (e.g. "rays": [1,4]   launches 1 ring of 4 beams plus the central beam). IF "NA" is provided, the impining convergence/divergence of the beams will be ignored and the outgoing beam will be launched with a direction orthogonal to the pinhole and the provided NA. However directions are kepts. "separation" defines an offset to the center, if provided. "launch_power" resets the current power of beams and launches beams according to the provided value.
-- `Iris` ("diameter", "success"), if the "success" parameter is provided (e.g. "success": {"diameter": 0.03},) the adjustable diameter needs to be below the stated value, to contribute to an overall success in the task (see components bar). If a success value is provided the minimum size is automatically limited to that value.
-- `Slit` ("diameter", "success"), if the "success" parameter is provided (e.g. "success": {"diameter": 0.03},) the adjustable diameter needs to be below the stated value, to contribute to an overall success in the task (see components bar). If a success value is provided the minimum size is automatically limited to that value.
-- `DualPinhole` ("diameter", "separation", "launches", "NA"), where "separation" indicates the distance between the two pinholes. If "lauches" is `true` this pinhole will (like a screen) analyse the impinging beams and launch two beams from its center. For other arguments see "pinhole".
-- `FibreCouple`
-- `Screen` ("success", "target"), the "success" of the screen is often the most important component to fullfill a given task. The following options are supported for screen "success":
-  - "Num": the minimal number of beams hitting the screen. If not specified it is allumed that this corresponds to the number of beams launched by the laser.
-  - "Std": the maximally allowed standard deviation of the spot. This is also shown by the attached indicator bar.
-  - "Power": minimal required power (integral over intensity) of all spots. This is also shown by the attached indicator bar.
-  - "PosX": maximal lateral distance to the center of the screen. This is also shown by the attached indicator bar.
-  - "PosY": maximal vertical distance to the center of the screen. This is also shown by the attached indicator bar.
-  - "Curv": maximally allowed curvature. If not provided, any curvature is accepted. No indicator bar is provided.
-e.g. "success": {"Std": 0.004, "PosX": 0.005, "PosY": 0.005}
-if "target" is specified (e.g. true) a screen target is drawn. If "target" is set to "line", "lineh" or "linev" a (horizontal or vertical) line-target is drawn.
-All features can be started by a "_" (e.g. "_Std": 0.004), which disables their display on the indicators panel, but they still need to be fulfilled. In this case the panel only turns green if all of these measures are fulfilled and no indication is given, which one may still be lacking.
-Some component types (e.g. Iris) also support the  argument "success" (with the parameter "diameter"):
-  - "success": {"diameter": 0.05}
-    meaning that this maximum diameter has to be adjusted by the user for this component to turn green and thus contribute to the "components" bar which needs all such components to be have reached their individual "success" criteria.
-Note that the user interface panel is usually attached to the first screen, but you can also supply
-- PanelPost  which serves as a (potentially movable) post on which the panel is placed. Note that in VR the presence of the left control takes over the panel.
+#### Light Sources
+
+- `Laser`: Coherent light source. Arguments:
+  - `rays`: [radial_layers, azimuthal_rays] - beam structure (e.g., [2,4] = 2 radial layers with 4 azimuthal rays each)
+  - `diameter`: total diameter of outer laser ray layer (default 0.3)
+  - `power`: brightness/intensity (default 1.0)
+  - `divergence`: radial beam divergence in radians (default 0.0)
+  - `wavelength`: wavelength in nanometers (default 488 nm)
+  
+- `Lightsource`: Extended incoherent light source with divergence. Same arguments as Laser, typically used with larger `divergence` values (e.g., 0.0875 rad).
+
+- `Sample`: Light-emitting sample slide. Additional arguments:
+  - `design`: type identifier (e.g., "Slide")
+  - `texture`: image file path for sample texture
+  - `texture_zoom`: zoom factor for texture display
+  - `launches`: if `true`, emits rays when illuminated
+  - `dir_em`: emission direction vector
+  - `drift`: enables drift animation
+  - `wavelength`: emitted light wavelength
+
+#### Optical Elements
+
+- `Lens`: Plano-convex or biconvex lens. Arguments:
+  - `r1`, `r2`: radii of curvature for each surface (0 = infinite/flat, negative = concave)
+  - `thickness`: lens thickness (default 0.3)
+  - `wedge_angle`: prism angle for shear-plates (only when r1=r2=0)
+  - `wedge_lambda`: alternative wedge parameter for interference fringes
+  - `cylinder`: if `true`, creates cylinder lens
+  - `refractive_index`: material index (default 1.52; array [min,max,initial] creates slider)
+  - `reflectivity1`, `reflectivity2`: surface reflectivity (default 0.04)
+  - `trace_reflection`: if `true`, launches weak reflected beams
+  - `principle1`, `principle2`, `focus1`, `focus2`: show/hide optical planes
+  
+- `Objective`: Microscope objective lens. Arguments:
+  - `focal_length`: focal distance (e.g., 0.01 m)
+  - `principle1`, `principle2`, `focus1`, `focus2`: show/hide optical planes
+
+- `Mirror`: Flat or curved mirror. Arguments:
+  - `r1`: radius of curvature (optional)
+  - `reflectivity`: reflection coefficient (default 1.0)
+  - `trace_reflection`: if `true`, launches secondary reflection beams
+  - `scan_angle`, `scan_period`, `scan_type` ("sawtooth"), `scan_cycles`: scanning mirror dynamics
+
+- `Beamsplitter`: Semi-transparent mirror. Arguments:
+  - `reflectivity`: transmission/reflection ratio (default 0.5)
+  - `trace_reflection`: if `true`, traces both transmitted and reflected beams
+  - `dichromatic`: dichromatic coating mode
+  - `scan_angle`, `scan_period`, `scan_type`, `scan_cycles`: scanning behavior
+  - *Note*: "Filter" type uses same geometry but different material properties
+
+- `Grating`: Diffraction grating. Arguments:
+  - `pitch`: grating pitch in micrometers
+
+#### Apertures & Stops
+
+- `Pinhole`: Pinhole aperture. Arguments:
+  - `diameter`: aperture diameter (default 0.05)
+  - `launches`: if `true`, launches rays when hit by beam
+  - `rays`: [rings, positions_per_ring] for launched rays (e.g., [1,4])
+  - `NA`: numerical aperture of outgoing beam (ignores incoming convergence)
+  - `separation`: offset from center
+  - `launch_power`: power of launched beams
+
+- `DualPinhole`: Two-pinholes aperture (Young's experiment). Arguments:
+  - `diameter`: individual pinhole diameter
+  - `separation`: distance between pinholes
+  - `launches`: if `true`, launches two beams from center
+  - `rays`, `NA`, `launch_power`: same as Pinhole
+
+- `Iris`: Adjustable circular aperture. Arguments:
+  - `diameter`: current aperture size
+  - `success`: {"diameter": max_size} - completion criterion when aperture < max_size
+
+- `Slit`: Adjustable rectangular slit. Arguments:
+  - `diameter`: slit width
+  - `success`: {"diameter": max_width} - completion criterion
+
+#### Detection & Imaging
+
+- `Screen`: Detection screen with measurement capabilities. Arguments:
+  - `target`: shows target pattern (`true`, "line", "lineh", "linev")
+  - `design`: "Camera" (monochrome) or "ColorCamera" for premium camera mode
+  - `success`: measurement criteria (see Screen Success Criteria below)
+
+- `FibreCouple`: Fiber optic coupler / fiber end. Arguments:
+  - `NA`: numerical aperture (default 0.05)
+  - `diameter`: fiber core diameter (default 0.3)
+  - Creates spline-shaped fiber bundle connecting launch and coupling points
+
+- `PanelPost`: UI panel mounting post. Arguments:
+  - `target`: if `true` (default), panel is created
+  - Used only when left VR controller is absent; otherwise controller takes over panel
+
+#### Common Component Arguments
+
+All components support these base arguments:
+- `name`: unique identifier (e.g., "L1", "M1", "S1")
+- `position`: [x, z] coordinates on table (in units, 1 unit ≈ 5 cm)
+- `height`: vertical position (post height = 2.0 units)
+- `rotation`: rotation [rx, ry, rz] in degrees or single value for z-axis
+- `dof`: degrees of freedom string (see DOF section above)
+- `limits`: per-axis movement limits [[min_x, max_x], [min_y, max_y], ...]
+- `displace`: offset parameter for certain components
+
+#### Screen Success Criteria
+
+Screens support detailed success measurement:
+- `Num`: minimum number of beams hitting screen (default = launched beams)
+- `Std`: maximum allowed spot standard deviation
+- `Power`: minimum required beam power/integral intensity
+- `PosX`: maximum lateral distance from center (x-axis)
+- `PosY`: maximum vertical distance from center (y-axis)
+- `Curv`: maximum allowed beam curvature
+- `DeltaX`, `DeltaY`: maximum beam separation/distance
+- Prefix with "_" (e.g., "_Std") to hide indicator but keep requirement
+
+Example: `"success": {"Std": 0.004, "PosX": 0.005, "_PosY": 0.005}` shows indicators for Std and PosX, but silently enforces PosY.
+  Some component types (e.g. Iris, Slit) also support the "success" argument with "diameter" parameter:
+  - `"success": {"diameter": 0.05}`
+    The maximum aperture size must be achieved for the component to turn green and contribute to the "components" completion bar. All components with success criteria must be satisfied for level progression.
+
+**Note on UI Panel:** The user interface panel is automatically attached to the first Screen component. You can explicitly place it using `PanelPost` component type, which creates a movable post for the panel. In VR mode, if the left controller is present, it takes over panel display instead of any PanelPost.
 
 ## Tasks
 
-tasks are defined by a `task` json tag within the list of other actions. This will interrupt the flow until this task is solved. The task is solved when all the components present on the table have been sucessfully solved. `task` supports the following tags:
+Tasks are defined by a `task` JSON step within the level's steps array. This interrupts normal flow until all components' success criteria are met. The task supports these properties:
 
-- `instruction`: The text entered here will be shown on the screen until this task is solved
-- `score`: The maximum score to earn for solving this task
-- `music`: with the fields `link` for the link to the narration file, `credits` for the text to display for credits.
-- `narration`: with has the fields `link` for the link to the narration file, `credits` for the text to display for credits and optionally `force`, which will prevent movement user interaction until the sound was played fully.
-- `showbeams`: if this optional boolean tag is provided the state of the `Beams` button is forced to the value given here and the button is disabled for this task.
-- `focus`, `focus1`, `focus2`: if true both focal planes or a specific focal plane can optionally be shown.
-- `principle`, `principle1`, `principle2`: if true both priciple planes or a specific principle plane can optionally be shown.
-- `showplanes`: if true, the aforementioned planes will be shown on start of the task (they can still be switched on and off).
-- `final`: can be present to indicate that this is the final task of this level
+- `instruction`: Text displayed to guide the player until task completion
+- `score`: Maximum points available for solving this task
+- `music`: Background music object with:
+  - `link`: URL/path to audio file (m4a, mp3)
+  - `credits`: Attribution text displayed in credits
+- `narration`: Spoken instructions object with:
+  - `link`: URL/path to narration audio file
+  - `credits`: Narrator attribution
+  - `force`: If `true`, blocks user interaction until narration completes
+- `question`: Alternative to instruction; used for quiz-style tasks
+- `answers`: Array of possible answers for question-based tasks
+- `showbeams`: Boolean; forces laser beam visibility state and disables the Beams button
+- `showplanes`: If `true`, shows optical planes on startup (can be toggled during task)
+- `focus`, `focus1`, `focus2`: Show focal planes (both, or specific one numbered 1/2)
+- `principle`, `principle1`, `principle2`: Show principal planes (both, or specific one)
+- `final`: Flag indicating this is the last task in the level
 
-## Visual Appearance
+Example task step:
+```json
+{
+  "type": "task",
+  "name": "Focus the Lens",
+  "instruction": "Align and focus the lens onto the screen",
+  "score": 100,
+  "showbeams": true,
+  "focus1": true,
+  "narration": {
+    "link": "narrations/task1_focus.m4a",
+    "credits": "Dr. Smith"
+  }
+}
+```
 
-There are some html-query parameters, which modify the visual appearance, rendering quality and rendering speed:
-    - `lens=true`: switches to a realistic rendering of the lenses. `lens=all` has the best rendering, including also other meshes in the lens effects.
-    - `pbr=true`: renders the posts in a nicer finish
-    - `fps=true`: shows the frames per second `fps` in the top right corner
-    - `env=name`: changes the background setting. Allowed entries for `name` are "forest", "night", "room", "astro"
-    - `teleport`: `true` or `false` enables/disables the teleportation in VR mode, switching to a moving motion (beware motion thickness!). `off` disables all movemnt in VR mode (recommended for absolute beginners)
-Remember to use them like in this example: `?lens=true&pbr=true&env=night`.
+### Additional Step Types
+
+Beyond `addComponent` and `task`, levels support these step types:
+
+- `modifyComponent`: Changes properties of an existing component (removes and recreates it)
+- `removeComponent`: Deletes a component by name
+- `resetComponent`: Returns component to initial position/rotation/configuration
+- `renameComponent`: Changes component's name (must use new name thereafter)
+- `solution`: Defines target configuration for hint animations
+  - Specify `position`, `rotation`, `height` as target values
+- `activate`: Changes degrees of freedom (DOF) of a component mid-task
+  - Example: `{"dof": "XYZxyz"}` unlocks full 6-DOF movement
+- `setObserverPosition`: Sets camera starting position
+  - `position`: [x, z] coordinates for observer location
+  - `look_at`: Target point to view (default: [0,0] at beam height)
+- `addBaseMesh`: Adds additional base meshes to the optical table
+- `addLensMesh`: Adds extra meshes for realistic lens rendering
+
+## Visual Appearance & Performance
+
+HTML query parameters modify visual appearance, rendering quality, and performance:
+
+| Parameter | Values | Default | Description |
+|-----------|--------|---------|-------------|
+| `mode` | `plain`, `vr`, `ar` | auto | Display mode selection |
+| `scale` | 0.05 – 5.0 | 0.15 | World scale factor. Try `scale=1.0` to feel tiny! In VR, table becomes floor at scale < 0.5 |
+| `env` | `forest`, `night`, `room`, `astro`, `square` | `forest` | Environment/skybox selection |
+| `pbr` | `true`, `false` | `false` | Use PBR materials for better post textures (reduces performance) |
+| `lens` | `true`, `all`, `false` | `false` | Realistic lens rendering. `all` includes all meshes in lens effects (premium feature) |
+| `fps` | `true`, `false` | `false` | Show FPS counter in top-right corner |
+| `safety` | `true`, `false` | `true` | Enable camera reset on laser collision |
+| `sides` | `true`, `false` | `true` | Show/hide lens side surfaces. `false` improves performance |
+| `teleport` | `true`, `false`, `off` | `off` | VR movement: `true`=teleport, `false`=walk, `off`=no movement (beginner-friendly) |
+| `language` | `de`, `en`, `no` | `de` | Game language (German, English, Norwegian) |
+| `user` | string | none | Player username for leaderboard |
+| `level` | integer | 1 | Starting level number |
+| `levels` | URL | internal | Load custom levels from external URL |
+| `setpw` | password | none | Set interference premium password automatically |
+
+**Examples:**
+- `?mode=vr&scale=0.3&env=room&user=test` - VR mode with test user
+- `?lens=all&pbr=true&fps=true` - Maximum quality rendering with FPS display
+- `?teleport=off&language=en` - No movement, English interface  
+- `?levels=https://example.com/levels&user=fred` - Custom level source
+
+Combine parameters with `&`: `?mode=ar&scale=1.0&env=forest&user=myname`
+
+## Language & Localization
+
+The game supports multiple languages, which can be selected via URL parameter or in the settings menu:
+- `language=de`: German (default)
+- `language=en`: English  
+- `language=no`: Norwegian
+
+Example: `?language=en`
+
+## Premium Features Password
+
+If you have purchased the premium license, you can activate interference features directly via URL:
+- `setpw=yourpassword`: Sets the interference password automatically on startup
+
+Example: `?setpw=yourpassword`
+
+Alternatively, use the "Password" button in the settings menu during gameplay.
+
+## Difficulty Settings
+
+The difficulty level affects scoring calculations. Currently accessible via the settings menu in-game:
+- **Hard**: Normal scoring (relative_difficulty = 1.0)
+- **Normal**: Reduced scoring threshold (relative_difficulty = 0.8)
+- **Easy**: Further reduced scoring threshold (relative_difficulty = 0.5)
+
+The control sensitivity can also be adjusted in the settings menu with three levels: Coarse, Medium, and Fine.
 
 ## License
 

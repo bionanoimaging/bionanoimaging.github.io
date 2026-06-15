@@ -1,22 +1,24 @@
 {
-    "dir": "ltr",
-    "lang": "en",
-    "name": "AlignIt! PWA",
-    "scope": "/AlignIt/index.html",
-    "display": "standalone", 
-    "start_url": "https://nanoimaging.de/AlignIt/index.html",
-    "short_name": "AlignItPWA",
-    "theme_color": "#ffffff",
-    "description": "A game for learning how to align an optical.",
-    "orientation": "landscape",
-    "background_color": "#ffffff",
-    "related_applications": [],
-    "prefer_related_applications": false,
-    "icons": [
-        {
-          "src": "/AlignIt/img/icon.png",
-          "type": "image/png",
-          "sizes": "512x512"
-        }
-    ]
-  }
+  "name": "AlignIt - Optical Alignment VR/AR",
+  "short_name": "AlignIt",
+  "description": "Practice optical alignment in VR/AR",
+  "start_url": ".",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "background_color": "#B6B9B7",
+  "theme_color": "#B6B9B7",
+  "icons": [
+    {
+      "src": "img/icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "img/icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

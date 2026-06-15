@@ -18,6 +18,7 @@
             "name": "Laser",
             "rays": [2,4],
             "diameter": 0.02,
+            "power": 10.0,
             "position": [-5,0]
         },
         {

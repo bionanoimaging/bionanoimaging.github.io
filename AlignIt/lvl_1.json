@@ -1,9 +1,9 @@
 {
     "version": 1.0,
     "number": "1",
-    "title": {"de": "Linsen: Finde den Fokus!", "en": "Lenses: Find the focus!", "no": "Finn fokus!"},
+    "title": {"de": "Finde den Fokus!", "en": "Find the focus!", "no": "Finn fokus!"},
     "steps": [
-     {
+        {
             "type": "addComponent",
             "component_type": "PanelPost",
             "name": "Panel Post",
@@ -11,110 +11,6 @@
             "position": [1, -1],
             "rotation": 0,
             "dof": ""
-        },
-        {
-        "type": "addComponent",
-        "component_type": "Lightsource",
-        "name": "F-Light",
-        "position": [-5, 2],
-        "height": 1,
-        "rotation": 0,
-        "dof": "",
-        "divergence": 0.05,
-        "diameter": 0.5,
-        "wavelength": 630,
-        "rays": [1, 3],
-        "power": 10.0
-        },
-        {
-            "type": "addComponent",
-            "component_type": "Lens",
-            "name": "L1",
-            "position": [-1.7,2],
-            "rotation": 0,
-            "r1": 1,
-            "r2": 1.5,
-            "principle1": false,
-            "focus1": true,
-            "principle2": false,
-            "focus2": true,
-            "dof": ""
-        },
-        {
-            "type": "addComponent",
-            "component_type": "Screen",
-            "name": "S1",
-            "success": {"Std": 0.01},
-            "position": [-0.3, 2],
-            "rotation": 0,
-            "dof": "X",
-            "target": false
-        },
-        {
-            "type": "solution", "name": "S1",
-            "position": [0.3, 2]
-        },
-        {
-            "type": "task",
-            "instruction": {
-                "de": "Bewege den Schirm!",
-                "en": "Move the screen!",
-                "no": "Flytt skjermen!"
-            },
-            "showbeams": false,
-            "showplanes": true,
-            "score": 100.0
-        },
-        {
-            "type": "task",
-            "question": {
-                "de": "Ist das Bild jetzt kleiner oder größer\n als die Quelle?",
-                "en": "Is the image now smaller or larger\n than the source?",
-                "no": "Er bildet nå mindre eller større\n enn kilden?"
-            },
-            "answers": [
-                {"de": "Kleiner", "en": "Smaller", "no": "Mindre"},
-                {"de": "Größer", "en": "Larger", "no": "Større"}
-            ],
-            "score": 100.0
-        },
-        {
-            "type": "modifyComponent",
-            "name": "L1",
-            "position": [-3.1,2]
-        },
-        {
-            "type": "solution", 
-            "name": "S1",
-            "position": [1.0, 2]
-        },
-        {
-            "type": "task",
-            "instruction": {
-                "de": "Bewege den Schirm!",
-                "en": "Move the screen!",
-                "no": "Flytt skjermen!"
-            },
-            "showbeams": false,
-            "showplanes": true,
-            "score": 100.0
-        },
-        {
-            "type": "task",
-            "question": {
-                "de": "Ist das Bild nun kleiner oder größer\n als die Quelle?",
-                "en": "Is the image now smaller or larger\n than the source?",
-                "no": "Er bildet nå mindre eller større\n enn kilden?"
-            },
-            "answers": [
-                {"de": "Größer", "en": "Larger", "no": "Større"},
-                {"de": "Kleiner", "en": "Smaller", "no": "Mindre"}
-            ],
-            "score": 100.0
-        },
-        {
-            "type": "removeComponent",
-            "name": "F-Light"
         },
         {
             "type": "addComponent", "component_type": "Laser", "name": "Laser",
@@ -125,8 +21,7 @@
             "dof": ""
         },
         {
-            "type": "modifyComponent", 
-            "name": "L1",
+            "type": "addComponent", "component_type": "Lens", "name": "L1",
             "position": [-2, 0],
             "rotation": 0,
             "r1": 1.0,
@@ -141,19 +36,16 @@
             "position": [0.28, 0]
         },
         {
-            "type": "modifyComponent", 
-            "name": "S1",
+            "type": "addComponent", "component_type": "Screen", "name": "S1",
             "success": {"Std": 0.01},
             "position": [2.2, 0.0],
             "rotation": 0,
-            "dof": "",
-            "target": true
+            "dof": ""
         },
         {
             "type": "task",
             "instruction": {"de": "Bewege L1 entlang der X-Koordinate, bis\nder Strahl auf dem Bildschirm fokussiert ist.\nGreife das untere Podest.", "en": "Move L1 along the X-coordinate until\nthe beam is focussed on the screen. Grab the bottom pedestal.", "no": "Flytt L1 langs X-koordinaten til\nstrålen er fokusert på skjermen. Ta tak i den nedre sokkelen."},
             "score": 100.0,
-            "showbeams": true,
             "showplanes": false,
             "music": {
                 "link": "music/Now+We+Ride+-+320bit.mp3", "credits": "Now We Ride by Alexander Nakarada | https://www.serpentsoundstudios.com\nCreative Commons CC BY 4.0, https://creativecommons.org/licenses/by/4.0/"
@@ -237,7 +129,7 @@
         },
         {
             "type": "task",
-            "instruction": {"de": "Fokussiere L1 mittels X-, Y-, Z- und Drehsteuerung.\nKlicke auf die Linse, um die Dreh-Ring zu aktivieren.\nDie flache Seite sollte zum Bildschirm zeigen!", "en": "Focus L1 by X-,Y-, Z- and rotation-control\nClick on the lens to activate rotation gizmos.\nThe flat side should point towards the screen!", "no": "Fokuser L1 med X-, Y-, Z- og rotasjonskontroll.\nKlikk på linsen for å aktivere rotasjons-gizmos.\nDen flate siden skal peke mot skjermen!"},
+            "instruction": {"de": "Fokussiere L1 mittels X-, Y-, Z- und Drehsteuerung.\nKlicke auf die Linse, um die Dreh-Gizmos zu aktivieren.\nDie flache Seite sollte zum Bildschirm zeigen!", "en": "Focus L1 by X-,Y-, Z- and rotation-control\nClick on the lens to activate rotation gizmos.\nThe flat side should point towards the screen!", "no": "Fokuser L1 med X-, Y-, Z- og rotasjonskontroll.\nKlikk på linsen for å aktivere rotasjons-gizmos.\nDen flate siden skal peke mot skjermen!"},
             "score": 200.0,
             "music": {
                 "link": "music/The+Sad+Piano+Background+Song+-+320bit.mp3", 

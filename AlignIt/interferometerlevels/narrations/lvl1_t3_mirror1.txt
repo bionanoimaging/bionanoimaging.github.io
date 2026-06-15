@@ -1,0 +1,39 @@
+LVL1_TASK3_MIRROR1 - First Mirror (Fixed Mirror) Narration Script
+==================================================================
+
+[Introduction to the first arm]
+We now add Mirror 1, which sits at the end of the first interferometer arm. 
+This mirror has a special role: it must reflect the beam directly back along 
+its incoming path. This technique is called retroreflection.
+
+[What retroreflection means]
+When light hits a mirror head-on - that is, perpendicular to the mirror surface 
+- it bounces straight back toward the source. This is different from the usual 
+case where light reflects at an angle. Retroreflection ensures that the beam 
+returns through exactly the same optical path it came from.
+
+[Alignment instructions]
+Mirror 1 is positioned at [-2, 1], about three units from the beamsplitter. 
+Your goal is to adjust the mirror's orientation so the reflected beam travels 
+back through the beamsplitter and heads toward the laser position.
+
+[How to verify alignment]
+Watch the reflected ray carefully. When properly aligned, you should see it 
+retrace the exact path of the incoming beam. The rotation angles around the x 
+and y axes need to be very close to zero for perfect retroreflection.
+
+[Technical tip]
+Use small, fine adjustments. Even tiny angular errors cause large displacement 
+at the return point because the error accumulates over twice the arm length - 
+once going out, once coming back.
+
+[Why this matters]
+Retroreflection maximizes the amount of light that returns to recombine with 
+the other beam. It also ensures that any phase information is preserved correctly. 
+This precise back-and-forth travel is fundamental to how the interferometer 
+measures path length differences.
+
+[Next step preview]
+Once Mirror 1 is properly retroreflecting, we'll add Mirror 2 in the second arm 
+and learn how to align both beams to emerge parallel from the beamsplitter.
+
