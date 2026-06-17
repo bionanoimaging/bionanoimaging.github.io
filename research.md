@@ -31,3 +31,4 @@ Also see this [Software page](/software) for details on our developed packages o
 * [HiResi4RPE](/projects/HiResi4RPE)
 * [nanoSCAN project collaboration: betatesting of PIC-based pattern generator](/projects/nanoSCAN_integrated_SIM.md)
 * [Polarization-resolved FLIM](/projects/Polarization-resolved-FLIM)
+* [Image Scanning Microscopy with STED, Adaptive Optics, and Fluorescence Lifetime Imaging](/projects/ism_sted_ao_flim.md)
