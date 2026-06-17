@@ -1,7 +1,7 @@
 // Names of the two caches used in this version of the service worker.
 // Change to v2, etc. when you update any of the local resources, which will
 // in turn trigger the install event again.
-const PRECACHE = 'precache-v33';
+const PRECACHE = 'precache-v34';
 const RUNTIME = 'runtime';
 
 // The files we want to cache for offline use. These are all relative to the
@@ -40,7 +40,7 @@ const filesToCache = [
   base + '/babylon/remote/right.glb',
   base + '/babylon/remote/left.glb',
   base + '/babylon/remote/FluorescentCells.jpg',
-  base + '/music/Be+Jammin\'+-+320bit.mp3',
+  base + '/music/Be+Jammin+-+320bit.mp3',
   base + '/music/Emotional+Ballad+-+320bit.mp3',
   base + '/music/forest-with-small-river-birds-and-nature-field-recording-6735.mp3',
   base + '/music/Melodic+Overflow+-+320bit.mp3',

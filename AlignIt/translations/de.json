@@ -121,7 +121,7 @@
     "success": "Erfolg:",
     "task_step": "Aufgabenschritt:",
     "question_label": "Frage (leer lassen für normale Aufgabe):",
-    "answers_label": "Antworten (kommagetrennt, erste=richtig):",
+    "answers_label": "Antworten, erste=richtig:",
     "step_types": "Schritttypen",
     "filename_empty": "Dateiname darf nicht leer sein",
     "step_type": {

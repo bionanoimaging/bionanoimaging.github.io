@@ -121,7 +121,7 @@
     "success": "Success:",
     "task_step": "Task Step:",
     "question_label": "Question (leave empty for normal task):",
-    "answers_label": "Answers (comma-separated, first=correct):",
+    "answers_label": "Answers, first=correct:",
     "step_types": "Step Types",
     "filename_empty": "Filename cannot be empty",
     "step_type": {

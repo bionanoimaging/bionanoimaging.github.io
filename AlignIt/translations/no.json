@@ -121,7 +121,7 @@
     "success": "Suksess:",
     "task_step": "Oppgavetrinn:",
     "question_label": "Spørsmål (la stå tomt for normal oppgave):",
-    "answers_label": "Svar (kommaseparert, første=riktig):",
+    "answers_label": "Svar, første=riktig:",
     "step_types": "Trinnetyper",
     "filename_empty": "Filnavn kan ikke være tomt",
     "step_type": {
