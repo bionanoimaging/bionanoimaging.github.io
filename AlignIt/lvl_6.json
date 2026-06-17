@@ -86,6 +86,9 @@
       "instruction": {
         "en": "Task 1: Level the laser beam.\nAdjust the laser position and angle so all beams pass through both pinholes and hit the screen."
       },
+      "music": {
+          "link": "music/Be+Jammin+-+320bit.mp3", "credits": "Be Jammin by Alexander Nakarada | https://www.serpentsoundstudios.com\nCreative Commons CC BY 4.0, https://creativecommons.org/licenses/by/4.0/"
+      },
       "score": 150,
       "showbeams": true,
       "showplanes": false
