@@ -68,11 +68,15 @@
             "component_type": "Screen",
             "name": "Screen",
             "target": false,
+            "success": {
+              "_DeltaC": 0.0001,
+              "_DeltaX": 0.00001,
+              "_DeltaY": 0.00001},
             "position": [2,0]
         },
         {
             "type": "task",
-            "instruction": {"de": "Ein Mach-Zehnder-Interferometer zum Erkunden\nvon Interferenzeffekten (nur in der Vollversion!)", "en": "A Mach-Zehnder Interferometer to explore\ninterference effects (only in the full version!)", "no": "Et Mach-Zehnder-interferometer for å utforske\ninterferenseffekter (kun i fullversjonen!)"},
+            "instruction": {"de": "Ein Mach-Zehnder-Interferometer zum Erkunden\nvon Interferenzeffekten (nur in der Vollversion!)", "en": "A Mach-Zehnder Interferometer to explore\ninterference effects (only in the full version!)\nFind and straighten the fringes!", "no": "Et Mach-Zehnder-interferometer for å utforske\ninterferenseffekter (kun i fullversjonen!)"},
             "success": {"PosX": 0.01, "PosY": 0.01, "Curv": 0.01, "RelAng": 0.01},
             "music": {
                 "link": "music/forest-with-small-river-birds-and-nature-field-recording-6735.mp3",

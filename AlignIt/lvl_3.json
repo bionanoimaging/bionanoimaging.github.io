@@ -19,7 +19,7 @@
             "rays": [1, 4],
             "diameter": 0.3,
             "position": [-6, 1],
-            "power": 40.0
+            "power": 3.0
         },
         {
             "type": "addComponent",

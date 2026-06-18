@@ -266,6 +266,8 @@ self.addEventListener('fetch', event => {
     let localCacheKey = null;
     if (url.endsWith('/profile.json')) {
       localCacheKey = base+'/babylon/remote/profile.json';
+    } else if (url.endsWith('/profilesList.json')) {
+      localCacheKey = base+'/babylon/remote/profilesList.json';
     } else if (url.endsWith('/left.glb')) {
       localCacheKey = base+'/babylon/remote/left.glb';
     } else if (url.endsWith('/right.glb')) {

@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "number": "1",
+  "title": "Michelson Interferometer - Complete Guide",
+  "steps": [
+    {
+      "type": "setObserverPosition",
+      "position": [ -8, -6, 2 ],
+      "look_at": [ 0, -3 ]
+    },
+    {
+      "type": "addComponent",
+      "component_type": "PanelPost",
+      "name": "Panel Post",
+      "height": 2.2,
+      "position": [ 3, -1 ],
+      "rotation": 0,
+      "dof": "",
+      "limits": [[],[],[],[],[],[]],
+      "target": true
+    },
+    {
+      "type": "addComponent",
+      "component_type": "Laser",
+      "name": "Laser",
+      "position": [ -2.1, -6 ],
+      "rotation": [ 0, -88, 2 ],
+      "dof": "XZxyzp",
+      "rays": [ 1, 3],
+      "diameter": 0.2,
+      "power": 2,
+      "wavelength": 488,
+      "limits": [[ -2.5, -1.7 ],[],[],[],[],[]],
+      "height": 1,
+      "displace": 0,
+      "divergence": 0
+    },
+    {
+      "type": "addComponent",
+      "component_type": "Pinhole",
+      "name": "Pinhole 1",
+      "position": [ -2, -4 ],
+      "height": 1,
+      "rotation": -90,
+      "dof": "",
+      "diameter": 0.05,
+      "limits": [[],[],[],[],[],[]],
+      "launches": true
+    },
+    {
+      "name": "Pinhole 2",
+      "type": "addComponent",
+      "dof": "",
+      "component_type": "Pinhole",
+      "position": [ -2, -1 ],
+      "rotation": [ 0, -90, 0 ],
+      "diameter": 0.07,
+      "height": 1,
+      "limits": [[],[],[],[],[],[]],
+      "displace": 0
+    },
+    {
+      "type": "addComponent",
+      "component_type": "Screen",
+      "name": "Alignment Screen",
+      "position": [ -2, 3],
+      "rotation": -90,
+      "dof": "",
+      "target": true,
+      "design": "Standard",
+      "success": {
+        "Num": 1
+      },
+      "height": 1,
+      "limits": [[],[],[],[],[],[]]
+    },
+    {
+      "type": "solution",
+      "component_type": "Laser",
+      "name": "Laser",
+      "position": [ -2, -6 ],
+      "rotation": [ 0, -90, 0 ]
+    },
+    {
+      "type": "task",
+      "instruction": {
+        "en": "Task 1: Level the laser beam.\nAdjust the laser position and angle so all beams pass through both pinholes and hit the screen."
+      },
+      "music": {
+          "link": "music/Be+Jammin+-+320bit.mp3", "credits": "Be Jammin by Alexander Nakarada | https://www.serpentsoundstudios.com\nCreative Commons CC BY 4.0, https://creativecommons.org/licenses/by/4.0/"
+      },
+      "score": 150,
+      "showbeams": true,
+      "showplanes": false
+    },
+    {
+      "type": "addComponent",
+      "component_type": "Mirror",
+      "name": "Mirror 1",
+      "position": [ -2, 1 ],
+      "rotation": [ 2, 1, 0 ],
+      "dof": "xyz",
+      "reflectivity": 1,
+      "limits": [[],[],[],
+        [ -5, 5 ],
+        [ -5, 5 ],[]],
+      "height": 1,
+      "displace": 0,
+      "scan_angle": 5,
+      "scan_period": 100,
+      "scan_type": "sawtooth",
+      "scan_cycles": 0
+    },
+    {
+      "type": "removeComponent",
+      "name": "Pinhole 1"
+    },
+    {
+      "name": "Pinhole 2",
+      "type": "modifyComponent",
+      "diameter": 0.15
+    },
+    {
+      "name": "Alignment Screen",
+      "type": "modifyComponent",
+      "dof": "",
+      "success": {
+        "Num": 4
+      },
+      "component_type": "Screen",
+      "position": [ 2, -2 ],
+      "target": false,
+      "design": "Standard",
+      "height": 1,
+      "rotation": [ 0, 0, 0 ],
+      "limits": [[],[],[],[],[],[]]
+    },
+    {
+      "name": "BS1",
+      "type": "addComponent",
+      "dof": "",
+      "component_type": "Beamsplitter",
+      "position": [ -2, -2 ],
+      "rotation": 45
+    },
+    {
+      "type": "solution",
+      "name": "Mirror 1",
+      "rotation": [ 0, 0, 0 ],
+      "component_type": "Mirror"
+    },
+    {
+      "type": "task",
+      "instruction": "Task 2: Retroreflect the beam.\nAdjust Mirror 1 so the reflected beam returns through the pinhole\nand hits the screeen.",
+      "score": 150,
+      "showbeams": true,
+      "showplanes": false,
+      "question": "",
+      "answers":[]
+    },
+    {
+      "name": "Mirror 2",
+      "type": "addComponent",
+      "dof": "xyz",
+      "component_type": "Mirror",
+      "position": [ -5.1, -2 ],
+      "rotation": [ 0, -90.1, 0.2],
+      "limits": [[],[],[],
+        [ -7, 7 ],
+        [ -7, 7 ]],
+      "height": 1,
+      "displace": 0,
+      "reflectivity": 1
+    },
+    {
+      "name": "Pinhole 2",
+      "type": "removeComponent",
+      "component_type": "Pinhole"
+    },
+    {
+      "name": "Laser",
+      "type": "modifyComponent",
+      "diameter": 0.6,
+      "power": 1
+    },
+    {
+      "name": "Alignment Screen",
+      "type": "modifyComponent",
+      "dof": "",
+      "success": {
+        "Num": 5,
+        "DeltaX": 0.0001,
+        "DeltaY": 0.0001
+      },
+      "component_type": "Screen",
+      "position": [ 0, -2 ],
+      "target": false,
+      "design": "Standard"
+    },
+    {
+      "name": "Mirror 2",
+      "type": "solution",
+      "component_type": "Mirror",
+      "position": [ -5, -2 ],
+      "rotation": [ 0, -90, 0.0 ]
+    },
+    {
+      "name": "Mirror 1",
+      "type": "solution",
+      "component_type": "Mirror",
+      "position": [ -2, 1 ],
+      "rotation": [ 0, 0, 0]
+    },
+    {
+      "type": "task",
+      "instruction": {
+        "en": "Task 3: Create two parallel beams.\nAdjust Mirror 2 so you see interference fringes on the screen. The spots should merge into one."
+      },
+      "score": 200,
+      "showbeams": true,
+      "showplanes": false
+    },
+    {
+      "name": "Lens",
+      "type": "addComponent",
+      "dof": "",
+      "component_type": "Lens",
+      "position": [ -2, -4 ],
+      "rotation": [ 0, 89.99999999999999, 0 ],
+      "limits": [[ -4, -1 ],
+        [ -7, -3 ],[],
+        [ -10, 10 ],
+        [ -10, 10 ],
+        [ -10, 10 ]],
+      "r1": 3,
+      "height": 1,
+      "displace": 0,
+      "r2": 0,
+      "thickness": 0.3,
+      "diameter": 1,
+      "cylinder": false,
+      "refractive_index": 1.52,
+      "reflectivity1": 0.04,
+      "reflectivity2": 0.04,
+      "principle1": true,
+      "principle2": true,
+      "focus1": true,
+      "focus2": true
+    },
+    {
+      "name": "Mirror 2",
+      "type": "modifyComponent",
+      "dof": "XYxyz",
+      "component_type": "Mirror",
+      "position": [ -5.1, -2.1 ],
+      "rotation": [ 0, -90, 0.0001 ]
+    },
+    {
+      "name": "Alignment Screen",
+      "type": "modifyComponent",
+      "dof": "",
+      "success": {
+        "Num": 5,
+        "DeltaX": 0.0001,
+        "DeltaY": 0.0001,
+        "DeltaC": 0.0001
+      },
+      "component_type": "Screen",
+      "position": [ 0, -2 ],
+      "target": false,
+      "design": "Standard"
+    },
+    {
+      "name": "Mirror 2",
+      "type": "solution",
+      "component_type": "Mirror",
+      "position": [ -5, -2 ],
+      "rotation": [ 0, -90, 0.0001 ]
+    },
+    {
+      "type": "task",
+      "instruction": {
+        "en": "Task 4b: Find zero optical path difference.\nScan Mirror 2 along Z until interference fringes appear on the screen. This marks the equal-path position."
+      },
+      "success": {
+        "PosZ": 0.02
+      },
+      "score": 250,
+      "showbeams": true,
+      "showplanes": false
+    },
+    {
+      "type": "task",
+      "instruction": {
+        "en": "Quiz: Where should the laser beam be directed?"
+      },
+      "question": {
+        "en": "Where should the laser beam be directed?"
+      },
+      "answers": [
+        {
+          "en": "Through the center of both pinholes"
+        },
+        {
+          "en": "Anywhere on the optical table"
+        },
+        {
+          "en": "Directly at the screen position"
+        }
+      ],
+      "score": 25,
+      "showplanes": false
+    },
+    {
+      "type": "task",
+      "instruction": {
+        "en": "Quiz: What is retroreflection?"
+      },
+      "question": {
+        "en": "What happens when Mirror 1 is properly aligned as a retroreflector?"
+      },
+      "answers": [
+        {
+          "en": "The beam returns through the pinholes"
+        },
+        {
+          "en": "It is scattered randomly"
+        },
+        {
+          "en": "It disappears completely"
+        }
+      ],
+      "score": 25,
+      "showplanes": false
+    },
+    {
+      "type": "task",
+      "instruction": {
+        "en": "Quiz: Why must both beams be parallel?"
+      },
+      "question": {
+        "en": "Why must both beams emerge parallel from the beamsplitter?"
+      },
+      "answers": [
+        {
+          "en": "Parallel beams overlap and create interference patterns"
+        },
+        {
+          "en": "It makes the setup look symmetrical"
+        },
+        {
+          "en": "Parallel beams travel faster"
+        }
+      ],
+      "score": 25
+    },
+    {
+      "type": "task",
+      "instruction": {
+        "en": "Quiz: Why use divergent light?"
+      },
+      "question": {
+        "en": "Why does divergent light help find zero path difference?"
+      },
+      "answers": [
+        {
+          "en": "Only at zero OPD do all rays interfere constructively"
+        },
+        {
+          "en": "The lens amplifies the signal"
+        },
+        {
+          "en": "Divergent light has longer coherence"
+        }
+      ],
+      "score": 25
+    },
+    {
+      "type": "task",
+      "instruction": {
+        "en": "Congratulations! You built and aligned a Michelson interferometer!\n\nPress DONE to proceed."
+      },
+      "final": true
+    }
+  ]
+}
