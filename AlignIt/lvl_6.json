@@ -29,7 +29,7 @@
       "rays": [ 1, 4 ],
       "diameter": 0.2,
       "power": 10,
-      "wavelength": 633,
+      "wavelength": 488,
       "limits": [[ -2.5, -1.7 ],[],[],[],[],[]],
       "height": 1,
       "displace": 0,
@@ -43,9 +43,9 @@
       "height": 1,
       "rotation": -90,
       "dof": "",
-      "diameter": 0.127,
+      "diameter": 0.05,
       "limits": [[],[],[],[],[],[]],
-      "displace": 0
+      "lauching": true
     },
     {
       "name": "Pinhole 2",
@@ -54,7 +54,7 @@
       "component_type": "Pinhole",
       "position": [ -2, -1 ],
       "rotation": [ 0, -90, 0 ],
-      "diameter": 0.127,
+      "diameter": 0.07,
       "height": 1,
       "limits": [[],[],[],[],[],[]],
       "displace": 0
@@ -69,7 +69,7 @@
       "target": false,
       "design": "Standard",
       "success": {
-        "Num": 5
+        "Num": 1
       },
       "height": 1,
       "limits": [[],[],[],[],[],[]]
@@ -116,6 +116,11 @@
       "name": "Pinhole 1",
       "type": "removeComponent",
       "component_type": "Pinhole"
+    },
+    {
+      "name": "Pinhole 2",
+      "type": "modifyComponent",
+      "diameter": 0.13
     },
     {
       "name": "Alignment Screen",

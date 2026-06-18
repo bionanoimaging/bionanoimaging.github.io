@@ -13,6 +13,11 @@
             "dof": ""
         },
         {
+        "type": "setObserverPosition",
+        "position": [ -6, 4, 1],
+        "look_at": [ 0, -3 ]
+        },
+        {
             "type": "addComponent", "component_type": "Laser", "name": "Laser",
             "rays": [2,4],
             "diameter": 0.7,
