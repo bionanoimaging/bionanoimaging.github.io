@@ -198,7 +198,6 @@
       "name": "Laser",
       "type": "modifyComponent",
       "diameter": 0.7,
-      "wavelength": 633,
       "power": 2
     },
     {
