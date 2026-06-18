@@ -28,7 +28,7 @@
       "dof": "XZxyz",
       "rays": [ 1, 4 ],
       "diameter": 0.2,
-      "power": 10,
+      "power": 2,
       "wavelength": 488,
       "limits": [[ -2.5, -1.7 ],[],[],[],[],[]],
       "height": 1,
@@ -120,7 +120,7 @@
     {
       "name": "Pinhole 2",
       "type": "modifyComponent",
-      "diameter": 0.13
+      "diameter": 0.15
     },
     {
       "name": "Alignment Screen",
@@ -199,7 +199,7 @@
       "type": "modifyComponent",
       "diameter": 0.7,
       "wavelength": 633,
-      "power": 10.0
+      "power": 2
     },
     {
       "name": "Alignment Screen",
