@@ -8,7 +8,10 @@
             "component_type": "PanelPost",
             "name": "Panel Post",
             "height": 2.2,
-            "position": [1, -1],
+            "position": [
+                1,
+                -1
+            ],
             "rotation": 0,
             "dof": ""
         },
@@ -16,44 +19,80 @@
             "type": "addComponent",
             "component_type": "Laser",
             "name": "Laser",
-            "rays": [2, 3],
+            "rays": [
+                2,
+                3
+            ],
             "diameter": 0.5,
-            "position": [-10,0],
+            "position": [
+                -10,
+                0
+            ],
             "height": 0.8,
             "rotation": 1.2,
             "dof": "Zz",
-            "limits": [[],[],[0.8,1.2],[],[],[-5,5]]
+            "limits": [
+                [],
+                [],
+                [
+                    0.8,
+                    1.2
+                ],
+                [],
+                [],
+                [
+                    -5,
+                    5
+                ]
+            ]
         },
         {
             "type": "addComponent",
             "component_type": "Iris",
             "name": "Position Iris",
-            "position": [-8,0],
+            "position": [
+                -8,
+                0
+            ],
             "diameter": 0.6,
-            "success": {"diameter": 0.08},
+            "success": {
+                "diameter": 0.08
+            },
             "dof": ""
         },
         {
             "type": "addComponent",
             "component_type": "Iris",
             "name": "Angle Iris",
-            "position": [0,0],
+            "position": [
+                0,
+                0
+            ],
             "diameter": 0.1,
-            "success": {"diameter": 0.08},
+            "success": {
+                "diameter": 0.08
+            },
             "dof": ""
         },
         {
             "type": "addComponent",
             "component_type": "Screen",
             "name": "Screen",
-            "position": [6,0],
+            "position": [
+                6,
+                0
+            ],
             "target": true,
             "rotation": 0
         },
         {
             "type": "task",
             "instruction": "Adjust the height and the angle of the laser\nusing two irises to have a well defined optical axis.",
-            "success": {"PosX": 0.01, "PosY": 0.01,"Num": 1},
+            "success": {
+                "PosX": 0.01,
+                "PosY": 0.01,
+                "Num": 1
+            },
             "score": 100.0,
             "music": {
                 "link": "music/Emotional+Ballad+-+320bit.mp3",
@@ -65,12 +104,41 @@
             "type": "addComponent",
             "component_type": "Lens",
             "name": "Condenser Lens",
-            "rotation": [0,1,-1],
-            "position": [-1,1],
+            "rotation": [
+                0,
+                1,
+                -1
+            ],
+            "position": [
+                -1,
+                1
+            ],
             "r1": 1.0,
             "r2": 1.0,
             "dof": "XYxyz",
-            "limits": [[-1.2,-0.8],[-1,1],[],[-5,5],[-5,5],[-5,5]]
+            "limits": [
+                [
+                    -1.2,
+                    -0.8
+                ],
+                [
+                    -1,
+                    1
+                ],
+                [],
+                [
+                    -5,
+                    5
+                ],
+                [
+                    -5,
+                    5
+                ],
+                [
+                    -5,
+                    5
+                ]
+            ]
         },
         {
             "type": "modifyComponent",
@@ -87,20 +155,30 @@
             "type": "modifyComponent",
             "name": "Angle Iris",
             "diameter": 0.8,
-            "position": [-3,0],
+            "position": [
+                -3,
+                0
+            ],
             "dof": "f"
         },
         {
             "type": "modifyComponent",
             "name": "Screen",
-            "position": [0,0],
+            "position": [
+                0,
+                0
+            ],
             "rotation": 0,
             "dof": ""
         },
         {
             "type": "task",
             "instruction": "By rotating and moving the condenser lens\nalong X- and Y-coordinates, focus the laser beam on the\ncentre of the screen.",
-            "success": {"Std": 0.007, "PosX": 0.01,"PosY": 0.01},
+            "success": {
+                "Std": 0.007,
+                "PosX": 0.01,
+                "PosY": 0.01
+            },
             "score": 200.0,
             "showbeams": true
         },
@@ -108,42 +186,103 @@
             "type": "addComponent",
             "component_type": "Lens",
             "name": "Field Lens",
-            "rotation": [0,-1,0.8],
-            "position": [-6,1],
+            "rotation": [
+                0,
+                -1,
+                0.8
+            ],
+            "position": [
+                -6,
+                1
+            ],
             "r1": 2.0,
             "dof": "XYxyz",
-            "limits": [[-7,-1],[-1,1],[],[-5,5],[-5,5],[-5,5]]
+            "limits": [
+                [
+                    -7,
+                    -1
+                ],
+                [
+                    -1,
+                    1
+                ],
+                [],
+                [
+                    -5,
+                    5
+                ],
+                [
+                    -5,
+                    5
+                ],
+                [
+                    -5,
+                    5
+                ]
+            ]
         },
         {
             "type": "addComponent",
             "component_type": "DualPinhole",
             "name": "P1",
-            "position": [1,0],
+            "position": [
+                1,
+                0
+            ],
             "diameter": 0.01,
             "launches": true,
             "dof": "XY",
-            "limits": [[1,3],[-0.8,1.2],[]]
+            "limits": [
+                [
+                    1,
+                    3
+                ],
+                [
+                    -0.8,
+                    1.2
+                ],
+                []
+            ]
         },
         {
             "type": "addComponent",
             "component_type": "DualPinhole",
             "name": "P2",
-            "position": [8,0],
+            "position": [
+                8,
+                0
+            ],
             "rotation": 0,
             "diameter": 0.01,
             "dof": "XY",
-            "limits": [[6,8],[-0.8,1.2],[]]
+            "limits": [
+                [
+                    6,
+                    8
+                ],
+                [
+                    -0.8,
+                    1.2
+                ],
+                []
+            ]
         },
         {
             "type": "modifyComponent",
             "name": "Screen",
             "target": true,
-            "position": [10,0]
+            "position": [
+                10,
+                0
+            ]
         },
         {
             "type": "task",
             "instruction": "Adjust the position of field lens between\nthe two irises in order to obtain a collimated beam after\nthe condenser lens.",
-            "success": {"PosX": 0.01,"Num": 2},
+            "success": {
+                "PosX": 0.01,
+                "Num": 2
+            },
             "score": 300.0
         },
         {
@@ -158,20 +297,33 @@
             "type": "modifyComponent",
             "name": "Angle Iris",
             "diameter": 0.8,
-            "success": {"diameter": 0.03},
+            "success": {
+                "diameter": 0.03
+            },
             "dof": "X",
-            "limits": [[-4,-1.8]]
+            "limits": [
+                [
+                    -4,
+                    -1.8
+                ]
+            ]
         },
         {
             "type": "modifyComponent",
             "name": "Screen",
             "target": true,
-            "position": [3,0]
+            "position": [
+                3,
+                0
+            ]
         },
         {
             "type": "task",
             "instruction": "Adjust the position of angle iris to the first conjugate plane\ni.e the front focal plane of field lens.",
-            "success": {"PosX": 0.005,"Num": 16},
+            "success": {
+                "PosX": 0.005,
+                "Num": 16
+            },
             "score": 400.0,
             "showbeams": false
         },
@@ -179,12 +331,41 @@
             "type": "addComponent",
             "component_type": "Lens",
             "name": "Objective Lens",
-            "rotation": [0,1.2,-1],
-            "position": [1,1],
+            "rotation": [
+                0,
+                1.2,
+                -1
+            ],
+            "position": [
+                1,
+                1
+            ],
             "r1": 1.0,
             "r2": 1.0,
             "dof": "XYxyz",
-            "limits": [[0.8,1.8],[-1,1],[],[-5,5],[-5,5],[-5,5]]
+            "limits": [
+                [
+                    0.8,
+                    1.8
+                ],
+                [
+                    -1,
+                    1
+                ],
+                [],
+                [
+                    -5,
+                    5
+                ],
+                [
+                    -5,
+                    5
+                ],
+                [
+                    -5,
+                    5
+                ]
+            ]
         },
         {
             "type": "modifyComponent",
@@ -196,12 +377,19 @@
             "type": "modifyComponent",
             "name": "Screen",
             "target": true,
-            "position": [2.2,0]
+            "position": [
+                2.2,
+                0
+            ]
         },
         {
             "type": "task",
             "instruction": "By rotating and moving the objective lens\nalong X- and Y-coordinates, focus the laser beam on the\ncentre of the screen.",
-            "success": {"Std": 0.007, "PosX": 0.01,"PosY": 0.01},
+            "success": {
+                "Std": 0.007,
+                "PosX": 0.01,
+                "PosY": 0.01
+            },
             "score": 500.0,
             "showbeams": true
         },
@@ -209,43 +397,104 @@
             "type": "addComponent",
             "component_type": "Lens",
             "name": "Tube Lens",
-            "rotation": [0,1.2,-1.2],
-            "position": [4,1],
+            "rotation": [
+                0,
+                1.2,
+                -1.2
+            ],
+            "position": [
+                4,
+                1
+            ],
             "r1": 0,
             "r2": 1.0,
             "dof": "XYxyz",
-            "limits": [[3,4.8],[-1,1],[],[-5,5],[-5,5],[-5,5]]
+            "limits": [
+                [
+                    3,
+                    4.8
+                ],
+                [
+                    -1,
+                    1
+                ],
+                [],
+                [
+                    -5,
+                    5
+                ],
+                [
+                    -5,
+                    5
+                ],
+                [
+                    -5,
+                    5
+                ]
+            ]
         },
         {
             "type": "addComponent",
             "component_type": "DualPinhole",
             "name": "DP1",
-            "position": [5.4,0],
+            "position": [
+                5.4,
+                0
+            ],
             "diameter": 0.01,
             "launches": true,
             "dof": "XY",
-            "limits": [[5.2,6.2],[-0.8,1.2],[]]
+            "limits": [
+                [
+                    5.2,
+                    6.2
+                ],
+                [
+                    -0.8,
+                    1.2
+                ],
+                []
+            ]
         },
         {
             "type": "addComponent",
             "component_type": "DualPinhole",
             "name": "DP2",
-            "position": [9,0],
+            "position": [
+                9,
+                0
+            ],
             "rotation": 0,
             "diameter": 0.01,
             "dof": "XY",
-            "limits": [[7,9],[-0.8,1.2],[]]
+            "limits": [
+                [
+                    7,
+                    9
+                ],
+                [
+                    -0.8,
+                    1.2
+                ],
+                []
+            ]
         },
         {
             "type": "modifyComponent",
             "name": "Screen",
             "target": true,
-            "position": [10,0]
+            "position": [
+                10,
+                0
+            ]
         },
         {
             "type": "task",
             "instruction": "Position of tube lens at the back focal plane\nof the objevtive lens and adjust to obtain a collimated beam after\nat the screen.",
-            "success": {"PosX": 0.01,"Num": 2},
+            "success": {
+                "PosX": 0.01,
+                "Num": 2
+            },
             "score": 800.0
         },
         {
@@ -265,49 +514,104 @@
             "type": "addComponent",
             "component_type": "Beamsplitter",
             "name": "Beam Splitter",
-            "position": [2.3,1],
+            "position": [
+                2.3,
+                1
+            ],
             "rotation": 40,
             "dof": "XYz",
-            "limits": [[2,3.3],[-1,1],[],[],[],[35,50]]
+            "limits": [
+                [
+                    2,
+                    3.3
+                ],
+                [
+                    -1,
+                    1
+                ],
+                [],
+                [],
+                [],
+                [
+                    35,
+                    50
+                ]
+            ]
         },
         {
             "type": "addComponent",
             "component_type": "Pinhole",
             "name": "P3",
-            "position": [3,-2],
+            "position": [
+                3,
+                -2
+            ],
             "diameter": 0.07,
             "rotation": 90,
             "dof": "XY",
-            "limits": [[2,3.3],[-2.2,-1.5],[]]
+            "limits": [
+                [
+                    2,
+                    3.3
+                ],
+                [
+                    -2.2,
+                    -1.5
+                ],
+                []
+            ]
         },
         {
             "type": "addComponent",
             "component_type": "Pinhole",
             "name": "P4",
-            "position": [2,-6],
+            "position": [
+                2,
+                -6
+            ],
             "diameter": 0.07,
             "rotation": 90,
             "dof": "XY",
-            "limits": [[2,3.3],[-7,-5.5],[]]
+            "limits": [
+                [
+                    2,
+                    3.3
+                ],
+                [
+                    -7,
+                    -5.5
+                ],
+                []
+            ]
         },
         {
             "type": "modifyComponent",
             "name": "Screen",
             "target": true,
-            "position": [7,0]
+            "position": [
+                7,
+                0
+            ]
         },
         {
             "type": "addComponent",
             "component_type": "Screen",
             "name": "Projection Screen",
-            "position": [2.7,-8],
+            "position": [
+                2.7,
+                -8
+            ],
             "target": true,
             "rotation": 90
         },
         {
             "type": "task",
             "instruction": "Position and adjust the beamsplitter between the objective\nand tube lens, and adjust the reflected beam path using two pinholes. ",
-            "success": {"PosX": 0.01, "PosY": 0.01, "Num": 1},
+            "success": {
+                "PosX": 0.01,
+                "PosY": 0.01,
+                "Num": 1
+            },
             "score": 850.0
         },
         {
@@ -317,7 +621,16 @@
                 "link": "narrations/lvl2t7.m4a",
                 "credits": "Rainer Heintzmann"
             },
-            "final": true
+            "final": true,
+            "music": {
+                "link": "music/studiokolomna-spring-192863.mp3",
+                "credits": "Spring by Studiokolomna | https://pixabay.com/music/classical-string-quartet-spring-192863/"
+            }
         }
-   ]
+    ],
+    "description": {
+        "de": "Abbe-Experiment (alt)",
+        "en": "Abbe's experiment (old)",
+        "no": "Abbes eksperiment (gammel)"
+    }
 }

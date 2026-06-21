@@ -7,7 +7,10 @@
             "type": "addComponent",
             "component_type": "FibreStart",
             "name": "Fibre In",
-            "position": [-1.5,-1.5],
+            "position": [
+                -1.5,
+                -1.5
+            ],
             "diameter": 0.1,
             "dof": "XYZxyz"
         },
@@ -15,7 +18,10 @@
             "type": "addComponent",
             "component_type": "FibreEnd",
             "name": "Fibre In",
-            "position": [4.5,4.5],
+            "position": [
+                4.5,
+                4.5
+            ],
             "diameter": 0.1,
             "dof": "XYZxyz"
         },
@@ -24,38 +30,75 @@
             "path": "textures/mounts/",
             "file": "SmallPost.stl",
             "scaling": 0.02,
-            "position": {"x": 0.0, "y": 0.02, "z": 0.0}
+            "position": {
+                "x": 0.0,
+                "y": 0.02,
+                "z": 0.0
+            }
         },
         {
             "type": "addLensMesh",
             "path": "textures/mounts/",
             "file": "lens_mount.stl",
             "scaling": 0.04,
-            "rotation": {"x": 0.0, "y": 90, "z": 0.0},
-            "position": {"x": 0.02, "y": -0.07, "z": -0.07}
+            "rotation": {
+                "x": 0.0,
+                "y": 90,
+                "z": 0.0
+            },
+            "position": {
+                "x": 0.02,
+                "y": -0.07,
+                "z": -0.07
+            }
         },
         {
-            "type": "addComponent", "component_type": "Laser", "name": "Laser",
-            "rays": [2,4],
-            "position": [-4,0],
+            "type": "addComponent",
+            "component_type": "Laser",
+            "name": "Laser",
+            "rays": [
+                2,
+                4
+            ],
+            "position": [
+                -4,
+                0
+            ],
             "rotation": 0,
             "dof": ""
         },
         {
-            "type": "addComponent", "component_type": "Lens", "name": "L1",
-            "position": [-2,0],
+            "type": "addComponent",
+            "component_type": "Lens",
+            "name": "L1",
+            "position": [
+                -2,
+                0
+            ],
             "rotation": 0,
             "r1": 1.0,
             "r2": 0.0,
             "dof": "X",
             "principle1": true,
             "focus1": true,
-            "limits": [[-2.5,1]]
+            "limits": [
+                [
+                    -2.5,
+                    1
+                ]
+            ]
         },
         {
-            "type": "addComponent", "component_type": "Screen", "name": "S1",
-            "success": {"Std": 0.01},
-            "position": [2, 0.0],
+            "type": "addComponent",
+            "component_type": "Screen",
+            "name": "S1",
+            "success": {
+                "Std": 0.01
+            },
+            "position": [
+                2,
+                0.0
+            ],
             "rotation": 0,
             "dof": ""
         },
@@ -64,7 +107,10 @@
             "component_type": "PanelPost",
             "name": "Panel Post",
             "height": 2.2,
-            "position": [1, -1],
+            "position": [
+                1,
+                -1
+            ],
             "rotation": 0,
             "dof": ""
         },
@@ -74,21 +120,44 @@
             "score": 100.0,
             "showplanes": false,
             "music": {
-                "link": "music/Now+We+Ride+-+320bit.mp3", "credits": "Now We Ride by Alexander Nakarada | https://www.serpentsoundstudios.com\nCreative Commons CC BY 4.0, https://creativecommons.org/licenses/by/4.0/"
+                "link": "music/Now+We+Ride+-+320bit.mp3",
+                "credits": "Now We Ride by Alexander Nakarada | https://www.serpentsoundstudios.com\nCreative Commons CC BY 4.0, https://creativecommons.org/licenses/by/4.0/"
             },
             "narration": {
-                "link": "narrations/lvl1t1.m4a", "credits": "Rainer Heintzmann"
+                "link": "narrations/lvl1t1.m4a",
+                "credits": "Rainer Heintzmann"
             }
         },
         {
-            "type": "modifyComponent", "name": "L1",
-            "position": [-2,-1],
+            "type": "modifyComponent",
+            "name": "L1",
+            "position": [
+                -2,
+                -1
+            ],
             "dof": "XY",
-            "limits": [[-2.5,1],[-2.5,1],[0.5,1.4]]
+            "limits": [
+                [
+                    -2.5,
+                    1
+                ],
+                [
+                    -2.5,
+                    1
+                ],
+                [
+                    0.5,
+                    1.4
+                ]
+            ]
         },
         {
-            "type": "modifyComponent", "name": "S1",
-            "success": {"_Std": 0.005, "PosX": 0.01}
+            "type": "modifyComponent",
+            "name": "S1",
+            "success": {
+                "_Std": 0.005,
+                "PosX": 0.01
+            }
         },
         {
             "type": "task",
@@ -103,13 +172,21 @@
         {
             "type": "modifyComponent",
             "name": "L1",
-            "position": [-2,-1],
+            "position": [
+                -2,
+                -1
+            ],
             "height": 0.9,
             "dof": "XYZ"
         },
         {
-            "type": "modifyComponent", "name": "S1",
-            "success": {"_Std": 0.004, "_PosX": 0.01, "PosY": 0.01}
+            "type": "modifyComponent",
+            "name": "S1",
+            "success": {
+                "_Std": 0.004,
+                "_PosX": 0.01,
+                "PosY": 0.01
+            }
         },
         {
             "type": "task",
@@ -117,7 +194,7 @@
             "score": 150.0,
             "principle1": true,
             "music": {
-                "link": "music/Melodic+Overflow+-+320bit.mp3", 
+                "link": "music/Melodic+Overflow+-+320bit.mp3",
                 "credits": "Melodic Overflow by Alexander Nakarada | https://www.serpentsoundstudios.com\nCreative Commons CC BY 4.0, https://creativecommons.org/licenses/by/4.0/"
             },
             "narration": {
@@ -128,21 +205,33 @@
         {
             "type": "modifyComponent",
             "name": "L1",
-            "position": [-2,-1],
-            "rotation": [163,-163,0],
+            "position": [
+                -2,
+                -1
+            ],
+            "rotation": [
+                163,
+                -163,
+                0
+            ],
             "height": 0.9,
             "dof": "XYZzy"
         },
         {
-            "type": "modifyComponent", "name": "S1",
-            "success": {"Std": 0.004, "_PosX": 0.01, "_PosY": 0.01}
+            "type": "modifyComponent",
+            "name": "S1",
+            "success": {
+                "Std": 0.004,
+                "_PosX": 0.01,
+                "_PosY": 0.01
+            }
         },
         {
             "type": "task",
             "instruction": "Focus L1 by X-,Y-, Z- and rotation-control\nClick on the lens to activate rotation gizmos.\nThe flat side should point towards the screen!",
             "score": 200.0,
             "music": {
-                "link": "music/The+Sad+Piano+Background+Song+-+320bit.mp3", 
+                "link": "music/The+Sad+Piano+Background+Song+-+320bit.mp3",
                 "credits": "The Sad Piano Background Song by Alexander Nakarada | https://www.serpentsoundstudios.com\nCreative Commons CC BY 4.0, https://creativecommons.org/licenses/by/4.0/"
             },
             "narration": {
@@ -153,13 +242,25 @@
         {
             "type": "modifyComponent",
             "name": "L1",
-            "position": [-2,-1],
-            "rotation": [163,-163,0],
+            "position": [
+                -2,
+                -1
+            ],
+            "rotation": [
+                163,
+                -163,
+                0
+            ],
             "height": 0.9
         },
         {
-            "type": "modifyComponent", "name": "S1",
-            "success": {"_Std": 0.006, "_PosX": 0.02, "_PosY": 0.02}
+            "type": "modifyComponent",
+            "name": "S1",
+            "success": {
+                "_Std": 0.006,
+                "_PosX": 0.02,
+                "_PosY": 0.02
+            }
         },
         {
             "type": "task",
@@ -168,8 +269,8 @@
                 "link": "narrations/lvl1t5.m4a",
                 "credits": "Rainer Heintzmann"
             },
-           "showbeams": false,
-           "score": 250.0
+            "showbeams": false,
+            "score": 250.0
         },
         {
             "type": "task",
@@ -178,7 +279,16 @@
                 "link": "narrations/lvl1t6.m4a",
                 "credits": "Rainer Heintzmann"
             },
-            "final": true
+            "final": true,
+            "music": {
+                "link": "music/studiokolomna-spring-192863.mp3",
+                "credits": "Spring by Studiokolomna | https://pixabay.com/music/classical-string-quartet-spring-192863/"
+            }
         }
-    ]
+    ],
+    "description": {
+        "de": "Komponenten testen",
+        "en": "Test all components",
+        "no": "Test alle komponenter"
+    }
 }

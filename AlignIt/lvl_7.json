@@ -1,14 +1,21 @@
 {
     "version": 1.0,
     "number": "7",
-    "title": {"de": "Mach-Zehnder-Interferometer", "en": "Mach Zehnder Interf.", "no": "Mach-Zehnder-interferometer"},
+    "title": {
+        "de": "Mach-Zehnder-Interferometer",
+        "en": "Mach Zehnder Interf.",
+        "no": "Mach-Zehnder-interferometer"
+    },
     "steps": [
         {
             "type": "addComponent",
             "component_type": "PanelPost",
             "name": "Panel Post",
             "height": 2.2,
-            "position": [1, -1],
+            "position": [
+                1,
+                -1
+            ],
             "rotation": 0,
             "dof": ""
         },
@@ -16,9 +23,15 @@
             "type": "addComponent",
             "component_type": "Laser",
             "name": "Laser",
-            "rays": [2,4],
+            "rays": [
+                2,
+                4
+            ],
             "diameter": 0.25,
-            "position": [-6,-2],
+            "position": [
+                -6,
+                -2
+            ],
             "rotation": 0,
             "dof": ""
         },
@@ -26,7 +39,10 @@
             "type": "addComponent",
             "component_type": "Lens",
             "name": "Planconvex L2",
-            "position": [-3,-2],
+            "position": [
+                -3,
+                -2
+            ],
             "rotation": 0,
             "r1": -10.0,
             "dof": "XYZxyz"
@@ -35,7 +51,10 @@
             "type": "addComponent",
             "component_type": "Beamsplitter",
             "name": "Beamsplitter 1",
-            "position": [-2,-2],
+            "position": [
+                -2,
+                -2
+            ],
             "rotation": -45,
             "dof": "XYZxyz"
         },
@@ -43,7 +62,10 @@
             "type": "addComponent",
             "component_type": "Mirror",
             "name": "Mirror 1",
-            "position": [-2,0],
+            "position": [
+                -2,
+                0
+            ],
             "rotation": -45.0005,
             "dof": "XYZxyz"
         },
@@ -51,7 +73,10 @@
             "type": "addComponent",
             "component_type": "Mirror",
             "name": "Mirror 2",
-            "position": [0,-2],
+            "position": [
+                0,
+                -2
+            ],
             "rotation": 135,
             "dof": "XYZxyz"
         },
@@ -59,7 +84,10 @@
             "type": "addComponent",
             "component_type": "Beamsplitter",
             "name": "Beamsplitter 1",
-            "position": [0,0],
+            "position": [
+                0,
+                0
+            ],
             "rotation": -45,
             "dof": "XYZxyz"
         },
@@ -69,15 +97,28 @@
             "name": "Screen",
             "target": false,
             "success": {
-              "_DeltaC": 0.0001,
-              "_DeltaX": 0.00001,
-              "_DeltaY": 0.00001},
-            "position": [2,0]
+                "_DeltaC": 0.0001,
+                "_DeltaX": 1e-05,
+                "_DeltaY": 1e-05
+            },
+            "position": [
+                2,
+                0
+            ]
         },
         {
             "type": "task",
-            "instruction": {"de": "Ein Mach-Zehnder-Interferometer zum Erkunden\nvon Interferenzeffekten (nur in der Vollversion!)", "en": "A Mach-Zehnder Interferometer to explore\ninterference effects (only in the full version!)\nFind and straighten the fringes!", "no": "Et Mach-Zehnder-interferometer for å utforske\ninterferenseffekter (kun i fullversjonen!)"},
-            "success": {"PosX": 0.01, "PosY": 0.01, "Curv": 0.01, "RelAng": 0.01},
+            "instruction": {
+                "de": "Ein Mach-Zehnder-Interferometer zum Erkunden\nvon Interferenzeffekten (nur in der Vollversion!)",
+                "en": "A Mach-Zehnder Interferometer to explore\ninterference effects (only in the full version!)\nFind and straighten the fringes!",
+                "no": "Et Mach-Zehnder-interferometer for å utforske\ninterferenseffekter (kun i fullversjonen!)"
+            },
+            "success": {
+                "PosX": 0.01,
+                "PosY": 0.01,
+                "Curv": 0.01,
+                "RelAng": 0.01
+            },
             "music": {
                 "link": "music/forest-with-small-river-birds-and-nature-field-recording-6735.mp3",
                 "credits": "Downloaded from pixabay.\nhttps://pixabay.com/sound-effects/search/forest-birds/"
@@ -86,12 +127,25 @@
         },
         {
             "type": "task",
-            "instruction": {"de": "Herzlichen Glückwunsch! Du hast Level 2 abgeschlossen.\nDrücke Fertig für Level 3.", "en": "Congratulations! You completed level 2\nPress Done for Lvl 3.", "no": "Gratulerer! Du har fullført nivå 2.\nTrykk Ferdig for nivå 3."},
+            "instruction": {
+                "de": "Herzlichen Glückwunsch! Du hast Level 2 abgeschlossen.\nDrücke Fertig für Level 3.",
+                "en": "Congratulations! You completed level 2\nPress Done for Lvl 3.",
+                "no": "Gratulerer! Du har fullført nivå 2.\nTrykk Ferdig for nivå 3."
+            },
             "narration": {
                 "link": "narrations/lvl2t7.m4a",
                 "credits": "Rainer Heintzmann"
             },
-            "final": true
+            "final": true,
+            "music": {
+                "link": "music/studiokolomna-spring-192863.mp3",
+                "credits": "Spring by Studiokolomna | https://pixabay.com/music/classical-string-quartet-spring-192863/"
+            }
         }
-   ]
+    ],
+    "description": {
+        "de": "Mach-Zehnder-Interferometer",
+        "en": "Mach-Zehnder interferometer",
+        "no": "Mach-Zehnder-interferometer"
+    }
 }

@@ -7,15 +7,24 @@
     "steps": [
         {
             "type": "setObserverPosition",
-            "position": [0, -8],
-            "look_at": [-2, 0]
+            "position": [
+                0,
+                -8
+            ],
+            "look_at": [
+                -2,
+                0
+            ]
         },
         {
             "type": "addComponent",
             "component_type": "PanelPost",
             "name": "Panel Post",
             "height": 2.2,
-            "position": [3, -1],
+            "position": [
+                3,
+                -1
+            ],
             "rotation": 0,
             "dof": ""
         },
@@ -23,14 +32,24 @@
             "type": "addComponent",
             "component_type": "Laser",
             "name": "Laser",
-            "rays": [1, 3],
+            "rays": [
+                1,
+                3
+            ],
             "diameter": 0.25,
             "power": 1.0,
             "wavelength": 633,
-            "position": [-2, -7],
+            "position": [
+                -2,
+                -7
+            ],
             "rotation": -90,
             "dof": "xyz",
-            "limits": [[], [], []]
+            "limits": [
+                [],
+                [],
+                []
+            ]
         },
         {
             "type": "task",
@@ -41,9 +60,15 @@
                 "en": "Where should the laser beam be directed?"
             },
             "answers": [
-                { "en": "Through the center of the future beamsplitter position at [-2, -2]" },
-                { "en": "Anywhere on the optical table" },
-                { "en": "Directly at the screen position" }
+                {
+                    "en": "Through the center of the future beamsplitter position at [-2, -2]"
+                },
+                {
+                    "en": "Anywhere on the optical table"
+                },
+                {
+                    "en": "Directly at the screen position"
+                }
             ],
             "comment": "Solution hint: rotation should be [-90, 0, 0]",
             "music": {
@@ -57,7 +82,10 @@
             "type": "addComponent",
             "component_type": "Beamsplitter",
             "name": "Beamsplitter 1",
-            "position": [-2.5, -2],
+            "position": [
+                -2.5,
+                -2
+            ],
             "rotation": 45,
             "reflectivity": 0.5,
             "dof": "XY",
@@ -67,7 +95,17 @@
             "type": "modifyComponent",
             "name": "Beamsplitter 1",
             "dof": "XYZxyz",
-            "limits": [[-3, -1], [-3, -1], []]
+            "limits": [
+                [
+                    -3,
+                    -1
+                ],
+                [
+                    -3,
+                    -1
+                ],
+                []
+            ]
         },
         {
             "type": "task",
@@ -78,9 +116,15 @@
                 "en": "What is the primary function of the beamsplitter in a Michelson interferometer?"
             },
             "answers": [
-                { "en": "To divide the incoming beam into two perpendicular paths and recombine them" },
-                { "en": "To amplify the laser light" },
-                { "en": "To focus the beam onto the screen" }
+                {
+                    "en": "To divide the incoming beam into two perpendicular paths and recombine them"
+                },
+                {
+                    "en": "To amplify the laser light"
+                },
+                {
+                    "en": "To focus the beam onto the screen"
+                }
             ],
             "comment": "Solution hint: position [-2, -2], rotation [0, 0, 45]",
             "music": {
@@ -94,11 +138,31 @@
             "type": "addComponent",
             "component_type": "Mirror",
             "name": "Mirror 1",
-            "position": [-2, 1],
-            "rotation": [0, 0, 0],
+            "position": [
+                -2,
+                1
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
             "reflectivity": 1.0,
             "dof": "Zxy",
-            "limits": [[], [], [], [-5, 5], [-5, 5], []],
+            "limits": [
+                [],
+                [],
+                [],
+                [
+                    -5,
+                    5
+                ],
+                [
+                    -5,
+                    5
+                ],
+                []
+            ],
             "trace_reflection": false
         },
         {
@@ -110,9 +174,15 @@
                 "en": "When properly aligned as a retroreflector, what happens to the beam?"
             },
             "answers": [
-                { "en": "It returns parallel to its incoming direction, back toward the source" },
-                { "en": "It is scattered randomly in all directions" },
-                { "en": "It disappears completely" }
+                {
+                    "en": "It returns parallel to its incoming direction, back toward the source"
+                },
+                {
+                    "en": "It is scattered randomly in all directions"
+                },
+                {
+                    "en": "It disappears completely"
+                }
             ],
             "comment": "Solution hint: position [-2, 1], rotation [0, 0, 0]",
             "music": {
@@ -126,11 +196,40 @@
             "type": "addComponent",
             "component_type": "Mirror",
             "name": "Mirror 2",
-            "position": [-5, -2],
-            "rotation": [0, 0, 90],
+            "position": [
+                -5,
+                -2
+            ],
+            "rotation": [
+                0,
+                0,
+                90
+            ],
             "reflectivity": 1.0,
             "dof": "XYZxy",
-            "limits": [[-5, -3], [-3, -1], [0.8, 1.2], [-10, 10], [-10, 10], []],
+            "limits": [
+                [
+                    -5,
+                    -3
+                ],
+                [
+                    -3,
+                    -1
+                ],
+                [
+                    0.8,
+                    1.2
+                ],
+                [
+                    -10,
+                    10
+                ],
+                [
+                    -10,
+                    10
+                ],
+                []
+            ],
             "trace_reflection": false
         },
         {
@@ -142,9 +241,15 @@
                 "en": "Why must both beams emerge parallel from the beamsplitter?"
             },
             "answers": [
-                { "en": "Parallel beams can overlap perfectly and create stable interference patterns" },
-                { "en": "It makes the setup look more symmetrical" },
-                { "en": "Parallel beams travel faster" }
+                {
+                    "en": "Parallel beams can overlap perfectly and create stable interference patterns"
+                },
+                {
+                    "en": "It makes the setup look more symmetrical"
+                },
+                {
+                    "en": "Parallel beams travel faster"
+                }
             ],
             "comment": "Solution hint: position [-4, -2], rotation [0, 0, 90]",
             "music": {
@@ -158,13 +263,38 @@
             "type": "addComponent",
             "component_type": "Lens",
             "name": "Diverging Lens",
-            "position": [-3, -6],
+            "position": [
+                -3,
+                -6
+            ],
             "rotation": 0,
             "r1": -10.0,
             "r2": 0,
             "thickness": 0.3,
             "dof": "XYZxyz",
-            "limits": [[-4, -2], [-5, -3], [], [-10, 10], [-10, 10], [-10, 10]]
+            "limits": [
+                [
+                    -4,
+                    -2
+                ],
+                [
+                    -5,
+                    -3
+                ],
+                [],
+                [
+                    -10,
+                    10
+                ],
+                [
+                    -10,
+                    10
+                ],
+                [
+                    -10,
+                    10
+                ]
+            ]
         },
         {
             "type": "task",
@@ -175,9 +305,15 @@
                 "en": "Why do we use a diverging lens instead of parallel light for precise alignment?"
             },
             "answers": [
-                { "en": "Divergent rays have different path lengths; only at zero OPD do ALL rays interfere constructively, making the zero-OPD position clearly visible" },
-                { "en": "The lens makes the beam brighter" },
-                { "en": "Divergent light has a longer wavelength" }
+                {
+                    "en": "Divergent rays have different path lengths; only at zero OPD do ALL rays interfere constructively, making the zero-OPD position clearly visible"
+                },
+                {
+                    "en": "The lens makes the beam brighter"
+                },
+                {
+                    "en": "Divergent light has a longer wavelength"
+                }
             ],
             "comment": "Solution hint: position [-2, -5], rotation [0, 0, -90]",
             "music": {
@@ -193,10 +329,16 @@
             "name": "Screen",
             "design": "Standard",
             "target": false,
-            "position": [2, -2],
+            "position": [
+                2,
+                -2
+            ],
             "rotation": 180,
             "dof": "",
-            "success": { "PosX": 0.08, "PosY": 0.08 }
+            "success": {
+                "PosX": 0.08,
+                "PosY": 0.08
+            }
         },
         {
             "type": "activate",
@@ -220,21 +362,43 @@
             "type": "modifyComponent",
             "name": "Mirror 2",
             "dof": "xyz",
-            "limits": [[], [], [], [-1, 1], [-1, 1], []]
+            "limits": [
+                [],
+                [],
+                [],
+                [
+                    -1,
+                    1
+                ],
+                [
+                    -1,
+                    1
+                ],
+                []
+            ]
         },
         {
             "type": "task",
             "instruction": {
                 "en": "Task 7: Fine-tune the mirror angles to achieve circular interference fringes (Haidinger fringes).\nCircular fringes indicate that the mirrors are exactly perpendicular to each other.\nEach ring represents a contour of constant path difference.\nThe center marks the position of zero optical path difference.\nUse very fine angular adjustments - even tiny changes matter!\nIn premium mode, you should see concentric rings when perfectly aligned."
             },
-            "success": { "Curv": 0.01, "RelAng": 0.01 },
+            "success": {
+                "Curv": 0.01,
+                "RelAng": 0.01
+            },
             "question": {
                 "en": "What do circular (concentric) fringes tell you about the mirror alignment?"
             },
             "answers": [
-                { "en": "The mirrors are exactly perpendicular, forming a perfect virtual air gap" },
-                { "en": "One mirror is significantly tilted" },
-                { "en": "The pathlengths are very different" }
+                {
+                    "en": "The mirrors are exactly perpendicular, forming a perfect virtual air gap"
+                },
+                {
+                    "en": "One mirror is significantly tilted"
+                },
+                {
+                    "en": "The pathlengths are very different"
+                }
             ],
             "comment": "Solution hint: Mirror 2 rotation [0, 0, 90]",
             "music": {
@@ -247,29 +411,54 @@
         {
             "type": "modifyComponent",
             "name": "Mirror 1",
-            "position": [-2, 1.15],
+            "position": [
+                -2,
+                1.15
+            ],
             "dof": "Z",
-            "limits": [[], [0.9, 1.3], []]
+            "limits": [
+                [],
+                [
+                    0.9,
+                    1.3
+                ],
+                []
+            ]
         },
         {
             "type": "modifyComponent",
             "name": "Mirror 2",
             "dof": "Z",
-            "limits": [[], [-3.5, -2.5], []]
+            "limits": [
+                [],
+                [
+                    -3.5,
+                    -2.5
+                ],
+                []
+            ]
         },
         {
             "type": "task",
             "instruction": {
                 "en": "Task 8: Find the zero optical path difference (zero-OPD) position using divergent light.\nNotice that Mirror 1 has been slightly offset. Now scan Mirror 2 along the Z-axis (toward and away from the beamsplitter).\nWith divergent light, interference fringes ONLY appear near the zero-OPD position.\nSlowly move Mirror 2 while watching the screen for colored fringes to appear.\nThe position where fringes first become visible marks the exact equal-path condition.\nThis is a powerful technique used in precision metrology!\n\nHint: Start with Mirror 2 at Z = -3.0 and slowly increase to Z = -2.6."
             },
-            "success": { "PosZ": 0.02 },
+            "success": {
+                "PosZ": 0.02
+            },
             "question": {
                 "en": "Why does divergent light help you find the exact zero path difference?"
             },
             "answers": [
-                { "en": "Different rays have different path lengths at most positions; only at zero OPD do ALL rays interfere constructively simultaneously, creating strong visible fringes" },
-                { "en": "The lens amplifies the interference signal electronically" },
-                { "en": "Divergent light has a longer coherence length" }
+                {
+                    "en": "Different rays have different path lengths at most positions; only at zero OPD do ALL rays interfere constructively simultaneously, creating strong visible fringes"
+                },
+                {
+                    "en": "The lens amplifies the interference signal electronically"
+                },
+                {
+                    "en": "Divergent light has a longer coherence length"
+                }
             ],
             "comment": "Solution hint: Mirror 2 at position [-4, -2, 1.0]",
             "music": {
@@ -284,7 +473,16 @@
             "instruction": {
                 "en": "Congratulations! You have successfully built and aligned a Michelson interferometer!\n\nYou learned:\n• Step-by-step construction of the interferometer\n• Retroreflection principle for mirror alignment\n• How to overlap two beams for interference\n• Using divergent light to find the exact zero path difference position\n• The meaning of circular (Haidinger) fringes\n\nThis fundamental instrument won Albert Michelson the first Nobel Prize in Physics (1907) and is still used today in applications ranging from gravitational wave detection (LIGO) to optical coherence tomography (medical imaging).\n\nPress DONE to proceed to the next level."
             },
-            "final": true
+            "final": true,
+            "music": {
+                "link": "music/studiokolomna-spring-192863.mp3",
+                "credits": "Spring by Studiokolomna | https://pixabay.com/music/classical-string-quartet-spring-192863/"
+            }
         }
-    ]
+    ],
+    "description": {
+        "de": "Michelson (Backup)",
+        "en": "Michelson (backup)",
+        "no": "Michelson (backup)"
+    }
 }

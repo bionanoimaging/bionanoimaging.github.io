@@ -15,7 +15,7 @@ By completing all tasks of a level, a score is obtained and entered into a globa
 
 Most features of this game can be used in the basic version, free of charge. However, some premium features require to purchase a license.
 Such features include:
-- Beam Interference. Interferometers such as the Michelson and Mach-Zehnder Interferometer only work properly in premium mode.
+- Beam Interference and Speckle Scattering. Interferometers such as the Michelson and Mach-Zehnder Interferometer only work properly in premium mode. Speckle patterns from rough surfaces also require interference computation.
 - Camera. The camera allows to image samples in a microcope mode. Without premium mode activated, only a screen is visible instead of a camera with a display.
 - Editor. The level editor can be tried for free. However, saving your edits is only possible in premium mode.
 - Realistic Lens rendering. In premium mode a special (albeit slower) mode of lens rendering can be activated, which renders lenses with close-to real properties. This includes being able to use a lens as a magnifying glass as the observer.
@@ -63,7 +63,7 @@ The "X"-button toggles the visibility of the screen (which is in your left hand)
 - the scale can be varied via the `?scale=0.15`(default) argument. Try `?scale=1.0` to feel like an ant! Note that in VR mode the mesh on which you walk changes from the table (at scales > 0.5) to the tiled floor (at scales < 0.5). In AR mode the scale is fixed to 0.15. Note that several arguments can be appended using the `&` symbol, e.g. `?mode=ar&scale=1.0`.
 - A number of environment files are avaiable via the `?env=` argument, using `?env=forest` (default), `?env=square`, `?env=astro`, `?env=room`
 - The rendering can be switched to nicer textures using `?pbr=true`, but this degrades performance, which may lead to jittering.
-- Currently supported optical component types via the `component_type` tag are: Planoconvex and biconvex lenses, Laser, Screen, pinhole, iris-aperture, mirror, semi-reflective mirror, fibre launch. See below for details.
+- Currently supported optical component types via the `component_type` tag are: Planoconvex and biconvex lenses, Laser, Screen (including rough/speckle surfaces), pinhole, iris-aperture, mirror, semi-reflective mirror, fibre launch. See below for details.
 - Music (switchable).
 - Narrations (switchable).
 - Leaderboard
@@ -198,6 +198,10 @@ All components have the possibility to specify degrees of freedom ("dof"). For t
   - `target`: shows target pattern (`true`, "line", "lineh", "linev")
   - `design`: "Camera" (monochrome) or "ColorCamera" for premium camera mode
   - `success`: measurement criteria (see Screen Success Criteria below)
+  - `rough`: if `true`, the screen scatters incoming beams into speckle patterns (see Speckle Scattering below)
+  - `num_bundles`: number of speckle bundles to launch (default 20, only when `rough: true`)
+  - `divergence`: divergence angle of speckle bundles in radians (default 0.3)
+  - `correlation_length`: spatial correlation length of the rough surface in units (default 0.5)
 
 - `FibreCouple`: Fiber optic coupler / fiber end. Arguments:
   - `NA`: numerical aperture (default 0.05)
@@ -237,6 +241,35 @@ Example: `"success": {"Std": 0.004, "PosX": 0.005, "_PosY": 0.005}` shows indica
     The maximum aperture size must be achieved for the component to turn green and contribute to the "components" completion bar. All components with success criteria must be satisfied for level progression.
 
 **Note on UI Panel:** The user interface panel is automatically attached to the first Screen component. You can explicitly place it using `PanelPost` component type, which creates a movable post for the panel. In VR mode, if the left controller is present, it takes over panel display instead of any PanelPost.
+
+### Speckle Scattering (Rough Surfaces)
+
+When a `Screen` component has `rough: true`, incoming laser beams are scattered into multiple point-source emitters called **speckle bundles**. These bundles interfere on downstream screens, producing realistic speckle patterns — the grainy intensity patterns characteristic of coherent light reflecting from rough surfaces.
+
+**Physics:** Each speckle bundle is launched from a random position within the illuminated spot on the rough screen, with a random phase offset drawn from a spatially correlated phase grid. The bundles propagate with a configurable divergence angle and interfere on observation screens according to their optical path differences (OPD).
+
+**Component arguments for rough screens:**
+- `rough`: enable speckle scattering (`true`/`false`)
+- `num_bundles`: number of point-source emitters (default 20). More bundles = finer speckle grains but higher computational cost.
+- `divergence`: angular spread of emitted bundles in radians (default 0.3). Higher divergence = faster speckle de-correlation with distance.
+- `correlation_length`: spatial scale of surface roughness in table units (default 0.5). Smaller values = more rapidly varying phase = smaller speckle grains.
+
+**Example rough screen:**
+```json
+{
+  "component_type": "Screen",
+  "name": "RoughScreen",
+  "position": [0, 0],
+  "rough": true,
+  "num_bundles": 30,
+  "divergence": 0.3,
+  "correlation_length": 0.5
+}
+```
+
+**Wavelength and color:** Speckle bundles inherit the wavelength and color of the incoming laser beam. A red laser (e.g., `wavelength: 650`) produces red speckle patterns on downstream screens. The phase computation uses the correct wavelength, not a hardcoded default.
+
+**Performance note:** Speckle scattering requires premium mode (interference features) to be visible. Each bundle is traced as a separate beam, so `num_bundles` directly affects rendering cost. For smooth performance on mobile devices, keep `num_bundles` ≤ 20.
 
 ## Tasks
 

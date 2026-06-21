@@ -3,112 +3,159 @@
     "number": "2",
     "title": "Widefield Microscopy",
     "steps": [
-      { "type": "addComponent",
-      "component_type": "PanelPost",
-      "name": "Panel Post",
-      "height": 2.2,
-      "position": [1,-2],
-      "dof": "XY",
-      "target": true
-      },
-    {
-      "type": "addComponent",
-      "component_type": "Beamsplitter",
-      "name": "Dichromatic",
-      "position": [2.5, 0],
-      "dichromatic": true,
-      "dof": "XYZxyz"
-    },
-    {
-      "type": "addComponent",
-      "component_type": "Filter",
-      "name": "LP 1",
-      "position": [3.5, -2],
-      "dof": "XYZxyz"
-    },
-    {
-      "type": "addComponent",
-      "component_type": "Objective",
-      "name": "Objective",
-      "dof": "XYZxyz",
-      "rotation": 180,
-      "principle1": true,
-      "focus1": true,
-      "principle2": true,
-      "focus2": true,
-      "position": [1.865, 0],
-      "focal_length": 0.05
-    },
-    {
-        "type": "addComponent",
-        "component_type": "Laser",
-        "name": "Laser",
-        "rays": [1,4],
-        "position": [-3, 0],
-        "rotation": 0,
-        "diameter": 0.06,
-        "power": 1.0,
-        "###divergence": -0.1,
-        "wavelength": 488,
-        "dof": "XYZxyzp"
-    },
-    {
-      "name": "Condenser Lens",
-      "type": "addComponent",
-      "dof": "XYZ",
-      "component_type": "Lens",
-      "position": [-1.27, -0.706],
-      "r1": 1
-    },
-    {
-    "type": "addComponent",
-    "component_type": "Sample",
-    "name": "FluoCells1",
-    "dof": "XYZxyz",
-    "position": [0.845, -0.12],
-    "rotation": [0, 0, 0],
-    "dir_em": 1,
-    "launches": true,
-    "design": "Slide",
-    "wavelength": 530,
-    "texture": "img/FluorescentCells.jpg",
-    "drift": 0.02
-    },
-    {
-      "type": "addComponent",
-      "name": "1x Objective",
-      "dof": "XYZ",
-      "component_type": "Lens",
-      "position": [2.7, -2],
-      "r1": 1
-    },
-    {
-      "name": "TL",
-      "type": "addComponent",
-      "dof": "XYZ",
-      "component_type": "Lens",
-      "position": [3.4, 0],
-      "r1": 1
-    },
-    {
-    "name": "Camera",
-    "type": "addComponent",
-    "dof": "XYZxyz",
-    "component_type": "Screen",
-    "position": [5.7, 0],
-    "design": "ColorCamera",
-    "target": false
-    },
-      {
-          "type": "task",
-          "instruction": "Focus the sample on the camera",
-          "score": 100.0
-      },
-      {
-          "type": "task",
-          "instruction": "Well done!",
-          "score": 100.0,
-          "final": true
-      }
-   ]
+        {
+            "type": "addComponent",
+            "component_type": "PanelPost",
+            "name": "Panel Post",
+            "height": 2.2,
+            "position": [
+                1,
+                -2
+            ],
+            "dof": "XY",
+            "target": true
+        },
+        {
+            "type": "addComponent",
+            "component_type": "Beamsplitter",
+            "name": "Dichromatic",
+            "position": [
+                2.5,
+                0
+            ],
+            "dichromatic": true,
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component_type": "Filter",
+            "name": "LP 1",
+            "position": [
+                3.5,
+                -2
+            ],
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component_type": "Objective",
+            "name": "Objective",
+            "dof": "XYZxyz",
+            "rotation": 180,
+            "principle1": true,
+            "focus1": true,
+            "principle2": true,
+            "focus2": true,
+            "position": [
+                1.865,
+                0
+            ],
+            "focal_length": 0.05
+        },
+        {
+            "type": "addComponent",
+            "component_type": "Laser",
+            "name": "Laser",
+            "rays": [
+                1,
+                4
+            ],
+            "position": [
+                -3,
+                0
+            ],
+            "rotation": 0,
+            "diameter": 0.06,
+            "power": 1.0,
+            "###divergence": -0.1,
+            "wavelength": 488,
+            "dof": "XYZxyzp"
+        },
+        {
+            "name": "Condenser Lens",
+            "type": "addComponent",
+            "dof": "XYZ",
+            "component_type": "Lens",
+            "position": [
+                -1.27,
+                -0.706
+            ],
+            "r1": 1
+        },
+        {
+            "type": "addComponent",
+            "component_type": "Sample",
+            "name": "FluoCells1",
+            "dof": "XYZxyz",
+            "position": [
+                0.845,
+                -0.12
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "dir_em": 1,
+            "launches": true,
+            "design": "Slide",
+            "wavelength": 530,
+            "texture": "img/FluorescentCells.jpg",
+            "drift": 0.02
+        },
+        {
+            "type": "addComponent",
+            "name": "1x Objective",
+            "dof": "XYZ",
+            "component_type": "Lens",
+            "position": [
+                2.7,
+                -2
+            ],
+            "r1": 1
+        },
+        {
+            "name": "TL",
+            "type": "addComponent",
+            "dof": "XYZ",
+            "component_type": "Lens",
+            "position": [
+                3.4,
+                0
+            ],
+            "r1": 1
+        },
+        {
+            "name": "Camera",
+            "type": "addComponent",
+            "dof": "XYZxyz",
+            "component_type": "Screen",
+            "position": [
+                5.7,
+                0
+            ],
+            "design": "ColorCamera",
+            "target": false
+        },
+        {
+            "type": "task",
+            "instruction": "Focus the sample on the camera",
+            "score": 100.0
+        },
+        {
+            "type": "task",
+            "instruction": "Well done!",
+            "score": 100.0,
+            "final": true,
+            "music": {
+                "link": "music/studiokolomna-spring-192863.mp3",
+                "credits": "Spring by Studiokolomna | https://pixabay.com/music/classical-string-quartet-spring-192863/"
+            }
+        }
+    ],
+    "description": {
+        "de": "Linsen: Achse ausrichten",
+        "en": "Lenses: Axis alignment",
+        "no": "Linse: Aksejustering"
+    }
 }

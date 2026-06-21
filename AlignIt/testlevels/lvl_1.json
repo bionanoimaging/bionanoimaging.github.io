@@ -3,43 +3,65 @@
     "number": "1",
     "title": "Lens Rendering",
     "steps": [
-      { "type": "addComponent",
-      "component_type": "PanelPost",
-      "name": "Panel Post",
-      "height": 2.2,
-      "position": [1,-2],
-      "dof": "XYZxyz",
-      "target": true
-      },
-    {
-        "type": "addComponent",
-        "component_type": "Laser",
-        "name": "Laser",
-        "rays": [2, 4],
-        "position": [-4, 0],
-        "rotation": 0,
-        "diameter": 0.2,
-        "wavelength": 488,
-        "dof": "XYZxyz"
-    },
-    {
-      "name": "Condensor",
-      "type": "addComponent",
-      "dof": "XYZxyz",
-      "component_type": "Lens",
-      "position": [-1, 0],
-      "r1": 1.5
-    },
-    {
-      "type": "task",
-      "instruction": "Couple the laser into the fibre.",
-      "score": 100.0
-    },
-    {
-      "type": "task",
-      "instruction": "Couple the laser into the fibre.",
-      "score": 100.0,
-      "final": true
+        {
+            "type": "addComponent",
+            "component_type": "PanelPost",
+            "name": "Panel Post",
+            "height": 2.2,
+            "position": [
+                1,
+                -2
+            ],
+            "dof": "XYZxyz",
+            "target": true
+        },
+        {
+            "type": "addComponent",
+            "component_type": "Laser",
+            "name": "Laser",
+            "rays": [
+                2,
+                4
+            ],
+            "position": [
+                -4,
+                0
+            ],
+            "rotation": 0,
+            "diameter": 0.2,
+            "wavelength": 488,
+            "dof": "XYZxyz"
+        },
+        {
+            "name": "Condensor",
+            "type": "addComponent",
+            "dof": "XYZxyz",
+            "component_type": "Lens",
+            "position": [
+                -1,
+                0
+            ],
+            "r1": 1.5
+        },
+        {
+            "type": "task",
+            "instruction": "Couple the laser into the fibre.",
+            "score": 100.0
+        },
+        {
+            "type": "task",
+            "instruction": "Couple the laser into the fibre.",
+            "score": 100.0,
+            "final": true,
+            "music": {
+                "link": "music/studiokolomna-spring-192863.mp3",
+                "credits": "Spring by Studiokolomna | https://pixabay.com/music/classical-string-quartet-spring-192863/"
+            }
+        }
+    ],
+    "description": {
+        "de": "Test: Komponenten",
+        "en": "Test: Components",
+        "no": "Test: Komponenter"
     }
-  ]
 }

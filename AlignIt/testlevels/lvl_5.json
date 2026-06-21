@@ -3,99 +3,139 @@
     "number": "1",
     "title": "Collision Detection",
     "steps": [
-      { "type": "addComponent",
-      "component_type": "PanelPost",
-      "name": "Panel Post",
-      "height": 2.2,
-      "position": [1,-2],
-      "dof": "XY",
-      "target": true
-      },
-    {
-        "type": "addComponent",
-        "component_type": "Laser",
-        "name": "Laser",
-        "rays": [2, 4],
-        "position": [-4, 0],
-        "rotation": 0,
-        "diameter": 0.2,
-        "wavelength": 488,
-        "dof": "XYZxyz"
-    },
-    {
-      "name": "Condensor",
-      "type": "addComponent",
-      "dof": "XY",
-      "component_type": "Lens",
-      "position": [-1.25, 0],
-      "r1": 0.5
-    },
-    {
-      "name": "FluoCells1",
-      "type": "addComponent",
-      "dof": "XYZxyz",
-      "component_type": "Sample",
-      "position": [0, 0],
-      "dir_em": 1,
-      "launches": true,
-      "design": "Slide"
-    },
-    {
-      "name": "Objective 01",
-      "type": "addComponent",
-      "dof": "XY",
-      "component_type": "Lens",
-      "position": [2.5, 0],
-      "r1": 1
-    },
-    {
-      "name": "Objective 02",
-      "type": "addComponent",
-      "dof": "XY",
-      "component_type": "Lens",
-      "position": [1.25, -2],
-      "r1": 0.5
-    },
-    {
-      "name": "Objective 03",
-      "type": "addComponent",
-      "dof": "XYZxyz",
-      "rotation": 180,
-      "component_type": "Objective",
-      "principle1": true,
-      "focus1": true,
-      "principle2": true,
-      "focus2": true,
-      "position": [2, -1],
-      "focal_length": 0.05
-    },
-    {
-      "name": "TL",
-      "type": "addComponent",
-      "dof": "XY",
-      "component_type": "Lens",
-      "position": [8.74, 0],
-      "r1": 1
-    },
-    {
-      "name": "Camera 1",
-      "type": "addComponent",
-      "dof": "XYZxyz",
-      "component_type": "Screen",
-      "position": [11, 0],
-      "design": "ColorCamera",
-      "target": false
-    },
-     {
-          "type": "task",
-          "instruction": "Focus the sample on the camera",
-          "score": 100.0
-      },
-      {
-          "type": "task",
-          "instruction": "Well done!",
-          "score": 100.0,
-          "final": true
-      }
-   ]
+        {
+            "type": "addComponent",
+            "component_type": "PanelPost",
+            "name": "Panel Post",
+            "height": 2.2,
+            "position": [
+                1,
+                -2
+            ],
+            "dof": "XY",
+            "target": true
+        },
+        {
+            "type": "addComponent",
+            "component_type": "Laser",
+            "name": "Laser",
+            "rays": [
+                2,
+                4
+            ],
+            "position": [
+                -4,
+                0
+            ],
+            "rotation": 0,
+            "diameter": 0.2,
+            "wavelength": 488,
+            "dof": "XYZxyz"
+        },
+        {
+            "name": "Condensor",
+            "type": "addComponent",
+            "dof": "XY",
+            "component_type": "Lens",
+            "position": [
+                -1.25,
+                0
+            ],
+            "r1": 0.5
+        },
+        {
+            "name": "FluoCells1",
+            "type": "addComponent",
+            "dof": "XYZxyz",
+            "component_type": "Sample",
+            "position": [
+                0,
+                0
+            ],
+            "dir_em": 1,
+            "launches": true,
+            "design": "Slide"
+        },
+        {
+            "name": "Objective 01",
+            "type": "addComponent",
+            "dof": "XY",
+            "component_type": "Lens",
+            "position": [
+                2.5,
+                0
+            ],
+            "r1": 1
+        },
+        {
+            "name": "Objective 02",
+            "type": "addComponent",
+            "dof": "XY",
+            "component_type": "Lens",
+            "position": [
+                1.25,
+                -2
+            ],
+            "r1": 0.5
+        },
+        {
+            "name": "Objective 03",
+            "type": "addComponent",
+            "dof": "XYZxyz",
+            "rotation": 180,
+            "component_type": "Objective",
+            "principle1": true,
+            "focus1": true,
+            "principle2": true,
+            "focus2": true,
+            "position": [
+                2,
+                -1
+            ],
+            "focal_length": 0.05
+        },
+        {
+            "name": "TL",
+            "type": "addComponent",
+            "dof": "XY",
+            "component_type": "Lens",
+            "position": [
+                8.74,
+                0
+            ],
+            "r1": 1
+        },
+        {
+            "name": "Camera 1",
+            "type": "addComponent",
+            "dof": "XYZxyz",
+            "component_type": "Screen",
+            "position": [
+                11,
+                0
+            ],
+            "design": "ColorCamera",
+            "target": false
+        },
+        {
+            "type": "task",
+            "instruction": "Focus the sample on the camera",
+            "score": 100.0
+        },
+        {
+            "type": "task",
+            "instruction": "Well done!",
+            "score": 100.0,
+            "final": true,
+            "music": {
+                "link": "music/studiokolomna-spring-192863.mp3",
+                "credits": "Spring by Studiokolomna | https://pixabay.com/music/classical-string-quartet-spring-192863/"
+            }
+        }
+    ],
+    "description": {
+        "de": "Test: Level 5",
+        "en": "Test: Level 5",
+        "no": "Test: Nivå 5"
+    }
 }

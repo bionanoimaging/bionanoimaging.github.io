@@ -1,36 +1,52 @@
 {
     "version": 1.0,
     "number": "1",
-    "title": {"de": "Linsen: Finde den Fokus!", "en": "Lenses: Find the focus!", "no": "Finn fokus!"},
+    "title": {
+        "de": "Linsen: Finde den Fokus!",
+        "en": "Lenses: Find the focus!",
+        "no": "Finn fokus!"
+    },
     "steps": [
-     {
+        {
             "type": "addComponent",
             "component_type": "PanelPost",
             "name": "Panel Post",
             "height": 2.2,
-            "position": [1, -1],
+            "position": [
+                1,
+                -1
+            ],
             "rotation": 0,
             "dof": ""
         },
         {
-        "type": "addComponent",
-        "component_type": "Lightsource",
-        "name": "F-Light",
-        "position": [-5, 2],
-        "height": 1,
-        "rotation": 0,
-        "dof": "",
-        "divergence": 0.05,
-        "diameter": 0.5,
-        "wavelength": 630,
-        "rays": [1, 3],
-        "power": 10.0
+            "type": "addComponent",
+            "component_type": "Lightsource",
+            "name": "F-Light",
+            "position": [
+                -5,
+                2
+            ],
+            "height": 1,
+            "rotation": 0,
+            "dof": "",
+            "divergence": 0.05,
+            "diameter": 0.5,
+            "wavelength": 630,
+            "rays": [
+                1,
+                3
+            ],
+            "power": 10.0
         },
         {
             "type": "addComponent",
             "component_type": "Lens",
             "name": "L1",
-            "position": [-1.7,2],
+            "position": [
+                -1.7,
+                2
+            ],
             "rotation": 0,
             "r1": 1,
             "r2": 1.5,
@@ -44,15 +60,24 @@
             "type": "addComponent",
             "component_type": "Screen",
             "name": "S1",
-            "success": {"Std": 0.01},
-            "position": [-0.3, 2],
+            "success": {
+                "Std": 0.01
+            },
+            "position": [
+                -0.3,
+                2
+            ],
             "rotation": 0,
             "dof": "X",
             "target": false
         },
         {
-            "type": "solution", "name": "S1",
-            "position": [0.3, 2]
+            "type": "solution",
+            "name": "S1",
+            "position": [
+                0.3,
+                2
+            ]
         },
         {
             "type": "task",
@@ -73,20 +98,34 @@
                 "no": "Er bildet nå mindre eller større\n enn kilden?"
             },
             "answers": [
-                {"de": "Kleiner", "en": "Smaller", "no": "Mindre"},
-                {"de": "Größer", "en": "Larger", "no": "Større"}
+                {
+                    "de": "Kleiner",
+                    "en": "Smaller",
+                    "no": "Mindre"
+                },
+                {
+                    "de": "Größer",
+                    "en": "Larger",
+                    "no": "Større"
+                }
             ],
             "score": 100.0
         },
         {
             "type": "modifyComponent",
             "name": "L1",
-            "position": [-3.1,2]
+            "position": [
+                -3.1,
+                2
+            ]
         },
         {
-            "type": "solution", 
+            "type": "solution",
             "name": "S1",
-            "position": [1.0, 2]
+            "position": [
+                1.0,
+                2
+            ]
         },
         {
             "type": "task",
@@ -107,8 +146,16 @@
                 "no": "Er bildet nå mindre eller større\n enn kilden?"
             },
             "answers": [
-                {"de": "Größer", "en": "Larger", "no": "Større"},
-                {"de": "Kleiner", "en": "Smaller", "no": "Mindre"}
+                {
+                    "de": "Größer",
+                    "en": "Larger",
+                    "no": "Større"
+                },
+                {
+                    "de": "Kleiner",
+                    "en": "Smaller",
+                    "no": "Mindre"
+                }
             ],
             "score": 100.0
         },
@@ -117,69 +164,132 @@
             "name": "F-Light"
         },
         {
-            "type": "addComponent", "component_type": "Laser", "name": "Laser",
-            "rays": [2,4],
+            "type": "addComponent",
+            "component_type": "Laser",
+            "name": "Laser",
+            "rays": [
+                2,
+                4
+            ],
             "diameter": 0.7,
-            "position": [-4,0],
+            "position": [
+                -4,
+                0
+            ],
             "rotation": 0,
             "dof": ""
         },
         {
-            "type": "modifyComponent", 
+            "type": "modifyComponent",
             "name": "L1",
-            "position": [-2, 0],
+            "position": [
+                -2,
+                0
+            ],
             "rotation": 0,
             "r1": 1.0,
             "r2": 0.0,
             "dof": "X",
             "principle1": true,
             "focus1": true,
-            "limits": [[-2.5,1]]
+            "limits": [
+                [
+                    -2.5,
+                    1
+                ]
+            ]
         },
         {
-            "type": "solution", "name": "L1",
-            "position": [0.28, 0]
+            "type": "solution",
+            "name": "L1",
+            "position": [
+                0.28,
+                0
+            ]
         },
         {
-            "type": "modifyComponent", 
+            "type": "modifyComponent",
             "name": "S1",
-            "success": {"Std": 0.01},
-            "position": [2.2, 0.0],
+            "success": {
+                "Std": 0.01
+            },
+            "position": [
+                2.2,
+                0.0
+            ],
             "rotation": 0,
             "dof": "",
             "target": true
         },
         {
             "type": "task",
-            "instruction": {"de": "Bewege L1 entlang der X-Koordinate, bis\nder Strahl auf dem Bildschirm fokussiert ist.\nGreife das untere Podest.", "en": "Move L1 along the X-coordinate until\nthe beam is focussed on the screen. Grab the bottom pedestal.", "no": "Flytt L1 langs X-koordinaten til\nstrålen er fokusert på skjermen. Ta tak i den nedre sokkelen."},
+            "instruction": {
+                "de": "Bewege L1 entlang der X-Koordinate, bis\nder Strahl auf dem Bildschirm fokussiert ist.\nGreife das untere Podest.",
+                "en": "Move L1 along the X-coordinate until\nthe beam is focussed on the screen. Grab the bottom pedestal.",
+                "no": "Flytt L1 langs X-koordinaten til\nstrålen er fokusert på skjermen. Ta tak i den nedre sokkelen."
+            },
             "score": 100.0,
             "showbeams": true,
             "showplanes": false,
             "music": {
-                "link": "music/Now+We+Ride+-+320bit.mp3", "credits": "Now We Ride by Alexander Nakarada | https://www.serpentsoundstudios.com\nCreative Commons CC BY 4.0, https://creativecommons.org/licenses/by/4.0/"
+                "link": "music/Now+We+Ride+-+320bit.mp3",
+                "credits": "Now We Ride by Alexander Nakarada | https://www.serpentsoundstudios.com\nCreative Commons CC BY 4.0, https://creativecommons.org/licenses/by/4.0/"
             },
             "narration": {
-                "link": {"en": "narrations/lvl1t1.m4a", "de": "narrations/lvl1t1.m4a"}, "credits": "Rainer Heintzmann"
+                "link": {
+                    "en": "narrations/lvl1t1.m4a",
+                    "de": "narrations/lvl1t1.m4a"
+                },
+                "credits": "Rainer Heintzmann"
             }
         },
         {
-            "type": "modifyComponent", "name": "L1",
-            "position": [-2.3,-1],
+            "type": "modifyComponent",
+            "name": "L1",
+            "position": [
+                -2.3,
+                -1
+            ],
             "dof": "XY",
-            "limits": [[-2.5,1],[-2.5,1],[0.5,1.4]]
+            "limits": [
+                [
+                    -2.5,
+                    1
+                ],
+                [
+                    -2.5,
+                    1
+                ],
+                [
+                    0.5,
+                    1.4
+                ]
+            ]
         },
         {
-            "type": "solution", "name": "L1",
-            "position": [0.28, 0],
+            "type": "solution",
+            "name": "L1",
+            "position": [
+                0.28,
+                0
+            ],
             "height": 1.0
         },
         {
-            "type": "modifyComponent", "name": "S1",
-            "success": {"Std": 0.005, "PosX": 0.01}
+            "type": "modifyComponent",
+            "name": "S1",
+            "success": {
+                "Std": 0.005,
+                "PosX": 0.01
+            }
         },
         {
             "type": "task",
-            "instruction": {"de": "Bewege L1 entlang der X- und Y-Koordinate,\nbis der Strahl auf dem Bildschirm fokussiert ist.", "en": "Move L1 along the X- and Y-coordinate\nuntil the beam is focussed on the screen.", "no": "Flytt L1 langs X- og Y-koordinaten\ntil strålen er fokusert på skjermen."},
+            "instruction": {
+                "de": "Bewege L1 entlang der X- und Y-Koordinate,\nbis der Strahl auf dem Bildschirm fokussiert ist.",
+                "en": "Move L1 along the X- and Y-coordinate\nuntil the beam is focussed on the screen.",
+                "no": "Flytt L1 langs X- og Y-koordinaten\ntil strålen er fokusert på skjermen."
+            },
             "score": 100.0,
             "principle1": true,
             "narration": {
@@ -190,26 +300,42 @@
         {
             "type": "modifyComponent",
             "name": "L1",
-            "position": [-2,-1],
+            "position": [
+                -2,
+                -1
+            ],
             "height": 0.9,
             "dof": "XYZ"
         },
         {
-            "type": "solution", "name": "L1",
-            "position": [0.28, 0],
+            "type": "solution",
+            "name": "L1",
+            "position": [
+                0.28,
+                0
+            ],
             "height": 1.0
         },
         {
-            "type": "modifyComponent", "name": "S1",
-            "success": {"Std": 0.004, "PosX": 0.01, "PosY": 0.01}
+            "type": "modifyComponent",
+            "name": "S1",
+            "success": {
+                "Std": 0.004,
+                "PosX": 0.01,
+                "PosY": 0.01
+            }
         },
         {
             "type": "task",
-            "instruction": {"de": "Fokussiere L1 mittels X-, Y- und Z-Steuerung.\nGreife die Montagestange, um Z zu bewegen.", "en": "Focus L1 by X-,Y- and Z control\nGrab the mounting rod to move Z.", "no": "Fokuser L1 med X-, Y- og Z-kontroll.\nTa tak i monteringsstangen for å bevege Z."},
+            "instruction": {
+                "de": "Fokussiere L1 mittels X-, Y- und Z-Steuerung.\nGreife die Montagestange, um Z zu bewegen.",
+                "en": "Focus L1 by X-,Y- and Z control\nGrab the mounting rod to move Z.",
+                "no": "Fokuser L1 med X-, Y- og Z-kontroll.\nTa tak i monteringsstangen for å bevege Z."
+            },
             "score": 150.0,
             "principle1": true,
             "music": {
-                "link": "music/Melodic+Overflow+-+320bit.mp3", 
+                "link": "music/Melodic+Overflow+-+320bit.mp3",
                 "credits": "Melodic Overflow by Alexander Nakarada | https://www.serpentsoundstudios.com\nCreative Commons CC BY 4.0, https://creativecommons.org/licenses/by/4.0/"
             },
             "narration": {
@@ -220,27 +346,47 @@
         {
             "type": "modifyComponent",
             "name": "L1",
-            "position": [-2,-1],
-            "rotation": [0,163,0],
+            "position": [
+                -2,
+                -1
+            ],
+            "rotation": [
+                0,
+                163,
+                0
+            ],
             "height": 0.9,
             "dof": "XYZz"
         },
         {
-            "type": "solution", "name": "L1",
-            "position": [0.28, 0],
+            "type": "solution",
+            "name": "L1",
+            "position": [
+                0.28,
+                0
+            ],
             "height": 1.0,
             "rotation": 0
         },
         {
-            "type": "modifyComponent", "name": "S1",
-            "success": {"Std": 0.004, "PosX": 0.01, "PosY": 0.01}
+            "type": "modifyComponent",
+            "name": "S1",
+            "success": {
+                "Std": 0.004,
+                "PosX": 0.01,
+                "PosY": 0.01
+            }
         },
         {
             "type": "task",
-            "instruction": {"de": "Fokussiere L1 mittels X-, Y-, Z- und Drehsteuerung.\nKlicke auf die Linse, um die Dreh-Ring zu aktivieren.\nDie flache Seite sollte zum Bildschirm zeigen!", "en": "Focus L1 by X-,Y-, Z- and rotation-control\nClick on the lens to activate rotation gizmos.\nThe flat side should point towards the screen!", "no": "Fokuser L1 med X-, Y-, Z- og rotasjonskontroll.\nKlikk på linsen for å aktivere rotasjons-gizmos.\nDen flate siden skal peke mot skjermen!"},
+            "instruction": {
+                "de": "Fokussiere L1 mittels X-, Y-, Z- und Drehsteuerung.\nKlicke auf die Linse, um die Dreh-Ring zu aktivieren.\nDie flache Seite sollte zum Bildschirm zeigen!",
+                "en": "Focus L1 by X-,Y-, Z- and rotation-control\nClick on the lens to activate rotation gizmos.\nThe flat side should point towards the screen!",
+                "no": "Fokuser L1 med X-, Y-, Z- og rotasjonskontroll.\nKlikk på linsen for å aktivere rotasjons-gizmos.\nDen flate siden skal peke mot skjermen!"
+            },
             "score": 200.0,
             "music": {
-                "link": "music/The+Sad+Piano+Background+Song+-+320bit.mp3", 
+                "link": "music/The+Sad+Piano+Background+Song+-+320bit.mp3",
                 "credits": "The Sad Piano Background Song by Alexander Nakarada | https://www.serpentsoundstudios.com\nCreative Commons CC BY 4.0, https://creativecommons.org/licenses/by/4.0/"
             },
             "narration": {
@@ -251,20 +397,36 @@
         {
             "type": "modifyComponent",
             "name": "L1",
-            "position": [-2,-1],
-            "rotation": [0,-163,20],
+            "position": [
+                -2,
+                -1
+            ],
+            "rotation": [
+                0,
+                -163,
+                20
+            ],
             "height": 0.9,
             "dof": "XYZzyx"
         },
         {
-            "type": "solution", "name": "L1",
-            "position": [0.28, 0],
+            "type": "solution",
+            "name": "L1",
+            "position": [
+                0.28,
+                0
+            ],
             "height": 1.0,
             "rotation": 0
         },
         {
-            "type": "modifyComponent", "name": "S1",
-            "success": {"Std": 0.006, "PosX": 0.02, "PosY": 0.02}
+            "type": "modifyComponent",
+            "name": "S1",
+            "success": {
+                "Std": 0.006,
+                "PosX": 0.02,
+                "PosY": 0.02
+            }
         },
         {
             "type": "activate",
@@ -273,22 +435,39 @@
         },
         {
             "type": "task",
-            "instruction": {"de": "Schließlich realistischer: Die Laserstrahlen werden nicht angezeigt.\nRichte die Linse aus! Denke an die korrekte Drehung\nund die Gesamtausrichtung der Linse!", "en": "Finally more realistically, the laserbeams are not shown.\nAlign the lens! Rememeber the correct rotation\nand overall orientation of the lens!", "no": "Til slutt, mer realistisk: laserstrålene vises ikke.\nJuster linsen! Husk den korrekte rotasjonen\nog den totale orienteringen av linsen!"},
+            "instruction": {
+                "de": "Schließlich realistischer: Die Laserstrahlen werden nicht angezeigt.\nRichte die Linse aus! Denke an die korrekte Drehung\nund die Gesamtausrichtung der Linse!",
+                "en": "Finally more realistically, the laserbeams are not shown.\nAlign the lens! Rememeber the correct rotation\nand overall orientation of the lens!",
+                "no": "Til slutt, mer realistisk: laserstrålene vises ikke.\nJuster linsen! Husk den korrekte rotasjonen\nog den totale orienteringen av linsen!"
+            },
             "narration": {
                 "link": "narrations/lvl1t5.m4a",
                 "credits": "Rainer Heintzmann"
             },
-           "showbeams": false,
-           "score": 250.0
+            "showbeams": false,
+            "score": 250.0
         },
         {
             "type": "task",
-            "instruction": {"de": "Herzlichen Glückwunsch! Du hast dieses Level abgeschlossen!\nDrücke Fertig für Level 2.", "en": "Congratulations! You completed this level!\nPress Done for Lvl 2.", "no": "Gratulerer! Du har fullført dette nivået!\nTrykk Ferdig for nivå 2."},
+            "instruction": {
+                "de": "Herzlichen Glückwunsch! Du hast dieses Level abgeschlossen!\nDrücke Fertig für Level 2.",
+                "en": "Congratulations! You completed this level!\nPress Done for Lvl 2.",
+                "no": "Gratulerer! Du har fullført dette nivået!\nTrykk Ferdig for nivå 2."
+            },
             "narration": {
                 "link": "narrations/lvl1t6.m4a",
                 "credits": "Rainer Heintzmann"
             },
-            "final": true
+            "final": true,
+            "music": {
+                "link": "music/studiokolomna-spring-192863.mp3",
+                "credits": "Spring by Studiokolomna | https://pixabay.com/music/classical-string-quartet-spring-192863/"
+            }
         }
-    ]
+    ],
+    "description": {
+        "de": "Linsen: Fokussieren",
+        "en": "Lenses: Focusing",
+        "no": "Linse: Fokusering"
+    }
 }

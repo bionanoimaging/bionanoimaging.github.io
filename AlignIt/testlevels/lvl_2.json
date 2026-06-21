@@ -4,25 +4,37 @@
     "title": "The same",
     "steps": [
         {
-        "type": "addComponent",
-        "component_type": "Lightsource",
-        "name": "F-Light",
-        "position": [-4, 2],
-        "height": 1,
-        "rotation": 0,
-        "dof": "XYp",
-        "divergence": 0.05,
-        "diameter": 0.5,
-        "wavelength": 630,
-        "rays": [1, 3],
-        "power": 1.0
+            "type": "addComponent",
+            "component_type": "Lightsource",
+            "name": "F-Light",
+            "position": [
+                -4,
+                2
+            ],
+            "height": 1,
+            "rotation": 0,
+            "dof": "XYp",
+            "divergence": 0.05,
+            "diameter": 0.5,
+            "wavelength": 630,
+            "rays": [
+                1,
+                3
+            ],
+            "power": 1.0
         },
         {
             "type": "addComponent",
             "component_type": "Laser",
             "name": "Laser",
-            "rays": [2,4],
-            "position": [-4,0],
+            "rays": [
+                2,
+                4
+            ],
+            "position": [
+                -4,
+                0
+            ],
             "rotation": 0,
             "dof": "XYZxyz"
         },
@@ -30,7 +42,10 @@
             "type": "addComponent",
             "component_type": "Lens",
             "name": "L1",
-            "position": [-0.7,2],
+            "position": [
+                -0.7,
+                2
+            ],
             "rotation": 0,
             "r1": 1,
             "r2": 1,
@@ -40,7 +55,10 @@
             "type": "addComponent",
             "component_type": "Mirror",
             "name": "M1",
-            "position": [0,-1],
+            "position": [
+                0,
+                -1
+            ],
             "rotation": -135,
             "dof": "XYZxyz"
         },
@@ -48,7 +66,10 @@
             "type": "addComponent",
             "component_type": "Mirror",
             "name": "M2",
-            "position": [1,-1],
+            "position": [
+                1,
+                -1
+            ],
             "rotation": -45,
             "dof": "XYZxyz"
         },
@@ -56,8 +77,15 @@
             "type": "addComponent",
             "component_type": "Screen",
             "name": "S1",
-            "success": {"Std": 0.01, "PosX": 0.01, "PosY": 0.01},
-            "position": [0.7,2],
+            "success": {
+                "Std": 0.01,
+                "PosX": 0.01,
+                "PosY": 0.01
+            },
+            "position": [
+                0.7,
+                2
+            ],
             "rotation": 0,
             "target": false
         },
@@ -66,5 +94,10 @@
             "instruction": "This testlevel contains all currently available components.",
             "score": 100.0
         }
-   ]
+    ],
+    "description": {
+        "de": "Test: Level 2",
+        "en": "Test: Level 2",
+        "no": "Test: Nivå 2"
+    }
 }

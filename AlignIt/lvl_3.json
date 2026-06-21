@@ -1,14 +1,21 @@
 {
     "version": 1.0,
     "number": "3",
-    "title": {"de": "Strahlkollimation", "en": "Beam Collimation", "no": "Strålekollimering"},
+    "title": {
+        "de": "Strahlkollimation",
+        "en": "Beam Collimation",
+        "no": "Strålekollimering"
+    },
     "steps": [
         {
             "type": "addComponent",
             "component_type": "PanelPost",
             "name": "Panel Post",
             "height": 2.2,
-            "position": [1, -1],
+            "position": [
+                1,
+                -1
+            ],
             "rotation": 0,
             "dof": ""
         },
@@ -16,16 +23,25 @@
             "type": "addComponent",
             "component_type": "Laser",
             "name": "Laser",
-            "rays": [1, 4],
+            "rays": [
+                1,
+                4
+            ],
             "diameter": 0.3,
-            "position": [-6, 1],
+            "position": [
+                -6,
+                1
+            ],
             "power": 3.0
         },
         {
             "type": "addComponent",
             "component_type": "Lens",
             "name": "L1",
-            "position": [-4,1],
+            "position": [
+                -4,
+                1
+            ],
             "rotation": 180,
             "focus1": true,
             "principle1": true,
@@ -37,23 +53,41 @@
             "type": "addComponent",
             "component_type": "Lens",
             "name": "L2",
-            "position": [-1,1],
+            "position": [
+                -1,
+                1
+            ],
             "rotation": 0,
             "r1": 0.0,
             "r2": 0.7,
             "focus1": true,
             "principle1": true,
-            "limits": [[-2.5, -0.5]],
+            "limits": [
+                [
+                    -2.5,
+                    -0.5
+                ]
+            ],
             "dof": "X"
         },
         {
             "type": "addComponent",
             "component_type": "DualPinhole",
             "name": "Colli-Launch",
-            "position": [0,1],
-            "rays": [0, 1],
+            "position": [
+                0,
+                1
+            ],
+            "rays": [
+                0,
+                1
+            ],
             "diameter": 0.01,
-            "rotation": [0,0,0],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
             "launches": true,
             "launch_power": 1.0,
             "dof": ""
@@ -62,7 +96,10 @@
             "type": "addComponent",
             "component_type": "DualPinhole",
             "name": "Colli-Check",
-            "position": [3,1],
+            "position": [
+                3,
+                1
+            ],
             "diameter": 0.02,
             "dof": ""
         },
@@ -71,14 +108,23 @@
             "component_type": "Screen",
             "name": "Test Screen",
             "target": true,
-            "position": [5, 1],
+            "position": [
+                5,
+                1
+            ],
             "rotation": 0,
-            "success": {"Num": 2},
+            "success": {
+                "Num": 2
+            },
             "dof": ""
         },
-       {
+        {
             "type": "task",
-            "instruction": {"de": "Kollimiere den Laser, indem du das Expansionsfernrohr so einstellst, dass es beide Doppelblenden passiert.", "en": "Collimate the laser by adjusting the expansion telescope passing both double-pinholes.", "no": "Kollimer laseren ved å justere ekspansjonsteleskopet slik at det passerer begge dobbelthullene."},
+            "instruction": {
+                "de": "Kollimiere den Laser, indem du das Expansionsfernrohr so einstellst, dass es beide Doppelblenden passiert.",
+                "en": "Collimate the laser by adjusting the expansion telescope passing both double-pinholes.",
+                "no": "Kollimer laseren ved å justere ekspansjonsteleskopet slik at det passerer begge dobbelthullene."
+            },
             "music": {
                 "link": "music/forest-with-small-river-birds-and-nature-field-recording-6735.mp3",
                 "credits": "Downloaded from pixabay.\nhttps://pixabay.com/sound-effects/search/forest-birds/"
@@ -96,21 +142,34 @@
         {
             "type": "modifyComponent",
             "name": "Laser",
-            "rays": [1, 4],
+            "rays": [
+                1,
+                4
+            ],
             "diameter": 0.5,
-            "position": [-6, 1]
+            "position": [
+                -6,
+                1
+            ]
         },
         {
             "type": "addComponent",
             "component_type": "Lens",
             "name": "Shear Plate",
-            "position": [2,1],
-            "rotation": [0,-45, 0],
+            "position": [
+                2,
+                1
+            ],
+            "rotation": [
+                0,
+                -45,
+                0
+            ],
             "r1": 0,
             "r2": 0,
             "reflectivity1": 0.2,
             "reflectivity2": 0.2,
-            "thickness": 0.10,
+            "thickness": 0.1,
             "trace_reflection": true,
             "wedge_lambda": 0.001,
             "dof": ""
@@ -119,25 +178,47 @@
             "type": "addComponent",
             "component_type": "Screen",
             "name": "Shear-Screen",
-            "position": [2, 0],
+            "position": [
+                2,
+                0
+            ],
             "rotation": 90,
             "target": "line",
-            "success": {"Curv": 0.002},
+            "success": {
+                "Curv": 0.002
+            },
             "dof": ""
         },
         {
             "type": "task",
-            "instruction": {"de": "Verwende nun die Scherplatte für die Feineinstellung.\nOrdne die Streifen entlang der Referenzlinie an.", "en": "Now use the shear-plate for fine-adjustment.\nArrange the fringes along the reference line", "no": "Bruk nå skjærplaten for finjustering.\nArranger stripene langs referanselinjen."},
+            "instruction": {
+                "de": "Verwende nun die Scherplatte für die Feineinstellung.\nOrdne die Streifen entlang der Referenzlinie an.",
+                "en": "Now use the shear-plate for fine-adjustment.\nArrange the fringes along the reference line",
+                "no": "Bruk nå skjærplaten for finjustering.\nArranger stripene langs referanselinjen."
+            },
             "score": 100.0
         },
         {
             "type": "task",
-            "instruction": {"de": "Herzlichen Glückwunsch! Du hast dieses Level abgeschlossen!\nDrücke Fertig für Level 4.", "en": "Congratulations! You completed this level!\nPress Done for Lvl 4.", "no": "Gratulerer! Du har fullført dette nivået!\nTrykk Ferdig for nivå 4."},
+            "instruction": {
+                "de": "Herzlichen Glückwunsch! Du hast dieses Level abgeschlossen!\nDrücke Fertig für Level 4.",
+                "en": "Congratulations! You completed this level!\nPress Done for Lvl 4.",
+                "no": "Gratulerer! Du har fullført dette nivået!\nTrykk Ferdig for nivå 4."
+            },
             "narration": {
                 "link": "narrations/lvl1t6.m4a",
                 "credits": "Rainer Heintzmann"
             },
-            "final": true
+            "final": true,
+            "music": {
+                "link": "music/studiokolomna-spring-192863.mp3",
+                "credits": "Spring by Studiokolomna | https://pixabay.com/music/classical-string-quartet-spring-192863/"
+            }
         }
-   ]
+    ],
+    "description": {
+        "de": "Laserstrahl kollimieren",
+        "en": "Collimate a laser beam",
+        "no": "Kollimer en laserstråle"
+    }
 }

@@ -1,14 +1,21 @@
 {
     "version": 1.0,
     "number": "5",
-    "title": {"de": "Faserkoppelung", "en": "Fibre Coupling", "no": "Fiberkopling"},
+    "title": {
+        "de": "Faserkoppelung",
+        "en": "Fibre Coupling",
+        "no": "Fiberkopling"
+    },
     "steps": [
         {
             "type": "addComponent",
             "component_type": "PanelPost",
             "name": "Panel Post",
             "height": 2.2,
-            "position": [1, -1],
+            "position": [
+                1,
+                -1
+            ],
             "rotation": 0,
             "dof": ""
         },
@@ -16,7 +23,10 @@
             "type": "addComponent",
             "component_type": "FibreCouple",
             "name": "FibreCouple 1",
-            "position": [-1.0, 1.1],
+            "position": [
+                -1.0,
+                1.1
+            ],
             "diameter": 0.01,
             "NA": 0.05,
             "dof": "XY"
@@ -25,7 +35,10 @@
             "type": "addComponent",
             "component_type": "FibreCouple",
             "name": "FibreCouple 2",
-            "position": [1, 0],
+            "position": [
+                1,
+                0
+            ],
             "diameter": 0.001,
             "rotation": 180,
             "NA": 0.05,
@@ -35,8 +48,14 @@
             "type": "addComponent",
             "component_type": "Laser",
             "name": "Laser",
-            "rays": [2,4],
-            "position": [-4,1],
+            "rays": [
+                2,
+                4
+            ],
+            "position": [
+                -4,
+                1
+            ],
             "rotation": 0,
             "divergence": -0.05,
             "dof": ""
@@ -47,14 +66,23 @@
             "name": "Screen",
             "design": "Powermeter",
             "target": false,
-            "success": {"Power": 0.99},
-            "position": [3,0],
+            "success": {
+                "Power": 0.99
+            },
+            "position": [
+                3,
+                0
+            ],
             "rotation": 0,
             "dof": ""
         },
         {
             "type": "task",
-            "instruction": {"de": "Kopple den Laser in die Faser ein.", "en": "Couple the laser into the fibre.", "no": "Kople laseren inn i fiberen."},
+            "instruction": {
+                "de": "Kopple den Laser in die Faser ein.",
+                "en": "Couple the laser into the fibre.",
+                "no": "Kople laseren inn i fiberen."
+            },
             "music": {
                 "link": "music/forest-with-small-river-birds-and-nature-field-recording-6735.mp3",
                 "credits": "Downloaded from pixabay.\nhttps://pixabay.com/sound-effects/search/forest-birds/"
@@ -64,23 +92,40 @@
         {
             "type": "modifyComponent",
             "name": "FibreCouple 1",
-            "position": [-1.0, 1.1, 1.0],
+            "position": [
+                -1.0,
+                1.1,
+                1.0
+            ],
             "diameter": 0.01,
             "NA": 0.15,
-            "rotation": [0, 3, 4],
+            "rotation": [
+                0,
+                3,
+                4
+            ],
             "dof": "XYZxyz"
         },
         {
             "type": "modifyComponent",
             "name": "Screen",
-            "success": {"Power": 0.90},
-            "position": [3,0],
+            "success": {
+                "Power": 0.9
+            },
+            "position": [
+                3,
+                0
+            ],
             "rotation": 0,
             "dof": ""
         },
         {
             "type": "task",
-            "instruction": {"de": "Die Faser ist nun stärker verkippt. Auch die Winkel sind falsch!", "en": "Now the fibre is misaligned more. Also the angles are wrong!", "no": "Nå er fiberen mer feiljustert. Vinklene er også feil!"},
+            "instruction": {
+                "de": "Die Faser ist nun stärker verkippt. Auch die Winkel sind falsch!",
+                "en": "Now the fibre is misaligned more. Also the angles are wrong!",
+                "no": "Nå er fiberen mer feiljustert. Vinklene er også feil!"
+            },
             "music": {
                 "link": "music/forest-with-small-river-birds-and-nature-field-recording-6735.mp3",
                 "credits": "Downloaded from pixabay.\nhttps://pixabay.com/sound-effects/search/forest-birds/"
@@ -90,23 +135,40 @@
         {
             "type": "modifyComponent",
             "name": "FibreCouple 1",
-            "position": [-1.0, 1.1, 1.0],
+            "position": [
+                -1.0,
+                1.1,
+                1.0
+            ],
             "diameter": 0.001,
             "NA": 0.15,
-            "rotation": [0, 4, 3],
+            "rotation": [
+                0,
+                4,
+                3
+            ],
             "dof": "XYZxyz"
         },
         {
             "type": "modifyComponent",
             "name": "Screen",
-            "success": {"Power": 0.85},
-            "position": [3,0],
+            "success": {
+                "Power": 0.85
+            },
+            "position": [
+                3,
+                0
+            ],
             "rotation": 0,
             "dof": ""
         },
         {
             "type": "task",
-            "instruction": {"de": "Der Faserkern ist nun auch viel kleiner (Singlemode).", "en": "Now the fibre core is also a lot smaller (single mode).", "no": "Fiberkjernen er nå også mye mindre (single mode)."},
+            "instruction": {
+                "de": "Der Faserkern ist nun auch viel kleiner (Singlemode).",
+                "en": "Now the fibre core is also a lot smaller (single mode).",
+                "no": "Fiberkjernen er nå også mye mindre (single mode)."
+            },
             "music": {
                 "link": "music/forest-with-small-river-birds-and-nature-field-recording-6735.mp3",
                 "credits": "Downloaded from pixabay.\nhttps://pixabay.com/sound-effects/search/forest-birds/"
@@ -115,12 +177,25 @@
         },
         {
             "type": "task",
-            "instruction": {"de": "Herzlichen Glückwunsch! Du hast die Faserkopplung abgeschlossen.\nDrücke Fertig für Level 6.", "en": "Congratulations! You completed fibre coupling\nPress Done for Lvl 6.", "no": "Gratulerer! Du har fullført fiberkoplingen.\nTrykk Ferdig for nivå 6."},
+            "instruction": {
+                "de": "Herzlichen Glückwunsch! Du hast die Faserkopplung abgeschlossen.\nDrücke Fertig für Level 6.",
+                "en": "Congratulations! You completed fibre coupling\nPress Done for Lvl 6.",
+                "no": "Gratulerer! Du har fullført fiberkoplingen.\nTrykk Ferdig for nivå 6."
+            },
             "narration": {
                 "link": "narrations/lvl1t6.m4a",
                 "credits": "Rainer Heintzmann"
             },
-            "final": true
+            "final": true,
+            "music": {
+                "link": "music/studiokolomna-spring-192863.mp3",
+                "credits": "Spring by Studiokolomna | https://pixabay.com/music/classical-string-quartet-spring-192863/"
+            }
         }
-   ]
+    ],
+    "description": {
+        "de": "Licht in Faser einkoppeln",
+        "en": "Couple light into a fibre",
+        "no": "Koble lys inn i fiber"
+    }
 }
