@@ -20,6 +20,16 @@
             "dof": ""
         },
         {
+        "type": "addComponent",
+        "component_type": "Screen",
+        "name": "HandCard",
+        "design": "HandScreen",
+        "width": 1.7,
+        "height": 1.5,
+        "position": [2, 0],
+        "dof": "XYZzyx"
+        },        
+        {
             "type": "setObserverPosition",
             "position": [
                 -6,
