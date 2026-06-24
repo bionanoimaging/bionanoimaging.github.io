@@ -1,0 +1,398 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Michelson Interferometer Teaching Level Sequence - Bio-Nanoimaging in Jena</title>
+<meta name="description" content="Webpage of the Nanoimaging group affiliated with the Leibniz Institute of  Photonic Technology and the Friedrich Schiller University of Jena.">
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Bio-Nanoimaging in Jena">
+<meta property="og:title" content="Michelson Interferometer Teaching Level Sequence">
+<meta property="og:url" content="https://bionanoimaging.github.io/nanoimaging.de/AlignIt/interferometerlevels/">
+
+
+  <meta property="og:description" content="Webpage of the Nanoimaging group affiliated with the Leibniz Institute of  Photonic Technology and the Friedrich Schiller University of Jena.">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="canonical" href="https://bionanoimaging.github.io/nanoimaging.de/AlignIt/interferometerlevels/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Rainer Heintzmann, Felix Wechsler",
+      "url": "https://bionanoimaging.github.io/nanoimaging.de/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--default">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/site-logo.jpg" alt="Bio-Nanoimaging in Jena"></a>
+        
+        <a class="site-title" href="/">
+          Bio-Nanoimaging in Jena
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/news/">NEWS</a>
+            </li><li class="masthead__menu-item">
+              <a href="/research/">RESEARCH</a>
+            </li><li class="masthead__menu-item">
+              <a href="/team/">TEAM</a>
+            </li><li class="masthead__menu-item">
+              <a href="/publications/">PUBLICATIONS</a>
+            </li><li class="masthead__menu-item">
+              <a href="/teaching/">TEACHING</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      <h1 id="michelson-interferometer-teaching-level-sequence">Michelson Interferometer Teaching Level Sequence</h1>
+<h2 id="interferometerlevels-level-design-document">interferometerlevels/ Level Design Document</h2>
+<hr />
+<h2 id="overview">Overview</h2>
+<p>This document describes the pedagogical structure and technical implementation
+of the new Michelson interferometer teaching sequence for AlignIt. The goal is
+to teach interferometer alignment in a progressive, scaffolded manner that builds
+both practical skills and conceptual understanding.</p>
+<hr />
+<h2 id="learning-objectives">Learning Objectives</h2>
+<h3 id="primary-objectives">Primary Objectives</h3>
+<ol>
+<li><strong>Step-by-step construction</strong> - Understanding how each component contributes to the system</li>
+<li><strong>Retroreflection principle</strong> - Mastering mirror alignment for beam return</li>
+<li><strong>Beam overlap technique</strong> - Achieving precise coaxial alignment</li>
+<li><strong>Divergent-light calibration</strong> - Finding absolute zero-OPD position (key innovation)</li>
+<li><strong>Fringe pattern interpretation</strong> - Reading circular vs. straight fringes</li>
+</ol>
+<h3 id="secondary-objectives">Secondary Objectives</h3>
+<ul>
+<li>Understanding degrees of freedom and constrained adjustment</li>
+<li>Appreciating precision requirements in optical alignment</li>
+<li>Connecting geometric optics (ray paths) with wave optics (interference)</li>
+<li>Historical context: Michelson's Nobel Prize and modern applications</li>
+</ul>
+<hr />
+<h2 id="level-structure">Level Structure</h2>
+<h3 id="current-file-codelvl1jsoncode">Current File: <code>lvl_1.json</code></h3>
+<p><strong>Title:</strong> &quot;Michelson Interferometer - Part 1: Building &amp; Basic Alignment&quot;<br />
+<strong>Total Tasks:</strong> 8 + completion message<br />
+<strong>Estimated Play Time:</strong> 15-25 minutes<br />
+<strong>Difficulty Progression:</strong> Moderate (±5° rotation limits initially, narrowing to ±1°)</p>
+<hr />
+<h2 id="task-breakdown">Task Breakdown</h2>
+<p>| Task | Component Added | Key Skill | Question Focus | Score |
+|------|----------------|-----------|----------------|-------|
+| 1 | Laser (pre-placed) | Beam direction control | Optical axis concept | 100 |
+| 2 | Beamsplitter | 45° orientation | Function of beamsplitter | 150 |
+| 3 | Mirror 1 | Retroreflection alignment | Retroreflector behavior | 200 |
+| 4 | Mirror 2 | Parallel beam emergence | Why parallelism matters | 200 |
+| 5 | Diverging Lens | Lateral insertion &amp; alignment | Purpose of divergence | 200 |
+| 6 | Screen | Tip/tilt fine-tuning | Beam superposition | 250 |
+| 7 | (Adjustment) | Angular precision | Circular fringe meaning | 300 |
+| 8 | (Scanning) | Z-axis calibration | Zero-OPD detection | 400 |
+| <strong>Total</strong> | | | | <strong>1800</strong> |</p>
+<hr />
+<h2 id="technical-implementation-details">Technical Implementation Details</h2>
+<h3 id="position-limits-strategy">Position Limits Strategy</h3>
+<pre><code>Component         X Range        Y Range        Z Range        Rotation Limits
+--------------   ------------   ------------   -----------    -----------------
+Laser            Fixed          Fixed          Fixed          Active xyz
+Beamsplitter     [-3, -1]       [-3, -1]       N/A            Full XYZxyz
+Mirror 1         [-3, -1]       [0, 2]         Free           x,y: ±5°
+Mirror 2 (T4)    [-5, -3]       [-3, -1]       [0.8, 1.2]     x,y: ±10°
+Mirror 2 (T7)    Fixed          Fixed          Fixed          x,y: ±1°
+Screen           Fixed          Fixed          Fixed          None
+Lens             [-4, -2]       [-5, -3]       Free           Full XYZxyz
+</code></pre>
+<p><strong>Rationale:</strong></p>
+<ul>
+<li>Prevent &quot;bypassing&quot; by moving components outside expected region</li>
+<li>Start generous (±5-10°), narrow progressively (±1°) for fine tuning</li>
+<li>Lock irrelevant DOFs to focus user attention on current skill</li>
+</ul>
+<h3 id="solution-hints-codesolcode-tag">Solution Hints (<code>sol</code> tag)</h3>
+<p>Every task includes a <code>sol</code> object providing the correct configuration:</p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"sol"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Mirror 2"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"position"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">-4</span><span class="p">,</span><span class="w"> </span><span class="mi">-2</span><span class="p">],</span><span class="w">
+    </span><span class="nl">"rotation"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">90</span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+<p><strong>Purpose:</strong> Users can request hints if stuck, revealing target values.<br />
+<strong>Implementation Note:</strong> This requires extending the UI to display <code>sol</code> values when requested (new feature).</p>
+<h3 id="question-format">Question Format</h3>
+<p>All tasks use the question/answers system already implemented in AlignIt:</p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"question"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"en"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Why must both beams emerge parallel from the beamsplitter?"</span><span class="w">
+</span><span class="p">}</span><span class="err">,</span><span class="w">
+</span><span class="nl">"answers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w"> </span><span class="nl">"en"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Parallel beams can overlap perfectly and create stable interference patterns"</span><span class="w"> </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w"> </span><span class="nl">"en"</span><span class="p">:</span><span class="w"> </span><span class="s2">"It makes the setup look more symmetrical"</span><span class="w"> </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w"> </span><span class="nl">"en"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Parallel beams travel faster"</span><span class="w"> </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre></div></div>
+<p><strong>First answer is always correct</strong> (standard convention).<br />
+Users select one answer; correct selection progresses to next task.</p>
+<h3 id="success-criteria">Success Criteria</h3>
+<p>Different metrics used per task:</p>
+<ul>
+<li><strong>Task 1-4:</strong> <code>{ &quot;Num&quot;: 1 }</code> - Just verify beam exists at target</li>
+<li><strong>Task 6:</strong> <code>{ &quot;PosX&quot;: 0.08, &quot;PosY&quot;: 0.08 }</code> - Overlap tolerance</li>
+<li><strong>Task 7:</strong> <code>{ &quot;Curv&quot;: 0.01, &quot;RelAng&quot;: 0.01 }</code> - Perfect circular fringes</li>
+<li><strong>Task 8:</strong> <code>{ &quot;PosZ&quot;: 0.02 }</code> - Must hit exact Z position</li>
+</ul>
+<hr />
+<h2 id="narration-files">Narration Files</h2>
+<p>All narration scripts stored in <code>narrations/</code> subdirectory:</p>
+<p>| File | Task | Length (est.) | Content |
+|------|------|---------------|---------|
+| <code>lvl1_t1_intro.txt</code> | Task 1 | 1:30 | Welcome, laser alignment instructions |
+| <code>lvl1_t2_beamsplitter.txt</code> | Task 2 | 2:00 | Beamsplitter function, 45° placement |
+| <code>lvl1_t3_mirror1.txt</code> | Task 3 | 2:30 | Retroreflection concept, alignment tips |
+| <code>lvl1_t4_mirror2.txt</code> | Task 4 | 2:30 | Second arm geometry, parallelism requirement |
+| <code>lvl1_t5_diverging_lens.txt</code> | Task 5 | 3:00 | Divergence purpose, zero-OPD explanation |
+| <code>lvl1_t6_overlap.txt</code> | Task 6 | 2:00 | Beam superposition, overlap technique |
+| <code>lvl1_t7_circular_fringes.txt</code> | Task 7 | 3:00 | Haidinger fringes, angular precision |
+| <code>lvl1_t8_divergent_calibration.txt</code> | Task 8 | 4:00 | Calibration technique, real-world applications |
+| <code>lvl1_final.txt</code> | Completion | 3:30 | Summary, history, modern uses |</p>
+<p><strong>Total narration time:</strong> ~22 minutes of audio content</p>
+<p><strong>Next Step:</strong> Convert these text scripts to audio files (.m4a or .mp3 format)</p>
+<hr />
+<h2 id="geometric-layout">Geometric Layout</h2>
+<pre><code>                     Y
+                     ↑
+                     │
+        Mirror 1     │     (no component)
+           ●         │
+         [-2,1]      │
+                     │
+                     │
+←────────────────────┼────────────────────→ X
+   Laser     BS      │      Screen
+      ● ──── ● ──────┼───────────●
+    [-2,-7] [-2,-2] │        [2,-2]
+         ┌──┴──┐    │
+         │Lens │    │
+         │[-2,-5]   │
+         └─────┘    │
+                    Mirror 2
+                        ●
+                      [-4,-2]
+</code></pre>
+<p><strong>Arm Lengths:</strong></p>
+<ul>
+<li>Vertical arm (Y-direction): 3 units to Mirror 1</li>
+<li>Horizontal arm (X-direction): 2 units to Mirror 2</li>
+<li>These are approximately equal for initial zero-OPD condition</li>
+</ul>
+<p><strong>Units:</strong> 1 unit ≈ 5 cm in real space (per AlignIt convention)</p>
+<hr />
+<h2 id="required-game-engine-changes">Required Game Engine Changes</h2>
+<h3 id="new-feature-needed-display-codesolcode-tag">New Feature Needed: Display <code>sol</code> Tag</h3>
+<p>Currently, solution hints exist in level JSON but aren't displayed to users.<br />
+<strong>Suggestion:</strong> Add a &quot;Hint&quot; button to the panel that shows the <code>sol</code> values
+for the current task when clicked.</p>
+<p><strong>Implementation sketch:</strong></p>
+<ol>
+<li>Check if <code>global_current_task_step.sol</code> exists</li>
+<li>If yes, display formatted text showing target position/rotation</li>
+<li>Optionally animate visual guide (ghost component at target location)</li>
+</ol>
+<h3 id="optional-enhancement-component-solved-state">Optional Enhancement: Component Solved State</h3>
+<p>The suggestion to add a visual indicator when optical components are properly
+illuminated/passed by laser beam would improve feedback:</p>
+<ul>
+<li>Green glow on beamsplitter when beam passes through center</li>
+<li>Green highlight on mirrors when correctly retroreflecting</li>
+<li>This helps users know they're on the right track before completing the task</li>
+</ul>
+<hr />
+<h2 id="future-levels-in-sequence">Future Levels in Sequence</h2>
+<h3 id="level-2-fringe-analysis-amp-wavelength-measurement">Level 2: Fringe Analysis &amp; Wavelength Measurement</h3>
+<ul>
+<li>Already have interferometer aligned</li>
+<li>Scan mirror and count fringes</li>
+<li>Calculate wavelength from known distance</li>
+<li>Introduce measurement uncertainty</li>
+</ul>
+<h3 id="level-3-white-light-interferometry">Level 3: White-Light Interferometry</h3>
+<ul>
+<li>Replace laser with broadband source</li>
+<li>Search for colored fringe packet</li>
+<li>Measure thickness of glass plate</li>
+<li>Demonstrate coherence length concept</li>
+</ul>
+<h3 id="level-4-mach-zehnder-interferometer">Level 4: Mach-Zehnder Interferometer</h3>
+<ul>
+<li>Different beam path geometry</li>
+<li>Sample insertion capability</li>
+<li>Phase shift measurements</li>
+<li>Comparison with Michelson design</li>
+</ul>
+<hr />
+<h2 id="testing-checklist">Testing Checklist</h2>
+<p>Before final release, verify:</p>
+<ul>
+<li>[ ] All components load correctly in game engine</li>
+<li>[ ] Position/rotation limits prevent cheating</li>
+<li>[ ] Questions advance properly on correct answer</li>
+<li>[ ] <code>sol</code> hint system displays (if implemented)</li>
+<li>[ ] Narration audio plays smoothly</li>
+<li>[ ] Premium interference visible when password entered</li>
+<li>[ ] Divergent light actually makes fringes disappear off zero-OPD</li>
+<li>[ ] Success criteria trigger at appropriate tolerances</li>
+<li>[ ] Score accumulates correctly across tasks</li>
+<li>[ ] No script loading errors in console</li>
+</ul>
+<hr />
+<h2 id="translation-priority-order">Translation Priority Order</h2>
+<p><strong>Phase 1:</strong> English (current)<br />
+<strong>Phase 2:</strong> German (highest priority - original developer language)<br />
+<strong>Phase 3:</strong> Norwegian (existing in other levels)</p>
+<p><strong>Note:</strong> All instructional text currently in <code>{ &quot;en&quot;: &quot;...&quot; }</code> format for easy translation addition.</p>
+<hr />
+<h2 id="credits-amp-attribution">Credits &amp; Attribution</h2>
+<p><strong>Level Design:</strong> OpenCode AI assistant + Rainer Heintzmann (guidance)<br />
+<strong>Music:</strong> Forest birds recording from Pixabay (CC0 license)<br />
+<strong>Narration voice:</strong> TBD (Rainer Heintzmann or professional voice actor)<br />
+<strong>Historical facts:</strong> Standard physics references (Nobel Prize archives, LIGO documentation)</p>
+<hr />
+<h2 id="version-history">Version History</h2>
+<p>| Version | Date | Changes |
+|---------|------|---------|
+| 1.0 | 2026-06-13 | Initial complete level design with 8 tasks |</p>
+<hr />
+<h2 id="contact-amp-feedback">Contact &amp; Feedback</h2>
+<p>For questions about this level design:<br />
+<strong>Developer:</strong> Rainer Heintzmann (rainer.heintzmann@nanoimaging.de)<br />
+<strong>AI Assistant Documentation:</strong> See AGENTS.md in main project root</p>
+<hr />
+<p><em>Last updated: June 13, 2026</em></p>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2026 Rainer Heintzmann, Felix Wechsler. <br>Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a><br>
+<a href="https://www.leibniz-ipht.de/en/imprint/" rel="nofollow">Imprint</a>
+</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
