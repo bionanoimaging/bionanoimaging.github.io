@@ -33,7 +33,7 @@
                 -6
             ],
             "rotation": -90,
-            "dof": "xyz"
+            "dof": "XYxyz"
         },
         {
             "type": "addComponent",
