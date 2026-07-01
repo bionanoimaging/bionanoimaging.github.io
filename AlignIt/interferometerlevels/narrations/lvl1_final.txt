@@ -1,0 +1,77 @@
+LVL1_FINAL_CONGRATULATIONS - Completion Narration Script
+=========================================================
+
+[Celebrating the achievement]
+Congratulations! You have successfully built, aligned, and calibrated a complete 
+Michelson interferometer from scratch. This is no small feat - you've learned 
+skills that optical engineers use in real laboratories every day.
+
+[Summary of what you accomplished]
+Let's review the key techniques you mastered:
+
+First, you learned step-by-step construction - starting with precise laser alignment, 
+then installing the beamsplitter at exactly 45 degrees, then setting up both mirrors 
+for optimal retroreflection.
+
+Second, you discovered the importance of beam parallelism - making sure both arms' 
+beams emerge from the beamsplitter traveling together toward the observation plane.
+
+Third, you practiced fine angular control to achieve circular Haidinger fringes, 
+which tell you the mirrors are perfectly perpendicular.
+
+Most importantly, you learned the divergent-light calibration technique - using 
+a simple lens to find the absolute zero optical path difference position. This 
+is the secret weapon of professional interferometrists.
+
+[Historical significance]
+Albert Michelson developed this instrument in the 1880s, refining it over decades. 
+His most famous experiment, done with Edward Morley in 1887, used a Michelson 
+interferometer to search for the luminiferous ether - the hypothetical medium 
+through which light was thought to propagate. Their null result - finding no 
+ether whatsoever - helped pave the way for Einstein's theory of special relativity.
+
+Michelson received the Nobel Prize in Physics in 1907, the first American to win 
+a science Nobel. His interferometer became the basis for defining the meter in 
+terms of the wavelength of light, connecting our units of length to fundamental 
+constants of nature.
+
+[Modern applications]
+The Michelson interferometer is more relevant today than ever:
+
+• LIGO (Laser Interferometer Gravitational-Wave Observatory) uses kilometer-scale 
+  Michelson interferometers to detect ripples in spacetime caused by colliding 
+  black holes billions of light-years away. The sensitivity is extraordinary - 
+  they measure changes smaller than one ten-thousandth the diameter of a proton.
+
+• Optical coherence tomography (OCT) uses white-light interferometry to create 
+  three-dimensional images of biological tissues, especially the retina. Millions 
+  of OCT scans are performed yearly in ophthalmology clinics worldwide.
+
+• Semiconductor manufacturing relies on interferometry for measuring film thicknesses 
+  with nanometer precision, ensuring chip quality.
+
+• Atomic force microscopy and surface profiling use interferometric techniques to 
+  map surface topography at the atomic scale.
+
+[What comes next]
+You now have a foundation for understanding many advanced optical instruments. 
+The principles you've learned here - interference, path length, coherence, 
+retroreflection - appear throughout modern physics and engineering.
+
+Future levels will explore:
+• The Mach-Zehnder interferometer, which separates the beams differently
+• Grating-based interferometers for spectral analysis
+• Fiber-coupled interferometers for portable sensing applications
+• Quantum interference effects that challenge our classical intuition
+
+[Encouragement]
+If you're pursuing optics or photonics as a career, or even if you're just curious 
+about how light works, you're building important knowledge. Every great scientist 
+and engineer starts with these fundamental concepts. Keep exploring, keep asking 
+questions, and keep adjusting those mirrors!
+
+[Closing]
+Thank you for playing AlignIt! We hope this simulation has deepened your 
+understanding of interferometry and inspired you to learn more about the 
+fascinating world of light and measurement.
+

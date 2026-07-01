@@ -1,0 +1,66 @@
+LVL1_TASK8_DIVERGENT_CALIBRATION - Zero-OPD Calibration with Divergent Light Narration Script
+==============================================================================================
+
+[The grand finale technique]
+Now we demonstrate the most powerful alignment trick in interferometry: using 
+divergent light to find the absolute zero optical path difference position. This 
+is how professional optical technicians calibrate their instruments.
+
+[Recap of the problem]
+With parallel light, you see interference fringes at ANY mirror separation. The 
+fringe pattern might get coarser or finer as you move a mirror, but it never 
+disappears completely. This makes it impossible to identify which fringe corresponds 
+to exactly equal path lengths.
+
+[How divergent light solves this]
+When you use divergent light from our lens, different rays hit the mirrors at 
+different angles. Each ray therefore has a slightly different total path length 
+through the system. At most mirror positions, these varying path differences mean 
+that constructive interference for some rays coincides with destructive interference 
+for others, washing out the overall pattern.
+
+But at the exact zero-OPD position - where both arms have identical lengths - 
+ALL rays interfere constructively simultaneously, regardless of their angle. This 
+creates a burst of strong, visible fringes that clearly marks the reference point.
+
+[The experimental procedure]
+In this task, Mirror 1 has been deliberately offset by 15 centimeters. Your job is 
+to scan Mirror 2 along the Z-axis while watching the screen. Move slowly and 
+carefully. At most positions, you'll see nothing or very faint patterns. But when 
+Mirror 2 reaches the position where its arm length matches Mirror 1's arm length, 
+suddenly bright colored fringes will appear.
+
+[What to look for]
+Start with Mirror 2 around Z = -3.0 units, then slowly increase toward Z = -2.6. 
+Watch for the moment when fringes suddenly become visible. That transition point 
+marks the zero optical path difference condition with extreme precision.
+
+[Color effects]
+If you're using white light instead of monochromatic laser light, you'll see 
+colored fringes - rainbow patterns radiating from the center. Each wavelength 
+has its own slightly different zero-OPD position, creating beautiful chromatic effects. 
+This is why it's sometimes called "white-light interferometry."
+
+[Real-world applications]
+This calibration technique is used everywhere precise distance measurement matters:
+• In semiconductor manufacturing for measuring film thicknesses
+• In astronomy for stellar interferometry and adaptive optics  
+• In medical imaging with optical coherence tomography (OCT)
+• In gravitational wave detectors like LIGO for maintaining arm balance
+
+[Why this matters for metrology]
+Once you've found the zero-OPD position using divergent light, you can switch 
+back to parallel light for measurements while knowing your absolute reference 
+point. This combination gives you both coarse positioning capability and fine 
+measurement precision.
+
+[Completing the lesson]
+By completing this task, you've learned not just how to align an interferometer, 
+but how to calibrate it to an absolute reference. You now understand a technique 
+used by scientists and engineers working on cutting-edge optical systems worldwide.
+
+[Culmination]
+This demonstrates the power of combining geometric optics (the lens) with wave 
+optics (interference). Understanding both perspectives is essential for mastering 
+modern optical instrumentation.
+
