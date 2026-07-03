@@ -101,7 +101,7 @@
             "design": "Slide",
             "wavelength": 530,
             "texture": "img/FluorescentCells.jpg",
-            "drift": 0.02
+            "drift": 0.0
         },
         {
             "type": "addComponent",

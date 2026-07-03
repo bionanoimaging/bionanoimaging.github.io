@@ -85,7 +85,7 @@
       "limits": [[],[],[],[],[],[]],
       "design": "",
       "num_bundles": 9,
-      "correlation_length": 0.5
+      "correlation_length": 0.0001
     },
     {
       "name": "S2",
