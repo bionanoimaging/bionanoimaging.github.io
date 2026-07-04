@@ -84,7 +84,8 @@
       "height": 1,
       "limits": [[],[],[],[],[],[]],
       "design": "",
-      "num_bundles": 9,
+      "num_bundles": 5,
+      "max_bundles": 5,
       "correlation_length": 0.0001
     },
     {
