@@ -13,7 +13,7 @@ The analysis was implemented in a custom Python script [“Classi4RPE”](https:
 
 The proposed approach achieves high performance, with mean sensitivities of 0.99 for L granules and 0.90 for ML granules, and corresponding specificities of 0.93 and 0.98, respectively, compared to manually annotated ground truth.[1]
 
-![BSAAdsorption](/assets/images/projects/classi4rpe.tif)
+![BSAAdsorption](/assets/images/projects/classi4rpe.png)
 
 *Classi4RPE performance results of one of the tested FLIM data sets compared to the generated ground truth. [1]
 
