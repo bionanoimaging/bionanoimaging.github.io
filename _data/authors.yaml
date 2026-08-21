@@ -369,3 +369,10 @@ Paolo Maran:
     - label: "LinkedIn"
       icon: "fas fa-fw fa-link"
       url: "https://www.linkedin.com/in/paolo-maran"
+
+Rahel Koch:
+  name        : "Rahel Koch"
+  bio         : "" 
+  avatar      : "/assets/images/people/picture_rahel2.jpg"
+  active      : true
+  role        : "PhD Candidate"
