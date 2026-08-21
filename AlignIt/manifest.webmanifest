@@ -1,0 +1,24 @@
+{
+  "name": "AlignIt - Optical Alignment VR/AR",
+  "short_name": "AlignIt",
+  "description": "Practice optical alignment in VR/AR",
+  "start_url": ".",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "background_color": "#B6B9B7",
+  "theme_color": "#B6B9B7",
+  "icons": [
+    {
+      "src": "img/icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "img/icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

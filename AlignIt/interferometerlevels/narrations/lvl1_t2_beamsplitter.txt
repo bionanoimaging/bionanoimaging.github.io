@@ -1,0 +1,34 @@
+LVL1_TASK2_BEAMSPLITTER - Beamsplitter Installation Narration Script
+=====================================================================
+
+[Context setting]
+Now we install the heart of the interferometer: the beamsplitter. This optical 
+component is what makes the Michelson design so elegant and powerful.
+
+[What a beamsplitter does]
+A beamsplitter is a partially reflective mirror - typically coated to reflect 
+50% of incoming light while transmitting the other 50%. In our simulation, 
+when your laser beam hits it at 45 degrees, you'll see two beams emerge: 
+one transmitted straight through, and one reflected at a right angle.
+
+[Placement instructions]
+Position the beamsplitter at coordinates [-2, -2], exactly where your laser 
+beam is traveling. The rotation should be 45 degrees relative to the incoming 
+beam. This orientation ensures that half the light goes toward what will be 
+Mirror 1, and half toward Mirror 2.
+
+[Verification step]
+You can verify correct alignment when both output beams are clearly visible 
+and have approximately equal brightness. If one beam is much dimmer than the 
+other, check that your beamsplitter is truly at 45 degrees.
+
+[Why this matters]
+The beamsplitter serves double duty: it splits the light on the way out, and 
+it recombines the light on the way back. This is why precise positioning is 
+critical - any error here propagates through the entire system.
+
+[Looking ahead]
+Once the beamsplitter is in place, we'll add the two mirrors at the ends of 
+each arm. Each mirror will send its beam back to the beamsplitter, where they 
+recombine and create the interference pattern that reveals path length differences.
+

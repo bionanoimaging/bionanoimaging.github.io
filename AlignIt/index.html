@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>AlignIt! - Optical Alignment (Bundled)</title>
+        <link rel="manifest" href="manifest.webmanifest">
+        <link rel="stylesheet" href="css/style.css">
+        <meta name="msapplication-TileColor" content="#B6B9B7">
+        <meta name="theme-color" content="#B6B9B7">
+
+        <!--
+          Bundled version: project code is bundled into a single file.
+          Babylon.js is loaded separately (same as original index.html).
+          Built with: npm run build:vite
+        -->
+        <script src="babylon/earcut.min.js"></script>
+        <script src="babylon/babylon.js"></script>
+        <script src="babylon/babylon.gui.min.js"></script>
+        <script src="babylon/babylonjs.loaders.min.js"></script>
+        <script src="alignit.bundle.js" defer></script>
+    </head>
+<body>
+    <div id="canvasZone"><canvas id="renderCanvas"></canvas></div>
+    <div id="fps">0</div>
+
+    <!-- BEGIN PWA SCRIPT -->
+<script>
+    if ('serviceWorker' in navigator) {
+        if (navigator.serviceWorker.controller) {
+            console.log('[PWA Builder] active service worker found, no need to register')
+        } else {
+            navigator.serviceWorker.register('sw.mjs')
+                .then(function (reg) {
+                    console.log('Service worker has been registered for scope:' + reg.scope);
+                })
+                .catch(function (err) {
+                    console.error('Service worker registration failed:', err);
+                });
+        }
+    }
+</script>
+<!-- END PWA SCRIPT -->
+</body>
+</html>
