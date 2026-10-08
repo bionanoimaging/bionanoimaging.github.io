@@ -1,0 +1,192 @@
+{
+  "ui": {
+    "back": "Back",
+    "resume": "Resume",
+    "restart": "Restart",
+    "settings": "Settings",
+    "level_editor": "Level Editor",
+    "help": "Help",
+    "credits": "Credits",
+    "load_lvl": "Load Lvl",
+    "hint": "Hint",
+    "beams": "Beams",
+    "laser": "Laser",
+    "planes": "Planes",
+    "scan": "Scan",
+    "password": "Password",
+    "done": "Done",
+    "music": "Music",
+    "narration": "Narration",
+    "highscore": "HighScore",
+    "next": "Next",
+    "new_level": "New Level",
+    "write_t": "Write T",
+    "add_t": "Add T",
+    "remove_t": "Remove T",
+    "start": "Start",
+    "apply": "Apply",
+    "insert": "Insert",
+    "remove": "Remove",
+    "next_task": "Next Task",
+    "export": "Export",
+    "level_abbr": "Lvl",
+    "save": "Save"
+  },
+  "settings_menu": {
+    "rendering": "Rendering",
+    "side_rendering": "SideRendering",
+    "pbr": "PBR",
+    "fps": "FPS",
+    "environment": "Environment",
+    "scale": "Scale",
+    "teleportation": "Teleportation",
+    "mode": "Mode",
+    "difficulty": "difficulty",
+    "sensitivity": "sensitivity",
+    "language": "Language"
+  },
+  "settings": {
+    "rendering": {
+      "light": "Light",
+      "normal": "Normal",
+      "full": "Full"
+    },
+    "side_rendering": {
+      "show_sides": "Show Sides",
+      "hide_sides": "Hide Sides"
+    },
+    "pbr": {
+      "pbr": "PBR",
+      "no_pbr": "no PBR"
+    },
+    "fps": {
+      "fps": "FPS",
+      "no_fps": "no FPS"
+    },
+    "environment": {
+      "forest": "Forest",
+      "night_sky": "Night Sky",
+      "tee_room": "Tee-Room",
+      "city_square": "City Square"
+    },
+    "scale": {
+      "giant": "Giant",
+      "normal": "Normal",
+      "ant": "Ant"
+    },
+    "teleportation": {
+      "teleportation_on": "Teleportation On",
+      "movement_on": "Movement On",
+      "teleportation_off": "Teleportation Off"
+    },
+    "mode": {
+      "plain": "Mode Plain",
+      "vr": "Mode VR",
+      "ar": "Mode AR"
+    },
+    "difficulty": {
+      "hard": "Hard",
+      "normal": "Normal",
+      "easy": "Easy"
+    },
+    "sensitivity": {
+      "coarse": "Coarse",
+      "medium": "Medium",
+      "fine": "Fine"
+    },
+    "language": {
+      "de": "German",
+      "en": "English",
+      "no": "Norwegian"
+    }
+  },
+  "msg": {
+    "welcome": "AlignIt! - learn optical alignment.\nStart the game at level 1.\n",
+    "loading_highscores": "Loading Highscores ...",
+    "level_loaded": "Level {number} loaded!\n{title}",
+    "congratulations": "Congratulations!\nYou completed level {number}\n{title}",
+    "you_won": "You Won!",
+    "animation_running": "Don't even dare to think about it!\nSolution animation still running!",
+    "you_lost": "You Lost! You solved only {solved} of {total} components.",
+    "laser_eye": "You looked into the laser beam! Laser turned off!\n",
+    "correct": "Correct!",
+    "wrong_try_again": "Wrong! Try again.",
+    "level_restarted": "Level Restarted",
+    "enjoy": "Enjoy!",
+    "well_done": "Well done!"
+  },
+  "editor": {
+    "components": "Components",
+    "tasks": "Tasks:",
+    "success": "Success:",
+    "task_step": "Task Step:",
+    "question_label": "Question (leave empty for normal task):",
+    "answers_label": "Answers, first=correct:",
+    "step_types": "Step Types",
+    "filename_empty": "Filename cannot be empty",
+    "step_type": {
+      "addComponent": "Add Component",
+      "modifyComponent": "Modify Component",
+      "removeComponent": "Remove Component",
+      "solution": "Solution",
+      "task": "Task",
+      "activate": "Activate",
+      "addBaseMesh": "Add Base Mesh",
+      "addLensMesh": "Add Lens Mesh",
+      "setObserverPosition": "Set Observer Position",
+      "resetComponent": "Reset Component",
+      "renameComponent": "Rename Component"
+    },
+    "component": {
+      "Lens": "Lens",
+      "Objective": "Objective",
+      "Laser": "Laser",
+      "Lightsource": "Lightsource",
+      "PanelPost": "Panel Post",
+      "FibreCouple": "Fibre Couple",
+      "Pinhole": "Pinhole",
+      "DualPinhole": "Dual Pinhole",
+      "Iris": "Iris",
+      "Slit": "Slit",
+      "Grating": "Grating",
+      "Beamsplitter": "Beamsplitter",
+      "Filter": "Filter",
+      "Mirror": "Mirror",
+      "Screen": "Screen",
+      "Sample": "Sample"
+    }
+  },
+  "alerts": {
+    "invalid_level": "Invalid level file format",
+    "error_reading": "Error reading level file"
+  },
+  "sound": {
+    "music": "Music:",
+    "music_paused": "Music: Paused.",
+    "narration": "Narration:"
+  },
+  "indicator": {
+    "beams": "Beams",
+    "focus": "Focus",
+    "power": "Power",
+    "pos_y": "Pos. Y",
+    "pos_z": "Pos. Z",
+    "curvature": "Curvature",
+    "delta_y": "Delta Y",
+    "delta_z": "Delta Z",
+    "components": "Components",
+    "movements": "Movements",
+    "notsolved_focus": "focus",
+    "notsolved_power": "power",
+    "notsolved_beams": "beams {current}/{required}",
+    "notsolved_pos_x": "pos X",
+    "notsolved_pos_y": "pos Y",
+    "notsolved_curvature": "curvature",
+    "notsolved_delta_x": "beam distance X",
+    "notsolved_delta_y": "beam distance Y"
+  },
+  "score": {
+    "format": "Lvl {level}, Task {task}, Max {maxpts}, score: {total}, task:{task_score}, Lvl: {level_score}",
+    "placeholder": "the score"
+  }
+}

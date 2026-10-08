@@ -1,0 +1,192 @@
+{
+  "ui": {
+    "back": "Tilbake",
+    "resume": "Fortsett",
+    "restart": "Start på nytt",
+    "settings": "Innstillinger",
+    "level_editor": "Nivåredigerer",
+    "help": "Hjelp",
+    "credits": "Credits",
+    "load_lvl": "Last nivå",
+    "hint": "Hint",
+    "beams": "Stråler",
+    "laser": "Laser",
+    "planes": "Plan",
+    "scan": "Scan",
+    "password": "Passord",
+    "done": "Ferdig",
+    "music": "Musikk",
+    "narration": "Fortelling",
+    "highscore": "Toppscore",
+    "next": "Neste",
+    "new_level": "Nytt nivå",
+    "write_t": "Skriv O",
+    "add_t": "Legg til O",
+    "remove_t": "Fjern O",
+    "start": "Start",
+    "apply": "Bruk",
+    "insert": "Sett inn",
+    "remove": "Fjern",
+    "next_task": "Neste oppgave",
+    "export": "Eksporter",
+    "level_abbr": "Niv",
+    "save": "Lagre"
+  },
+  "settings_menu": {
+    "rendering": "Rendering",
+    "side_rendering": "Siderendering",
+    "pbr": "PBR",
+    "fps": "FPS",
+    "environment": "Miljø",
+    "scale": "Skala",
+    "teleportation": "Teleportering",
+    "mode": "Modus",
+    "difficulty": "Vanskelighetsgrad",
+    "sensitivity": "Følsomhet",
+    "language": "Språk"
+  },
+  "settings": {
+    "rendering": {
+      "light": "Lett",
+      "normal": "Normal",
+      "full": "Full"
+    },
+    "side_rendering": {
+      "show_sides": "Vis sider",
+      "hide_sides": "Skjul sider"
+    },
+    "pbr": {
+      "pbr": "PBR",
+      "no_pbr": "ingen PBR"
+    },
+    "fps": {
+      "fps": "FPS",
+      "no_fps": "ingen FPS"
+    },
+    "environment": {
+      "forest": "Skog",
+      "night_sky": "Nattestjernehimmel",
+      "tee_room": "Te-rom",
+      "city_square": "Bytorg"
+    },
+    "scale": {
+      "giant": "Kjempe",
+      "normal": "Normal",
+      "ant": "Maur"
+    },
+    "teleportation": {
+      "teleportation_on": "Teleportering på",
+      "movement_on": "Bevegelse på",
+      "teleportation_off": "Teleportering av"
+    },
+    "mode": {
+      "plain": "Modus Standard",
+      "vr": "Modus VR",
+      "ar": "Modus AR"
+    },
+    "difficulty": {
+      "hard": "Vanskelig",
+      "normal": "Normal",
+      "easy": "Lett"
+    },
+    "sensitivity": {
+      "coarse": "Grov",
+      "medium": "Middels",
+      "fine": "Fin"
+    },
+    "language": {
+      "de": "Tysk",
+      "en": "Engelsk",
+      "no": "Norsk"
+    }
+  },
+  "msg": {
+    "welcome": "AlignIt! - Lær optisk justering.\nStart spillet på nivå 1.\n",
+    "loading_highscores": "Laster toppscorer ...",
+    "level_loaded": "Nivå {number} lastet!\n{title}",
+    "congratulations": "Gratulerer!\nDu fullførte nivå {number}\n{title}",
+    "you_won": "Du vant!",
+    "animation_running": "Ikke tenk engang på det!\nLøsningsanimasjonen kjører fortsatt!",
+    "you_lost": "Du tapte! Du løste bare {solved} av {total} komponenter.",
+    "laser_eye": "Du så inn i laserstrålen! Laseren ble slått av!\n",
+    "correct": "Riktig!",
+    "wrong_try_again": "Feil! Prøv igjen.",
+    "level_restarted": "Nivå startet på nytt",
+    "enjoy": "Kos deg!",
+    "well_done": "Bra jobbet!"
+  },
+  "editor": {
+    "components": "Komponenter",
+    "tasks": "Oppgaver:",
+    "success": "Suksess:",
+    "task_step": "Oppgavetrinn:",
+    "question_label": "Spørsmål (la stå tomt for normal oppgave):",
+    "answers_label": "Svar, første=riktig:",
+    "step_types": "Trinnetyper",
+    "filename_empty": "Filnavn kan ikke være tomt",
+    "step_type": {
+      "addComponent": "Legg til komponent",
+      "modifyComponent": "Endre komponent",
+      "removeComponent": "Fjern komponent",
+      "solution": "Løsning",
+      "task": "Oppgave",
+      "activate": "Aktiver",
+      "addBaseMesh": "Legg til base mesh",
+      "addLensMesh": "Legg til linse mesh",
+      "setObserverPosition": "Sett observatørposisjon",
+      "resetComponent": "Tilbakestill komponent",
+      "renameComponent": "Gi komponent nytt navn"
+    },
+    "component": {
+      "Lens": "Linse",
+      "Objective": "Objektiv",
+      "Laser": "Laser",
+      "Lightsource": "Lyskilde",
+      "PanelPost": "Panel-post",
+      "FibreCouple": "Fiberkopler",
+      "Pinhole": "Nålehull",
+      "DualPinhole": "Dobbelt nålehull",
+      "Iris": "Iris",
+      "Slit": "Spalte",
+      "Grating": "Gitterspeil",
+      "Beamsplitter": "Strålesplitter",
+      "Filter": "Filter",
+      "Mirror": "Speil",
+      "Screen": "Skjerm",
+      "Sample": "Prøve"
+    }
+  },
+  "alerts": {
+    "invalid_level": "Ugyldig nivåfilformat",
+    "error_reading": "Feil ved lesing av nivåfil"
+  },
+  "sound": {
+    "music": "Musikk:",
+    "music_paused": "Musikk: Pauset.",
+    "narration": "Fortelling:"
+  },
+  "indicator": {
+    "beams": "Stråler",
+    "focus": "Fokus",
+    "power": "Kraft",
+    "pos_y": "Pos. Y",
+    "pos_z": "Pos. Z",
+    "curvature": "Krumning",
+    "delta_y": "Delta Y",
+    "delta_z": "Delta Z",
+    "components": "Komponenter",
+    "movements": "Bevegelser",
+    "notsolved_focus": "fokus",
+    "notsolved_power": "kraft",
+    "notsolved_beams": "stråler {current}/{required}",
+    "notsolved_pos_x": "pos X",
+    "notsolved_pos_y": "pos Y",
+    "notsolved_curvature": "krumning",
+    "notsolved_delta_x": "stråleafstand X",
+    "notsolved_delta_y": "stråleafstand Y"
+  },
+  "score": {
+    "format": "Niv {level}, Oppg {task}, Maks {maxpts}, poeng: {total}, oppg:{task_score}, Niv: {level_score}",
+    "placeholder": "poengstand"
+  }
+}

@@ -1,0 +1,34 @@
+LVL1_TASK1_INTRO - Laser Alignment Narration Script
+=====================================================
+
+[Opening tone, welcoming]
+Welcome to the Michelson Interferometer simulation. This is one of the most 
+important instruments in optical physics. It won Albert Michelson the first 
+Nobel Prize in Physics in 1907, and today it's used in cutting-edge applications 
+from gravitational wave detection to medical imaging.
+
+[Task introduction]
+Your first task is to align the laser beam along what we call the optical axis. 
+Imagine an invisible line running through the center of your optical table. 
+The laser beam should follow this line precisely.
+
+[Specific instructions]
+You'll see the laser positioned at [-2, -7]. The beamsplitter will eventually 
+be placed at position [-2, -2]. Your job is to direct the laser beam so it 
+passes exactly through that future beamsplitter position.
+
+[How to use controls]
+Use the rotation controls on all three axes - x, y, and z - to aim the beam. 
+Look at where the red laser ray is traveling. Adjust until it points directly 
+toward the coordinates [-2, -2].
+
+[Why this matters]
+Precision alignment from the start is crucial. Every optical component downstream 
+depends on having the beam come from the right direction. This is true in any 
+optical system you'll ever build.
+
+[Completion expectation]
+When you're done, the beam should travel straight along the optical axis, ready 
+for the beamsplitter to be installed. Take your time - accuracy now prevents 
+frustration later.
+

@@ -1,0 +1,48 @@
+LVL1_TASK7_CIRCULAR_FRINGES - Circular Fringes (Haidinger Fringes) Narration Script
+===================================================================================
+
+[Entering wave optics territory]
+With both beams perfectly overlapped, we now enter the truly fascinating realm 
+of optical interference. The pattern you see on the screen tells you everything 
+about the relationship between the two arms of your interferometer.
+
+[Types of fringes]
+There are two main types of fringe patterns you can create in a Michelson 
+interferometer. Straight parallel fringes appear when one mirror is slightly 
+tilted relative to the other. Circular fringes - also called Haidinger fringes 
+or fringes of equal inclination - appear when the mirrors are exactly perpendicular.
+
+[What circular fringes mean]
+When you see concentric rings centered on the screen, this indicates that the 
+two mirrors form a perfect virtual air gap. Each ring represents rays that have 
+traveled the same total distance in both arms. The geometry is analogous to 
+contour lines on a topographic map, but here the "elevation" is optical path length.
+
+[The center spot significance]
+The very center of the circular pattern marks the condition of zero optical path 
+difference. At normal incidence - where light travels straight out and back - 
+both arms have exactly equal lengths. This is the most important reference point 
+in the entire interferometer.
+
+[Fine-tuning requirements]
+Achieving perfect circular fringes requires exquisite angular alignment. You'll 
+need to use very fine control over Mirror 2's tip and tilt. Even thousandths of 
+a degree matter here. In this task, your rotation range is intentionally limited 
+to ±1 degree so you focus on precision rather than gross adjustments.
+
+[Observing the pattern]
+In premium mode with interference enabled, you should see bright and dark rings 
+that get closer together as you move away from the center. The spacing tells you 
+about the path difference gradient across the beam profile.
+
+[Why this matters scientifically]
+Circular fringes are used in precision metrology for measuring refractive indices, 
+detecting surface irregularities, and even searching for tiny changes in distance. 
+The famous Michelson-Morley experiment that searched for the luminiferous ether 
+used precisely this kind of fringe pattern analysis.
+
+[Mastery indicator]
+Being able to reliably produce clean circular fringes is a hallmark of skilled 
+optical alignment. It shows you understand not just how to make things work, but 
+how to make them work optimally.
+
