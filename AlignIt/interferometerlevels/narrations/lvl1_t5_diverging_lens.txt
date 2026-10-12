@@ -1,0 +1,45 @@
+LVL1_TASK5_DIVerging_LENS - Diverging Lens Insertion Narration Script
+======================================================================
+
+[Introducing a crucial component]
+Now we add the diverging lens, which is absolutely essential for precision 
+alignment of the interferometer. This simple optical element unlocks a powerful 
+technique used by professional optical technicians.
+
+[What the lens does]
+A plano-concave or biconcave lens spreads out light rays that pass through it. 
+Instead of parallel rays staying parallel, they diverge from a common origin 
+point. In our case, we want the laser beam to spread as it travels toward the 
+beamsplitter.
+
+[Why we need divergent light]
+With perfectly parallel light, interference fringes appear at ANY mirror 
+separation. You can't tell where the zero path difference position is because 
+fringes look the same whether the arms are equal or very different in length.
+
+But with divergent light, different rays travel different distances depending 
+on their angle. At most positions, these various path differences cancel each 
+other out, washing out the interference pattern. Only when the two arms have 
+exactly equal lengths do ALL the rays interfere constructively together.
+
+[Insertion instructions]
+The lens should be placed between the laser and the beamsplitter, roughly along 
+the optical axis around position [-2, -5]. You'll need to move it laterally 
+until it intercepts the beam, then rotate it so both surfaces are perpendicular 
+to the beam direction.
+
+[What you should observe]
+After inserting the lens correctly, notice how the beam expands as it travels. 
+You'll see the ray bundle get wider downstream of the lens. This spreading is 
+exactly what we need for the calibration technique.
+
+[The alignment power]
+This setup lets you find the exact zero optical path difference position. When 
+you scan one mirror while watching the screen, fringes will only become visible 
+in a narrow region around the equal-path condition. That bright fringe region 
+marks your reference point with extreme precision.
+
+[Looking ahead]
+We'll use this property in Task 8 to demonstrate how professional metrologists 
+find the absolute reference position before making precise measurements.
+

@@ -1,0 +1,44 @@
+LVL1_TASK6_OVERLAP - Beam Overlap at Screen Narration Script
+=============================================================
+
+[Bringing it all together]
+Now both beams from the interferometer arms reach the screen, but you'll notice 
+they appear as two separate spots. Our next challenge is to make them overlap 
+perfectly so they can interfere with each other.
+
+[Why overlap is necessary]
+For light waves to create interference patterns, they must occupy exactly the 
+same space at exactly the same time. Think of it like throwing two stones into 
+a pond: the ripple patterns only interact where the waves physically overlap. 
+Similarly, light beams must superimpose to create bright and dark fringes.
+
+[Current state]
+Right now, the two beams emerge parallel from the beamsplitter but are slightly 
+separated laterally. They're heading in the right direction, but they need to 
+be coaxial - traveling along the same axis.
+
+[Alignment technique]
+Fine-tune the tip and tilt of Mirror 2 - that means small adjustments to its 
+rotations around the x and y axes. These tiny angular changes steer the beam 
+slightly at the screen without disrupting the overall alignment of the system.
+
+[What to look for]
+Watch the screen carefully as you make adjustments. The two red laser spots 
+should gradually move closer together until they merge into a single spot. 
+When perfectly overlapped, the combined spot will be brightest in the center.
+
+[Premium mode note]
+In the full version with interference enabled, once the beams are truly 
+overlapping you should begin to see faint interference fringes - alternating 
+bright and dark bands or concentric rings, depending on the exact mirror angles.
+
+[Physical analogy]
+Imagine holding two flashlights aimed at a wall. If they're pointed at slightly 
+different spots, you see two circles of light. Only when you aim them at exactly 
+the same spot do the beams combine. That's what we're achieving here, but with 
+much greater precision because we're dealing with coherent laser light.
+
+[Next step]
+Once the beams overlap, we can enter the realm of precise wave optics and start 
+observing and analyzing interference patterns.
+

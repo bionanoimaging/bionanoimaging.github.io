@@ -1,0 +1,146 @@
+{
+    "version": 1.0,
+    "number": "7",
+    "title": "Two Iris Apertures",
+    "steps": [
+        {
+            "type": "addComponent",
+            "component_type": "Laser",
+            "name": "Laser",
+            "rays": [
+                0,
+                0
+            ],
+            "position": [
+                -4,
+                0
+            ],
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component_type": "Mirror",
+            "name": "Mirror 1",
+            "position": [
+                2,
+                -1
+            ],
+            "rotation": -135,
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component_type": "Mirror",
+            "name": "Mirror 2",
+            "position": [
+                2,
+                -2
+            ],
+            "rotation": 135,
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component_type": "Mirror",
+            "name": "Mirror 3",
+            "position": [
+                2,
+                -3
+            ],
+            "rotation": 0,
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component_type": "Mirror",
+            "name": "Mirror 4",
+            "position": [
+                1,
+                -1
+            ],
+            "rotation": 45,
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component_type": "Mirror",
+            "name": "Mirror 5",
+            "position": [
+                1,
+                -2
+            ],
+            "rotation": 90,
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component_type": "Iris",
+            "name": "Position Iris",
+            "position": [
+                -2,
+                0
+            ],
+            "height": 1.0,
+            "diameter": 0.8,
+            "dof": "XYZxyz",
+            "success": {
+                "diameter": 0.05
+            },
+            "comment": "This iris can be adjusted."
+        },
+        {
+            "type": "addComponent",
+            "component_type": "Iris",
+            "name": "Angle Iris",
+            "position": [
+                1,
+                0
+            ],
+            "height": 1.0,
+            "diameter": 0.05,
+            "dof": "XYZxyz"
+        },
+        {
+            "type": "addComponent",
+            "component_type": "Screen",
+            "name": "Screen",
+            "target": false,
+            "position": [
+                4,
+                0
+            ],
+            "dof": "XYZ"
+        },
+        {
+            "type": "task",
+            "instruction": "Without seeing the actual beams,\niris apertures are helpful tools.\nAdjust the angle to hit the angle-aperture.",
+            "success": {
+                "Num": 1
+            },
+            "music": {
+                "link": "music/studiokolomna-spring-192863.mp3",
+                "credits": "Spring by Studiokolomna | https://pixabay.com/music/classical-string-quartet-spring-192863/"
+            },
+            "final": true,
+            "score": 100.0
+        },
+        {
+            "type": "task",
+            "instruction": "Congratulations! You completed level 2\nPress Done for Lvl 3.",
+            "narration": {
+                "link": "narrations/lvl2t7.m4a",
+                "credits": "Rainer Heintzmann"
+            },
+            "final": true,
+            "music": {
+                "link": "music/studiokolomna-spring-192863.mp3",
+                "credits": "Spring by Studiokolomna | https://pixabay.com/music/classical-string-quartet-spring-192863/"
+            }
+        }
+    ],
+    "description": {
+        "de": "Iris-Justage üben",
+        "en": "Practice iris alignment",
+        "no": "Øv iris-justering"
+    }
+}

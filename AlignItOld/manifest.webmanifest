@@ -1,0 +1,22 @@
+{
+    "dir": "ltr",
+    "lang": "en",
+    "name": "AlignIt! PWA",
+    "scope": "/AlignIt/index.html",
+    "display": "standalone", 
+    "start_url": "https://nanoimaging.de/AlignIt/index.html",
+    "short_name": "AlignItPWA",
+    "theme_color": "#ffffff",
+    "description": "A game for learning how to align an optical.",
+    "orientation": "landscape",
+    "background_color": "#ffffff",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "icons": [
+        {
+          "src": "/AlignIt/img/icon.png",
+          "type": "image/png",
+          "sizes": "512x512"
+        }
+    ]
+  }

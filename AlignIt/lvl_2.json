@@ -1,0 +1,626 @@
+{
+    "version": 1.0,
+    "number": "2",
+    "title": {
+        "de": "Optische Achse",
+        "en": "Optical Axis",
+        "no": "Optisk akse"
+    },
+    "steps": [
+        {
+            "type": "addComponent",
+            "component_type": "PanelPost",
+            "name": "Panel Post",
+            "height": 2.2,
+            "position": [
+                1,
+                -1
+            ],
+            "rotation": 0,
+            "dof": ""
+        },
+        {
+            "type": "addComponent",
+            "component_type": "Laser",
+            "name": "Laser",
+            "rays": [
+                0,
+                0
+            ],
+            "position": [
+                -4,
+                0
+            ],
+            "dof": "y"
+        },
+        {
+            "type": "addComponent",
+            "component_type": "Pinhole",
+            "name": "P1",
+            "position": [
+                -2,
+                0.2
+            ],
+            "dof": "Y",
+            "limits": [
+                [],
+                [
+                    -0.4,
+                    0.4
+                ],
+                [
+                    0.5,
+                    1.4
+                ]
+            ]
+        },
+        {
+            "type": "solution",
+            "name": "P1",
+            "position": [
+                -2,
+                0
+            ]
+        },
+        {
+            "type": "addComponent",
+            "component_type": "Pinhole",
+            "name": "P2",
+            "position": [
+                1,
+                -0.2
+            ],
+            "dof": "Y",
+            "limits": [
+                [],
+                [
+                    -0.4,
+                    0.4
+                ],
+                [
+                    0.5,
+                    1.4
+                ]
+            ]
+        },
+        {
+            "type": "solution",
+            "name": "P2",
+            "position": [
+                1,
+                0
+            ]
+        },
+        {
+            "type": "addComponent",
+            "component_type": "Screen",
+            "name": "Screen",
+            "target": false,
+            "position": [
+                4,
+                0
+            ],
+            "success": {
+                "Num": 1
+            },
+            "dof": "",
+            "limits": [
+                [],
+                [
+                    -0.4,
+                    0.4
+                ],
+                [
+                    0.5,
+                    1.4
+                ]
+            ]
+        },
+        {
+            "type": "activate",
+            "name": "P1",
+            "dof": "Y"
+        },
+        {
+            "type": "task",
+            "instruction": {
+                "de": "Positioniere beide Blenden so, dass\nder Laserstrahl durch sie hindurchgeht.",
+                "en": "Position both pinholes such that\nthe laser beam passes through them.",
+                "no": "Posisjoner begge hullene slik at\nlaserstrålen passerer gjennom dem."
+            },
+            "score": 100.0,
+            "music": {
+                "link": "music/Emotional+Ballad+-+320bit.mp3",
+                "credits": "Emotional Ballad by Alexander Nakarada | https://www.serpentsoundstudios.comn\nCreative Commons CC BY 4.0, https://creativecommons.org/licenses/by/4.0/"
+            },
+            "narration": {
+                "link": "narrations/lvl2t1.m4a",
+                "credits": "Rainer Heintzmann"
+            }
+        },
+        {
+            "type": "modifyComponent",
+            "name": "P1",
+            "position": [
+                -2,
+                0.2
+            ],
+            "height": 1.1,
+            "dof": "YZ"
+        },
+        {
+            "type": "modifyComponent",
+            "name": "P2",
+            "position": [
+                1,
+                0.2
+            ],
+            "height": 0.9,
+            "dof": "YZ"
+        },
+        {
+            "type": "solution",
+            "name": "P1",
+            "height": 1.0,
+            "position": [
+                -2,
+                0
+            ]
+        },
+        {
+            "type": "solution",
+            "name": "P2",
+            "height": 1.0,
+            "position": [
+                1,
+                0
+            ]
+        },
+        {
+            "type": "activate",
+            "name": "P1",
+            "dof": "YZ"
+        },
+        {
+            "type": "task",
+            "instruction": {
+                "de": "Stelle P1 und P2 so ein, dass der Laserstrahl durchgelassen wird.",
+                "en": "Adjust P1 and P2 to transmit the laser beam.",
+                "no": "Juster P1 og P2 slik at laserstrålen passerer gjennom."
+            },
+            "score": 100.0,
+            "narration": {
+                "link": "narrations/lvl2t2.m4a",
+                "credits": "Rainer Heintzmann"
+            }
+        },
+        {
+            "type": "modifyComponent",
+            "name": "P1",
+            "position": [
+                -2,
+                0.2
+            ],
+            "height": 1.1,
+            "dof": "YZ"
+        },
+        {
+            "type": "modifyComponent",
+            "name": "P2",
+            "position": [
+                1,
+                0.2
+            ],
+            "height": 0.9,
+            "dof": "YZ"
+        },
+        {
+            "type": "solution",
+            "name": "P1",
+            "position": [
+                -2,
+                0
+            ],
+            "height": 1.0
+        },
+        {
+            "type": "solution",
+            "name": "P2",
+            "position": [
+                1,
+                0
+            ],
+            "height": 1.0
+        },
+        {
+            "type": "activate",
+            "name": "P1",
+            "dof": "YZ"
+        },
+        {
+            "type": "task",
+            "instruction": {
+                "de": "Stelle P1 und P2 so ein, dass der Laserstrahl durchgelassen wird, ohne die Strahlen zu sehen.",
+                "en": "Adjust P1 and P2 to transmit the laser beam without seeing the rays.",
+                "no": "Juster P1 og P2 slik at laserstrålen passerer gjennom uten å se strålene."
+            },
+            "score": 100.0,
+            "narration": {
+                "link": "narrations/lvl2t3.m4a",
+                "credits": "Rainer Heintzmann"
+            },
+            "showbeams": false
+        },
+        {
+            "type": "modifyComponent",
+            "name": "P1",
+            "position": [
+                -2,
+                0
+            ],
+            "height": 1.0,
+            "dof": ""
+        },
+        {
+            "type": "modifyComponent",
+            "name": "P2",
+            "position": [
+                1,
+                0
+            ],
+            "height": 1.0,
+            "dof": ""
+        },
+        {
+            "type": "modifyComponent",
+            "name": "Laser",
+            "height": 1.1,
+            "rotation": [
+                0,
+                0,
+                1.5
+            ],
+            "limits": [
+                [],
+                [],
+                [
+                    0.4,
+                    1.4
+                ],
+                [
+                    -10,
+                    10
+                ],
+                [
+                    -10,
+                    10
+                ],
+                [
+                    -10,
+                    10
+                ]
+            ],
+            "dof": "Zy"
+        },
+        {
+            "type": "solution",
+            "name": "Laser",
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "height": 1.0
+        },
+        {
+            "type": "activate",
+            "name": "Laser",
+            "dof": "y"
+        },
+        {
+            "type": "task",
+            "instruction": {
+                "de": "Stelle die Höhe und den Winkel des Lasers so ein,\ndass eine gut definierte optische Achse entsteht.",
+                "en": "Adjust the height and the angle of the laser\nto have a well defined optical axis.",
+                "no": "Juster høyden og vinkelen til laseren\nfor å få en veldefinert optisk akse."
+            },
+            "narration": {
+                "link": "narrations/lvl2t4.m4a",
+                "credits": "Rainer Heintzmann"
+            },
+            "score": 100.0
+        },
+        {
+            "type": "removeComponent",
+            "name": "P1"
+        },
+        {
+            "type": "removeComponent",
+            "name": "P2"
+        },
+        {
+            "type": "resetComponent",
+            "name": "Laser"
+        },
+        {
+            "type": "addComponent",
+            "component_type": "Iris",
+            "name": "Position Iris",
+            "position": [
+                -2,
+                0
+            ],
+            "height": 1.0,
+            "diameter": 0.6,
+            "dof": "f",
+            "limits": [
+                [],
+                [
+                    -0.4,
+                    0.4
+                ],
+                [
+                    0.5,
+                    1.4
+                ]
+            ],
+            "comment": "This iris cannot be adjusted."
+        },
+        {
+            "type": "addComponent",
+            "component_type": "Iris",
+            "name": "Angle Iris",
+            "position": [
+                1,
+                0
+            ],
+            "height": 1.0,
+            "diameter": 0.05,
+            "dof": "f",
+            "limits": [
+                [],
+                [
+                    -0.4,
+                    0.4
+                ],
+                [
+                    0.5,
+                    1.4
+                ]
+            ],
+            "comment": "This iris cannot be adjusted."
+        },
+        {
+            "type": "modifyComponent",
+            "name": "Laser",
+            "height": 1.1,
+            "position": [
+                -4,
+                0.3
+            ],
+            "rotation": [
+                0,
+                -4,
+                1.5
+            ],
+            "limits": [
+                [],
+                [],
+                [],
+                [
+                    -10,
+                    10
+                ],
+                [
+                    -10,
+                    10
+                ],
+                [
+                    -10,
+                    10
+                ]
+            ],
+            "dof": "yz"
+        },
+        {
+            "type": "solution",
+            "name": "Laser",
+            "rotation": [
+                0,
+                3.357,
+                -1.11
+            ]
+        },
+        {
+            "type": "activate",
+            "name": "Laser",
+            "dof": "yz"
+        },
+        {
+            "type": "task",
+            "instruction": {
+                "de": "Ohne die tatsächlichen Strahlen zu sehen,\nsind Irisblenden hilfreiche Werkzeuge.\nStelle den Winkel so ein, dass er die Winkelblende trifft.",
+                "en": "Without seeing the actual beams,\niris apertures are helpful tools.\nAdjust the angle to hit the angle-aperture.",
+                "no": "Uten å se de faktiske strålene\ner irisblender nyttige verktøy.\nJuster vinkelen slik at den treffer vinkelblenden."
+            },
+            "narration": {
+                "link": "narrations/lvl2t5.m4a",
+                "credits": "Rainer Heintzmann"
+            },
+            "score": 100.0
+        },
+        {
+            "type": "modifyComponent",
+            "name": "Screen",
+            "success": {
+                "Num": 1
+            },
+            "position": [
+                0,
+                0
+            ],
+            "limits": [
+                [],
+                [
+                    -0.4,
+                    0.4
+                ],
+                [
+                    0.5,
+                    1.4
+                ]
+            ]
+        },
+        {
+            "type": "modifyComponent",
+            "name": "Position Iris",
+            "diameter": 0.049,
+            "dof": "f"
+        },
+        {
+            "type": "modifyComponent",
+            "name": "Laser",
+            "dof": "YZ",
+            "limits": [
+                [],
+                [
+                    -0.4,
+                    0.4
+                ],
+                [
+                    0.5,
+                    1.4
+                ]
+            ]
+        },
+        {
+            "type": "solution",
+            "name": "Laser",
+            "position": [
+                -4,
+                0
+            ],
+            "height": 1.0,
+            "rotation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "activate",
+            "name": "Laser",
+            "dof": "YZ"
+        },
+        {
+            "type": "task",
+            "instruction": {
+                "de": "Wende nun deine Aufmerksamkeit der \"Positionsblende\" zu\nund stelle die Laserposition so ein, dass der Laser hindurchgeht.",
+                "en": "Now move your attention to the \"Position Iris\"\nand adjust the laser position to make the laser pass through.",
+                "no": "Ret nå oppmerksomheten mot \"posisjonsblenden\"\nog juster laserposisjonen slik at laseren passerer gjennom."
+            },
+            "narration": {
+                "link": "narrations/lvl2t6.m4a",
+                "credits": "Rainer Heintzmann"
+            },
+            "score": 100.0
+        },
+        {
+            "type": "modifyComponent",
+            "name": "Screen",
+            "position": [
+                4,
+                0
+            ],
+            "success": {
+                "Num": 1
+            },
+            "limits": [
+                [],
+                [
+                    -0.4,
+                    0.4
+                ],
+                [
+                    0.5,
+                    1.4
+                ]
+            ]
+        },
+        {
+            "type": "modifyComponent",
+            "name": "Position Iris",
+            "diameter": 0.2,
+            "dof": "",
+            "success": {
+                "diameter": 0.05
+            }
+        },
+        {
+            "type": "modifyComponent",
+            "name": "Laser",
+            "dof": "YZyz",
+            "limits": [
+                [],
+                [
+                    -0.4,
+                    0.4
+                ],
+                [
+                    0.5,
+                    1.4
+                ]
+            ]
+        },
+        {
+            "type": "solution",
+            "name": "Laser",
+            "position": [
+                -4,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "height": 1.0
+        },
+        {
+            "type": "activate",
+            "name": "Laser",
+            "dof": "YZ"
+        },
+        {
+            "type": "task",
+            "instruction": {
+                "de": "Schließe nun den Strahlgang ab, indem du Winkel-\nund Positionsblenden abwechselnd verwendest.\nSchließe weiterhin die vordere Iris.",
+                "en": "Now finish this beam-walk by alternating angle\nand position apertures.\nKeep closing the front iris.",
+                "no": "Fullfør nå denne strålegangen ved å veksle mellom vinkel-\nog posisjonsblender.\nFortsett å lukke den fremre irisblenden."
+            },
+            "score": 100.0
+        },
+        {
+            "type": "task",
+            "instruction": {
+                "de": "Herzlichen Glückwunsch! Du hast Level 2 abgeschlossen.\nDrücke Fertig für Level 3.",
+                "en": "Congratulations! You completed level 2\nPress Done for Lvl 3.",
+                "no": "Gratulerer! Du har fullført nivå 2.\nTrykk Ferdig for nivå 3."
+            },
+            "narration": {
+                "link": "narrations/lvl2t7.m4a",
+                "credits": "Rainer Heintzmann"
+            },
+            "final": true,
+            "music": {
+                "link": "music/studiokolomna-spring-192863.mp3",
+                "credits": "Spring by Studiokolomna | https://pixabay.com/music/classical-string-quartet-spring-192863/"
+            }
+        }
+    ],
+    "description": {
+        "de": "Optische Achse ausrichten",
+        "en": "Align the optical axis",
+        "no": "Juster den optiske aksen"
+    }
+}
